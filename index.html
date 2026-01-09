@@ -1,498 +1,388 @@
 <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!--[if lt IE 7 ]><html class="ie ie6" lang="fr"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="fr"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="fr"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-
-<html class="not-ie" lang="fr">
-<!--<![endif]-->
-
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Senior Software Engineer | Expert Symfony & Architecture Hexagonale | Créateur d'outils open-source (doctrine-doctor, hexagonal-maker-bundle) | Speaker AFUP 2025 | Contributeur API Platform" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <!-- Primary Meta Tags -->
+    <title>Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert</title>
+    <meta name="title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert" />
+    <meta name="description" content="Expert en architecture hexagonale, DDD/CQRS avec 12+ ans d'expérience. Créateur d'outils open-source pour la communauté PHP. Contributeur API Platform." />
     <meta name="author" content="Ahmed EBEN HASSINE">
     <meta name="keywords" content="Symfony, PHP, Architecture Hexagonale, DDD, CQRS, API Platform, Doctrine, Software Engineer, Montpellier, Open Source, DevOps, Kubernetes, Docker">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ahmed-bhs.github.io/">
-    <meta property="og:title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert">
-    <meta property="og:description" content="Expert en architecture hexagonale, DDD/CQRS avec 12+ ans d'expérience. Créateur d'outils open-source pour la communauté PHP. Contributeur API Platform.">
-    <meta property="og:image" content="https://ahmed-bhs.github.io/img/face.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ahmed-bhs.github.io/" />
+    <meta property="og:title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert" />
+    <meta property="og:description" content="Expert en architecture hexagonale, DDD/CQRS avec 12+ ans d'expérience. Créateur d'outils open-source pour la communauté PHP. Contributeur API Platform." />
+    <meta property="og:image" content="https://ahmed-bhs.github.io/img/face.jpg" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ahmed-bhs.github.io/">
-    <meta property="twitter:title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert">
-    <meta property="twitter:description" content="Expert en architecture hexagonale, DDD/CQRS avec 12+ ans d'expérience. Créateur d'outils open-source pour la communauté PHP.">
-    <meta property="twitter:image" content="https://ahmed-bhs.github.io/img/face.jpg">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ahmed-bhs.github.io/" />
+    <meta property="twitter:title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert" />
+    <meta property="twitter:description" content="Expert en architecture hexagonale, DDD/CQRS avec 12+ ans d'expérience. Créateur d'outils open-source pour la communauté PHP." />
+    <meta property="twitter:image" content="https://ahmed-bhs.github.io/img/face.jpg" />
 
-    <title>Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert & Open Source Contributor</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://ahmed-bhs.github.io/">Ahmed BHS</a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">PROJETS</a></li>
+            <li><a class="nav-link" href="#experience">EXPÉRIENCE</a></li>
+            <li><a class="nav-link" href="#skills">COMPÉTENCES</a></li>
+            <li>
+              <a class="nav-link btn btn-primary" href="mailto:ahmedbhs123@gmail.com">CONTACT <i class="fas fa-envelope"></i></a>
+            </li>
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="all" href="css/bootstrap.css" type="text/css"/>
-    <link rel="stylesheet" media="all" href="css/custom.css" type="text/css"/>
-</head>
-<body>
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
 
-<!-- Navigation -->
-<nav id="spy" class="spy hidden-sm hidden-xs">
-    <ul>
-        <li class="active"><a href="#profile">Profile</a></li>
-        <li><a href="#professional-skills">Compétences</a></li>
-        <li><a href="#work-experience">Expérience Professionnelle</a></li>
-        <li><a href="#projects">Projets Open Source</a></li>
-        <li><a href="#education">Formation</a></li>
-        <li><a href="#personal-skills">Langues</a></li>
-        <li><a href="#interests">Hobbies</a></li>
-    </ul>
-</nav>
-<!-- end Navigation -->
+      <section class="header-container">
+        <h1>Bonjour, je suis Ahmed</h1>
 
-<!-- Navigation for small devices -->
-<nav id="mini-nav" class="spy visible-sm visible-xs">
-    <ul>
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Menu</a>
-            <ul class="dropdown-menu">
-                <li class="active"><a href="#profile">Profile</a></li>
-                <li><a href="#professional-skills">Compétences</a></li>
-                <li><a href="#work-experience">Expérience Professionnelle</a></li>
-                <li><a href="#projects">Projets Open Source</a></li>
-                <li><a href="#education">Formation</a></li>
-                <li><a href="#personal-skills">Langues</a></li>
-                <li><a href="#interests">Hobbies</a></li>
+        <div class="content-text">
+          <h2>Senior Software Engineer</h2>
+          <h2>Expert Symfony & Architecture Hexagonale</h2>
+
+          <p>
+            12+ ans d'expérience en développement. Créateur d'outils open-source utilisés par la communauté PHP internationale.
+            Contributeur API Platform. Speaker AFUP Montpellier 2025.
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/ahmed-bhs" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://linkedin.com/in/ahmedbhs/" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:ahmedbhs123@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Me Contacter</a>
+        </div>
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projets Open Source</h2>
+        <p>Mes contributions à la communauté PHP et Symfony</p>
+      </div>
+
+      <article class="project">
+        <!-- Doctrine Doctor -->
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Doctrine Doctor</h3>
+              <p>CLI tool - 16 analyzers, 9 fixers</p>
+              <p class="project-stats">⭐ 45+ stars • 📦 500+ installations</p>
+            </div>
+            <div class="project-link">
+              <a href="https://github.com/ahmed-bhs/doctrine-doctor" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://ahmed-bhs.github.io/doctrine-doctor/" target="_blank"><i class="fas fa-book"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hexagonal Maker Bundle -->
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Hexagonal Maker Bundle</h3>
+              <p>Symfony - 19 maker commands</p>
+              <p class="project-stats">⭐ 80+ stars • 📦 1,200+ installations</p>
+            </div>
+            <div class="project-link">
+              <a href="https://github.com/ahmed-bhs/hexagonal-maker-bundle" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://ahmed-bhs.github.io/hexagonal-maker-bundle/" target="_blank"><i class="fas fa-book"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hexagonal Demo -->
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Hexagonal Demo</h3>
+              <p>Demo app - Architecture hexagonale</p>
+              <p class="project-stats">⭐ 30+ stars • 95% auto-généré</p>
+            </div>
+            <div class="project-link">
+              <a href="https://github.com/ahmed-bhs/hexagonal-demo" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://ahmed-bhs.github.io/hexagonal-demo/" target="_blank"><i class="fas fa-book"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- API Platform -->
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>API Platform</h3>
+              <p>Contributeur Core & Documentation</p>
+              <p class="project-stats">🔗 Contributions régulières</p>
+            </div>
+            <div class="project-link">
+              <a href="https://github.com/api-platform/core" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://api-platform.com/" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTFS.ME -->
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>CTFS.ME</h3>
+              <p>Plateforme CTF - Co-fondateur</p>
+              <p class="project-stats">🏆 Cybersécurité • 👥 Communauté</p>
+            </div>
+            <div class="project-link">
+              <a href="https://ctfs.me" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Expérience Professionnelle</h2>
+        <p>12+ ans d'expertise en développement et architecture</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-content">
+            <h3>Senior Development & Architecture Engineer</h3>
+            <h4>Codein - Montpellier</h4>
+            <p class="timeline-date">Février 2019 - Présent</p>
+            <ul>
+              <li>Architecture API REST supportant <strong>50,000+ utilisateurs concurrents</strong></li>
+              <li>Lead technique et mentor pour équipes de 5-8 développeurs</li>
+              <li>Clients : OPPBTP, Bpifrance, IRD, CIRAD, FFGolf, Ministère de la Culture</li>
+              <li>Amélioration des performances de <strong>40%</strong> via DevOps</li>
             </ul>
-        </li>
-    </ul>
-</nav>
-<!-- end Navigation for small devices -->
-
-<!-- Dark Mode Toggle -->
-<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-    <span id="theme-icon">🌙</span>
-    <span id="theme-text">Dark</span>
-</button>
-<!-- end Dark Mode Toggle -->
-
-<!-- Header -->
-<header id="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 text-center">
-                <p class="header-name">Ahmed EBEN HASSINE</p>
-                <p class="header-title">Senior Software Engineer - Symfony & Architecture Expert</p>
-                <p class="header-subtitle">
-                    Expert en architecture hexagonale, DDD/CQRS et patterns SOLID avec 12+ ans d'expérience.
-                    Créateur d'outils open-source utilisés par la communauté PHP internationale (doctrine-doctor, hexagonal-maker-bundle).
-                    Contributeur API Platform. Speaker AFUP Montpellier 2025. Disponible pour missions freelance et CDI (100% remote accepté).
-                </p>
-                <a href="#" class="download-cv-btn" onclick="window.print(); return false;">
-                    📄 Télécharger CV
-                </a>
+            <div class="tech-tags">
+              <span>PHP 8.x</span>
+              <span>Symfony 6/7</span>
+              <span>API Platform</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
             </div>
+          </div>
         </div>
-    </div>
-</header>
-<!-- end Header -->
 
-<!-- Profile -->
-<section id="profile" class="profile activate">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="glyphicon glyphicon-user"></span>Profile</li>
-                    <li>
-                        <span class="note">Nom</span>
-                        <p><strong>Ahmed EBEN HASSINE</strong></p>
-                    </li>
-                    <li>
-                        <span class="note">Ville</span>
-                        <p><strong>Montpellier (34000), France</strong></p>
-                    </li>
-                    <li>
-                        <span class="note">Email</span>
-                        <p><strong>ahmedbhs123@gmail.com</strong></p>
-                    </li>
-                    <li>
-                        <span class="note">Téléphone</span>
-                        <p><strong>+33 7 54 19 11 37</strong></p>
-                    </li>
-                    <li>
-                        <span class="note">Network</span>
-                        <div style="margin: 10px 0;">
-                            <a href="https://github.com/ahmed-bhs" class="social-button github" target="_blank" rel="noopener">
-                                <img src="img/github.png" alt="github" />
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/ahmedbhs/" class="social-button linkedin" target="_blank" rel="noopener">
-                                <img src="img/linkedin.png" alt="linkedin" />
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="note">Highlights</span>
-                        <p class="description">Architectures supportant <strong>50,000+</strong> utilisateurs concurrents</p>
-                        <p class="description">Amélioration des performances de <strong>40%</strong> via DevOps</p>
-                        <p class="description"><strong>90%</strong> de réduction du temps de traitement via IA</p>
-                        <p class="description">Contributeur open-source (API Platform, Doctrine, Symfony)</p>
-                    </li>
-                </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Senior Backend Engineer</h3>
+            <h4>Lexik - Pérols</h4>
+            <p class="timeline-date">Décembre 2017 - Janvier 2019</p>
+            <ul>
+              <li>Applications Symfony haute performance (10,000+ requêtes/min)</li>
+              <li>Optimisation Doctrine : réduction des temps de réponse de <strong>60%</strong></li>
+              <li>Formation et mentoring des équipes (3-5 développeurs)</li>
+            </ul>
+            <div class="tech-tags">
+              <span>PHP 7.x</span>
+              <span>Symfony 4</span>
+              <span>MySQL</span>
+              <span>Redis</span>
+              <span>ElasticSearch</span>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- end Profile -->
 
-<!-- Professional skills -->
-<section id="professional-skills" class="professional-skills">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="glyphicon glyphicon-tasks"></span>Compétences</li>
-                    <li>
-                        <p>PHP 8.x<span class="annotation pull-right">Expert (12+ ans)</span></p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Symfony 6/7<span class="annotation pull-right">Expert Certifié</span></p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>API Platform<span class="annotation pull-right">Contributeur Open Source</span></p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Doctrine ORM<span class="annotation pull-right">Expert (Créateur doctrine-doctor)</span></p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Architecture Hexagonale / DDD<span class="annotation pull-right">Expert & Conférencier</span></p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>Docker / Kubernetes<span class="annotation pull-right">Avancé (Production)</span></p>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="description"><strong>Méthodologies :</strong> Agile/Scrum, TDD, BDD, CI/CD, Code Review, Pair Programming.</p>
-                        <p class="description"><strong>Architecture :</strong> Hexagonale, DDD/CQRS, SOLID, API REST, Microservices, Event-Driven.</p>
-                        <p class="description"><strong>Base de données :</strong> MySQL, PostgreSQL, Redis, MongoDB, ElasticSearch, Oracle, SQLite.</p>
-                        <p class="description"><strong>DevOps & Cloud :</strong> Docker, Kubernetes, GitLab CI/CD, GitHub Actions, AWS, Ansible, Terraform.</p>
-                        <p class="description"><strong>Frontend :</strong> JavaScript/TypeScript, Vue.js, Angular, Stimulus, jQuery, Bootstrap, Tailwind CSS.</p>
-                        <p class="description"><strong>Autres langages :</strong> Go, Python, Ruby, Bash, C++.</p>
-                        <p class="description"><strong>Qualité / CI :</strong> PHPUnit, Behat, Codeception, PHPStan, Psalm, SonarQube, Jenkins.</p>
-                        <p class="description"><strong>Versionning :</strong> Git + GitHub, GitLab et Bitbucket.</p>
-                        <p class="description"><strong>Environnement de travail préféré :</strong> Linux (Ubuntu/Debian) + PHPStorm/VSCode</p>
-                    </li>
-                </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Full Stack Software Engineer</h3>
+            <h4>TALAN - Tunis</h4>
+            <p class="timeline-date">Janvier 2014 - Novembre 2017</p>
+            <ul>
+              <li>Applications web pour clients internationaux (banque, télécoms, assurance)</li>
+              <li>Solutions e-commerce avec <strong>20,000+ produits</strong></li>
+              <li>Intégration systèmes tiers : Stripe, PayPal, Salesforce, SAP</li>
+            </ul>
+            <div class="tech-tags">
+              <span>PHP 5.6/7.0</span>
+              <span>Symfony 2/3</span>
+              <span>JavaScript</span>
+              <span>AngularJS</span>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- end Professional skills -->
+      </div>
+    </section>
 
-<!-- Work experience -->
-<section id="work-experience" class="work-experience">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="glyphicon glyphicon-briefcase"></span>Expérience Professionnelle</li>
-                    <li class="timeline-item active">
-                        <span class="note">Poste actuel, depuis Février 2019</span>
-                        <p><strong>Codein (Montpellier, 34)</strong></p>
-                        <p><strong>Senior Development & Architecture Engineer</strong></p>
-                        <p class="description">Conception et déploiement d'architectures API REST (Symfony 6/7, API Platform) supportant <strong>50,000+ utilisateurs concurrents</strong> avec haute disponibilité (99.9% uptime).</p>
-                        <p class="description">Lead technique et mentor pour équipes de 5-8 développeurs sur projets à fort enjeu.</p>
-                        <p class="description">Développement de solutions enterprise pour clients majeurs : <strong>OPPBTP, Bpifrance, IRD, CIRAD, Atlantic, FFGolf, Ministère de la Culture</strong>.</p>
-                        <p class="description">Création de <strong>19 Maker Commands</strong> (hexagonal-maker-bundle) pour automatiser la génération de code hexagonal, réduisant le temps de scaffolding de <strong>70%</strong>.</p>
-                        <p class="description">Amélioration des performances de <strong>40%</strong> via optimisation DevOps (Docker, Kubernetes, Redis, Varnish).</p>
-                        <p class="description">Réduction de <strong>90%</strong> du temps de traitement documentaire par intégration d'IA (OCR, NLP, AWS Textract).</p>
-                        <p class="description"><strong>Stack technique :</strong></p>
-                        <div class="tech-stack">
-                            <span class="tech-badge">PHP 8.x</span>
-                            <span class="tech-badge">Symfony 6/7</span>
-                            <span class="tech-badge">API Platform</span>
-                            <span class="tech-badge">Doctrine</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                            <span class="tech-badge">Redis</span>
-                            <span class="tech-badge">RabbitMQ</span>
-                            <span class="tech-badge">Docker</span>
-                            <span class="tech-badge">Kubernetes</span>
-                            <span class="tech-badge">GitLab CI/CD</span>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <span class="note">Décembre 2017 - Janvier 2019</span>
-                        <p><strong>Lexik (Pérols, 34)</strong></p>
-                        <p><strong>Senior Backend Engineer</strong></p>
-                        <p class="description">Développement d'applications Symfony haute performance pour clients e-commerce et SaaS (10,000+ requêtes/min).</p>
-                        <p class="description">Mise en place d'architectures API REST scalables avec authentification JWT et rate limiting.</p>
-                        <p class="description">Optimisation des requêtes Doctrine, réduisant les temps de réponse de <strong>60%</strong> via indexes et eager loading.</p>
-                        <p class="description">Formation et mentoring des équipes (3-5 développeurs) aux bonnes pratiques Symfony et patterns SOLID.</p>
-                        <p class="description"><strong>Stack technique :</strong></p>
-                        <div class="tech-stack">
-                            <span class="tech-badge">PHP 7.x</span>
-                            <span class="tech-badge">Symfony 4</span>
-                            <span class="tech-badge">Doctrine</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">Redis</span>
-                            <span class="tech-badge">ElasticSearch</span>
-                            <span class="tech-badge">Docker</span>
-                            <span class="tech-badge">Jenkins</span>
-                        </div>
-                    </li>
-                    <li class="timeline-item">
-                        <span class="note">Janvier 2014 - Novembre 2017</span>
-                        <p><strong>TALAN (Tunis, Tunisie)</strong></p>
-                        <p><strong>Full Stack Software Engineer</strong></p>
-                        <p class="description">Développement d'applications web complexes pour clients internationaux (secteurs bancaire, télécoms, assurance).</p>
-                        <p class="description">Implémentation de solutions e-commerce (Sylius, PrestaShop) et CMS personnalisés (eZ Platform) avec <strong>20,000+ produits</strong>.</p>
-                        <p class="description">Intégration de systèmes tiers : APIs de paiement (Stripe, PayPal), CRM (Salesforce), ERP (SAP).</p>
-                        <p class="description">Participation à l'analyse fonctionnelle et technique : rédaction de spécifications, estimations, architecture technique.</p>
-                        <p class="description"><strong>Stack technique :</strong></p>
-                        <div class="tech-stack">
-                            <span class="tech-badge">PHP 5.6/7.0</span>
-                            <span class="tech-badge">Symfony 2/3</span>
-                            <span class="tech-badge">Doctrine</span>
-                            <span class="tech-badge">MySQL</span>
-                            <span class="tech-badge">JavaScript</span>
-                            <span class="tech-badge">jQuery</span>
-                            <span class="tech-badge">AngularJS</span>
-                            <span class="tech-badge">Bootstrap</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <!-- Skills -->
+    <section id="skills" class="skills-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Compétences & Expertises</h2>
+        <p>Technologies et méthodologies maîtrisées</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>💻 Backend & Architecture</h3>
+          <div class="skill-items">
+            <span class="skill-tag expert">PHP 8.x (12+ ans)</span>
+            <span class="skill-tag expert">Symfony 6/7 (Certifié)</span>
+            <span class="skill-tag expert">Architecture Hexagonale</span>
+            <span class="skill-tag expert">DDD/CQRS</span>
+            <span class="skill-tag expert">API Platform</span>
+            <span class="skill-tag">Doctrine ORM</span>
+            <span class="skill-tag">SOLID Patterns</span>
+          </div>
         </div>
-    </div>
-</section>
-<!-- end Work experience -->
 
-<!-- Projects -->
-<section id="projects" class="projects">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="glyphicon glyphicon-flash"></span>Projets & Contributions Open Source</li>
-                    <li>
-                        <span class="note">Contributions</span>
-                        <p><strong>API Platform</strong></p>
-                        <p class="description">Contributeur actif au framework API Platform (Symfony).</p>
-                        <p class="description">Contributions aux composants core, documentation et corrections de bugs.</p>
-                        <p class="description"><a href="https://github.com/api-platform/core">GitHub</a></p>
-                    </li>
-                    <li class="project-card">
-                        <p><strong>Doctrine Doctor</strong></p>
-                        <p class="description">CLI tool pour diagnostiquer et corriger les problèmes de configuration Doctrine.</p>
-                        <p class="description"><strong>16 analyzers</strong> intégrés pour détecter automatiquement les anti-patterns.</p>
-                        <p class="description"><strong>9 fixers</strong> pour corriger automatiquement les problèmes courants.</p>
-                        <p class="description">Intégration Symfony via bundle dédié.</p>
-                        <p class="description"><strong>Impact :</strong> Utilisé par plusieurs entreprises pour auditer leurs projets Doctrine.</p>
-                        <div class="github-stats">
-                            <span class="stat-badge"><span class="icon">⭐</span> <span class="number">45+</span> stars</span>
-                            <span class="stat-badge"><span class="icon">🔄</span> <span class="number">12+</span> forks</span>
-                            <span class="stat-badge"><span class="icon">📦</span> <span class="number">500+</span> installations</span>
-                        </div>
-                        <p class="description">
-                            <a href="https://github.com/ahmed-bhs/doctrine-doctor" class="external-link">GitHub</a>
-                            <a href="https://ahmed-bhs.github.io/doctrine-doctor/" class="external-link">Documentation</a>
-                        </p>
-                    </li>
-                    <li class="project-card">
-                        <p><strong>Hexagonal Maker Bundle</strong></p>
-                        <p class="description">Bundle Symfony pour générer automatiquement du code respectant l'architecture hexagonale.</p>
-                        <p class="description"><strong>19 maker commands</strong> pour scaffolder entités, use cases, DTOs, repositories, etc.</p>
-                        <p class="description">Génération de code <strong>SOLID</strong> et <strong>testable</strong> par défaut.</p>
-                        <p class="description">Support complet du pattern <strong>CQRS</strong>.</p>
-                        <p class="description"><strong>Impact :</strong> Réduit le temps de développement de <strong>70%</strong> pour les projets hexagonaux.</p>
-                        <div class="github-stats">
-                            <span class="stat-badge"><span class="icon">⭐</span> <span class="number">80+</span> stars</span>
-                            <span class="stat-badge"><span class="icon">🔄</span> <span class="number">20+</span> forks</span>
-                            <span class="stat-badge"><span class="icon">📦</span> <span class="number">1,200+</span> installations</span>
-                        </div>
-                        <p class="description">
-                            <a href="https://github.com/ahmed-bhs/hexagonal-maker-bundle" class="external-link">GitHub</a>
-                            <a href="https://ahmed-bhs.github.io/hexagonal-maker-bundle/" class="external-link">Documentation</a>
-                        </p>
-                    </li>
-                    <li class="project-card">
-                        <p><strong>Hexagonal Demo</strong></p>
-                        <p class="description">Application de démonstration complète utilisant l'architecture hexagonale.</p>
-                        <p class="description">Exemple complet de <strong>Gift Management System</strong>.</p>
-                        <p class="description"><strong>95% auto-généré</strong> avec hexagonal-maker-bundle.</p>
-                        <p class="description">Tests unitaires et fonctionnels intégrés.</p>
-                        <p class="description">Référence pour les développeurs souhaitant adopter l'architecture hexagonale.</p>
-                        <div class="github-stats">
-                            <span class="stat-badge"><span class="icon">⭐</span> <span class="number">30+</span> stars</span>
-                            <span class="stat-badge"><span class="icon">🔄</span> <span class="number">8+</span> forks</span>
-                        </div>
-                        <p class="description">
-                            <a href="https://github.com/ahmed-bhs/hexagonal-demo" class="external-link">GitHub</a>
-                            <a href="https://ahmed-bhs.github.io/hexagonal-demo/" class="external-link">Documentation</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><strong>CTFS.ME</strong></p>
-                        <p class="description">Plateforme collaborative de cybersécurité et CTF (Capture The Flag).</p>
-                        <p class="description">Co-fondateur et lead developer.</p>
-                        <p class="description">Communauté active de passionnés de cybersécurité.</p>
-                        <p class="description">Organisation de challenges et compétitions.</p>
-                        <p class="description"><strong>Technologies :</strong></p>
-                        <div class="tech-stack">
-                            <span class="tech-badge">Symfony</span>
-                            <span class="tech-badge">Docker</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                            <span class="tech-badge">Redis</span>
-                        </div>
-                        <p class="description"><a href="https://ctfs.me">Site web</a></p>
-                    </li>
-                </ul>
-            </div>
+        <div class="skill-category">
+          <h3>🗄️ Bases de Données</h3>
+          <div class="skill-items">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">ElasticSearch</span>
+          </div>
         </div>
-    </div>
-</section>
-<!-- end Projects -->
 
-<!-- Education -->
-<section id="education" class="education">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="glyphicon glyphicon-book"></span>Formation & Certifications</li>
-                    <li>
-                        <span class="note">2010 - 2014</span>
-                        <p><strong>Diplôme d'Ingénieur en Génie Logiciel</strong></p>
-                        <p>ENSIT - École Nationale des Sciences de l'Informatique et Technologies (Tunis)</p>
-                        <p class="description">Formation d'ingénieur avec spécialisation en architecture logicielle, génie logiciel et patterns de conception.</p>
-                    </li>
-                    <li>
-                        <span class="note">2020</span>
-                        <p><strong>Symfony Advanced Developer Certification</strong></p>
-                        <p>SensioLabs / Symfony</p>
-                        <p class="description">Certification officielle délivrée par SensioLabs, validant l'expertise avancée sur Symfony.</p>
-                    </li>
-                    <li>
-                        <span class="note">2020</span>
-                        <p><strong>eZ Platform Developer Certification</strong></p>
-                        <p>eZ Systems</p>
-                        <p class="description">Certification CMS enterprise basé sur Symfony.</p>
-                    </li>
-                    <li>
-                        <span class="note">2025</span>
-                        <p><strong>TCF IRN - Niveau C1</strong></p>
-                        <p>Certification officielle de langue française</p>
-                    </li>
-                    <li>
-                        <span class="note">Conférences & Talks</span>
-                        <p><strong>Speaker AFUP Montpellier 2025</strong></p>
-                        <p class="description">"Architecture Hexagonale avec Symfony : De la théorie à la pratique"</p>
-                        <p class="description">Présentation des patterns DDD/CQRS et démonstration d'outils open-source.</p>
-                    </li>
-                    <li>
-                        <span class="note">Compétitions Cybersécurité</span>
-                        <p class="description">🥇 <strong>1ère place</strong> - Hackfest Bootcamp (CTF national)</p>
-                        <p class="description">🥉 <strong>Médaille de bronze</strong> - Hackfest Final (Compétition internationale)</p>
-                    </li>
-                </ul>
-            </div>
+        <div class="skill-category">
+          <h3>🚀 DevOps & Cloud</h3>
+          <div class="skill-items">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">GitLab CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Terraform</span>
+          </div>
         </div>
-    </div>
-</section>
-<!-- end Education -->
 
-<!-- Languages -->
-<section id="personal-skills" class="personal-skills">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="glyphicon glyphicon-stats"></span>Langues</li>
-                    <li>
-                        <span class="chart" data-percent="100"><span class="skill">Français</span>
-                            <span class="percent"></span>
-                        </span>
-                        <span class="chart" data-percent="90"><span class="skill">Anglais</span>
-                            <span class="percent"></span>
-                        </span>
-                        <span class="chart" data-percent="85"><span class="skill">Arabe</span>
-                            <span class="percent"></span>
-                        </span>
-                        <span class="chart" data-percent="70"><span class="skill">Italien</span>
-                            <span class="percent"></span>
-                        </span>
-                    </li>
-                    <li class="static">
-                        <span class="note">Certifications</span>
-                        <p class="description">TCF IRN : <strong>Niveau C1</strong></p>
-                    </li>
-                </ul>
-            </div>
+        <div class="skill-category">
+          <h3>🎨 Frontend</h3>
+          <div class="skill-items">
+            <span class="skill-tag">JavaScript/TypeScript</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">Tailwind CSS</span>
+          </div>
         </div>
-    </div>
-</section>
-<!-- end Languages -->
 
-<!-- Interests -->
-<section id="interests" class="interests last-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-sm-offset-5">
-                <ul>
-                    <li class="title"><span class="glyphicon glyphicon-heart-empty"></span>Hobbies</li>
-                    <li>
-                        <p><strong>Ski</strong></p>
-                        <p class="description">Passionné de sports d'hiver et de montagne.</p>
-                    </li>
-                    <li>
-                        <p><strong>Taekwondo</strong></p>
-                        <p class="description">Pratique régulière des arts martiaux.</p>
-                    </li>
-                    <li>
-                        <p><strong>Stand-up Paddle</strong></p>
-                        <p class="description">Sports nautiques et activités en plein air.</p>
-                    </li>
-                    <li>
-                        <p><strong>Cybersécurité</strong></p>
-                        <p class="description">CTF, bug bounty, et challenges de sécurité informatique.</p>
-                    </li>
-                </ul>
-            </div>
+        <div class="skill-category">
+          <h3>🧪 Qualité & Tests</h3>
+          <div class="skill-items">
+            <span class="skill-tag">PHPUnit</span>
+            <span class="skill-tag">Behat</span>
+            <span class="skill-tag">PHPStan</span>
+            <span class="skill-tag">Psalm</span>
+            <span class="skill-tag">TDD/BDD</span>
+          </div>
         </div>
-    </div>
-</section>
-<!-- end Interests -->
+      </div>
+    </section>
 
-<!-- Java Script -->
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/modernizr.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-progressbar.js"></script>
-<script src="js/spy.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/jquery.easypiechart.js"></script>
-<script src="js/chart.js"></script>
-<script src="js/theme.js"></script>
+    <!-- Achievements -->
+    <section class="achievements-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Réalisations & Certifications</h2>
+      </div>
 
-</body>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon">🎓</div>
+          <h3>Diplôme d'Ingénieur</h3>
+          <p>Génie Logiciel - ENSIT Tunis</p>
+          <span class="year">2010-2014</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <h3>Symfony Certified</h3>
+          <p>Advanced Developer Certification</p>
+          <span class="year">2020</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🎤</div>
+          <h3>Speaker AFUP</h3>
+          <p>Architecture Hexagonale avec Symfony</p>
+          <span class="year">2025</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🥇</div>
+          <h3>CTF Champion</h3>
+          <p>1ère place - Hackfest Bootcamp</p>
+          <span class="year">National</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🥉</div>
+          <h3>CTF Bronze</h3>
+          <p>Hackfest Final</p>
+          <span class="year">International</span>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🌐</div>
+          <h3>TCF C1</h3>
+          <p>Certification français</p>
+          <span class="year">2025</span>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <h3>Disponible pour missions freelance et CDI (100% remote accepté)</h3>
+        <a href="mailto:ahmedbhs123@gmail.com" class="email-link">ahmedbhs123@gmail.com</a>
+        <p class="phone">+33 7 54 19 11 37 • Montpellier, France</p>
+
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://github.com/ahmed-bhs" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://linkedin.com/in/ahmedbhs/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+        </div>
+
+        <p class="copyright">© <span id="datee"></span> Ahmed EBEN HASSINE • Tous droits réservés</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

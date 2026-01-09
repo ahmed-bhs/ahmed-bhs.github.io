@@ -1,0 +1,434 @@
+/* ?This is where reusable styling of this template will be. 
+   !Will contain things like:
+   * Button styling
+   * Background color styling
+   * padding and margin
+*/
+
+.container {
+  max-width: var(--width-medium);
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+h1::selection,
+h2::selection {
+  color: #111;
+  background: var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.9rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #000000;
+}
+
+.btn-secondary {
+  margin: 5px 0;
+  background-color: var(--bg-secondary);
+  color: var(--bg-primary);
+}
+
+/* add hover to resume button */
+.btn-primary:hover {
+  background: var(--secondary-color);
+}
+
+/* Dark mode toggle */
+#switch {
+  display: none;
+}
+
+.toggle-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-icons > img {
+  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 30px;
+}
+
+.moon {
+  transform: rotate(10deg);
+}
+
+#switch:checked + .toggle-icons .moon {
+  transform: rotate(250deg);
+}
+
+#switch:checked + .toggle-icons .sun {
+  transform: rotate(100deg);
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+
+.header-container > div {
+  margin-top: 1rem;
+}
+
+.content-text {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.content-text h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  transition: 0.2s ease-in-out;
+}
+
+.content-text p {
+  padding: 0.5rem;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Project cards */
+.card {
+  padding: 1rem;
+  background: var(--card-background);
+  color: #ffffff;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.card a {
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.card a:hover {
+  color: var(--primary-color);
+}
+
+.card:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover .project-info {
+  opacity: 1;
+}
+
+/* Project Images */
+
+/* project 1 */
+.card:nth-child(1) {
+  background: url(../assets/project/project-one.png) center center/cover;
+}
+
+/* Project 2 */
+.card:nth-child(2) {
+  background: url(../assets/project/project-two.png) center center/cover;
+}
+
+/* Project 3 */
+.card:nth-child(3) {
+  background: url(../assets/project/project-three.png) center center/cover;
+}
+
+/* Project 4 */
+.card:nth-child(4) {
+  background: url(../assets/project/project-four.png) center center/cover;
+}
+
+/* Project 5 */
+.card:nth-child(5) {
+  background: url(../assets/project/project-five.png) center center/cover;
+}
+
+/* Project 6 */
+.card:nth-child(6) {
+  background: url(../assets/project/project-six.png) center center/cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header-container {
+    margin-top: 7rem;
+    text-align: center;
+  }
+
+  .content-text h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Custom Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  margin: 40px 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -45px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+.timeline-dot.active {
+  background: #07b500;
+  box-shadow: 0 0 0 3px #07b500;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(7, 181, 0, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(7, 181, 0, 0); }
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border-color);
+}
+
+.timeline-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+}
+
+.timeline-content h4 {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.timeline-content ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.timeline-content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Tech Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tech-tags span {
+  padding: 5px 12px;
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.skill-category {
+  background: var(--bg-secondary);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.skill-category h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  padding: 8px 16px;
+  background: var(--bg-primary);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.skill-tag.expert {
+  background: linear-gradient(135deg, var(--primary-color), #06a000);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.achievement-card {
+  background: var(--bg-secondary);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.achievement-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.achievement-card .year {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Project Stats */
+.project-stats {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* Social Links in Header */
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Footer Customization */
+footer .email-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+footer .phone {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 10px 0;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 30px;
+  }
+  
+  .timeline-dot {
+    left: -35px;
+  }
+  
+  .timeline::before {
+    left: -28px;
+  }
+  
+  .skills-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-links {
+    flex-direction: column;
+  }
+  
+  .social-links .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
