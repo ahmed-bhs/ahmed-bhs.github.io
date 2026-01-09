@@ -53,11 +53,19 @@
 </nav>
 <!-- end Navigation for small devices -->
 
+<!-- Dark Mode Toggle -->
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+    <span id="theme-icon">🌙</span>
+    <span id="theme-text">Dark</span>
+</button>
+<!-- end Dark Mode Toggle -->
+
 <!-- Header -->
 <header id="header">
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
+                <img src="img/face.jpg" alt="Ahmed EBEN HASSINE" class="profile-photo">
                 <p class="header-name">Ahmed EBEN HASSINE</p>
                 <p class="header-title">Senior Software Engineer - Symfony & Architecture Expert</p>
                 <p class="header-subtitle">
@@ -65,6 +73,9 @@
                     Créateur d'outils open-source utilisés par la communauté PHP internationale (doctrine-doctor, hexagonal-maker-bundle).
                     Contributeur API Platform. Speaker AFUP Montpellier 2025. Disponible pour missions freelance et CDI (100% remote accepté).
                 </p>
+                <a href="#" class="download-cv-btn" onclick="window.print(); return false;">
+                    📄 Télécharger CV
+                </a>
             </div>
         </div>
     </div>
@@ -96,14 +107,16 @@
                     </li>
                     <li>
                         <span class="note">Network</span>
-                        <p>
-                            <img src="img/github.png" alt="github" class="social-logo" />
-                            <strong><a href="https://github.com/ahmed-bhs">GitHub</a></strong>
-                        </p>
-                        <p>
-                            <img src="img/linkedin.png" alt="linkedin" class="social-logo" />
-                            <strong><a href="https://linkedin.com/in/ahmedbhs/">LinkedIn</a></strong>
-                        </p>
+                        <div style="margin: 10px 0;">
+                            <a href="https://github.com/ahmed-bhs" class="social-button github" target="_blank" rel="noopener">
+                                <img src="img/github.png" alt="github" />
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/ahmedbhs/" class="social-button linkedin" target="_blank" rel="noopener">
+                                <img src="img/linkedin.png" alt="linkedin" />
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
                     </li>
                     <li>
                         <span class="note">Highlights</span>
@@ -197,7 +210,19 @@
                         <p class="description">Création de <strong>19 Maker Commands</strong> (hexagonal-maker-bundle) pour automatiser la génération de code hexagonal, réduisant le temps de scaffolding de <strong>70%</strong>.</p>
                         <p class="description">Amélioration des performances de <strong>40%</strong> via optimisation DevOps (Docker, Kubernetes, Redis, Varnish).</p>
                         <p class="description">Réduction de <strong>90%</strong> du temps de traitement documentaire par intégration d'IA (OCR, NLP, AWS Textract).</p>
-                        <p class="description"><strong>Stack technique :</strong> PHP 8.x, Symfony 6/7, Doctrine, PostgreSQL, Redis, RabbitMQ, Docker, Kubernetes, GitLab CI/CD.</p>
+                        <p class="description"><strong>Stack technique :</strong></p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">PHP 8.x</span>
+                            <span class="tech-badge">Symfony 6/7</span>
+                            <span class="tech-badge">API Platform</span>
+                            <span class="tech-badge">Doctrine</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">RabbitMQ</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">GitLab CI/CD</span>
+                        </div>
                     </li>
                     <li>
                         <span class="note">Décembre 2017 - Janvier 2019</span>
@@ -207,7 +232,17 @@
                         <p class="description">Mise en place d'architectures API REST scalables avec authentification JWT et rate limiting.</p>
                         <p class="description">Optimisation des requêtes Doctrine, réduisant les temps de réponse de <strong>60%</strong> via indexes et eager loading.</p>
                         <p class="description">Formation et mentoring des équipes (3-5 développeurs) aux bonnes pratiques Symfony et patterns SOLID.</p>
-                        <p class="description"><strong>Stack technique :</strong> PHP 7.x, Symfony 4, Doctrine, MySQL, Redis, ElasticSearch, Docker, Jenkins.</p>
+                        <p class="description"><strong>Stack technique :</strong></p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">PHP 7.x</span>
+                            <span class="tech-badge">Symfony 4</span>
+                            <span class="tech-badge">Doctrine</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">ElasticSearch</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Jenkins</span>
+                        </div>
                     </li>
                     <li>
                         <span class="note">Janvier 2014 - Novembre 2017</span>
@@ -217,7 +252,17 @@
                         <p class="description">Implémentation de solutions e-commerce (Sylius, PrestaShop) et CMS personnalisés (eZ Platform) avec <strong>20,000+ produits</strong>.</p>
                         <p class="description">Intégration de systèmes tiers : APIs de paiement (Stripe, PayPal), CRM (Salesforce), ERP (SAP).</p>
                         <p class="description">Participation à l'analyse fonctionnelle et technique : rédaction de spécifications, estimations, architecture technique.</p>
-                        <p class="description"><strong>Stack technique :</strong> PHP 5.6/7.0, Symfony 2/3, Doctrine, MySQL, JavaScript, jQuery, AngularJS, Bootstrap.</p>
+                        <p class="description"><strong>Stack technique :</strong></p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">PHP 5.6/7.0</span>
+                            <span class="tech-badge">Symfony 2/3</span>
+                            <span class="tech-badge">Doctrine</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">jQuery</span>
+                            <span class="tech-badge">AngularJS</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -273,7 +318,13 @@
                         <p class="description">Co-fondateur et lead developer.</p>
                         <p class="description">Communauté active de passionnés de cybersécurité.</p>
                         <p class="description">Organisation de challenges et compétitions.</p>
-                        <p class="description"><strong>Technologies :</strong> Symfony, Docker, PostgreSQL, Redis.</p>
+                        <p class="description"><strong>Technologies :</strong></p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Symfony</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Redis</span>
+                        </div>
                         <p class="description"><a href="https://ctfs.me">Site web</a></p>
                     </li>
                 </ul>
@@ -407,6 +458,7 @@
 <script src="js/scripts.js"></script>
 <script src="js/jquery.easypiechart.js"></script>
 <script src="js/chart.js"></script>
+<script src="js/theme.js"></script>
 
 </body>
 </html>
