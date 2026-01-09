@@ -35,7 +35,44 @@ header h1 {
 .tagline {
     font-size: 1.2rem;
     opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    font-size: 1rem;
+    opacity: 0.85;
     margin-bottom: 1.5rem;
+}
+
+.location i {
+    margin-right: 0.5rem;
+}
+
+/* Highlights */
+.highlights {
+    background-color: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.highlight-item i {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.highlight-item span {
+    font-size: 0.95rem;
+    line-height: 1.4;
 }
 
 /* Navigation */
@@ -291,6 +328,73 @@ nav a:hover {
     margin-bottom: 0.5rem;
 }
 
+/* Languages */
+.languages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.language-level {
+    color: #667eea;
+    font-size: 0.9rem;
+}
+
+.language-progress {
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.language-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 1s ease-out;
+}
+
+/* Hobbies */
+.hobbies {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hobby {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #f9f9f9;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.hobby:hover {
+    border-color: #667eea;
+    background-color: #f0f0ff;
+}
+
+.hobby i {
+    color: #667eea;
+    font-size: 1.2rem;
+}
+
 /* Contact */
 .contact-info p {
     display: flex;
@@ -325,6 +429,25 @@ footer {
     padding: 1.5rem;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     header h1 {
@@ -342,6 +465,19 @@ footer {
 
     .job-header {
         flex-direction: column;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .languages {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
