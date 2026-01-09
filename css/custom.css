@@ -113,7 +113,7 @@ strong {
 }
 
 .progress-bar-success {
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background-color: #07b500;
 }
 
 .annotation {
@@ -421,71 +421,61 @@ nav .active a {
 /* Profile ------------------------------------------------- */
 
 .profile .title .glyphicon{
-    background-color: #667eea;
+    background-color: #9300ff;
 }
 
 .profile .title {
-    border-bottom: 1px #667eea dotted;
+    border-bottom: 1px #9300ff dotted;
 }
 
 /* Work experience ------------------------------------------------- */
 
 .work-experience .title .glyphicon{
-    background-color: #764ba2;
+    background-color: #00a7ff;
 }
 
 .work-experience .title {
-    border-bottom: 1px #764ba2 dotted;
+    border-bottom: 1px #00a7ff dotted;
 }
 
 /* Education ------------------------------------------------- */
 
 .education .title .glyphicon{
-    background-color: #9333ea;
+    background-color: #ffa700;
 }
 
 .education .title {
-    border-bottom: 1px #9333ea dotted;
+    border-bottom: 1px #ffa700 dotted;
 }
 
 /* Professional skills ------------------------------------------------- */
 
 .professional-skills .title .glyphicon{
-    background-color: #667eea;
+    background-color: #07b500;
 }
 
 .professional-skills .title {
-    border-bottom: 1px #667eea dotted;
+    border-bottom: 1px #07b500 dotted;
 }
 
 /* Personal skills ------------------------------------------------- */
 
 .personal-skills .title .glyphicon{
-    background-color: #8b5cf6;
+    background-color: #00aca5;
 }
 
 .personal-skills .title {
-    border-bottom: 1px #8b5cf6 dotted;
+    border-bottom: 1px #00aca5 dotted;
 }
 
 /* Interests ------------------------------------------------- */
 
 .interests .title .glyphicon{
-    background-color: #764ba2;
+    background-color: #f00;
 }
 
 .interests .title {
-    border-bottom: 1px #764ba2 dotted;
-}
-
-/* Projects ------------------------------------------------ */
-
-.projects .title .glyphicon{
-    background-color: #6366f1;
-}
-
-.projects .title {
-	border-bottom: 1px #6366f1 dotted;
+    border-bottom: 1px #f00 dotted;
 }
 
 /* Portfolio ------------------------------------------------ */
