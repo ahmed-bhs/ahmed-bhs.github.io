@@ -1,554 +1,393 @@
 <!DOCTYPE html>
-<html lang="fr">
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="fr"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="fr"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="fr"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<html class="not-ie" lang="fr">
+<!--<![endif]-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ahmed EBEN HASSINE - Senior Software Engineer spécialisé en Symfony, Architecture API REST, DevOps et Conception Logicielle">
-    <meta name="keywords" content="Ahmed EBEN HASSINE, Symfony, PHP, Architecture Hexagonale, DDD, CQRS, API REST, DevOps, Software Engineer">
+    <meta charset="utf-8">
+    <meta name="description" content="Senior Software Engineer spécialisé en Symfony, Architecture API REST, DevOps et Conception Logicielle" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>Ahmed EBEN HASSINE - Senior Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all" href="css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" media="all" href="css/custom.css" type="text/css"/>
 </head>
 <body>
+
+<!-- Navigation -->
+<nav id="spy" class="spy hidden-sm hidden-xs">
+    <ul>
+        <li class="active"><a href="#profile">Profile</a></li>
+        <li><a href="#professional-skills">Compétences</a></li>
+        <li><a href="#work-experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#personal-skills">Langues</a></li>
+        <li><a href="#interests">Hobbies</a></li>
+    </ul>
+</nav>
+<!-- end Navigation -->
+
+<!-- Navigation for small devices -->
+<nav id="mini-nav" class="spy visible-sm visible-xs">
+    <ul>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Menu</a>
+            <ul class="dropdown-menu">
+                <li class="active"><a href="#profile">Profile</a></li>
+                <li><a href="#professional-skills">Compétences</a></li>
+                <li><a href="#work-experience">Expérience</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#education">Formation</a></li>
+                <li><a href="#personal-skills">Langues</a></li>
+                <li><a href="#interests">Hobbies</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<!-- end Navigation for small devices -->
+
+<!-- Header -->
+<header id="header">
     <div class="container">
-        <header>
-            <h1>Ahmed EBEN HASSINE</h1>
-            <p class="tagline">Senior Software Engineer - Symfony & Architecture Expert</p>
-            <p class="location"><i class="fas fa-map-marker-alt"></i> Montpellier, France</p>
-            <nav>
-                <a href="#profile">Profil</a>
-                <a href="#competences">Compétences</a>
-                <a href="#projets">Projets</a>
-                <a href="#experience">Expérience</a>
-                <a href="#formation">Formation</a>
-                <a href="#langues">Langues</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-
-        <section id="profile" class="section">
-            <h2>Profil</h2>
-            <div class="profile-content">
-                <div class="profile-info">
-                    <p class="intro">
-                        Senior Software Engineer spécialisé en Symfony, architecture API REST, DevOps et conception logicielle.
-                        Expert en architecture hexagonale, DDD/CQRS et patterns SOLID. Créateur d'outils open-source pour
-                        la communauté PHP (doctrine-doctor, hexagonal-maker-bundle). Conférencier AFUP Montpellier 2025.
-                    </p>
-                    <div class="highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-rocket"></i>
-                            <span>Architectures supportant <strong>50,000+</strong> utilisateurs concurrents</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Amélioration des performances de <strong>40%</strong> via DevOps</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-robot"></i>
-                            <span><strong>90%</strong> de réduction du temps de traitement via IA</span>
-                        </div>
-                    </div>
-                    <div class="contact-links">
-                        <a href="https://github.com/ahmed-bhs" target="_blank" rel="noopener">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://linkedin.com/in/ahmedbhs/" target="_blank" rel="noopener">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://twitter.com/ahmed_bhs" target="_blank" rel="noopener">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                        <a href="mailto:ahmedbhs123@gmail.com">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                        <a href="tel:+33754191137">
-                            <i class="fas fa-phone"></i> +33 7 54 19 11 37
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="competences" class="section">
-            <h2>Compétences Techniques</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <div class="skill">
-                        <span class="skill-name">PHP 8.x</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 98%">Expert - 98%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Symfony 6/7</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 98%">Expert - 98%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">API Platform</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%">Contributeur - 95%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Doctrine ORM</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%">95%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Laravel / eZplatform</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%">85%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-sitemap"></i> Architecture & Design</h3>
-                    <div class="skill">
-                        <span class="skill-name">Architecture Hexagonale</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 98%">Expert - 98%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">DDD & CQRS</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%">95%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">SOLID Principles</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%">95%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">API REST</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 98%">98%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Microservices</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%">85%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Bases de Données</h3>
-                    <div class="skill">
-                        <span class="skill-name">MySQL / PostgreSQL</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%">95%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Redis</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%">90%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">MongoDB / ElasticSearch</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%">80%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Oracle / SQLite</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%">75%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> DevOps & Cloud</h3>
-                    <div class="skill">
-                        <span class="skill-name">Docker / Docker Swarm</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 92%">92%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">GitLab CI/CD</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 95%">95%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">GitHub Actions</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%">90%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">AWS / Ansible</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%">85%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-desktop"></i> Frontend</h3>
-                    <div class="skill">
-                        <span class="skill-name">JavaScript / TypeScript</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%">85%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Vue.js / Angular</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 82%">82%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Stimulus / jQuery</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%">85%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Bootstrap / Tailwind</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 88%">88%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Autres Langages</h3>
-                    <div class="skill">
-                        <span class="skill-name">Go</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%">75%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Python</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%">80%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Ruby</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%">70%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Bash / C++</span>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%">85%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projets" class="section">
-            <h2>Projets Open Source</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>
-                        <i class="fas fa-stethoscope"></i>
-                        Doctrine Doctor
-                    </h3>
-                    <p class="project-desc">
-                        Outil d'analyse runtime pour Doctrine ORM. Détecte les requêtes N+1, les index manquants,
-                        les problèmes de sécurité et 66+ problèmes de performance. Intégré dans le Symfony Web Profiler.
-                        Utilisé par des développeurs du monde entier.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Symfony</span>
-                        <span class="tag">Doctrine</span>
-                        <span class="tag">Performance</span>
-                        <span class="tag">Sécurité</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ahmed-bhs/doctrine-doctor" target="_blank" rel="noopener">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://ahmed-bhs.github.io/doctrine-doctor/" target="_blank" rel="noopener">
-                            <i class="fas fa-book"></i> Documentation
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h3>
-                        <i class="fas fa-hexagon"></i>
-                        Hexagonal Maker Bundle
-                    </h3>
-                    <p class="project-desc">
-                        Bundle Symfony pour générer une architecture hexagonale complète. 19 commandes maker pour CQRS, DDD et Clean Architecture.
-                        Génération automatique de modules CRUD avec tests. Accélère le développement de 85%.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Symfony</span>
-                        <span class="tag">DDD</span>
-                        <span class="tag">CQRS</span>
-                        <span class="tag">Générateur</span>
-                        <span class="tag">CLI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ahmed-bhs/hexagonal-maker-bundle" target="_blank" rel="noopener">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://ahmed-bhs.github.io/hexagonal-maker-bundle/" target="_blank" rel="noopener">
-                            <i class="fas fa-book"></i> Documentation
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h3>
-                        <i class="fas fa-gift"></i>
-                        Hexagonal Demo
-                    </h3>
-                    <p class="project-desc">
-                        Application de démonstration d'architecture hexagonale avec Symfony. Système de gestion de cadeaux
-                        avec 95% du code auto-généré. Showcase pratique des patterns DDD et CQRS.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Demo</span>
-                        <span class="tag">Hexagonal</span>
-                        <span class="tag">Éducatif</span>
-                        <span class="tag">CQRS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ahmed-bhs/hexagonal-demo" target="_blank" rel="noopener">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://ahmed-bhs.github.io/hexagonal-demo/" target="_blank" rel="noopener">
-                            <i class="fas fa-book"></i> Documentation
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h3>
-                        <i class="fas fa-shield-alt"></i>
-                        CTFS.ME
-                    </h3>
-                    <p class="project-desc">
-                        Co-fondateur et administrateur système. Plateforme de création et hébergement de challenges de cybersécurité.
-                        Infrastructure Docker Swarm pour haute disponibilité et performance.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Cybersécurité</span>
-                        <span class="tag">Docker Swarm</span>
-                        <span class="tag">DevOps</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://ctfs.me" target="_blank" rel="noopener">
-                            <i class="fas fa-globe"></i> Website
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <h2>Expérience Professionnelle</h2>
-            <div class="experience">
-                <div class="job">
-                    <div class="job-header">
-                        <h3>Senior Development & Architecture Engineer</h3>
-                        <span class="period">Février 2019 - Présent</span>
-                    </div>
-                    <p class="company"><strong>Codein</strong> - Montpellier, France</p>
-                    <ul>
-                        <li>Conception et déploiement d'architectures API REST supportant <strong>50,000+ utilisateurs concurrents</strong></li>
-                        <li>Développement de solutions pour clients majeurs : <strong>OPPBTP, Bpifrance, IRD, CIRAD, Atlantic, FFGolf, Ministère de la Culture</strong></li>
-                        <li>Direction d'initiatives d'automatisation IA avec <strong>OpenAI et LangChain</strong> : <strong>90% de réduction</strong> du temps de traitement manuel</li>
-                        <li>Gestion complète du pipeline DevOps avec implémentation CI/CD : <strong>amélioration des performances de 40%</strong></li>
-                        <li>Audits de code Symfony et établissement de standards de qualité : implémentation du développement TDD</li>
-                        <li>Architecture hexagonale, DDD, CQRS pour applications enterprise-scale</li>
-                    </ul>
-                    <div class="job-tags">
-                        <span class="tag">Symfony</span>
-                        <span class="tag">API Platform</span>
-                        <span class="tag">Architecture</span>
-                        <span class="tag">DevOps</span>
-                        <span class="tag">IA/OpenAI</span>
-                        <span class="tag">DDD/CQRS</span>
-                    </div>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <h3>Développeur Backend</h3>
-                        <span class="period">Mars - Juillet 2018</span>
-                    </div>
-                    <p class="company"><strong>Lexik</strong> - France</p>
-                    <ul>
-                        <li>Construction d'une solution de regroupement e-commerce avec implémentation d'API RESTful</li>
-                        <li>Application des patterns <strong>Domain-Driven Design (DDD)</strong> et <strong>CQRS</strong></li>
-                        <li>Optimisation de la sérialisation de données pour amélioration des performances</li>
-                        <li>Architecture d'infrastructure basée sur <strong>Docker et RabbitMQ</strong> pour traitement asynchrone</li>
-                    </ul>
-                    <div class="job-tags">
-                        <span class="tag">Symfony</span>
-                        <span class="tag">API REST</span>
-                        <span class="tag">DDD</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">RabbitMQ</span>
-                    </div>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <h3>Stagiaire Développeur</h3>
-                        <span class="period">Juin - Août 2017</span>
-                    </div>
-                    <p class="company"><strong>TALAN</strong> - Tunisie</p>
-                    <ul>
-                        <li>Rédaction de Documentation d'Architecture Technique définissant le framework de scalabilité</li>
-                        <li>Implémentation de l'authentification Google et fonctionnalité d'upload multiple de fichiers</li>
-                        <li>Développement de dashboards business intelligence</li>
-                        <li>Participation à la méthodologie Agile Scrum</li>
-                    </ul>
-                    <div class="job-tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">Architecture</span>
-                        <span class="tag">Agile</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="formation" class="section">
-            <h2>Formation Universitaire</h2>
-            <div class="education">
-                <div class="degree">
-                    <h3>Diplôme d'Ingénieur en Informatique</h3>
-                    <p class="school">École Nationale Supérieure d'Ingénierie de Tunis (ENSIT)</p>
-                    <p class="year">2015 - 2018</p>
-                </div>
-
-                <div class="degree">
-                    <h3>Cycle Préparatoire Mathématiques-Physique</h3>
-                    <p class="school">Institut Préparatoire aux Études d'Ingénieur de Nabeul (IPEIN)</p>
-                    <p class="year">2013 - 2015</p>
-                </div>
-            </div>
-
-            <h3>Certifications</h3>
-            <ul class="certifications">
-                <li><strong>Symfony Advanced Developer</strong> - SensioLabs (2020)</li>
-                <li><strong>eZ Platform Advanced Developer</strong> - Ibexa (2020)</li>
-                <li><strong>TCF IRN</strong> - Compétence orale niveau C1 (2025)</li>
-            </ul>
-
-            <h3>Conférences & Talks</h3>
-            <ul class="certifications">
-                <li><strong>AFUP Montpellier 2025</strong> - "Intégration de Symfony, ApiPlatform, OpenAI et LangChain"</li>
-            </ul>
-
-            <h3>Compétitions de Cybersécurité</h3>
-            <ul class="certifications">
-                <li><strong>1ère place</strong> - Hackfest Bootcamp 2017</li>
-                <li><strong>Médaille de Bronze</strong> - Hackfest Final 2017</li>
-            </ul>
-        </section>
-
-        <section id="langues" class="section">
-            <h2>Langues</h2>
-            <div class="languages">
-                <div class="language">
-                    <span class="language-name"><i class="fas fa-globe"></i> Français</span>
-                    <div class="language-level">
-                        <div class="language-progress" style="width: 100%">Langue maternelle</div>
-                    </div>
-                </div>
-                <div class="language">
-                    <span class="language-name"><i class="fas fa-globe"></i> Anglais</span>
-                    <div class="language-level">
-                        <div class="language-progress" style="width: 90%">Professionnel - C1</div>
-                    </div>
-                </div>
-                <div class="language">
-                    <span class="language-name"><i class="fas fa-globe"></i> Arabe</span>
-                    <div class="language-level">
-                        <div class="language-progress" style="width: 85%">Conversationnel</div>
-                    </div>
-                </div>
-                <div class="language">
-                    <span class="language-name"><i class="fas fa-globe"></i> Italien</span>
-                    <div class="language-level">
-                        <div class="language-progress" style="width: 70%">Conversationnel</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p>
-                    <i class="fas fa-envelope"></i>
-                    <strong>Email:</strong>
-                    <a href="mailto:ahmedbhs123@gmail.com">ahmedbhs123@gmail.com</a>
-                </p>
-                <p>
-                    <i class="fas fa-phone"></i>
-                    <strong>Téléphone:</strong>
-                    <a href="tel:+33754191137">+33 7 54 19 11 37</a>
-                </p>
-                <p>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <strong>Localisation:</strong>
-                    Montpellier (34000), France
-                </p>
-                <p>
-                    <i class="fab fa-github"></i>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/ahmed-bhs" target="_blank" rel="noopener">github.com/ahmed-bhs</a>
-                </p>
-                <p>
-                    <i class="fab fa-linkedin"></i>
-                    <strong>LinkedIn:</strong>
-                    <a href="https://linkedin.com/in/ahmedbhs/" target="_blank" rel="noopener">linkedin.com/in/ahmedbhs</a>
-                </p>
-                <p>
-                    <i class="fab fa-twitter"></i>
-                    <strong>Twitter:</strong>
-                    <a href="https://twitter.com/ahmed_bhs" target="_blank" rel="noopener">@ahmed_bhs</a>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <p class="header-name">Ahmed EBEN HASSINE</p>
+                <p class="header-title">Senior Software Engineer - Symfony & Architecture Expert</p>
+                <p class="header-subtitle">
+                    Spécialisé en Symfony, architecture API REST, DevOps et conception logicielle.
+                    Expert en architecture hexagonale, DDD/CQRS et patterns SOLID. Créateur d'outils open-source pour
+                    la communauté PHP (doctrine-doctor, hexagonal-maker-bundle). Conférencier AFUP Montpellier 2025.
                 </p>
             </div>
-
-            <div class="hobbies">
-                <h3>Centres d'intérêt</h3>
-                <p>
-                    <i class="fas fa-skiing"></i> Ski •
-                    <i class="fas fa-hand-rock"></i> Taekwondo •
-                    <i class="fas fa-water"></i> Stand-up Paddle •
-                    <i class="fas fa-shield-alt"></i> Cybersécurité
-                </p>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 Ahmed EBEN HASSINE - Senior Software Engineer</p>
-            <p class="footer-links">
-                <a href="https://ahmed-bhs.github.io/doctrine-doctor/">Doctrine Doctor</a> •
-                <a href="https://ahmed-bhs.github.io/hexagonal-maker-bundle/">Hexagonal Maker</a> •
-                <a href="https://ahmed-bhs.github.io/hexagonal-demo/">Demo</a>
-            </p>
-        </footer>
+        </div>
     </div>
+</header>
+<!-- end Header -->
 
-    <script src="script.js"></script>
+<!-- Profile -->
+<section id="profile" class="profile activate">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-user"></span>Profile</li>
+                    <li>
+                        <span class="note">Nom</span>
+                        <p><strong>Ahmed EBEN HASSINE</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Ville</span>
+                        <p><strong>Montpellier (34000), France</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Email</span>
+                        <p><strong>ahmedbhs123@gmail.com</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Téléphone</span>
+                        <p><strong>+33 7 54 19 11 37</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Network</span>
+                        <p>
+                            <strong><a href="https://github.com/ahmed-bhs">GitHub</a></strong>
+                        </p>
+                        <p>
+                            <strong><a href="https://linkedin.com/in/ahmedbhs/">LinkedIn</a></strong>
+                        </p>
+                        <p>
+                            <strong><a href="https://twitter.com/ahmed_bhs">Twitter</a></strong>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="note">Highlights</span>
+                        <p class="description">⚡ Architectures supportant <strong>50,000+</strong> utilisateurs concurrents</p>
+                        <p class="description">📈 Amélioration des performances de <strong>40%</strong> via DevOps</p>
+                        <p class="description">🤖 <strong>90%</strong> de réduction du temps de traitement via IA</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Profile -->
+
+<!-- Professional skills -->
+<section id="professional-skills" class="professional-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-tasks"></span>Compétences</li>
+                    <li>
+                        <p>PHP 8.x<span class="annotation pull-right">Expert - 98%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Symfony 6/7<span class="annotation pull-right">Expert - 98%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>API Platform<span class="annotation pull-right">Contributeur - 95%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Doctrine ORM<span class="annotation pull-right">95%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Architecture Hexagonale / DDD<span class="annotation pull-right">98%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Docker / Kubernetes<span class="annotation pull-right">92%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="description"><strong>Architecture :</strong> Hexagonale, DDD/CQRS, SOLID, API REST, Microservices.</p>
+                        <p class="description"><strong>Base de données :</strong> MySQL, PostgreSQL, Redis, MongoDB, ElasticSearch, Oracle, SQLite.</p>
+                        <p class="description"><strong>DevOps & Cloud :</strong> Docker, Kubernetes, GitLab CI/CD, GitHub Actions, AWS, Ansible, Terraform.</p>
+                        <p class="description"><strong>Frontend :</strong> JavaScript/TypeScript, Vue.js, Angular, Stimulus, jQuery, Bootstrap, Tailwind CSS.</p>
+                        <p class="description"><strong>Autres langages :</strong> Go, Python, Ruby, Bash, C++.</p>
+                        <p class="description"><strong>Qualité / CI :</strong> PHPUnit, Behat, Codeception, PHPStan, Psalm, SonarQube, Jenkins.</p>
+                        <p class="description"><strong>Versionning :</strong> Git + GitHub, GitLab et Bitbucket.</p>
+                        <p class="description"><strong>Environnement de travail préféré :</strong> Linux (Ubuntu/Debian) + PHPStorm/VSCode</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Professional skills -->
+
+<!-- Work experience -->
+<section id="work-experience" class="work-experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-briefcase"></span>Expérience Professionnelle</li>
+                    <li>
+                        <span class="note">Février 2019 - Présent</span>
+                        <p><strong>Codein (Montpellier, 34)</strong></p>
+                        <p><strong>Senior Development & Architecture Engineer</strong></p>
+                        <p class="description">Conception et déploiement d'architectures API REST supportant <strong>50,000+ utilisateurs concurrents</strong>.</p>
+                        <p class="description">Développement de solutions pour clients majeurs : <strong>OPPBTP, Bpifrance, IRD, CIRAD, Atlantic, FFGolf, Ministère de la Culture</strong>.</p>
+                        <p class="description">Création de <strong>19 Maker Commands</strong> pour automatiser la génération de code hexagonal.</p>
+                        <p class="description">Amélioration des performances de <strong>40%</strong> via optimisation DevOps.</p>
+                        <p class="description">Réduction de <strong>90%</strong> du temps de traitement par intégration d'IA (OCR, NLP).</p>
+                        <p class="description">Lead technique sur projets critiques à fort trafic.</p>
+                    </li>
+                    <li>
+                        <span class="note">Décembre 2017 - Janvier 2019</span>
+                        <p><strong>Lexik (Pérols, 34)</strong></p>
+                        <p><strong>Senior Backend Engineer</strong></p>
+                        <p class="description">Développement d'applications Symfony haute performance.</p>
+                        <p class="description">Mise en place d'architectures API REST scalables.</p>
+                        <p class="description">Amélioration continue des pratiques de développement.</p>
+                        <p class="description">Formation des équipes aux bonnes pratiques Symfony.</p>
+                    </li>
+                    <li>
+                        <span class="note">Janvier 2014 - Novembre 2017</span>
+                        <p><strong>TALAN (Tunis, Tunisie)</strong></p>
+                        <p><strong>Full Stack Software Engineer</strong></p>
+                        <p class="description">Développement d'applications web complexes pour clients internationaux.</p>
+                        <p class="description">Implémentation de solutions e-commerce et CMS personnalisés.</p>
+                        <p class="description">Intégration de systèmes tiers et APIs externes.</p>
+                        <p class="description">Participation à l'analyse fonctionnelle et technique des projets.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Work experience -->
+
+<!-- Projects -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-flash"></span>Projets Open Source</li>
+                    <li>
+                        <p><strong>Doctrine Doctor</strong></p>
+                        <p class="description">CLI tool pour diagnostiquer et corriger les problèmes de configuration Doctrine.</p>
+                        <p class="description">🎯 <strong>16 analyzers</strong> intégrés pour détecter automatiquement les anti-patterns.</p>
+                        <p class="description">🔧 <strong>9 fixers</strong> pour corriger automatiquement les problèmes courants.</p>
+                        <p class="description">📦 Intégration Symfony via bundle dédié.</p>
+                        <p class="description">🔗 <a href="https://github.com/ahmed-bhs/doctrine-doctor">GitHub</a> | <a href="https://ahmed-bhs.github.io/doctrine-doctor/">Documentation</a></p>
+                    </li>
+                    <li>
+                        <p><strong>Hexagonal Maker Bundle</strong></p>
+                        <p class="description">Bundle Symfony pour générer automatiquement du code respectant l'architecture hexagonale.</p>
+                        <p class="description">⚙️ <strong>19 maker commands</strong> pour scaffolder entités, use cases, DTOs, repositories, etc.</p>
+                        <p class="description">🎯 Génération de code <strong>SOLID</strong> et <strong>testable</strong> par défaut.</p>
+                        <p class="description">🏗️ Support complet du pattern <strong>CQRS</strong>.</p>
+                        <p class="description">🔗 <a href="https://github.com/ahmed-bhs/hexagonal-maker-bundle">GitHub</a> | <a href="https://ahmed-bhs.github.io/hexagonal-maker-bundle/">Documentation</a></p>
+                    </li>
+                    <li>
+                        <p><strong>Hexagonal Demo</strong></p>
+                        <p class="description">Application de démonstration complète utilisant l'architecture hexagonale.</p>
+                        <p class="description">📚 Exemple complet de <strong>Gift Management System</strong>.</p>
+                        <p class="description">🤖 <strong>95% auto-généré</strong> avec hexagonal-maker-bundle.</p>
+                        <p class="description">✅ Tests unitaires et fonctionnels intégrés.</p>
+                        <p class="description">🔗 <a href="https://github.com/ahmed-bhs/hexagonal-demo">GitHub</a> | <a href="https://ahmed-bhs.github.io/hexagonal-demo/">Documentation</a></p>
+                    </li>
+                    <li>
+                        <p><strong>CTFS.ME</strong></p>
+                        <p class="description">Plateforme collaborative de cybersécurité et CTF (Capture The Flag).</p>
+                        <p class="description">🏆 Co-fondateur et lead developer.</p>
+                        <p class="description">👥 Communauté active de passionnés de cybersécurité.</p>
+                        <p class="description">🎮 Organisation de challenges et compétitions.</p>
+                        <p class="description">🔗 <a href="https://ctfs.me">Site web</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Projects -->
+
+<!-- Education -->
+<section id="education" class="education">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-book"></span>Formation & Certifications</li>
+                    <li>
+                        <span class="note">2025</span>
+                        <p><strong>TCF IRN - Niveau C1</strong></p>
+                        <p>Certification officielle de langue française</p>
+                    </li>
+                    <li>
+                        <span class="note">2020</span>
+                        <p><strong>Symfony Advanced Developer Certification</strong></p>
+                        <p>SensioLabs / Symfony</p>
+                    </li>
+                    <li>
+                        <span class="note">2020</span>
+                        <p><strong>eZ Platform Developer Certification</strong></p>
+                        <p>eZ Systems</p>
+                    </li>
+                    <li>
+                        <span class="note">2013 - 2014</span>
+                        <p><strong>Master en Génie Logiciel</strong></p>
+                        <p>ENSIT - École Nationale des Sciences de l'Informatique et Technologies (Tunis)</p>
+                    </li>
+                    <li>
+                        <span class="note">2010 - 2013</span>
+                        <p><strong>Licence en Informatique Appliquée à la Gestion</strong></p>
+                        <p>IPEIN - Institut Préparatoire aux Études d'Ingénieurs (Nabeul)</p>
+                    </li>
+                    <li>
+                        <span class="note">Conférences & Talks</span>
+                        <p><strong>Speaker AFUP Montpellier 2025</strong></p>
+                        <p class="description">Présentation sur l'architecture hexagonale et les bonnes pratiques Symfony.</p>
+                    </li>
+                    <li>
+                        <span class="note">Compétitions Cybersécurité</span>
+                        <p class="description">🥇 <strong>1ère place</strong> - Hackfest Bootcamp</p>
+                        <p class="description">🥉 <strong>Médaille de bronze</strong> - Hackfest Final</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Education -->
+
+<!-- Languages -->
+<section id="personal-skills" class="personal-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-stats"></span>Langues</li>
+                    <li>
+                        <span class="chart" data-percent="100"><span class="skill">Français</span>
+                            <span class="percent"></span>
+                        </span>
+                        <span class="chart" data-percent="90"><span class="skill">Anglais</span>
+                            <span class="percent"></span>
+                        </span>
+                        <span class="chart" data-percent="85"><span class="skill">Arabe</span>
+                            <span class="percent"></span>
+                        </span>
+                        <span class="chart" data-percent="70"><span class="skill">Italien</span>
+                            <span class="percent"></span>
+                        </span>
+                    </li>
+                    <li class="static">
+                        <span class="note">Certifications</span>
+                        <p class="description">TCF IRN : <strong>Niveau C1</strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Languages -->
+
+<!-- Interests -->
+<section id="interests" class="interests last-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-heart-empty"></span>Hobbies</li>
+                    <li>
+                        <p><strong>Ski</strong></p>
+                        <p class="description">Passionné de sports d'hiver et de montagne.</p>
+                    </li>
+                    <li>
+                        <p><strong>Taekwondo</strong></p>
+                        <p class="description">Pratique régulière des arts martiaux.</p>
+                    </li>
+                    <li>
+                        <p><strong>Stand-up Paddle</strong></p>
+                        <p class="description">Sports nautiques et activités en plein air.</p>
+                    </li>
+                    <li>
+                        <p><strong>Cybersécurité</strong></p>
+                        <p class="description">CTF, bug bounty, et challenges de sécurité informatique.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Interests -->
+
+<!-- Java Script -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-progressbar.js"></script>
+<script src="js/spy.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/jquery.easypiechart.js"></script>
+<script src="js/chart.js"></script>
+
 </body>
 </html>
