@@ -1,0 +1,10 @@
+# Documents confidentiels personnels
+CHECKLIST_FREELANCE_LEGAL.md
+
+# Logs freelance (à ne jamais commiter)
+freelance_hours_log.xlsx
+freelance_*.xlsx
+
+# Documents sensibles
+contrat_*.pdf
+devis_*.pdf

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Ma Méthode de Travail Freelance - Ahmed EBEN HASSINE</title>
+    <meta name="title" content="Ma Méthode de Travail Freelance - Ahmed EBEN HASSINE" />
+    <meta name="description" content="Découvrez comment je travaille en mission freelance : méthodologie agile, RAD, livraisons rapides et qualité garantie." />
+    <meta name="author" content="Ahmed EBEN HASSINE">
+    <meta name="keywords" content="Freelance, Méthode Agile, RAD, Développement Rapide, Symfony, PHP">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ahmed-bhs.github.io/methode-travail.html" />
+    <meta property="og:title" content="Ma Méthode de Travail Freelance - Ahmed EBEN HASSINE" />
+    <meta property="og:description" content="Découvrez comment je travaille en mission freelance : méthodologie agile, RAD, livraisons rapides et qualité garantie." />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ahmed-bhs.github.io/methode-travail.html" />
+    <meta property="twitter:title" content="Ma Méthode de Travail Freelance - Ahmed EBEN HASSINE" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <style>
+      /* Styles spécifiques pour la page méthode */
+      .method-hero {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        padding: 120px 20px 60px;
+        text-align: center;
+        margin-top: 80px;
+      }
+
+      .method-hero h1 {
+        font-size: 3rem;
+        color: var(--text-color-two);
+        margin-bottom: 20px;
+        font-weight: 800;
+      }
+
+      .method-hero p {
+        font-size: 1.3rem;
+        color: var(--text-color-two);
+        max-width: 800px;
+        margin: 0 auto;
+        opacity: 0.95;
+      }
+
+      /* Mind Map Container */
+      .mindmap-container {
+        margin: 60px auto;
+        padding: 40px 20px;
+        max-width: 1400px;
+      }
+
+      .mindmap-intro {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .mindmap-intro h2 {
+        font-size: 2.5rem;
+        color: var(--text-primary);
+        margin-bottom: 20px;
+      }
+
+      .mindmap-intro p {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Flow Steps */
+      .flow-steps {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 60px 0;
+        position: relative;
+      }
+
+      .flow-step {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        gap: 30px;
+        position: relative;
+      }
+
+      .flow-step:not(:last-child)::after {
+        content: "↓";
+        position: absolute;
+        left: 40px;
+        bottom: -40px;
+        font-size: 2rem;
+        color: var(--primary-color);
+        font-weight: bold;
+      }
+
+      .step-number-box {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--text-color-two);
+        box-shadow: 0 8px 20px rgba(255, 205, 66, 0.4);
+        flex-shrink: 0;
+      }
+
+      .step-content-box {
+        background: var(--card-background);
+        border: 2px solid var(--border-color);
+        border-radius: 16px;
+        padding: 35px;
+        transition: all 0.3s ease;
+      }
+
+      .step-content-box:hover {
+        border-color: var(--primary-color);
+        box-shadow: var(--shadow);
+        transform: translateX(10px);
+      }
+
+      .step-content-box h3 {
+        font-size: 1.8rem;
+        color: var(--text-primary);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .step-content-box h3 i {
+        color: var(--primary-color);
+      }
+
+      .step-duration {
+        display: inline-block;
+        background: var(--primary-color);
+        color: var(--text-color-two);
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .step-description {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+
+      .step-details {
+        background: var(--bg-primary);
+        border-radius: 12px;
+        padding: 25px;
+        border-left: 4px solid var(--primary-color);
+      }
+
+      .step-details h4 {
+        font-size: 1.2rem;
+        color: var(--text-primary);
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      .step-details ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .step-details li {
+        padding: 10px 0;
+        padding-left: 30px;
+        position: relative;
+        color: var(--text-color);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .step-details li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .step-substeps {
+        margin-top: 20px;
+        padding-left: 20px;
+        border-left: 2px dashed var(--border-color);
+      }
+
+      .substep {
+        margin-bottom: 15px;
+        padding: 15px;
+        background: rgba(255, 205, 66, 0.05);
+        border-radius: 8px;
+      }
+
+      .substep-title {
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+      }
+
+      .substep-desc {
+        color: var(--text-color);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      /* Key Principles */
+      .key-principles {
+        background: var(--card-background);
+        border-radius: 20px;
+        padding: 50px;
+        margin: 60px 0;
+        border: 3px solid var(--primary-color);
+      }
+
+      .key-principles h2 {
+        font-size: 2.2rem;
+        color: var(--text-primary);
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .principles-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      .principle-card {
+        background: var(--bg-primary);
+        padding: 30px;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .principle-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+        border-color: var(--primary-color);
+      }
+
+      .principle-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      .principle-card h4 {
+        font-size: 1.3rem;
+        color: var(--text-primary);
+        margin-bottom: 12px;
+      }
+
+      .principle-card p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .method-hero h1 {
+          font-size: 2rem;
+        }
+
+        .method-hero p {
+          font-size: 1.1rem;
+        }
+
+        .flow-step {
+          grid-template-columns: 60px 1fr;
+          gap: 20px;
+        }
+
+        .step-number-box {
+          width: 60px;
+          height: 60px;
+          font-size: 1.5rem;
+        }
+
+        .flow-step:not(:last-child)::after {
+          left: 30px;
+        }
+
+        .step-content-box {
+          padding: 25px;
+        }
+
+        .step-content-box h3 {
+          font-size: 1.4rem;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+
+        .key-principles {
+          padding: 30px 20px;
+        }
+
+        .principles-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://ahmed-bhs.github.io/">Ahmed EBEN HASSINE</a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="index.html#services">SERVICES</a></li>
+            <li><a class="nav-link" href="index.html#projects">PROJETS</a></li>
+            <li><a class="nav-link" href="index.html#experience">EXPÉRIENCE</a></li>
+            <li><a class="nav-link" href="index.html#pricing">TARIFS</a></li>
+            <li><a class="nav-link" href="methode-travail.html">MA MÉTHODE</a></li>
+            <li><a class="nav-link btn btn-primary" href="index.html#contact">CONTACT <i class="fas fa-envelope"></i></a></li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="method-hero">
+      <h1>Ma Méthode de Travail Freelance</h1>
+      <p>Une approche agile et pragmatique pour livrer rapidement de la valeur avec une qualité irréprochable</p>
+    </section>
+
+    <!-- Mind Map Container -->
+    <section class="mindmap-container">
+      <div class="mindmap-intro">
+        <h2>Comment nous allons travailler ensemble</h2>
+        <p>
+          Ma méthode combine les principes du développement agile et du RAD (Rapid Application Development)
+          pour garantir des livraisons rapides, itératives et de haute qualité. Chaque étape est pensée pour
+          maximiser la transparence, la communication et la satisfaction client.
+        </p>
+      </div>
+
+      <!-- Flow Steps -->
+      <div class="flow-steps">
+
+        <!-- Étape 1: Cadrage Initial -->
+        <div class="flow-step">
+          <div class="step-number-box">1</div>
+          <div class="step-content-box">
+            <h3>
+              <i class="fas fa-handshake"></i>
+              Réunion de Cadrage Initial
+            </h3>
+            <span class="step-duration">⏱️ 30-60 minutes (Gratuit)</span>
+            <p class="step-description">
+              <strong>Pas de bla-bla, pas de perte de temps : on va droit au but.</strong><br>
+              Réunion efficace structurée en 4 points clés : Besoin → Problématique → Solution → Réalisation.
+            </p>
+            <div class="step-details">
+              <h4>Déroulé de la réunion :</h4>
+
+              <div class="substep" style="margin-bottom: 15px;">
+                <div class="substep-title">1. Votre besoin</div>
+                <div class="substep-desc">
+                  Qu'attendez-vous concrètement ? Nouvelle fonctionnalité, correction de bugs, refonte, optimisation ?
+                  On identifie rapidement ce que vous voulez obtenir.
+                </div>
+              </div>
+
+              <div class="substep" style="margin-bottom: 15px;">
+                <div class="substep-title">2. La problématique</div>
+                <div class="substep-desc">
+                  Quel est le vrai problème à résoudre ? Contexte technique, contraintes business, délais, budget.
+                  On creuse pour comprendre les enjeux sans tourner autour du pot.
+                </div>
+              </div>
+
+              <div class="substep" style="margin-bottom: 15px;">
+                <div class="substep-title">3. La solution proposée</div>
+                <div class="substep-desc">
+                  Je vous propose une approche technique concrète, pragmatique et réaliste.
+                  Pas de bullshit, juste ce qui marche. Stack, architecture, méthodologie.
+                </div>
+              </div>
+
+              <div class="substep" style="margin-bottom: 15px;">
+                <div class="substep-title">4. Modalités de réalisation</div>
+                <div class="substep-desc">
+                  Estimation macro (durée, budget), découpage en phases, rythme de travail.
+                  Si on est alignés, on démarre. Sinon, on ne perd pas notre temps.
+                </div>
+              </div>
+
+              <p style="color: var(--text-secondary); font-style: italic; font-size: 0.95rem; margin-top: 20px;">
+                <strong>Résultat :</strong> En moins d'une heure, vous savez si je peux vous aider, comment, et à quel prix.
+                Pas de rendez-vous de courtoisie interminables.
+              </p>
+
+              <div style="background: rgba(255, 205, 66, 0.1); border-left: 4px solid var(--primary-color); padding: 20px; margin-top: 25px; border-radius: 8px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--text-primary);">
+                  <i class="fas fa-shield-alt"></i> Je ne suis pas un exécutant aveugle
+                </h4>
+                <p style="color: var(--text-color); font-size: 0.95rem; line-height: 1.6; margin-bottom: 10px;">
+                  <strong>Je challenge toujours le besoin</strong> pour veiller sur la qualité et l'amélioration de votre produit :
+                </p>
+                <ul style="margin: 15px 0; padding-left: 20px;">
+                  <li style="margin-bottom: 8px; color: var(--text-color);">
+                    Si je vois qu'un besoin est inutile, trop complexe, ou qu'il existe une alternative plus simple et efficace,
+                    <strong>je vous le dis clairement</strong>. Pas question de facturer pour du travail sans valeur.
+                  </li>
+                  <li style="margin-bottom: 8px; color: var(--text-color);">
+                    Si je détecte des <strong>failles de sécurité</strong>, des <strong>problèmes de performance</strong>,
+                    des <strong>soucis d'architecture</strong>, ou des <strong>opportunités d'amélioration</strong>,
+                    je vous alerte immédiatement, même si ce n'était pas dans le scope initial.
+                  </li>
+                  <li style="color: var(--text-color);">
+                    Mon rôle n'est pas juste de coder ce que vous demandez, mais de vous conseiller pour que votre produit
+                    soit robuste, sécurisé, performant et maintenable.
+                  </li>
+                </ul>
+                <p style="color: var(--text-secondary); font-style: italic; font-size: 0.9rem; margin-top: 15px;">
+                  <strong>En résumé :</strong> Vous avez un partenaire technique qui pense business et qualité,
+                  pas un simple prestataire qui dit "oui" à tout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étape 2: Planification & Spécifications -->
+        <div class="flow-step">
+          <div class="step-number-box">2</div>
+          <div class="step-content-box">
+            <h3>
+              <i class="fas fa-clipboard-list"></i>
+              Planification & Spécifications Détaillées
+            </h3>
+            <span class="step-duration">⏱️ 1-2 jours (Sprint 0)</span>
+            <p class="step-description">
+              Formalisation de tous les besoins dans votre outil de gestion de projet préféré
+              (Jira, Redmine, Trello, Linear, etc.). Définition du lot de tickets, numérotation des releases,
+              et estimation du temps approximatif sur lequel nous allons travailler.
+            </p>
+            <div class="step-details">
+              <h4>Livrables de cette phase :</h4>
+              <ul>
+                <li>Lot de tickets complet avec user stories détaillées et numérotées</li>
+                <li>Critères d'acceptation clairs pour chaque ticket</li>
+                <li>Numérotation des releases selon Semantic Versioning (v1.0.0, v1.1.0, v2.0.0...)</li>
+                <li>Architecture technique et choix technologiques documentés</li>
+                <li>Estimation du temps approximatif par release et globalement</li>
+                <li>Découpage en cycles de 2 semaines avec objectifs clairs</li>
+                <li>Chiffrage validé et priorisation avec vous</li>
+                <li>Cycles de livraison et recette sur les environnements dev, staging et production</li>
+                <li>Mise en place des accès (repos Git, serveurs, outils)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étape 3: Cycles de Développement (2 semaines) -->
+        <div class="flow-step">
+          <div class="step-number-box">3</div>
+          <div class="step-content-box">
+            <h3>
+              <i class="fas fa-sync-alt"></i>
+              Cycles de Développement Agile
+            </h3>
+            <span class="step-duration">⏱️ Itérations de 2 semaines</span>
+            <p class="step-description">
+              Au cœur de ma méthode : des cycles courts de 2 semaines pour livrer de la valeur
+              continuellement. Chaque cycle suit un processus rigoureux pour garantir qualité et rapidité.
+            </p>
+
+            <div class="step-details">
+              <h4>Pour chaque ticket (évolution ou anomalie) :</h4>
+
+              <div class="step-substeps">
+                <div class="substep">
+                  <div class="substep-title">📋 1. Spécification du besoin</div>
+                  <div class="substep-desc">
+                    Rédaction claire du besoin avec critères d'acceptation. Validation avec vous avant de commencer.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">🔍 2. Analyse technique préalable (max 2h)</div>
+                  <div class="substep-desc">
+                    Analyse de la solution, identification des impacts, choix d'implémentation.
+                    Si l'analyse dépasse 2h, le ticket est découpé ou simplifié avec votre accord.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">💻 3. Développement & Tests</div>
+                  <div class="substep-desc">
+                    Implémentation de la solution avec batterie de tests unitaires systématique.
+                    Chaque ligne de code est testée pour garantir la non-régression.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">🔧 4. Préparation de la Merge Request (MR)</div>
+                  <div class="substep-desc">
+                    Code review interne, vérification des bonnes pratiques, tests automatisés via CI/CD.
+                    La MR est clean, documentée et prête à être reviewée.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">👀 5. Code Review (si équipe)</div>
+                  <div class="substep-desc">
+                    Si vous avez une équipe, un autre développeur revoit le code avant merge.
+                    Garantie de qualité collective et transfert de connaissance.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">🚀 6. Déploiement sur environnement de recette</div>
+                  <div class="substep-desc">
+                    Déploiement automatique via CI/CD sur l'environnement de staging.
+                    Tests de smoke pour vérifier que tout fonctionne.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">✅ 7. Recette interne</div>
+                  <div class="substep-desc">
+                    Validation fonctionnelle de mon côté : tous les critères d'acceptation sont vérifiés,
+                    tests de non-régression effectués.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">🎯 8. Recette client</div>
+                  <div class="substep-desc">
+                    Vous testez la fonctionnalité sur l'environnement de staging.
+                    Si besoin, on itère jusqu'à validation complète.
+                  </div>
+                </div>
+
+                <div class="substep">
+                  <div class="substep-title">9. Mise en production</div>
+                  <div class="substep-desc">
+                    Une fois validé, déploiement en production avec monitoring actif.
+                    Garantie de correction des régressions gratuitement dont je suis responsable.
+                  </div>
+                </div>
+              </div>
+
+              <div style="background: rgba(16, 185, 129, 0.1); border-left: 4px solid #10b981; padding: 20px; margin-top: 25px; border-radius: 8px;">
+                <h4 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--text-primary);">
+                  <i class="fas fa-shield-alt"></i> Garantie qualité
+                </h4>
+                <p style="color: var(--text-color); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                  <strong>Si une régression est détectée en production suite à mes développements,
+                  la correction est entièrement gratuite.</strong> Je prends la responsabilité de mon code.
+                  C'est pourquoi chaque livraison inclut une batterie de tests complète pour minimiser ce risque.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étape 4: Communication Continue -->
+        <div class="flow-step">
+          <div class="step-number-box">4</div>
+          <div class="step-content-box">
+            <h3>
+              <i class="fas fa-comments"></i>
+              Communication & Transparence Totale
+            </h3>
+            <span class="step-duration">⏱️ En continu</span>
+            <p class="step-description">
+              La communication est au cœur de ma méthode. Vous savez toujours où j'en suis,
+              ce qui est fait, ce qui reste à faire, et les éventuels blocages.
+            </p>
+            <div class="step-details">
+              <h4>Mes engagements communication :</h4>
+              <ul>
+                <li><strong>Canal dédié :</strong> Slack, Discord, Teams ou votre outil préféré pour échanges en temps réel</li>
+                <li><strong>Daily update :</strong> Point quotidien écrit en fin de journée sur l'avancement</li>
+                <li><strong>Réunions régulières :</strong> Démo de sprint tous les 15 jours + rétrospective</li>
+                <li><strong>Disponibilité :</strong> Réponse rapide aux questions (sous 2-4h en journée)</li>
+                <li><strong>Transparence :</strong> Accès total au board Jira/Trello, au code (GitLab/GitHub), aux pipelines CI/CD</li>
+                <li><strong>Reporting :</strong> Tableau de bord temps réel de l'avancement (burndown chart, vélocité)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Étape 5: Rétrospective & Amélioration -->
+        <div class="flow-step">
+          <div class="step-number-box">5</div>
+          <div class="step-content-box">
+            <h3>
+              <i class="fas fa-chart-line"></i>
+              Rétrospective & Amélioration Continue
+            </h3>
+            <span class="step-duration">⏱️ Fin de chaque cycle (30-45 min)</span>
+            <p class="step-description">
+              À la fin de chaque cycle de 2 semaines, nous faisons le point ensemble :
+              ce qui a bien fonctionné, ce qui peut être amélioré, et comment optimiser le prochain sprint.
+            </p>
+            <div class="step-details">
+              <h4>Points abordés en rétrospective :</h4>
+              <ul>
+                <li>Démonstration des fonctionnalités livrées (démo live)</li>
+                <li>Analyse de la vélocité et du respect des estimations</li>
+                <li>Identification des points de friction et blocages</li>
+                <li>Collecte de vos feedbacks et suggestions</li>
+                <li>Ajustement de la méthodologie si nécessaire</li>
+                <li>Planification et priorisation du prochain cycle</li>
+                <li>Monitoring des métriques business et techniques</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Engagement & Facturation -->
+      <div class="key-principles" style="margin-bottom: 40px;">
+        <h2>Engagement & Facturation</h2>
+        <div class="step-details" style="max-width: 900px; margin: 0 auto;">
+          <h4 style="font-size: 1.3rem; margin-bottom: 20px; color: var(--primary-color);">
+            <i class="fas fa-info-circle"></i> Ce qui est gratuit
+          </h4>
+          <ul style="margin-bottom: 30px;">
+            <li><strong>Premier rendez-vous de cadrage (30-60 min) :</strong> Totalement gratuit et sans engagement. C'est un échange pour voir si nous pouvons travailler ensemble.</li>
+          </ul>
+
+          <h4 style="font-size: 1.3rem; margin-bottom: 20px; color: var(--primary-color); margin-top: 30px;">
+            <i class="fas fa-file-signature"></i> Comment démarrer ? (Formalisation de l'engagement)
+          </h4>
+          <p style="margin-bottom: 15px; color: var(--text-color); font-size: 1rem;">
+            Une fois que nous sommes d'accord sur le projet et les modalités, il faut formaliser notre collaboration.
+            <strong>Je m'adapte complètement à vos processus internes.</strong> Voici les 3 options possibles :
+          </p>
+
+          <div class="substep" style="margin-bottom: 15px;">
+            <div class="substep-title">Option 1 : Vous travaillez avec des bons de commande (BC)</div>
+            <div class="substep-desc">
+              <strong>Contexte :</strong> Grandes entreprises, groupes, administrations.<br>
+              <strong>Comment ça marche :</strong> Vous générez un bon de commande via votre système interne (SAP, etc.) qui décrit la prestation (TJM, nombre de jours, période).
+              Je commence à travailler dès réception du BC. Je facture ensuite contre ce BC.<br>
+              <strong>Avantage :</strong> Vous gardez votre processus habituel, je m'y plie.
+            </div>
+          </div>
+
+          <div class="substep" style="margin-bottom: 15px;">
+            <div class="substep-title">Option 2 : Contrat de prestation (missions longues en régie)</div>
+            <div class="substep-desc">
+              <strong>Contexte :</strong> Missions de plusieurs semaines/mois, collaboration récurrente.<br>
+              <strong>Comment ça marche :</strong> Signature d'un contrat cadre simple (1-2 pages) qui définit les modalités générales : TJM, rythme de facturation, préavis, confidentialité, propriété intellectuelle.
+              Je fournis un modèle simple si vous n'en avez pas.<br>
+              <strong>Avantage :</strong> Sécurise les deux parties sur la durée, évite de refaire un devis à chaque intervention.
+            </div>
+          </div>
+
+          <div class="substep" style="margin-bottom: 15px;">
+            <div class="substep-title">Option 3 : Devis validé par email (missions courtes/forfait)</div>
+            <div class="substep-desc">
+              <strong>Contexte :</strong> PME, startups, missions courtes (audit, setup CI/CD, upgrade...), projets au forfait.<br>
+              <strong>Comment ça marche :</strong> Je vous envoie un devis PDF (prestation + prix + délai). Vous répondez par email "Devis accepté" ou vous le signez et me le renvoyez.
+              C'est tout. On démarre.<br>
+              <strong>Avantage :</strong> Démarrage ultra-rapide, simplicité maximale, pas de lourdeur administrative.
+            </div>
+          </div>
+
+          <p style="color: var(--text-secondary); font-style: italic; font-size: 0.95rem; margin-top: 20px;">
+            <strong>L'essentiel :</strong> Pas de formalisme excessif. L'objectif est de démarrer rapidement tout en ayant un cadre clair.
+            Pour les toutes petites missions (1-2 jours), un simple échange d'emails suffit.
+          </p>
+
+          <h4 style="font-size: 1.3rem; margin-bottom: 20px; color: var(--primary-color); margin-top: 30px;">
+            <i class="fas fa-euro-sign"></i> Rythme de facturation
+          </h4>
+          <p style="margin-bottom: 15px; color: var(--text-color); font-size: 1rem;">
+            <strong>Principe :</strong> Simplifier pour tout le monde et éviter de grossir les tâches comptables pour rien.
+            La facturation s'adapte au volume et à la durée de la mission :
+          </p>
+
+          <div class="substep" style="margin-bottom: 15px;">
+            <div class="substep-title">Missions au forfait (Audit, Setup CI/CD, Upgrade Stack, Setup Infra...)</div>
+            <div class="substep-desc">
+              <strong>Contractualisation :</strong> Devis détaillé signé (par email ou physiquement)<br>
+              <strong>Facturation standard :</strong> Acompte 30% au démarrage + 70% à la livraison<br>
+              <strong>Souplesse :</strong> Je m'adapte à votre organisation. Paiement à livraison accepté pour grands comptes ou clients de confiance.<br>
+              <strong>Délai de paiement :</strong> 30 jours après émission de la facture
+            </div>
+          </div>
+
+          <div class="substep" style="margin-bottom: 15px;">
+            <div class="substep-title">Missions courtes en régie (2-10 jours)</div>
+            <div class="substep-desc">
+              <strong>Facturation :</strong> Une seule facture en fin de mission<br>
+              <strong>Exemple :</strong> Mission de 5 jours → Une facture à J+5 pour 2500€ HT<br>
+              <strong>Délai de paiement :</strong> 30 jours après émission de la facture<br>
+              <em style="color: var(--text-secondary); font-size: 0.9rem;">Pas de factures multiples pour des petites missions, on simplifie.</em>
+            </div>
+          </div>
+
+          <div class="substep" style="margin-bottom: 15px;">
+            <div class="substep-title">Missions moyennes en régie (10-30 jours sur 1-2 mois)</div>
+            <div class="substep-desc">
+              <strong>Facturation :</strong> Tous les 10 jours travaillés OU en fin de mois (selon ce qui simplifie votre compta)<br>
+              <strong>Exemple 1 :</strong> 10 jours travaillés sur 2 semaines → Facture de 5000€ HT<br>
+              <strong>Exemple 2 :</strong> 20 jours sur le mois de mars → Une facture fin mars de 10000€ HT<br>
+              <strong>Délai de paiement :</strong> 30 jours après émission de la facture
+            </div>
+          </div>
+
+          <div class="substep">
+            <div class="substep-title">Missions longues / Récurrentes (3+ mois)</div>
+            <div class="substep-desc">
+              <strong>Facturation :</strong> Mensuelle (fin de mois ou début du mois suivant)<br>
+              <strong>Exemple :</strong> Engagement 2 jours/semaine → Facture mensuelle de ~4000€ HT<br>
+              <strong>Délai de paiement :</strong> 30 jours fin de mois
+            </div>
+          </div>
+
+          <p style="color: var(--text-secondary); font-style: italic; font-size: 0.95rem; margin-top: 20px;">
+            <strong>Flexibilité totale :</strong> On s'adapte selon le volume pour simplifier votre compta.
+            L'objectif n'est pas de multiplier les factures, mais de trouver un rythme qui facilite la vie de tout le monde.
+            Si vous préférez une facture mensuelle globale plutôt que plusieurs petites, pas de souci.
+          </p>
+        </div>
+      </div>
+
+      <!-- Key Principles -->
+      <div class="key-principles">
+        <h2>Mes Principes de Travail</h2>
+        <div class="principles-grid">
+
+          <div class="principle-card">
+            <div class="principle-icon">⚡</div>
+            <h4>RAD - Rapid Application Development</h4>
+            <p>
+              Livraisons rapides et itératives. Vous voyez les résultats dès la première semaine.
+              Pas de tunnel de 3 mois : on livre, on teste, on ajuste.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">🎯</div>
+            <h4>Focus sur la valeur business</h4>
+            <p>
+              Chaque ticket, chaque ligne de code doit apporter de la valeur mesurable.
+              On priorise ce qui a le plus d'impact sur vos objectifs.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">🧪</div>
+            <h4>Qualité non négociable</h4>
+            <p>
+              Tests systématiques, code review, CI/CD automatisé.
+              La qualité n'est pas une option, c'est un standard.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">🔄</div>
+            <h4>Flexibilité & Adaptation</h4>
+            <p>
+              Les besoins évoluent ? Pas de problème. L'approche agile permet d'ajuster
+              les priorités à chaque sprint selon vos retours.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">📊</div>
+            <h4>Transparence totale</h4>
+            <p>
+              Accès complet au code, aux boards, aux metrics.
+              Vous savez toujours où on en est, ce qui est fait, ce qui reste.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-icon">🚀</div>
+            <h4>Livraisons continues</h4>
+            <p>
+              Déploiements fréquents en production. Vous récoltez les bénéfices rapidement
+              au lieu d'attendre la fin du projet.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-container">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Prêt à démarrer avec cette méthode ?</h2>
+          <p>Discutons de votre projet et voyons comment ma méthode peut vous aider à atteindre vos objectifs rapidement.</p>
+          <div class="cta-buttons">
+            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" class="btn btn-primary btn-large">
+              <i class="fas fa-calendar-check"></i> Réserver un Appel Gratuit (30 min)
+            </a>
+            <a href="mailto:ahmedbhs123@gmail.com" class="btn btn-secondary btn-large">
+              <i class="fas fa-envelope"></i> M'envoyer un Email
+            </a>
+          </div>
+          <p class="cta-guarantee">💡 Premier échange sans engagement • Réponse sous 24h • 100% remote accepté</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <h3>Disponible pour missions freelance</h3>
+        <a href="mailto:ahmedbhs123@gmail.com" class="email-link">ahmedbhs123@gmail.com</a>
+        <p class="phone">+33 7 54 19 11 37 • Montpellier, France</p>
+
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://github.com/ahmed-bhs" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://linkedin.com/in/ahmedbhs/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://medium.com/@ahmedbhs/" target="_blank" title="Blog Medium"><i class="fab fa-medium" style="font-size: 32px; color: var(--text-color);"></i></a>
+        </div>
+
+        <p class="copyright">© <span id="datee"></span> Ahmed EBEN HASSINE • Tous droits réservés</p>
+        <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 10px; opacity: 0.7;">
+          Activité freelance exercée en complément d'activité professionnelle principale • Respect des obligations de loyauté et confidentialité
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
