@@ -954,7 +954,7 @@ h2::selection {
   transform: rotate(-11deg) scale(1.04);
 }
 
-.trust-stamp svg {
+.trust-stamp-badge {
   width: 100%;
   height: auto;
   display: block;
