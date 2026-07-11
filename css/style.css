@@ -113,6 +113,27 @@ h6 {
   letter-spacing: 0;
 }
 
+.nav-availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 14px;
+  margin-right: auto;
+  padding: 7px 12px;
+  border: 1px solid color-mix(in srgb, var(--primary-color) 72%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card-background) 90%, transparent);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-availability-badge .status-dot {
+  width: 8px;
+  height: 8px;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -482,7 +503,7 @@ h6 {
 @media (max-width: 1350px) {
   .navbar .container {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, auto) 1fr auto;
     column-gap: 0.75rem;
     padding: 0 1.5rem;
   }
@@ -534,6 +555,9 @@ h6 {
     cursor: pointer;
     padding: 0.2rem 0.4rem;
     justify-self: end;
+    grid-column: 3;
+    position: relative;
+    z-index: 30;
   }
 
   .hamburger.active {
@@ -562,11 +586,21 @@ h6 {
 
 @media (max-width: 600px) {
   .navbar .container {
+    grid-template-columns: minmax(0, 1fr) auto;
     padding: 0 1rem;
   }
 
   #logo a {
     font-size: 0.9rem;
+  }
+
+  .nav-availability-badge {
+    display: none;
+  }
+
+  .hamburger {
+    grid-column: 2;
+    display: block;
   }
 
   .hamburger {

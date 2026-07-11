@@ -67,6 +67,7 @@
           <h1 id="logo">
             <a href="index.html">Ahmed EBEN HASSINE</a>
           </h1>
+          <span class="nav-availability-badge" aria-label="Disponible pour missions freelance"><span class="status-dot"></span>Disponible</span>
           <ul class="nav-menu">
             <li><a class="nav-link active" href="#explore">OFFRES</a></li>
             <li><a class="nav-link" href="realisations.html">RÉALISATIONS</a></li>
@@ -100,11 +101,6 @@
             <img src="assets/ibexa-certified-developer.png" alt="Ibexa Certified Advanced Developer" width="96" height="96" />
           </span>
         </div>
-        <div class="availability-badge">
-          <span class="status-dot"></span>
-          Disponible pour missions freelance
-        </div>
-
         <h1>Freelance Symfony pour vos projets web et interventions techniques</h1>
 
         <div class="content-text">
@@ -130,18 +126,16 @@
           <a href="realisations.html" class="btn btn-secondary"><i class="fas fa-folder-open"></i> Réalisations</a>
         </div>
 
-        <div class="hero-console" aria-label="Aperçu d'une intervention freelance">
+        <div class="hero-console" aria-label="Aperçu d'une intervention freelance" data-hero-console>
           <div class="console-header">
             <span></span>
             <span></span>
             <span></span>
-            <strong>mission-symfony</strong>
+            <strong data-console-title>mission-symfony</strong>
           </div>
           <div class="console-body">
-            <p><span class="prompt">$</span> analyser application --scope=seo,ux,performance</p>
-            <p><span class="console-ok">✓</span> audit technique et parcours priorisés</p>
-            <p><span class="console-ok">✓</span> backlog clair pour l'équipe produit</p>
-            <p><span class="console-ok">✓</span> corrections Symfony livrables en sprint court</p>
+            <p class="console-command"><span class="prompt">$</span><span data-console-command></span><span class="console-cursor" aria-hidden="true"></span></p>
+            <div class="console-output" data-console-output aria-live="polite"></div>
           </div>
         </div>
       </section>
@@ -209,7 +203,6 @@
       <div class="content-text">
         <h2><span class="hand-underline">Quelle mission souhaitez-vous me confier ?</span></h2>
         <p>Deux points d'entrée simples : créer un projet web complet ou intervenir sur votre application existante.</p>
-        <p style="margin-top: 22px;"><span class="sticky-note">Pas sûr de votre choix ?<br>Écrivez-moi, je vous oriente.</span></p>
       </div>
 
       <div class="explore-cta-hint" aria-hidden="true">
@@ -220,39 +213,42 @@
         </svg>
       </div>
 
-      <div class="pricing-grid">
-        <div class="pricing-card featured">
-          <div class="pricing-badge">Projet web complet</div>
-          <h3>Création de projet web</h3>
-          <p class="pricing-description">Site vitrine, blog, back-office, réservation ou e-commerce sur mesure en Symfony. Vous gardez la main sur votre contenu.</p>
-          <ul class="pricing-features">
-            <li><span class="check-hand"></span> Sites rapides & éco-conçus</li>
-            <li><span class="check-hand"></span> Vous gérez votre contenu</li>
-            <li><span class="check-hand"></span> Hébergement & maintenance inclus</li>
-          </ul>
-          <a href="sites-web.html" class="btn btn-primary" style="margin-top: 15px;">Voir les offres <i class="fas fa-arrow-right"></i></a>
-        </div>
+      <div class="pricing-note-layout">
+        <p class="pricing-side-note"><span class="sticky-note">Pas sûr de votre choix ?<br>Écrivez-moi, je vous oriente.</span></p>
+        <div class="pricing-grid">
+          <div class="pricing-card featured">
+            <div class="pricing-badge">Projet web complet</div>
+            <h3>Création de projet web</h3>
+            <p class="pricing-description">Site vitrine, blog, back-office, réservation ou e-commerce sur mesure en Symfony. Vous gardez la main sur votre contenu.</p>
+            <ul class="pricing-features">
+              <li><span class="check-hand"></span> Sites rapides & éco-conçus</li>
+              <li><span class="check-hand"></span> Vous gérez votre contenu</li>
+              <li><span class="check-hand"></span> Hébergement & maintenance inclus</li>
+            </ul>
+            <a href="sites-web.html" class="btn btn-primary" style="margin-top: 15px;">Voir les offres <i class="fas fa-arrow-right"></i></a>
+          </div>
 
-        <div class="pricing-card">
-          <h3>Intervention freelance Symfony</h3>
-          <p class="pricing-description">Audit, renfort d'équipe, CI/CD, performance, dette technique ou migration PHP/Symfony. TJM 500€/jour.</p>
-          <ul class="pricing-features">
-            <li><span class="check-hand"></span> Architecture hexagonale & CQRS</li>
-            <li><span class="check-hand"></span> Audit technique & performance</li>
-            <li><span class="check-hand"></span> Remote</li>
-          </ul>
-          <a href="freelance.html" class="btn btn-primary" style="margin-top: 15px;">Voir les prestations <i class="fas fa-arrow-right"></i></a>
-        </div>
+          <div class="pricing-card">
+            <h3>Intervention freelance Symfony</h3>
+            <p class="pricing-description">Audit, renfort d'équipe, CI/CD, performance, dette technique ou migration PHP/Symfony. TJM 500€/jour.</p>
+            <ul class="pricing-features">
+              <li><span class="check-hand"></span> Architecture hexagonale & CQRS</li>
+              <li><span class="check-hand"></span> Audit technique & performance</li>
+              <li><span class="check-hand"></span> Remote</li>
+            </ul>
+            <a href="freelance.html" class="btn btn-primary" style="margin-top: 15px;">Voir les prestations <i class="fas fa-arrow-right"></i></a>
+          </div>
 
-        <div class="pricing-card">
-          <h3>Preuves & réalisations</h3>
-          <p class="pricing-description">Projets open-source, certifications, contributions et expériences vérifiables.</p>
-          <ul class="pricing-features">
-            <li><span class="check-hand"></span> Outils adoptés par 2000+ devs</li>
-            <li><span class="check-hand"></span> Certifié Symfony & eZ Platform</li>
-            <li><span class="check-hand"></span> 10+ ans d'expérience</li>
-          </ul>
-          <a href="realisations.html" class="btn btn-primary" style="margin-top: 15px;">Découvrir <i class="fas fa-arrow-right"></i></a>
+          <div class="pricing-card">
+            <h3>Preuves & réalisations</h3>
+            <p class="pricing-description">Projets open-source, certifications, contributions et expériences vérifiables.</p>
+            <ul class="pricing-features">
+              <li><span class="check-hand"></span> Outils adoptés par 2000+ devs</li>
+              <li><span class="check-hand"></span> Certifié Symfony & eZ Platform</li>
+              <li><span class="check-hand"></span> 10+ ans d'expérience</li>
+            </ul>
+            <a href="realisations.html" class="btn btn-primary" style="margin-top: 15px;">Découvrir <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </section>
