@@ -895,6 +895,70 @@ h2::selection {
   cursor: pointer;
 }
 
+.brief-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.brief-form-status {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 0;
+  min-height: 1.2em;
+  font-size: 0.95rem;
+}
+
+.brief-form-status.is-success {
+  color: #2e7d32;
+}
+
+.brief-form-status.is-error {
+  color: #c62828;
+}
+
+.hero-cta-hint,
+.brief-cta-hint {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  color: var(--text-secondary);
+  opacity: 0.85;
+}
+
+.hero-cta-hint {
+  justify-content: flex-start;
+  margin: 8px 0 -6px 6px;
+}
+
+.brief-cta-hint {
+  justify-content: center;
+  margin: 4px 0 -10px;
+}
+
+.doodle-note {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  line-height: 1;
+  transform: rotate(-4deg);
+}
+
+.doodle-arrow {
+  width: 74px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.doodle-arrow-down {
+  width: 58px;
+}
+
+@media (max-width: 640px) {
+  .hero-cta-hint,
+  .brief-cta-hint {
+    display: none;
+  }
+}
+
 .deliverables-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));

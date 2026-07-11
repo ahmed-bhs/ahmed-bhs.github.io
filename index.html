@@ -29,6 +29,9 @@
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
     <script type="application/ld+json">
@@ -102,6 +105,14 @@
           <p>
             <strong>J'aide les entreprises, agences et indépendants à livrer des applications web fiables, rapides et maintenables.</strong> J'interviens en freelance sur des projets Symfony, des sites administrables, des APIs, des audits techniques, des migrations PHP/Symfony et du renfort d'équipe. J'ai accompagné des organisations comme OPPBTP, Bpifrance, IRD, CIRAD, Valobat, Baresto, Atlantic, FFGolf, Delabie et le Ministère de la Culture.
           </p>
+        </div>
+
+        <div class="hero-cta-hint" aria-hidden="true">
+          <span class="doodle-note">Commencez ici</span>
+          <svg class="doodle-arrow" viewBox="0 0 110 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 6C22 30 30 46 62 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M46 54C53 55 59 56 62 56C61 52 59 46 56 40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
 
         <div class="social-links">
@@ -401,17 +412,29 @@
       <div class="division"></div>
       <div class="content-text">
         <h2>Envoyer un brief rapide</h2>
-        <p>Si vous préférez écrire avant de réserver un appel, remplissez ces informations : votre client mail préparera le message.</p>
+        <p>Si vous préférez écrire avant de réserver un appel, remplissez ces informations : je reçois votre message directement et vous réponds rapidement.</p>
       </div>
 
-      <form class="brief-form" action="mailto:ahmedbhs123@gmail.com" method="post" enctype="text/plain" data-brief-form>
+      <div class="brief-cta-hint" aria-hidden="true">
+        <span class="doodle-note">Deux minutes suffisent</span>
+        <svg class="doodle-arrow doodle-arrow-down" viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 8C34 20 52 40 50 66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M36 52C42 60 47 64 50 66C54 62 60 58 68 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <form class="brief-form" action="https://api.web3forms.com/submit" method="POST" data-brief-form>
+        <input type="hidden" name="access_key" value="a38d9d2e-62be-4e6f-a3a0-a1bf9c094951" />
+        <input type="hidden" name="subject" value="Brief projet freelance Symfony" />
+        <input type="hidden" name="from_name" value="Formulaire ahmed-bhs.github.io" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
         <label>
           Nom / entreprise
           <input type="text" name="Nom" placeholder="Votre nom ou société" />
         </label>
         <label>
           Email
-          <input type="email" name="Email" placeholder="vous@entreprise.fr" />
+          <input type="email" name="email" placeholder="vous@entreprise.fr" />
         </label>
         <label>
           Type de besoin
@@ -433,8 +456,9 @@
           <textarea name="Message" rows="6" placeholder="Contexte, objectif, stack, délai, contraintes..."></textarea>
         </label>
         <button type="submit" class="btn btn-primary brief-form-submit">
-          <i class="fas fa-paper-plane"></i> Préparer l'email
+          <i class="fas fa-paper-plane"></i> Envoyer
         </button>
+        <p class="brief-form-status" data-brief-status role="status" aria-live="polite"></p>
       </form>
     </section>
 

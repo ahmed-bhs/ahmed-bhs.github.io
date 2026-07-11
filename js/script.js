@@ -59,28 +59,43 @@ myDate.innerHTML = yes;
 const briefForm = document.querySelector("[data-brief-form]");
 
 if (briefForm) {
-  briefForm.addEventListener("submit", function (event) {
+  const status = briefForm.querySelector("[data-brief-status]");
+  const submitButton = briefForm.querySelector("[type=submit]");
+
+  briefForm.addEventListener("submit", async function (event) {
     event.preventDefault();
 
-    const data = new FormData(briefForm);
-    const body = [
-      "Bonjour Ahmed,",
-      "",
-      "Je souhaite vous contacter pour un besoin freelance.",
-      "",
-      `Nom / entreprise : ${data.get("Nom") || ""}`,
-      `Email : ${data.get("Email") || ""}`,
-      `Type de besoin : ${data.get("Besoin") || ""}`,
-      `Budget ou durée : ${data.get("Budget") || ""}`,
-      "",
-      "Message :",
-      data.get("Message") || "",
-      "",
-      "Merci,",
-    ].join("\n");
+    if (status) {
+      status.textContent = "Envoi en cours...";
+      status.className = "brief-form-status is-sending";
+    }
+    if (submitButton) submitButton.disabled = true;
 
-    const subject = encodeURIComponent("Brief projet freelance Symfony");
-    const encodedBody = encodeURIComponent(body);
-    window.location.href = `mailto:ahmedbhs123@gmail.com?subject=${subject}&body=${encodedBody}`;
+    try {
+      const response = await fetch(briefForm.action, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(briefForm),
+      });
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        briefForm.reset();
+        if (status) {
+          status.textContent = "Message envoyé. Je vous réponds rapidement.";
+          status.className = "brief-form-status is-success";
+        }
+      } else {
+        throw new Error(result.message || "Erreur inconnue");
+      }
+    } catch (error) {
+      if (status) {
+        status.textContent =
+          "Envoi impossible. Écrivez-moi directement à ahmedbhs123@gmail.com";
+        status.className = "brief-form-status is-error";
+      }
+    } finally {
+      if (submitButton) submitButton.disabled = false;
+    }
   });
 }
