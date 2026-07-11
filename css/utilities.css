@@ -1906,7 +1906,7 @@ footer .copyright {
   height: 1.1em;
   vertical-align: -0.2em;
   margin-right: 6px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffcd42' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 13L9 19L20 5'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2379d839' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 13L9 19L20 5'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
 }
