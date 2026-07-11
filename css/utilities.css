@@ -143,7 +143,7 @@ h2::selection {
   font-size: clamp(2.2rem, 5vw, 4.6rem);
   line-height: 1.2;
   transition: 0.2s ease-in-out;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .content-text p {
@@ -161,7 +161,7 @@ h2::selection {
   border-radius: 14px;
   box-shadow: 0 26px 80px rgba(57, 42, 31, 0.24);
   color: #f7efe3;
-  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  font-family: var(--font-mono);
   text-align: left;
 }
 
@@ -604,7 +604,7 @@ h2::selection {
   color: var(--primary-color);
   line-height: 1;
   margin-bottom: 10px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .stat-label {
@@ -728,7 +728,7 @@ h2::selection {
   color: var(--primary-color);
   font-size: 0.78rem;
   font-weight: 800;
-  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  font-family: var(--font-mono);
   letter-spacing: 0.3px;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -1377,7 +1377,7 @@ footer .copyright {
   border-radius: 999px;
   font-size: 0.72rem;
   font-weight: var(--weight-bold);
-  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  font-family: var(--font-mono);
 }
 
 .pricing-card h3 {
