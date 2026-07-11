@@ -4,25 +4,28 @@
    * Cards and sections
 */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap);
 
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #b85c38;
-  --secondary-color: #e7a16f;
-  --bg-primary: #fbfaf7;
-  --text-color: #24211d;
+  --primary-color: #77614f;
+  --secondary-color: #a78b73;
+  --bg-primary: #f7f3ea;
+  --text-color: #25211c;
   --text-color-two: #ffffff;
-  --text-primary: #24211d;
-  --text-secondary: #6f6a62;
-  --bg-secondary: #24211d;
-  --card-background: #ffffff;
-  --bg-secondary-two: #f0ebe4;
-  --border-color: rgba(36, 33, 29, 0.14);
+  --text-primary: #25211c;
+  --text-secondary: #6d665c;
+  --bg-secondary: #25211c;
+  --card-background: #fffdfa;
+  --bg-secondary-two: #ede5d8;
+  --surface-warm: #efe6d7;
+  --console-bg: #231f1a;
+  --console-muted: #b8aa98;
+  --border-color: rgba(37, 33, 28, 0.14);
 
-  --shadow: 0 18px 50px rgba(36, 33, 29, 0.12);
-  --shadow-sm: 0 8px 24px rgba(36, 33, 29, 0.08);
+  --shadow: 0 22px 70px rgba(57, 42, 31, 0.14);
+  --shadow-sm: 0 10px 30px rgba(57, 42, 31, 0.08);
 
   /* Font Weight */
   --weight-small: 400;
@@ -46,6 +49,9 @@
   --bg-secondary: #f8f4ee;
   --card-background: #211e19;
   --bg-secondary-two: #f8f4ee;
+  --surface-warm: #28231d;
+  --console-bg: #0f0e0c;
+  --console-muted: #b9aa98;
   --border-color: rgba(255, 255, 255, 0.1);
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.24);
@@ -74,9 +80,11 @@ a {
 
 /* Main styling */
 body {
-  background: var(--bg-primary);
+  background:
+    radial-gradient(circle at top left, rgba(119, 97, 79, 0.16), transparent 34rem),
+    linear-gradient(180deg, var(--bg-primary) 0%, #fffaf2 48%, var(--bg-primary) 100%);
   color: var(--text-color);
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
 }
@@ -89,8 +97,10 @@ body {
   right: 0;
   z-index: 20;
   background: var(--bg-primary);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 30px rgba(57, 42, 31, 0.06);
   border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(18px);
+  background-color: color-mix(in srgb, var(--bg-primary) 88%, transparent);
 }
 
 .navbar .container {
@@ -112,10 +122,11 @@ body {
 
 .navbar .nav-link {
   margin: 0 1rem;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: var(--weight-semibold);
   border-bottom: 2px solid transparent;
   padding-bottom: 0.35rem;
+  letter-spacing: 0.02em;
 }
 
 .navbar .nav-link:hover,
