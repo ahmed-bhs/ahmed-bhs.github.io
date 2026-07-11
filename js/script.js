@@ -55,3 +55,32 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+const briefForm = document.querySelector("[data-brief-form]");
+
+if (briefForm) {
+  briefForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const data = new FormData(briefForm);
+    const body = [
+      "Bonjour Ahmed,",
+      "",
+      "Je souhaite vous contacter pour un besoin freelance.",
+      "",
+      `Nom / entreprise : ${data.get("Nom") || ""}`,
+      `Email : ${data.get("Email") || ""}`,
+      `Type de besoin : ${data.get("Besoin") || ""}`,
+      `Budget ou durée : ${data.get("Budget") || ""}`,
+      "",
+      "Message :",
+      data.get("Message") || "",
+      "",
+      "Merci,",
+    ].join("\n");
+
+    const subject = encodeURIComponent("Brief projet freelance Symfony");
+    const encodedBody = encodeURIComponent(body);
+    window.location.href = `mailto:ahmedbhs123@gmail.com?subject=${subject}&body=${encodedBody}`;
+  });
+}
