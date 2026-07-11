@@ -12,10 +12,10 @@ function toggleTheme() {
     const themeText = document.getElementById('theme-text');
 
     if (newTheme === 'dark') {
-        themeIcon.textContent = '☀️';
+        themeIcon.textContent = 'light';
         themeText.textContent = 'Light';
     } else {
-        themeIcon.textContent = '🌙';
+        themeIcon.textContent = 'dark';
         themeText.textContent = 'Dark';
     }
 }
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const themeText = document.getElementById('theme-text');
 
     if (savedTheme === 'dark') {
-        themeIcon.textContent = '☀️';
+        themeIcon.textContent = 'light';
         themeText.textContent = 'Light';
     }
 

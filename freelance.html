@@ -7,23 +7,23 @@
 
     <!-- Primary Meta Tags -->
     <title>Missions Freelance & Audit Technique - Ahmed EBEN HASSINE | Symfony</title>
-    <meta name="title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert" />
+    <meta name="title" content="Missions Freelance Symfony - Ahmed EBEN HASSINE" />
     <meta name="description" content="Missions freelance Symfony, audit technique, CI/CD, upgrade de stack. TJM 500€/jour. Expert architecture hexagonale, 10+ ans d'expérience." />
     <meta name="author" content="Ahmed EBEN HASSINE">
-    <meta name="keywords" content="Symfony, PHP, Architecture Hexagonale, , CQRS, API Platform, Doctrine, Software Engineer, Montpellier, Open Source, DevOps, Kubernetes, Docker">
+    <meta name="keywords" content="Symfony, PHP, Architecture Hexagonale, CQRS, API Platform, Doctrine, Software Engineer, Montpellier, Open Source, DevOps, Kubernetes, Docker">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ahmed-bhs.github.io/" />
-    <meta property="og:title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert" />
-    <meta property="og:description" content="Expert en architecture hexagonale, CQRS avec 8+ ans d'expérience. Créateur d'outils open-source pour la communauté PHP. Contributeur API Platform." />
+    <meta property="og:url" content="https://ahmed-bhs.github.io/freelance.html" />
+    <meta property="og:title" content="Missions Freelance Symfony - Ahmed EBEN HASSINE" />
+    <meta property="og:description" content="Audit technique, renfort d'équipe, CI/CD, performance, migrations PHP/Symfony et architecture applicative. TJM 500€/jour." />
     <meta property="og:image" content="https://ahmed-bhs.github.io/img/face.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://ahmed-bhs.github.io/" />
-    <meta property="twitter:title" content="Ahmed EBEN HASSINE - Senior Software Engineer | Symfony Expert" />
-    <meta property="twitter:description" content="Expert en architecture hexagonale, CQRS avec 8+ ans d'expérience. Créateur d'outils open-source pour la communauté PHP." />
+    <meta property="twitter:url" content="https://ahmed-bhs.github.io/freelance.html" />
+    <meta property="twitter:title" content="Missions Freelance Symfony - Ahmed EBEN HASSINE" />
+    <meta property="twitter:description" content="Audit technique, renfort d'équipe, CI/CD, performance, migrations PHP/Symfony et architecture applicative. TJM 500€/jour." />
     <meta property="twitter:image" content="https://ahmed-bhs.github.io/img/face.jpg" />
 
     <!-- Favicons -->
@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
   </head>
+  <body>
     <header class="page-header">
       <nav class="navbar">
         <div class="container">
@@ -40,22 +41,21 @@
           </h1>
           <ul class="nav-menu">
             <li><a class="nav-link" href="index.html">ACCUEIL</a></li>
-            <li><a class="nav-link" href="sites-web.html">SITES WEB</a></li>
-            <li><a class="nav-link" href="freelance.html">FREELANCE</a></li>
+            <li><a class="nav-link" href="sites-web.html">PROJETS WEB</a></li>
+            <li><a class="nav-link active" href="freelance.html">INTERVENTIONS</a></li>
             <li><a class="nav-link" href="realisations.html">RÉALISATIONS</a></li>
             <li><a class="nav-link" href="parcours.html">PARCOURS</a></li>
-            <li><a class="nav-link" href="methode-travail.html">MA MÉTHODE</a></li>
-            <li><a class="nav-link" href="https://medium.com/@ahmedbhs/" target="_blank">BLOG</a></li>
+            <li><a class="nav-link" href="methode-travail.html">MÉTHODE</a></li>
             <li>
               <a class="nav-link btn btn-primary" href="index.html#contact">CONTACT <i class="fas fa-envelope"></i></a>
             </li>
-            <div class="theme-switch">
+            <li class="theme-switch">
               <input type="checkbox" id="switch" />
               <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
+                <img class="moon" src="assets/moon.svg" alt="" />
+                <img class="sun" src="assets/sun.svg" alt="" />
               </label>
-            </div>
+            </li>
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -75,7 +75,7 @@
 
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">🔍</div>
+          <div class="service-icon"><i class="fas fa-search"></i></div>
           <h3>Audit Technique Complet</h3>
           <p>Évaluation 360° de vos projets : qualité du code, architecture applicative, sécurité (OWASP, vulnérabilités), et performance. Identification des opportunités d'amélioration technique et métier.</p>
           <ul class="service-benefits">
@@ -86,7 +86,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🏗️</div>
+          <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
           <h3>Architecture & Refactoring</h3>
           <p>Conception d'architectures hexagonales, CQRS pour applications scalables et maintenables. Migration de monolithes vers microservices.</p>
           <ul class="service-benefits">
@@ -97,7 +97,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon">⚡</div>
+          <div class="service-icon"><i class="fas fa-tachometer-alt"></i></div>
           <h3>Performance & Optimisation</h3>
           <p>Audit de performance, optimisation BDD, mise en cache stratégique (Redis, Varnish), et infrastructure DevOps (Kubernetes, Docker).</p>
           <ul class="service-benefits">
@@ -108,7 +108,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🚀</div>
+          <div class="service-icon"><i class="fas fa-code"></i></div>
           <h3>Développement API REST/GraphQL</h3>
           <p>Conception et développement d'APIs robustes avec Symfony et API Platform. Documentation complète, versioning, authentification JWT.</p>
           <ul class="service-benefits">
@@ -119,7 +119,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon">👨‍🏫</div>
+          <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
           <h3>Mentoring & Formation</h3>
           <p>Formation de vos équipes aux bonnes pratiques Symfony, architecture hexagonale, TDD/BDD. Revues de code et pair programming.</p>
           <ul class="service-benefits">
@@ -135,10 +135,10 @@
     <section id="pricing" class="pricing-container container">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Tarifs & Offre de Lancement</h2>
-        <p>Des tarifs transparents et compétitifs pour vous accompagner dans vos projets</p>
+        <h2>Formats d'intervention freelance</h2>
+        <p>Des formats simples pour lancer un audit, renforcer une équipe ou livrer une évolution web</p>
         <p style="margin-top: 15px; font-size: 1.1rem; color: var(--primary-color); font-weight: 600;">
-          💡 TJM : 500€/jour
+          TJM : 500€/jour
         </p>
       </div>
 
@@ -150,7 +150,7 @@
             <span class="amount">500€</span>
             <span class="period">/ jour</span>
           </div>
-          <p class="pricing-description">TJM tout compris pour missions longue durée</p>
+          <p class="pricing-description">TJM pour renfort d'équipe, cadrage, développement ou accompagnement technique</p>
 
           <div class="pricing-offer">
             <h4>Offre de lancement</h4>
@@ -197,7 +197,7 @@
           <ul class="pricing-features">
             <li><i class="fas fa-check"></i> GitLab CI / GitHub Actions / Bitbucket</li>
             <li><i class="fas fa-check"></i> Pipeline automatisé (build, test, deploy)</li>
-            <li><i class="fas fa-check"></i> Environments multiples (dev/staging/prod)</li>
+            <li><i class="fas fa-check"></i> Environnements multiples (dev/staging/prod)</li>
             <li><i class="fas fa-check"></i> Tests automatisés intégrés</li>
             <li><i class="fas fa-check"></i> Documentation complète</li>
             <li><i class="fas fa-check"></i> Formation équipe (1h)</li>
@@ -247,22 +247,6 @@
             <li><i class="fas fa-info-circle"></i> Vous gérez ensuite ou déléguez à un prestataire infogérance</li>
           </ul>
         </div>
-
-        <div class="pricing-card">
-          <h3>CDI / Long Terme</h3>
-          <div class="price">
-            <span class="amount">À discuter</span>
-          </div>
-          <p class="pricing-description">Senior Developer, Tech Lead ou Architect</p>
-
-          <ul class="pricing-features">
-            <li><i class="fas fa-check"></i> Rôle de Senior Developer ou Tech Lead</li>
-            <li><i class="fas fa-check"></i> Architecture & mentoring d'équipe</li>
-            <li><i class="fas fa-check"></i> Management technique & leadership</li>
-            <li><i class="fas fa-check"></i> 100% remote ou hybride depuis Montpellier</li>
-            <li><i class="fas fa-check"></i> Ouvert aux opportunités internationales</li>
-          </ul>
-        </div>
       </div>
       <p style="text-align: center; color: var(--text-secondary); font-size: 0.85rem; margin-top: 20px; font-style: italic;">
         *Tarifs HT. TVA 20% en sus pour clients français, autoliquidation UE.
@@ -273,17 +257,17 @@
     <section id="contact" class="cta-container">
       <div class="container">
         <div class="cta-content">
-          <h2>Prêt à démarrer votre projet ?</h2>
-          <p>Discutons de vos besoins et voyons comment je peux vous aider à atteindre vos objectifs techniques et business.</p>
+          <h2>Un projet web ou une intervention Symfony à lancer ?</h2>
+          <p>Parlons de votre besoin, du contexte technique et du meilleur format d'intervention freelance.</p>
           <div class="cta-buttons">
-            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" class="btn btn-primary btn-large">
+            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
               <i class="fas fa-calendar-check"></i> Réserver un Appel Gratuit (30 min)
             </a>
             <a href="mailto:ahmedbhs123@gmail.com" class="btn btn-secondary btn-large">
               <i class="fas fa-envelope"></i> M'envoyer un Email
             </a>
           </div>
-          <p class="cta-guarantee">💡 Premier échange sans engagement • Réponse sous 24h • 100% remote accepté</p>
+          <p class="cta-guarantee">Premier échange sans engagement • Réponse sous 24h • Remote ou hybride</p>
         </div>
       </div>
     </section>
@@ -296,9 +280,9 @@
 
         <!-- Social links -->
         <div class="social">
-          <a href="https://github.com/ahmed-bhs" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-          <a href="https://linkedin.com/in/ahmedbhs/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
-          <a href="https://medium.com/@ahmedbhs/" target="_blank" title="Blog Medium"><i class="fab fa-medium" style="font-size: 32px; color: var(--text-color);"></i></a>
+          <a href="https://github.com/ahmed-bhs" target="_blank" rel="noopener noreferrer"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://linkedin.com/in/ahmedbhs/" target="_blank" rel="noopener noreferrer"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://medium.com/@ahmedbhs/" target="_blank" rel="noopener noreferrer" title="Blog Medium"><i class="fab fa-medium" style="font-size: 32px; color: var(--text-color);"></i></a>
         </div>
 
         <p class="copyright">© <span id="datee"></span> Ahmed EBEN HASSINE • Tous droits réservés</p>

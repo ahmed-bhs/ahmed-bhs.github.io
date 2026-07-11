@@ -111,6 +111,25 @@ body {
   margin: 0 1rem;
   font-size: 0.8rem;
   font-weight: var(--weight-semibold);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.35rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.navbar .nav-link.btn {
+  border-bottom: 0;
+  padding-bottom: 0.75rem;
+}
+
+.navbar .nav-link.btn:hover,
+.navbar .nav-link.btn:focus {
+  color: var(--text-color-two);
 }
 
 .navbar #logo img {
@@ -339,10 +358,5 @@ body {
   .project {
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .header-container .btn {
-    border-radius: 5px;
-    width: 80%;
   }
 }

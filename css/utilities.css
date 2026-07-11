@@ -74,6 +74,7 @@ h2::selection {
   justify-content: center;
   margin-top: 8rem;
   padding: 1rem;
+  max-width: 100%;
 }
 
 /* Availability Badge */
@@ -125,6 +126,7 @@ h2::selection {
 .content-text {
   text-align: center;
   margin: 1rem 0;
+  max-width: 100%;
 }
 
 .content-text h2 {
@@ -233,6 +235,20 @@ h2::selection {
 .card .project-link a:hover {
   transform: scale(1.1);
   background: var(--secondary-color);
+}
+
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.btn-icon i {
+  margin: 0;
 }
 
 /* Custom Timeline Styles */
@@ -475,6 +491,7 @@ h2::selection {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
+  max-width: 100%;
 }
 
 /* Stats Section */
@@ -520,6 +537,216 @@ h2::selection {
   font-weight: 600;
 }
 
+/* Case Studies */
+.case-studies-container {
+  margin: 30px auto;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin: 25px 0;
+}
+
+.case-card {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow);
+}
+
+.case-meta {
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.case-card h3 {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.case-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.case-result {
+  color: var(--text-primary) !important;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+
+/* Conversion Sections */
+.audit-express-container,
+.fit-container,
+.proof-links-container,
+.brief-container {
+  margin: 30px auto;
+}
+
+.split-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.split-content,
+.audit-card,
+.fit-card,
+.proof-link,
+.brief-form {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.split-content,
+.audit-card,
+.fit-card {
+  padding: 30px;
+}
+
+.split-content h2,
+.audit-card h3,
+.fit-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.split-content p,
+.audit-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.audit-card {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 5px 20px rgba(255, 205, 66, 0.18);
+}
+
+.compact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.compact-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 9px 0;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.compact-list li i {
+  color: var(--primary-color);
+  margin-top: 3px;
+  min-width: 16px;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.fit-negative .compact-list li i {
+  color: var(--text-secondary);
+}
+
+.proof-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.proof-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 78px;
+  padding: 18px;
+  color: var(--text-primary);
+  font-weight: 800;
+  transition: all 0.3s ease;
+}
+
+.proof-link i {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.proof-link:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow);
+}
+
+.brief-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 28px;
+}
+
+.brief-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.brief-form input,
+.brief-form select,
+.brief-form textarea {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font: inherit;
+}
+
+.brief-form input:focus,
+.brief-form select:focus,
+.brief-form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 205, 66, 0.25);
+}
+
+.brief-form-full,
+.brief-form-submit {
+  grid-column: 1 / -1;
+}
+
+.brief-form-submit {
+  justify-self: center;
+  border: 0;
+  cursor: pointer;
+}
+
 /* Services Section */
 .services-container {
   margin: 30px auto;
@@ -549,7 +776,8 @@ h2::selection {
 }
 
 .service-icon {
-  font-size: 3rem;
+  font-size: 2.4rem;
+  color: var(--primary-color);
   margin-bottom: 15px;
 }
 
@@ -692,12 +920,16 @@ footer .copyright {
     margin-top: 7rem;
     text-align: center;
     padding: 1rem 1.5rem;
+    width: 100%;
+    overflow: hidden;
   }
 
   .header-container h1 {
     font-size: 1.8rem;
     line-height: 1.3;
     padding: 0 10px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .availability-badge {
@@ -711,6 +943,8 @@ footer .copyright {
     font-size: 1.6rem;
     line-height: 1.3;
     margin-bottom: 0.5rem;
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .content-text p {
@@ -741,6 +975,9 @@ footer .copyright {
     gap: 10px;
     width: 100%;
     padding: 0 10px;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .social-links .btn {
@@ -748,11 +985,27 @@ footer .copyright {
     max-width: 100%;
     padding: 0.7rem 1.2rem;
     font-size: 0.85rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 15px;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-section,
+  .fit-grid,
+  .brief-form {
+    grid-template-columns: 1fr;
+  }
+
+  .proof-links-grid {
+    grid-template-columns: 1fr;
   }
 
   .services-grid {
@@ -807,6 +1060,7 @@ footer .copyright {
   .social-links .btn {
     font-size: 0.8rem;
     padding: 0.65rem 1rem;
+    white-space: normal;
   }
 
   .stats-grid {
@@ -832,6 +1086,27 @@ footer .copyright {
 
   .cta-guarantee {
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container,
+  .stats-container,
+  .case-studies-container,
+  .audit-express-container,
+  .fit-container,
+  .proof-links-container,
+  .brief-container,
+  .pricing-container {
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-container h1,
+  .content-text h2,
+  .content-text p {
+    max-width: 100%;
   }
 }
 

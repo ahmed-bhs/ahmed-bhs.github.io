@@ -338,21 +338,21 @@
           <!-- Navbar links -->
           <ul class="nav-menu">
             <li><a class="nav-link" href="index.html">ACCUEIL</a></li>
-            <li><a class="nav-link" href="sites-web.html">SITES WEB</a></li>
-            <li><a class="nav-link" href="freelance.html">FREELANCE</a></li>
+            <li><a class="nav-link" href="sites-web.html">PROJETS WEB</a></li>
+            <li><a class="nav-link" href="freelance.html">INTERVENTIONS</a></li>
             <li><a class="nav-link" href="realisations.html">RÉALISATIONS</a></li>
             <li><a class="nav-link" href="parcours.html">PARCOURS</a></li>
-            <li><a class="nav-link" href="methode-travail.html">MA MÉTHODE</a></li>
+            <li><a class="nav-link active" href="methode-travail.html">MÉTHODE</a></li>
             <li><a class="nav-link btn btn-primary" href="index.html#contact">CONTACT <i class="fas fa-envelope"></i></a></li>
 
             <!-- Toggle switch -->
-            <div class="theme-switch">
+            <li class="theme-switch">
               <input type="checkbox" id="switch" />
               <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
+                <img class="moon" src="assets/moon.svg" alt="" />
+                <img class="sun" src="assets/sun.svg" alt="" />
               </label>
-            </div>
+            </li>
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -391,7 +391,7 @@
               <i class="fas fa-handshake"></i>
               Réunion de Cadrage Initial
             </h3>
-            <span class="step-duration">⏱️ 30-60 minutes (Gratuit)</span>
+            <span class="step-duration">30-60 minutes (Gratuit)</span>
             <p class="step-description">
               <strong>Pas de bla-bla, pas de perte de temps : on va droit au but.</strong><br>
               Réunion efficace structurée en 4 points clés : Besoin → Problématique → Solution → Réalisation.
@@ -475,7 +475,7 @@
               <i class="fas fa-clipboard-list"></i>
               Planification & Spécifications Détaillées
             </h3>
-            <span class="step-duration">⏱️ 1-2 jours (Sprint 0)</span>
+            <span class="step-duration">1-2 jours (Sprint 0)</span>
             <p class="step-description">
               Formalisation de tous les besoins dans votre outil de gestion de projet préféré
               (Jira, Redmine, Trello, Linear, etc.). Définition du lot de tickets, numérotation des releases,
@@ -506,7 +506,7 @@
               <i class="fas fa-sync-alt"></i>
               Cycles de Développement Agile
             </h3>
-            <span class="step-duration">⏱️ Itérations de 2 semaines</span>
+            <span class="step-duration">Itérations de 2 semaines</span>
             <p class="step-description">
               Au cœur de ma méthode : des cycles courts de 2 semaines pour livrer de la valeur
               continuellement. Chaque cycle suit un processus rigoureux pour garantir qualité et rapidité.
@@ -524,7 +524,7 @@
                 </div>
 
                 <div class="substep">
-                  <div class="substep-title">🔍 2. Analyse technique préalable (max 2h)</div>
+                  <div class="substep-title">2. Analyse technique préalable (max 2h)</div>
                   <div class="substep-desc">
                     Analyse de la solution, identification des impacts, choix d'implémentation.
                     Si l'analyse dépasse 2h, le ticket est découpé ou simplifié avec votre accord.
@@ -540,7 +540,7 @@
                 </div>
 
                 <div class="substep">
-                  <div class="substep-title">🔧 4. Préparation de la Merge Request (MR)</div>
+                  <div class="substep-title">4. Préparation de la Merge Request (MR)</div>
                   <div class="substep-desc">
                     Code review interne, vérification des bonnes pratiques, tests automatisés via CI/CD.
                     La MR est clean, documentée et prête à être reviewée.
@@ -556,7 +556,7 @@
                 </div>
 
                 <div class="substep">
-                  <div class="substep-title">🚀 6. Déploiement sur environnement de recette</div>
+                  <div class="substep-title">6. Déploiement sur environnement de recette</div>
                   <div class="substep-desc">
                     Déploiement automatique via CI/CD sur l'environnement de staging.
                     Tests de smoke pour vérifier que tout fonctionne.
@@ -572,7 +572,7 @@
                 </div>
 
                 <div class="substep">
-                  <div class="substep-title">🎯 8. Recette client</div>
+                  <div class="substep-title">8. Recette client</div>
                   <div class="substep-desc">
                     Vous testez la fonctionnalité sur l'environnement de staging.
                     Si besoin, on itère jusqu'à validation complète.
@@ -610,7 +610,7 @@
               <i class="fas fa-comments"></i>
               Communication & Transparence Totale
             </h3>
-            <span class="step-duration">⏱️ En continu</span>
+            <span class="step-duration">En continu</span>
             <p class="step-description">
               La communication est au cœur de ma méthode. Vous savez toujours où j'en suis,
               ce qui est fait, ce qui reste à faire, et les éventuels blocages.
@@ -637,7 +637,7 @@
               <i class="fas fa-chart-line"></i>
               Rétrospective & Amélioration Continue
             </h3>
-            <span class="step-duration">⏱️ Fin de chaque cycle (30-45 min)</span>
+            <span class="step-duration">Fin de chaque cycle (30-45 min)</span>
             <p class="step-description">
               À la fin de chaque cycle de 2 semaines, nous faisons le point ensemble :
               ce qui a bien fonctionné, ce qui peut être amélioré, et comment optimiser le prochain sprint.
@@ -774,7 +774,7 @@
         <div class="principles-grid">
 
           <div class="principle-card">
-            <div class="principle-icon">⚡</div>
+            <div class="principle-icon"><i class="fas fa-bolt"></i></div>
             <h4>RAD - Rapid Application Development</h4>
             <p>
               Livraisons rapides et itératives. Vous voyez les résultats dès la première semaine.
@@ -783,7 +783,7 @@
           </div>
 
           <div class="principle-card">
-            <div class="principle-icon">🎯</div>
+            <div class="principle-icon"><i class="fas fa-bullseye"></i></div>
             <h4>Focus sur la valeur business</h4>
             <p>
               Chaque ticket, chaque ligne de code doit apporter de la valeur mesurable.
@@ -792,7 +792,7 @@
           </div>
 
           <div class="principle-card">
-            <div class="principle-icon">🧪</div>
+            <div class="principle-icon"><i class="fas fa-vial"></i></div>
             <h4>Qualité non négociable</h4>
             <p>
               Tests systématiques, code review, CI/CD automatisé.
@@ -810,7 +810,7 @@
           </div>
 
           <div class="principle-card">
-            <div class="principle-icon">📊</div>
+            <div class="principle-icon"><i class="fas fa-chart-line"></i></div>
             <h4>Transparence totale</h4>
             <p>
               Accès complet au code, aux boards, aux metrics.
@@ -819,7 +819,7 @@
           </div>
 
           <div class="principle-card">
-            <div class="principle-icon">🚀</div>
+            <div class="principle-icon"><i class="fas fa-rocket"></i></div>
             <h4>Livraisons continues</h4>
             <p>
               Déploiements fréquents en production. Vous récoltez les bénéfices rapidement
@@ -836,17 +836,17 @@
     <section id="contact" class="cta-container">
       <div class="container">
         <div class="cta-content">
-          <h2>Prêt à démarrer avec cette méthode ?</h2>
-          <p>Discutons de votre projet et voyons comment ma méthode peut vous aider à atteindre vos objectifs rapidement.</p>
+          <h2>Un projet web ou une intervention freelance à cadrer ?</h2>
+          <p>Parlons de votre besoin, des priorités et de la meilleure façon de livrer rapidement une première version utile.</p>
           <div class="cta-buttons">
-            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" class="btn btn-primary btn-large">
+            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
               <i class="fas fa-calendar-check"></i> Réserver un Appel Gratuit (30 min)
             </a>
             <a href="mailto:ahmedbhs123@gmail.com" class="btn btn-secondary btn-large">
               <i class="fas fa-envelope"></i> M'envoyer un Email
             </a>
           </div>
-          <p class="cta-guarantee">💡 Premier échange sans engagement • Réponse sous 24h • 100% remote accepté</p>
+          <p class="cta-guarantee">Premier échange sans engagement • Réponse sous 24h • Remote ou hybride</p>
         </div>
       </div>
     </section>
@@ -859,9 +859,9 @@
 
         <!-- Social links -->
         <div class="social">
-          <a href="https://github.com/ahmed-bhs" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-          <a href="https://linkedin.com/in/ahmedbhs/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
-          <a href="https://medium.com/@ahmedbhs/" target="_blank" title="Blog Medium"><i class="fab fa-medium" style="font-size: 32px; color: var(--text-color);"></i></a>
+          <a href="https://github.com/ahmed-bhs" target="_blank" rel="noopener noreferrer"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="https://linkedin.com/in/ahmedbhs/" target="_blank" rel="noopener noreferrer"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://medium.com/@ahmedbhs/" target="_blank" rel="noopener noreferrer" title="Blog Medium"><i class="fab fa-medium" style="font-size: 32px; color: var(--text-color);"></i></a>
         </div>
 
         <p class="copyright">© <span id="datee"></span> Ahmed EBEN HASSINE • Tous droits réservés</p>
