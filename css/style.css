@@ -362,8 +362,11 @@ h6 {
 }
 
 .footer-social .footer-ibexa {
+  width: 30px;
+  height: 30px;
   background: #ffffff;
   overflow: hidden;
+  align-self: center;
 }
 
 .footer-social .footer-ibexa img {
