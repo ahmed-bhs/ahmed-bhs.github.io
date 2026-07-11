@@ -960,6 +960,17 @@ h2::selection {
   display: block;
 }
 
+.services-container,
+.pricing-container,
+.experience-container {
+  position: relative;
+}
+
+.trust-stamp-inline {
+  top: 14px;
+  right: 3%;
+}
+
 @media (max-width: 900px) {
   .trust-stamp {
     position: static;
