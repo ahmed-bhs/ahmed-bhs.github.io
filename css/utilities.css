@@ -932,6 +932,47 @@ h2::selection {
   margin: 6px 0 -6px 10%;
 }
 
+.clients-container {
+  position: relative;
+}
+
+.trust-stamp {
+  position: absolute;
+  top: 6px;
+  right: 3%;
+  width: 118px;
+  color: var(--text-secondary);
+  opacity: 0.55;
+  transform: rotate(-11deg);
+  z-index: 2;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.trust-stamp:hover,
+.trust-stamp:focus-visible {
+  opacity: 0.85;
+  transform: rotate(-11deg) scale(1.04);
+}
+
+.trust-stamp svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .trust-stamp {
+    position: static;
+    margin: 14px auto 0;
+    transform: rotate(-7deg);
+    opacity: 0.7;
+  }
+  .trust-stamp:hover,
+  .trust-stamp:focus-visible {
+    transform: rotate(-7deg) scale(1.04);
+  }
+}
+
 .cta-cta-hint {
   justify-content: center;
   margin: 6px 0 -4px;
@@ -1140,7 +1181,7 @@ h2::selection {
 
 .cta-guarantee {
   font-size: 0.95rem;
-  color: var(--text-color-two);
+  color: #ffffff;
   margin-top: 30px;
   font-weight: 600;
   opacity: 0.9;
