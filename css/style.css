@@ -9,9 +9,9 @@
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #77614f;
+  --primary-color: #b85c38;
   --secondary-color: #a78b73;
-  --bg-primary: #f7f3ea;
+  --bg-primary: #fbfaf7;
   --text-color: #25211c;
   --text-color-two: #ffffff;
   --text-primary: #25211c;
@@ -81,7 +81,7 @@ a {
 /* Main styling */
 body {
   background:
-    radial-gradient(circle at top left, rgba(119, 97, 79, 0.16), transparent 34rem),
+    radial-gradient(circle at top left, rgba(184, 92, 56, 0.12), transparent 34rem),
     linear-gradient(180deg, var(--bg-primary) 0%, #fffaf2 48%, var(--bg-primary) 100%);
   color: var(--text-color);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
