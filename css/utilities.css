@@ -987,6 +987,7 @@ h2::selection {
 .cta-cta-hint {
   justify-content: center;
   margin: 6px 0 -4px;
+  color: #ffffff;
 }
 
 .hero-cta-hint {
