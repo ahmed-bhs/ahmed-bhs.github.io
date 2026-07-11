@@ -917,12 +917,18 @@ h2::selection {
 }
 
 .hero-cta-hint,
-.brief-cta-hint {
+.brief-cta-hint,
+.cta-cta-hint {
   display: flex;
   align-items: flex-end;
   gap: 6px;
   color: var(--text-secondary);
   opacity: 0.85;
+}
+
+.cta-cta-hint {
+  justify-content: center;
+  margin: 6px 0 -4px;
 }
 
 .hero-cta-hint {
@@ -954,7 +960,8 @@ h2::selection {
 
 @media (max-width: 640px) {
   .hero-cta-hint,
-  .brief-cta-hint {
+  .brief-cta-hint,
+  .cta-cta-hint {
     display: none;
   }
 }
