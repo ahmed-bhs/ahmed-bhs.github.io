@@ -108,9 +108,24 @@ h6 {
 }
 
 #logo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
   font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2.2vw, 1.85rem);
   font-weight: 700;
   letter-spacing: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.logo-cert-badge {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  vertical-align: middle;
 }
 
 /* Navbar */
@@ -172,7 +187,6 @@ h6 {
 
 .navbar #logo img {
   display: block;
-  width: 40px;
 }
 
 .navbar .btn {
@@ -326,9 +340,16 @@ h6 {
 @media (max-width: 768px) {
 }
 
-@media (max-width: 670px) {
+@media (max-width: 1350px) {
   .navbar .container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 0.75rem;
     padding: 0 1.5rem;
+  }
+
+  #logo {
+    min-width: 0;
   }
 
   .navbar .nav-menu {
@@ -373,6 +394,7 @@ h6 {
     display: block;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
+    justify-self: end;
   }
 
   .hamburger.active {
@@ -396,5 +418,25 @@ h6 {
   .project {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .container {
+    padding: 0 1rem;
+  }
+
+  #logo a {
+    gap: 0.2rem;
+    font-size: 1.02rem;
+  }
+
+  .logo-cert-badge {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hamburger {
+    padding: 0.2rem;
   }
 }

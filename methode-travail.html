@@ -70,7 +70,7 @@
       .mindmap-intro h2 {
         font-size: 2.5rem;
         color: var(--text-primary);
-        margin-bottom: 20px;
+        margin-bottom: 26px;
       }
 
       .mindmap-intro p {
@@ -81,11 +81,132 @@
       }
 
       /* Flow Steps */
+      .method-overview {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+        margin: 50px 0 10px;
+      }
+
+      .overview-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        padding: 18px 12px;
+        background: var(--card-background);
+        border: 2px solid var(--border-color);
+        border-radius: 14px;
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: all 0.2s ease;
+        position: relative;
+      }
+
+      .overview-step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 18px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 20' fill='none' stroke='%23ffcd42' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 10C8 9 15 10 21 10'/%3E%3Cpath d='M15 4C18 7 20 9 21 10C20 11 18 13 15 16'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.9;
+        z-index: 1;
+      }
+
+      .overview-step:hover {
+        border-color: var(--primary-color);
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+      }
+
+      .overview-step .ov-num {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: var(--text-color-two);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1rem;
+      }
+
+      .overview-step .ov-title {
+        font-weight: 700;
+        font-size: 0.95rem;
+        line-height: 1.3;
+      }
+
+      .overview-step .ov-duration {
+        font-size: 0.78rem;
+        color: var(--text-secondary);
+      }
+
+      @media (max-width: 820px) {
+        .method-overview {
+          grid-template-columns: 1fr 1fr;
+          gap: 14px;
+        }
+        .overview-step:not(:last-child)::after {
+          content: none;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .method-overview {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .step-details-toggle {
+        background: var(--bg-primary);
+        border-radius: 12px;
+        border-left: 4px solid var(--primary-color);
+        overflow: hidden;
+      }
+
+      .step-details-summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 12px 16px;
+        font-weight: 700;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        user-select: none;
+      }
+
+      .step-details-summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .step-details-summary::before {
+        content: "\25B6";
+        font-size: 0.8rem;
+        transition: transform 0.2s ease;
+      }
+
+      details[open] > .step-details-summary::before {
+        transform: rotate(90deg);
+      }
+
+      .step-details-inner {
+        padding: 0 16px 16px;
+      }
+
       .flow-steps {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 40px;
-        margin: 60px 0;
+        gap: 30px;
+        margin: 44px 0;
         position: relative;
       }
 
@@ -97,13 +218,16 @@
       }
 
       .flow-step:not(:last-child)::after {
-        content: "↓";
+        content: "";
         position: absolute;
-        left: 40px;
-        bottom: -40px;
-        font-size: 2rem;
-        color: var(--primary-color);
-        font-weight: bold;
+        left: 26px;
+        bottom: -46px;
+        width: 34px;
+        height: 40px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 44' fill='none' stroke='%23ffcd42' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3C12 14 22 22 16 40'/%3E%3Cpath d='M8 31C12 37 15 40 16 40C18 38 22 35 27 34'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.85;
       }
 
       .step-number-box {
@@ -125,7 +249,7 @@
         background: var(--card-background);
         border: 2px solid var(--border-color);
         border-radius: 16px;
-        padding: 35px;
+        padding: 26px 28px;
         transition: all 0.3s ease;
       }
 
@@ -234,8 +358,8 @@
       .key-principles {
         background: var(--card-background);
         border-radius: 20px;
-        padding: 50px;
-        margin: 60px 0;
+        padding: 34px 30px;
+        margin: 46px 0;
         border: 3px solid var(--primary-color);
       }
 
@@ -336,7 +460,7 @@
         <div class="container">
           <!-- Logo -->
           <h1 id="logo">
-            <a href="https://ahmed-bhs.github.io/">Ahmed EBEN HASSINE</a>
+            <a href="https://ahmed-bhs.github.io/">Ahmed <img class="logo-cert-badge" src="assets/symfony-certified-developer.webp" alt="Symfony Certified Developer" width="32" height="32" /> EBEN HASSINE</a>
           </h1>
           <!-- Navbar links -->
           <ul class="nav-menu">
@@ -375,7 +499,7 @@
     <!-- Mind Map Container -->
     <section class="mindmap-container">
       <div class="mindmap-intro">
-        <h2>Comment nous allons travailler ensemble</h2>
+        <h2><span class="hand-underline">Comment nous allons travailler ensemble</span></h2>
         <p>
           Ma méthode combine les principes du développement agile et du RAD (Rapid Application Development)
           pour garantir des livraisons rapides, itératives et de haute qualité. Chaque étape est pensée pour
@@ -383,11 +507,39 @@
         </p>
       </div>
 
+      <nav class="method-overview" aria-label="Aperçu des étapes">
+        <a class="overview-step" href="#etape-1">
+          <span class="ov-num">1</span>
+          <span class="ov-title">Cadrage initial</span>
+          <span class="ov-duration">30-60 min · gratuit</span>
+        </a>
+        <a class="overview-step" href="#etape-2">
+          <span class="ov-num">2</span>
+          <span class="ov-title">Planification & specs</span>
+          <span class="ov-duration">1-2 jours</span>
+        </a>
+        <a class="overview-step" href="#etape-3">
+          <span class="ov-num">3</span>
+          <span class="ov-title">Cycles de dev agile</span>
+          <span class="ov-duration">Sprints de 2 semaines</span>
+        </a>
+        <a class="overview-step" href="#etape-4">
+          <span class="ov-num">4</span>
+          <span class="ov-title">Communication</span>
+          <span class="ov-duration">En continu</span>
+        </a>
+        <a class="overview-step" href="#etape-5">
+          <span class="ov-num">5</span>
+          <span class="ov-title">Revue & bilan</span>
+          <span class="ov-duration">Fin de cycle</span>
+        </a>
+      </nav>
+
       <!-- Flow Steps -->
       <div class="flow-steps">
 
         <!-- Étape 1: Cadrage Initial -->
-        <div class="flow-step">
+        <div class="flow-step" id="etape-1">
           <div class="step-number-box">1</div>
           <div class="step-content-box">
             <h3>
@@ -399,7 +551,7 @@
               <strong>Pas de bla-bla, pas de perte de temps : on va droit au but.</strong><br>
               Réunion efficace structurée en 4 points clés : Besoin → Problématique → Solution → Réalisation.
             </p>
-            <div class="step-details">
+            <details class="step-details step-details-toggle"><summary class="step-details-summary"><span>Voir le détail de cette étape</span></summary><div class="step-details-inner">
               <h4>Déroulé de la réunion :</h4>
 
               <div class="substep" style="margin-bottom: 15px;">
@@ -466,12 +618,12 @@
                   pas un simple prestataire qui dit "oui" à tout.
                 </p>
               </div>
-            </div>
+            </div></details>
           </div>
         </div>
 
         <!-- Étape 2: Planification & Spécifications -->
-        <div class="flow-step">
+        <div class="flow-step" id="etape-2">
           <div class="step-number-box">2</div>
           <div class="step-content-box">
             <h3>
@@ -484,7 +636,7 @@
               (Jira, Redmine, Trello, Linear, etc.). Définition du lot de tickets, numérotation des releases,
               et estimation du temps approximatif sur lequel nous allons travailler.
             </p>
-            <div class="step-details">
+            <details class="step-details step-details-toggle"><summary class="step-details-summary"><span>Voir le détail de cette étape</span></summary><div class="step-details-inner">
               <h4>Livrables de cette phase :</h4>
               <ul>
                 <li>Lot de tickets complet avec user stories détaillées et numérotées</li>
@@ -497,12 +649,12 @@
                 <li>Cycles de livraison et recette sur les environnements dev, staging et production</li>
                 <li>Mise en place des accès (repos Git, serveurs, outils)</li>
               </ul>
-            </div>
+            </div></details>
           </div>
         </div>
 
         <!-- Étape 3: Cycles de Développement (2 semaines) -->
-        <div class="flow-step">
+        <div class="flow-step" id="etape-3">
           <div class="step-number-box">3</div>
           <div class="step-content-box">
             <h3>
@@ -515,7 +667,7 @@
               continuellement. Chaque cycle suit un processus rigoureux pour garantir qualité et rapidité.
             </p>
 
-            <div class="step-details">
+            <details class="step-details step-details-toggle"><summary class="step-details-summary"><span>Voir le détail de cette étape</span></summary><div class="step-details-inner">
               <h4>Pour chaque ticket (évolution ou anomalie) :</h4>
 
               <div class="step-substeps">
@@ -601,12 +753,12 @@
                   C'est pourquoi chaque livraison inclut une batterie de tests complète pour minimiser ce risque.
                 </p>
               </div>
-            </div>
+            </div></details>
           </div>
         </div>
 
         <!-- Étape 4: Communication Continue -->
-        <div class="flow-step">
+        <div class="flow-step" id="etape-4">
           <div class="step-number-box">4</div>
           <div class="step-content-box">
             <h3>
@@ -618,7 +770,7 @@
               La communication est au cœur de ma méthode. Vous savez toujours où j'en suis,
               ce qui est fait, ce qui reste à faire, et les éventuels blocages.
             </p>
-            <div class="step-details">
+            <details class="step-details step-details-toggle"><summary class="step-details-summary"><span>Voir le détail de cette étape</span></summary><div class="step-details-inner">
               <h4>Mes engagements communication :</h4>
               <ul>
                 <li><strong>Canal dédié :</strong> Slack, Discord, Teams ou votre outil préféré pour échanges en temps réel</li>
@@ -628,12 +780,12 @@
                 <li><strong>Transparence :</strong> Accès total au board Jira/Trello, au code (GitLab/GitHub), aux pipelines CI/CD</li>
                 <li><strong>Reporting :</strong> Tableau de bord temps réel de l'avancement (burndown chart, vélocité)</li>
               </ul>
-            </div>
+            </div></details>
           </div>
         </div>
 
         <!-- Étape 5: Rétrospective & Amélioration -->
-        <div class="flow-step">
+        <div class="flow-step" id="etape-5">
           <div class="step-number-box">5</div>
           <div class="step-content-box">
             <h3>
@@ -645,7 +797,7 @@
               À la fin de chaque cycle de 2 semaines, nous faisons le point ensemble :
               ce qui a bien fonctionné, ce qui peut être amélioré, et comment optimiser le prochain sprint.
             </p>
-            <div class="step-details">
+            <details class="step-details step-details-toggle"><summary class="step-details-summary"><span>Voir le détail de cette étape</span></summary><div class="step-details-inner">
               <h4>Points abordés en rétrospective :</h4>
               <ul>
                 <li>Démonstration des fonctionnalités livrées (démo live)</li>
@@ -656,16 +808,18 @@
                 <li>Planification et priorisation du prochain cycle</li>
                 <li>Monitoring des métriques business et techniques</li>
               </ul>
-            </div>
+            </div></details>
           </div>
         </div>
 
       </div>
 
+      <div class="wave-divider" aria-hidden="true"></div>
+
       <!-- Engagement & Facturation -->
       <div class="key-principles" style="margin-bottom: 40px;">
         <h2>Engagement & Facturation</h2>
-        <div class="step-details" style="max-width: 900px; margin: 0 auto;">
+        <div style="max-width: 900px; margin: 0 auto;">
           <h4 style="font-size: 1.3rem; margin-bottom: 20px; color: var(--primary-color);">
             <i class="fas fa-info-circle"></i> Ce qui est gratuit
           </h4>
