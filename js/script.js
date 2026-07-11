@@ -110,7 +110,7 @@ if (heroConsole) {
   const scenarios = [
     {
       title: "site-vitrine",
-      command: "creer site --type=vitrine --pages=6 --bo=simple",
+      command: "créer site --type=vitrine --pages=6 --bo=simple --multilingue=option",
       lines: [
         ["ok", "design responsive et pages clés cadrées"],
         ["ok", "textes et images éditables depuis le back-office"],
@@ -119,7 +119,7 @@ if (heroConsole) {
     },
     {
       title: "cms-contenu",
-      command: "creer cms --admin=easyadmin --contenu=pages,blog,medias",
+      command: "créer cms --admin=easyadmin --contenu=pages,blog,medias",
       lines: [
         ["ok", "pages, actualités, menus et médias administrables"],
         ["ok", "bibliothèque images, PDF et vidéos structurée"],
@@ -128,7 +128,7 @@ if (heroConsole) {
     },
     {
       title: "page-builder",
-      command: "creer site --cms=sulu --edition=blocs --preview=live",
+      command: "créer site --cms=sulu --edition=blocs --preview=live",
       lines: [
         ["ok", "éditeur de pages par blocs configurable"],
         ["ok", "aperçu avant publication et brouillons activés"],
@@ -137,7 +137,7 @@ if (heroConsole) {
     },
     {
       title: "ecommerce",
-      command: "creer boutique --catalogue --paiement=stripe --stock",
+      command: "créer boutique --catalogue --paiement=stripe --stock",
       lines: [
         ["ok", "catalogue produits, variantes et stock modélisés"],
         ["ok", "panier, tunnel de commande et paiement sécurisés"],
@@ -146,7 +146,7 @@ if (heroConsole) {
     },
     {
       title: "reservation",
-      command: "creer reservation --agenda --paiement=acompte --rappels=email",
+      command: "créer reservation --agenda --paiement=acompte --rappels=email",
       lines: [
         ["ok", "créneaux, disponibilités et règles métier configurés"],
         ["ok", "paiement d'acompte et notifications automatiques"],
