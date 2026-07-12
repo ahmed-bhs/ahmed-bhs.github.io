@@ -1015,72 +1015,56 @@ h2::selection {
 
 .hero-cert-badges {
   position: absolute;
-  top: 100px;
+  top: 90px;
   right: 4%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   z-index: 5;
+}
+
+.hero-cert-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
 }
 
 .hero-cert-badge {
   display: block;
-  width: 104px;
-  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2));
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 9px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
 }
 
-.hero-cert-badge:first-child {
-  transform: rotate(-8deg);
-}
-
-.hero-cert-badge:first-child:hover,
-.hero-cert-badge:first-child:focus-visible {
-  transform: rotate(-8deg) scale(1.06);
-}
-
-.hero-cert-badge-ibexa {
-  width: 74px;
-  transform: rotate(6deg);
-}
-
-.hero-cert-badge-ibexa img {
-  border-radius: 12px;
-}
-
-.hero-cert-badge-ccna {
-  width: 80px;
-  transform: rotate(-5deg);
-}
-
-.hero-cert-badge-ccna:hover,
-.hero-cert-badge-ccna:focus-visible {
-  transform: rotate(-5deg) scale(1.06);
+.hero-cert-badge:hover,
+.hero-cert-badge:focus-visible {
+  transform: scale(1.07);
 }
 
 .hero-cert-badge img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
   display: block;
 }
 
 @media (max-width: 900px) {
   .hero-cert-badges {
     position: static;
-    flex-direction: row;
-    justify-content: center;
     margin: 0 auto 18px;
-    gap: 18px;
+    gap: 12px;
   }
   .hero-cert-badge {
-    width: 80px;
-  }
-  .hero-cert-badge-ibexa {
-    width: 72px;
-  }
-  .hero-cert-badge-ccna {
     width: 76px;
+    height: 76px;
+    padding: 7px;
   }
 }
 
