@@ -1183,9 +1183,10 @@ h2::selection {
 }
 
 .hero-paths {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 300px));
   justify-content: center;
+  align-items: stretch;
   gap: 40px;
   margin: 26px 0 18px;
 }
@@ -1195,6 +1196,7 @@ h2::selection {
   flex-direction: column;
   align-items: center;
   gap: 6px;
+  min-width: 0;
 }
 
 .hero-path-q {
@@ -1210,7 +1212,14 @@ h2::selection {
 .hero-path-cta {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   gap: 4px;
+  margin-top: auto;
+}
+
+.hero-path-cta .btn,
+.header-container > .social-links .btn {
+  text-transform: none !important;
 }
 
 .hero-path-arrow {
@@ -1231,6 +1240,11 @@ h2::selection {
 }
 
 @media (max-width: 640px) {
+  .hero-paths {
+    grid-template-columns: minmax(0, 340px);
+    gap: 18px;
+  }
+
   .hero-cta-hint,
   .brief-cta-hint,
   .cta-cta-hint,
