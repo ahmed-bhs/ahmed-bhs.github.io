@@ -198,10 +198,28 @@ h6 {
 }
 
 .logo-name {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
   white-space: nowrap;
+}
+
+.logo-name-main {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+}
+
+.logo-name-role {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-top: 3px;
 }
 
 /* Navbar */
