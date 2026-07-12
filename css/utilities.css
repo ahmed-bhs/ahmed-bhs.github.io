@@ -153,6 +153,42 @@ h2::selection {
   max-width: 700px;
 }
 
+.header-container .content-text h2 {
+  background: linear-gradient(
+    100deg,
+    var(--text-primary) 0%,
+    var(--text-primary) 38%,
+    var(--primary-color) 50%,
+    var(--text-primary) 62%,
+    var(--text-primary) 100%
+  );
+  background-size: 220% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: hero-title-shimmer 5.5s ease-in-out infinite;
+}
+
+@keyframes hero-title-shimmer {
+  0%, 100% {
+    background-position: 130% 0;
+  }
+  50% {
+    background-position: -30% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-container .content-text h2 {
+    animation: none;
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    color: var(--text-primary);
+  }
+}
+
 .hero-console {
   width: min(860px, calc(100% - 32px));
   margin: 38px auto 0;
@@ -1014,13 +1050,19 @@ h2::selection {
   display: block;
 }
 
+.header-container {
+  position: relative;
+}
+
 .hero-cert-badges {
+  position: absolute;
+  top: 50%;
+  right: 1.5%;
+  transform: translateY(-50%);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 22px;
+  gap: 12px;
   z-index: 5;
 }
 
@@ -1030,8 +1072,8 @@ h2::selection {
 
 .hero-cert-badge {
   display: block;
-  width: 88px;
-  height: 88px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
   background: #ffffff;
   overflow: hidden;
@@ -1057,8 +1099,8 @@ h2::selection {
 }
 
 .hero-cert-row-top .hero-cert-badge {
-  width: 138px;
-  height: 138px;
+  width: 78px;
+  height: 78px;
   background: transparent;
   border-radius: 0;
   overflow: visible;
