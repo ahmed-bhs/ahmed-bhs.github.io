@@ -1310,6 +1310,24 @@ h2::selection {
   opacity: 0.9;
 }
 
+.cta-signature-line {
+  margin-top: 26px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+.cta-signature {
+  font-family: "Caveat", cursive;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 2px;
+  color: var(--primary-color);
+  transform: rotate(-4deg);
+  display: inline-block;
+}
+
 /* Footer Customization */
 footer .email-link {
   font-size: 1.5rem;
