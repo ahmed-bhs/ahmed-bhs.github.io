@@ -125,16 +125,16 @@ h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
   height: 40px;
+  padding: 0 10px;
   border-radius: 11px;
   background: var(--primary-color);
   color: #ffffff;
 }
 
 .logo-glyph {
-  width: 26px;
-  height: auto;
+  height: 22px;
+  width: auto;
   display: block;
 }
 
