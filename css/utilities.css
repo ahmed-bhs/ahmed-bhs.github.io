@@ -1677,6 +1677,12 @@ footer .copyright {
   line-height: 1.2;
 }
 
+.price .amount .hl-hand {
+  background-size: 100% 46%;
+  background-position: 0 85%;
+  padding: 0 6px;
+}
+
 .pricing-card:last-child .price .amount {
   font-size: 1.8rem;
 }
