@@ -107,31 +107,48 @@ h6 {
   line-height: 1.12;
 }
 
+#logo {
+  margin-right: auto;
+}
+
 #logo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: 0;
 }
 
-.nav-availability-badge {
+.logo-mark {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin-left: 14px;
-  margin-right: auto;
-  padding: 7px 12px;
-  border: 1px solid color-mix(in srgb, var(--primary-color) 72%, transparent);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--card-background) 90%, transparent);
-  color: var(--text-primary);
-  font-size: 0.78rem;
-  font-weight: 700;
-  white-space: nowrap;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
 }
 
-.nav-availability-badge .status-dot {
-  width: 8px;
-  height: 8px;
+.logo-mark .status-dot {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--bg-primary);
+}
+
+.logo-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
 }
 
 /* Navbar */
@@ -590,12 +607,13 @@ h6 {
     padding: 0 1rem;
   }
 
-  #logo a {
-    font-size: 0.9rem;
+  .logo-name {
+    font-size: 0.95rem;
   }
 
-  .nav-availability-badge {
-    display: none;
+  .logo-mark {
+    width: 34px;
+    height: 34px;
   }
 
   .hamburger {

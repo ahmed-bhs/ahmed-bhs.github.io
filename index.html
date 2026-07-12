@@ -66,9 +66,11 @@
       <nav class="navbar">
         <div class="container">
           <h1 id="logo">
-            <a href="index.html">Ahmed EBEN HASSINE</a>
+            <a href="index.html">
+              <span class="logo-mark" title="Disponible pour missions freelance"><span class="status-dot"></span>AEH</span>
+              <span class="logo-name">Ahmed Eben Hassine</span>
+            </a>
           </h1>
-          <span class="nav-availability-badge" aria-label="Disponible pour missions freelance"><span class="status-dot"></span>Disponible</span>
           <ul class="nav-menu">
             <li><a class="nav-link active" href="#explore">OFFRES</a></li>
             <li><a class="nav-link" href="realisations.html">RÉALISATIONS</a></li>
@@ -427,12 +429,30 @@
         <label>
           Type de besoin
           <select name="Besoin">
-            <option>Projet web Symfony</option>
-            <option>Intervention freelance</option>
-            <option>Audit SEO</option>
-            <option>Audit UX/UI</option>
-            <option>Pack site ou outil web</option>
-            <option>Migration / performance</option>
+            <optgroup label="Création web">
+              <option>Site vitrine</option>
+              <option>Site vitrine + blog / back-office</option>
+              <option>Site avec page builder</option>
+              <option>Site de réservation / prise de RDV</option>
+              <option>Boutique e-commerce</option>
+              <option>Application métier sur mesure</option>
+            </optgroup>
+            <optgroup label="Mise en ligne & maintenance">
+              <option>Hébergement & déploiement</option>
+              <option>Maintenance / TMA (support & évolutions)</option>
+            </optgroup>
+            <optgroup label="Interventions techniques">
+              <option>Audit technique (code, architecture, sécurité)</option>
+              <option>Audit SEO</option>
+              <option>Audit UX/UI</option>
+              <option>Architecture & refonte (hexagonale, CQRS)</option>
+              <option>Performance & optimisation</option>
+              <option>Conception d'API (API Platform)</option>
+              <option>Migration Symfony / PHP</option>
+              <option>Renfort d'équipe (remote)</option>
+              <option>Formation Symfony / bonnes pratiques</option>
+            </optgroup>
+            <option>Je ne sais pas encore / autre</option>
           </select>
         </label>
         <label>
