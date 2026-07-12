@@ -633,9 +633,9 @@ h6 {
 .offers-layout .offer-help-wrap {
   position: absolute;
   top: 50%;
-  left: 100%;
+  right: 100%;
   transform: translateY(-50%);
-  margin: 0 0 0 18px;
+  margin: 0 18px 0 0;
 }
 
 .offer-help-wrap {
