@@ -993,7 +993,7 @@ h2::selection {
   position: absolute;
   top: 6px;
   right: 3%;
-  width: 118px;
+  width: 132px;
   color: var(--text-secondary);
   opacity: 1;
   transform: rotate(-11deg);
