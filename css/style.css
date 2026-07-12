@@ -608,37 +608,70 @@ h6 {
   }
 }
 
-.offer-help {
-  max-width: 720px;
-  margin: 2.5rem auto 0;
-  padding: 1.8rem 2rem;
-  text-align: center;
-  background: var(--surface-warm);
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
+.offer-help-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.5rem 0 0;
+}
+
+.offer-help-note {
+  position: relative;
+  width: 250px;
+  padding: 1.4rem 1.3rem 1.2rem;
+  background: #fff6c8;
+  color: #4a3f1e;
+  border-radius: 3px;
+  transform: rotate(2.5deg);
+  box-shadow: 0 10px 22px rgba(57, 42, 31, 0.18);
+  transition: transform 0.2s ease;
+}
+
+.offer-help-note:hover {
+  transform: rotate(0deg);
+}
+
+.offer-help-note::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 96px;
+  height: 26px;
+  transform: translateX(-50%) rotate(-3deg);
+  background: rgba(240, 225, 170, 0.55);
+  border: 1px solid rgba(180, 160, 110, 0.35);
 }
 
 .offer-help-title {
-  font-family: var(--font-heading);
-  font-size: 1.4rem;
-  font-weight: var(--weight-bold);
-  color: var(--text-primary);
-  margin-bottom: 0.4rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.55rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 0.35rem;
 }
 
 .offer-help-copy {
-  color: var(--text-secondary);
-  margin-bottom: 1.4rem;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: "Caveat", cursive;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  margin-bottom: 0.8rem;
+  color: #5c4f28;
 }
 
-.offer-help-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
+.offer-help-link {
+  display: inline-block;
+  font-family: "Caveat", cursive;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  .offer-help-wrap {
+    justify-content: center;
+  }
 }
 
 .budget-section {
