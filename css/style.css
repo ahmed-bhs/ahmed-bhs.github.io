@@ -128,7 +128,7 @@ h6 {
   height: 40px;
   padding: 0 10px;
   border-radius: 11px;
-  background: var(--primary-color);
+  background: #b85c38;
   color: #ffffff;
 }
 
@@ -138,24 +138,24 @@ h6 {
   display: block;
 }
 
-.logo-thread {
+.logo-animate .logo-thread {
   stroke-dasharray: 74;
   stroke-dashoffset: 74;
   animation: logo-thread-draw 1s ease 0.2s forwards;
 }
 
-.logo-node {
+.logo-animate .logo-node {
   transform-box: fill-box;
   transform-origin: center;
   transform: scale(0);
   animation: logo-node-pop 0.35s ease forwards;
 }
 
-.logo-node:first-of-type {
+.logo-animate .logo-node:first-of-type {
   animation-delay: 0.15s;
 }
 
-.logo-node:last-of-type {
+.logo-animate .logo-node:last-of-type {
   animation-delay: 1.1s;
 }
 

@@ -87,6 +87,21 @@ h2::selection {
   max-width: 100%;
 }
 
+@media (min-width: 901px) {
+  .header-container > h1 {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-container .content-text h2 {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(2.2rem, 4vw, 3.6rem);
+  }
+}
+
 /* Availability Badge */
 .availability-badge {
   display: inline-flex;
@@ -1015,12 +1030,12 @@ h2::selection {
 
 .hero-cert-badges {
   position: absolute;
-  top: 80px;
-  right: 4%;
+  top: 64px;
+  right: 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 46px;
+  gap: 16px;
   z-index: 5;
 }
 
