@@ -1056,9 +1056,8 @@ h2::selection {
 
 .hero-cert-badges {
   position: absolute;
-  top: 50%;
+  top: 24px;
   right: 1.5%;
-  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1181,6 +1180,44 @@ h2::selection {
   font-size: 1.5rem;
   line-height: 1;
   transform: rotate(-4deg);
+}
+
+.hero-paths {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 26px 0 18px;
+}
+
+.hero-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-path-q {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  line-height: 1.05;
+  color: var(--text-primary);
+  transform: rotate(-2deg);
+  max-width: 300px;
+  text-align: center;
+}
+
+.hero-path-cta {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.hero-path-arrow {
+  width: 46px;
+  color: var(--primary-color);
+  transform: scaleX(-1) rotate(-8deg);
+  flex-shrink: 0;
 }
 
 .doodle-arrow {
