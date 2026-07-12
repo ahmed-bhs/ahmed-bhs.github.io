@@ -138,6 +138,56 @@ h6 {
   display: block;
 }
 
+.logo-thread {
+  stroke-dasharray: 74;
+  stroke-dashoffset: 74;
+  animation: logo-thread-draw 1s ease 0.2s forwards;
+}
+
+.logo-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: scale(0);
+  animation: logo-node-pop 0.35s ease forwards;
+}
+
+.logo-node:first-of-type {
+  animation-delay: 0.15s;
+}
+
+.logo-node:last-of-type {
+  animation-delay: 1.1s;
+}
+
+@keyframes logo-thread-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logo-node-pop {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-thread {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+  .logo-node {
+    transform: scale(1);
+    animation: none;
+  }
+}
+
 .logo-mark .status-dot {
   position: absolute;
   top: -3px;
