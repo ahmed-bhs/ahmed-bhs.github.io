@@ -1020,7 +1020,7 @@ h2::selection {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 46px;
   z-index: 5;
 }
 
@@ -1055,9 +1055,13 @@ h2::selection {
   transform: scale(1.02);
 }
 
+.hero-cert-row-bottom .hero-cert-badge {
+  border: 2px solid var(--border-color);
+}
+
 .hero-cert-row-top .hero-cert-badge {
-  width: 116px;
-  height: 116px;
+  width: 138px;
+  height: 138px;
   background: transparent;
   border-radius: 0;
   overflow: visible;
@@ -1087,8 +1091,8 @@ h2::selection {
     height: 76px;
   }
   .hero-cert-row-top .hero-cert-badge {
-    width: 100px;
-    height: 100px;
+    width: 116px;
+    height: 116px;
   }
 }
 
