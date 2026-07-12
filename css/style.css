@@ -679,16 +679,9 @@ h6 {
   }
 }
 
-.offers-layout {
-  position: relative;
-}
-
 .offers-layout .offer-help-wrap {
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  transform: translateY(-50%);
-  margin: 0 18px 0 0;
+  justify-content: flex-end;
+  margin: 1.5rem 0 0;
 }
 
 .offer-help-wrap {
@@ -751,17 +744,8 @@ h6 {
   text-underline-offset: 3px;
 }
 
-@media (max-width: 1300px) {
-  .offers-layout .offer-help-wrap {
-    position: static;
-    transform: none;
-    justify-content: center;
-    margin: 1.4rem 0 0;
-  }
-}
-
 @media (max-width: 640px) {
-  .offer-help-wrap {
+  .offers-layout .offer-help-wrap {
     justify-content: center;
   }
 }

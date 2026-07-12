@@ -1118,8 +1118,9 @@ h2::selection {
 }
 
 .trust-stamp-inline {
-  top: 14px;
-  right: 3%;
+  top: 78px;
+  right: 2%;
+  width: 108px;
 }
 
 @media (max-width: 900px) {
