@@ -1055,6 +1055,17 @@ h2::selection {
   transform: scale(1.02);
 }
 
+.hero-cert-row-top .hero-cert-badge {
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
+}
+
+.hero-cert-row-top .hero-cert-badge img {
+  transform: none;
+}
+
 .hero-cert-badge-ibexa img {
   transform: scale(1.12);
 }
