@@ -232,7 +232,6 @@ h6 {
 .navbar .nav-menu {
   display: flex;
   align-items: center;
-  background: var(--bg-primary);
 }
 
 .navbar .nav-link {
@@ -593,6 +592,7 @@ h6 {
     padding: 2rem;
     border-radius: 5px;
     align-items: flex-start;
+    background: var(--bg-primary);
   }
 
   .navbar .btn {
