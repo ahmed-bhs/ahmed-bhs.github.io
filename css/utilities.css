@@ -1184,10 +1184,10 @@ h2::selection {
 
 .hero-paths {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 300px));
+  grid-template-columns: repeat(2, minmax(300px, 340px));
   justify-content: center;
   align-items: stretch;
-  gap: 40px;
+  gap: 34px;
   margin: 26px 0 18px;
 }
 
@@ -1205,8 +1205,12 @@ h2::selection {
   line-height: 1.05;
   color: var(--text-primary);
   transform: rotate(-2deg);
-  max-width: 300px;
+  max-width: 340px;
+  min-height: 2.6rem;
   text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .hero-path-cta {
@@ -1217,6 +1221,7 @@ h2::selection {
   margin-top: auto;
 }
 
+.hero-action-btn,
 .hero-path-cta .btn,
 .header-container > .social-links .btn {
   text-transform: none !important;

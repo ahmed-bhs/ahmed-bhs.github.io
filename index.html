@@ -35,7 +35,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260712-cta" />
+    <style>
+      .hero-paths {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 340px));
+        justify-content: center;
+        align-items: stretch;
+        gap: 34px;
+      }
+
+      .hero-path {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 0;
+      }
+
+      .hero-path-q {
+        max-width: 340px;
+        min-height: 2.6rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+      }
+
+      .hero-path-cta {
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+      }
+
+      .hero-action-btn {
+        text-transform: none !important;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 760px) {
+        .hero-paths {
+          grid-template-columns: minmax(0, 340px);
+          gap: 18px;
+        }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -131,7 +173,7 @@
                 <path d="M12 8C34 20 52 40 50 66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
                 <path d="M36 52C42 60 47 64 50 66C54 62 60 58 68 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <a href="sites-web.html" class="btn btn-primary"><i class="fas fa-laptop-code"></i> commencez par ici</a>
+              <a href="sites-web.html" class="btn btn-primary hero-action-btn"><i class="fas fa-laptop-code"></i> commencez par ici</a>
             </div>
           </div>
 
@@ -142,14 +184,14 @@
                 <path d="M12 8C34 20 52 40 50 66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
                 <path d="M36 52C42 60 47 64 50 66C54 62 60 58 68 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <a href="freelance.html" class="btn btn-primary"><i class="fas fa-tools"></i> commencez ici</a>
+              <a href="freelance.html" class="btn btn-primary hero-action-btn"><i class="fas fa-tools"></i> commencez ici</a>
             </div>
           </div>
         </div>
 
         <div class="social-links">
-          <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-calendar-check"></i> réserver un appel</a>
-          <a href="realisations.html" class="btn btn-secondary"><i class="fas fa-folder-open"></i> réalisations</a>
+          <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary hero-action-btn"><i class="fas fa-calendar-check"></i> réserver un appel</a>
+          <a href="realisations.html" class="btn btn-secondary hero-action-btn"><i class="fas fa-folder-open"></i> réalisations</a>
         </div>
 
         <div class="hero-console" aria-label="Aperçu d'une intervention freelance" data-hero-console>
