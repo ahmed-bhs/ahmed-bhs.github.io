@@ -1184,10 +1184,11 @@ h2::selection {
 
 .hero-paths {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 340px));
+  grid-template-columns: minmax(240px, 260px) minmax(240px, 260px) max-content max-content;
   justify-content: center;
   align-items: stretch;
-  gap: 34px;
+  column-gap: 8px;
+  row-gap: 18px;
   margin: 26px 0 18px;
 }
 
@@ -1201,7 +1202,7 @@ h2::selection {
 
 .hero-path-q {
   font-family: "Caveat", cursive;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   line-height: 1.05;
   color: var(--text-primary);
   transform: rotate(-2deg);
@@ -1231,12 +1232,16 @@ h2::selection {
 
 .hero-path-arrow {
   position: absolute;
-  left: calc(50% - 142px);
+  left: calc(50% - 128px);
   top: 2px;
   width: 58px;
   color: var(--primary-color);
   transform: rotate(-8deg);
   flex-shrink: 0;
+}
+
+.hero-path-plain .hero-path-q {
+  visibility: hidden;
 }
 
 .doodle-arrow {
@@ -1249,10 +1254,21 @@ h2::selection {
   width: 58px;
 }
 
+@media (max-width: 820px) {
+  .hero-paths {
+    grid-template-columns: repeat(2, minmax(260px, 340px));
+    column-gap: 34px;
+  }
+}
+
 @media (max-width: 640px) {
   .hero-paths {
     grid-template-columns: minmax(0, 340px);
     gap: 18px;
+  }
+
+  .hero-path-plain .hero-path-q {
+    display: none;
   }
 
   .hero-cta-hint,
