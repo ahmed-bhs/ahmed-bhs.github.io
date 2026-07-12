@@ -1015,12 +1015,12 @@ h2::selection {
 
 .hero-cert-badges {
   position: absolute;
-  top: 90px;
+  top: 80px;
   right: 4%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 30px;
   z-index: 5;
 }
 
@@ -1056,6 +1056,8 @@ h2::selection {
 }
 
 .hero-cert-row-top .hero-cert-badge {
+  width: 116px;
+  height: 116px;
   background: transparent;
   border-radius: 0;
   overflow: visible;
@@ -1078,11 +1080,15 @@ h2::selection {
   .hero-cert-badges {
     position: static;
     margin: 0 auto 18px;
-    gap: 12px;
+    gap: 20px;
   }
   .hero-cert-badge {
     width: 76px;
     height: 76px;
+  }
+  .hero-cert-row-top .hero-cert-badge {
+    width: 100px;
+    height: 100px;
   }
 }
 
