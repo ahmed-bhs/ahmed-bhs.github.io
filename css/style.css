@@ -758,8 +758,8 @@ h6 {
   grid-template-columns: repeat(5, 1fr);
   gap: 0.75rem;
   align-items: end;
-  height: 280px;
-  padding: 2rem 0.75rem 0;
+  height: 300px;
+  padding: 2.75rem 0.75rem 0;
   border-bottom: 2px solid var(--border-color);
 }
 
