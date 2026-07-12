@@ -627,19 +627,15 @@ h6 {
 }
 
 .offers-layout {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.offers-layout .pricing-grid {
-  flex: 1;
-  min-width: 0;
+  position: relative;
 }
 
 .offers-layout .offer-help-wrap {
-  flex: 0 0 auto;
-  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin: 0 0 0 18px;
 }
 
 .offer-help-wrap {
@@ -702,14 +698,12 @@ h6 {
   text-underline-offset: 3px;
 }
 
-@media (max-width: 900px) {
-  .offers-layout {
-    flex-direction: column;
-    align-items: stretch;
-  }
+@media (max-width: 1300px) {
   .offers-layout .offer-help-wrap {
+    position: static;
+    transform: none;
     justify-content: center;
-    margin-top: 1.2rem;
+    margin: 1.4rem 0 0;
   }
 }
 
