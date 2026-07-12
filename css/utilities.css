@@ -1049,6 +1049,16 @@ h2::selection {
   border-radius: 12px;
 }
 
+.hero-cert-badge-ccna {
+  width: 80px;
+  transform: rotate(-5deg);
+}
+
+.hero-cert-badge-ccna:hover,
+.hero-cert-badge-ccna:focus-visible {
+  transform: rotate(-5deg) scale(1.06);
+}
+
 .hero-cert-badge img {
   width: 100%;
   height: auto;
@@ -1068,6 +1078,9 @@ h2::selection {
   }
   .hero-cert-badge-ibexa {
     width: 72px;
+  }
+  .hero-cert-badge-ccna {
+    width: 76px;
   }
 }
 
