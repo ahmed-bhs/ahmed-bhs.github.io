@@ -61,9 +61,21 @@
       }
 
       .hero-path-cta {
+        position: relative;
         display: flex;
+        align-items: center;
         justify-content: center;
+        width: 100%;
+        min-height: 62px;
         margin-top: auto;
+      }
+
+      .hero-path-arrow {
+        position: absolute;
+        left: calc(50% - 142px);
+        top: 2px;
+        width: 58px;
+        transform: rotate(-8deg);
       }
 
       .hero-action-btn {

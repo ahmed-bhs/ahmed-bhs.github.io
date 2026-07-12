@@ -1214,10 +1214,12 @@ h2::selection {
 }
 
 .hero-path-cta {
+  position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  gap: 4px;
+  width: 100%;
+  min-height: 62px;
   margin-top: auto;
 }
 
@@ -1228,9 +1230,12 @@ h2::selection {
 }
 
 .hero-path-arrow {
-  width: 46px;
+  position: absolute;
+  left: calc(50% - 142px);
+  top: 2px;
+  width: 58px;
   color: var(--primary-color);
-  transform: scaleX(-1) rotate(-8deg);
+  transform: rotate(-8deg);
   flex-shrink: 0;
 }
 
