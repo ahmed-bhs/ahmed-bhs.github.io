@@ -1183,25 +1183,28 @@ h2::selection {
 }
 
 .hero-paths {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 180px));
+  justify-content: center;
+  align-items: end;
+  gap: 14px;
+  width: 100%;
   margin: 26px 0 18px;
 }
 
-.hero-path-prompts {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 340px));
-  justify-content: center;
-  column-gap: 72px;
-  width: 100%;
+.hero-cta-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  min-width: 0;
 }
 
-.hero-path-prompt {
+.hero-cta-prompt {
   position: relative;
-  min-height: 80px;
+  min-height: 84px;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -1215,27 +1218,18 @@ h2::selection {
   text-align: center;
 }
 
-.hero-action-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-
 .hero-action-btn,
-.hero-action-row .btn,
 .header-container > .social-links .btn {
+  width: 100%;
+  min-height: 44px;
   text-transform: none !important;
   white-space: nowrap;
 }
 
 .hero-path-arrow {
-  position: relative;
-  align-self: flex-end;
-  right: 22px;
-  bottom: 4px;
+  position: absolute;
+  left: 6px;
+  bottom: -7px;
   width: 58px;
   color: var(--primary-color);
   transform: rotate(-8deg);
@@ -1253,39 +1247,29 @@ h2::selection {
 }
 
 @media (max-width: 980px) {
-  .hero-path-prompts {
-    column-gap: 28px;
+  .hero-paths {
+    grid-template-columns: repeat(4, minmax(140px, 170px));
+    gap: 10px;
   }
 
-  .hero-action-row {
-    gap: 8px;
-  }
-
-  .hero-action-row .btn {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+  .hero-action-btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 0.72rem;
   }
 }
 
 @media (max-width: 640px) {
-  .hero-path-prompts {
-    grid-template-columns: 1fr;
-    gap: 4px;
-  }
-
-  .hero-path-prompt {
-    min-height: auto;
-  }
-
-  .hero-path-arrow {
-    display: none;
-  }
-
-  .hero-action-row {
+  .hero-paths {
+    grid-template-columns: repeat(4, 150px);
     overflow-x: auto;
     justify-content: flex-start;
     padding-bottom: 4px;
+  }
+
+  .hero-cta-prompt {
+    min-height: 0;
+    display: none;
   }
 
   .hero-cta-hint,
