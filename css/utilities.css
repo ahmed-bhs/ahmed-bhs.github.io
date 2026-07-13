@@ -1826,27 +1826,34 @@ footer .copyright {
 
 .price .old-price {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
   width: fit-content;
-  color: color-mix(in srgb, var(--text-secondary) 88%, var(--card-background));
-  font-size: 0.88rem;
+  margin-bottom: 2px;
+  padding: 5px 10px;
+  color: var(--text-secondary);
+  background: color-mix(in srgb, var(--card-background) 72%, var(--surface-warm));
+  border: 1px solid color-mix(in srgb, var(--text-secondary) 22%, transparent);
+  border-radius: 999px;
+  font-size: 0.9rem;
   line-height: 1.2;
 }
 
 .price .old-price-label {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: var(--weight-bold);
   letter-spacing: 0;
   text-transform: uppercase;
+  color: var(--text-primary);
 }
 
 .price .old-price-amount {
   font-weight: var(--weight-bold);
+  color: var(--text-secondary);
   text-decoration: line-through;
   text-decoration-thickness: 2px;
-  text-decoration-color: color-mix(in srgb, var(--text-secondary) 78%, transparent);
+  text-decoration-color: var(--text-secondary);
 }
 
 .price .amount .hl-hand {
