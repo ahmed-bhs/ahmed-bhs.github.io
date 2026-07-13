@@ -1810,10 +1810,11 @@ footer .copyright {
 
 .price {
   margin: 8px 0 16px;
-  min-height: 64px;
+  min-height: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 2px;
 }
 
 .price .amount {
@@ -1821,6 +1822,31 @@ footer .copyright {
   font-weight: var(--weight-bold);
   color: var(--primary-color);
   line-height: 1.2;
+}
+
+.price .old-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  width: fit-content;
+  color: color-mix(in srgb, var(--text-secondary) 88%, var(--card-background));
+  font-size: 0.88rem;
+  line-height: 1.2;
+}
+
+.price .old-price-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.price .old-price-amount {
+  font-weight: var(--weight-bold);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: color-mix(in srgb, var(--text-secondary) 78%, transparent);
 }
 
 .price .amount .hl-hand {
