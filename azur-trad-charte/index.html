@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preview charte Riviera Interpreting</title>
+  <style>
+    :root {
+      --navy: #0b1d33;
+      --navy-2: #122842;
+      --ivory: #f6f2ea;
+      --brass: #d3a331;
+      --brass-lt: #e8c15c;
+      --line: rgba(227, 178, 60, .26);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(70% 90% at 100% 0%, rgba(211, 163, 49, .10), transparent 45%),
+        linear-gradient(180deg, var(--navy), var(--navy-2));
+      color: var(--ivory);
+      font: 16px/1.6 Georgia, serif;
+    }
+    main {
+      width: min(980px, calc(100vw - 40px));
+      margin: 0 auto;
+      padding: 72px 0 80px;
+    }
+    .eyebrow {
+      color: #fff3a6;
+      font: 700 12px/1.2 Arial, sans-serif;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 18px 0 14px;
+      font-size: clamp(2.6rem, 5vw, 4.4rem);
+      line-height: .98;
+      font-weight: 500;
+    }
+    p.lede {
+      max-width: 58ch;
+      margin: 0 0 34px;
+      color: rgba(246, 242, 234, .82);
+      font-family: Arial, sans-serif;
+      font-size: 1.05rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    a.card {
+      display: block;
+      padding: 22px 22px 20px;
+      border: 1px solid var(--line);
+      background: rgba(246, 242, 234, .03);
+      color: inherit;
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, background .2s ease;
+    }
+    a.card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(232, 193, 92, .65);
+      background: rgba(246, 242, 234, .05);
+    }
+    .kicker {
+      color: var(--brass-lt);
+      font: 700 11px/1.2 Arial, sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .title {
+      margin-top: 10px;
+      font-size: 1.7rem;
+      line-height: 1.05;
+    }
+    .desc {
+      margin-top: 10px;
+      color: rgba(246, 242, 234, .72);
+      font: 14px/1.6 Arial, sans-serif;
+    }
+    @media (max-width: 760px) {
+      main { padding: 48px 0 56px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Preview cliente</div>
+    <h1>Charte graphique Riviera Interpreting</h1>
+    <p class="lede">Version statique de validation visuelle publiee le 28 aout 2026. Cette preview regroupe les pages clefs du site pour valider l'ambiance, la typographie et la mise en page.</p>
+    <div class="grid">
+      <a class="card" href="./accueil.html">
+        <div class="kicker">Page</div>
+        <div class="title">Accueil</div>
+        <div class="desc">Hero, bandeau de confiance, bloc cabinet et structure editoriale principale.</div>
+      </a>
+      <a class="card" href="./cabinet.html">
+        <div class="kicker">Page</div>
+        <div class="title">Cabinet</div>
+        <div class="desc">Presentation de l'equipe, portraits, filtres langues et cartes detaillees.</div>
+      </a>
+      <a class="card" href="./contact.html">
+        <div class="kicker">Page</div>
+        <div class="title">Contact</div>
+        <div class="desc">Formulaire, ton editoriale et rendu des blocs conversion.</div>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
