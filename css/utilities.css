@@ -3190,6 +3190,27 @@ html {
   text-transform: uppercase;
 }
 
+.premium-web-page .offer-detail-recommendation {
+  padding: 10px 12px;
+  border-left: 2px solid #b9975b;
+  background: rgba(210, 173, 114, 0.12);
+  color: #4d5d6b;
+}
+
+.premium-web-page .offer-detail-recommended {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 7px;
+  border: 1px solid rgba(185, 151, 91, 0.55);
+  border-radius: 2px;
+  color: #947244;
+  font-size: 0.68rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 /* Marqueurs de bénéfices en champagne, plus cohérents avec la direction luxe. */
 .pricing-card .check-hand {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b9975b' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 13L9 19L20 5'/%3E%3C/svg%3E");
