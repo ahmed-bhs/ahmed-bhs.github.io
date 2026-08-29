@@ -3467,6 +3467,87 @@ body {
   line-height: 1;
 }
 
+/* Détails d'interface premium : hiérarchie, rythme et micro-contrastes. */
+.division {
+  height: 1px;
+  margin: 0 0 28px;
+  background: linear-gradient(90deg, transparent, rgba(185, 151, 91, 0.7) 24%, rgba(51, 78, 104, 0.22) 70%, transparent);
+}
+
+.content-text h2,
+.mindmap-intro h2 {
+  letter-spacing: -0.015em;
+}
+
+.content-text h2::after,
+.mindmap-intro h2::after {
+  display: block;
+  width: 42px;
+  height: 2px;
+  margin-top: 12px;
+  background: linear-gradient(90deg, #b9975b, transparent);
+  content: "";
+}
+
+.section-kicker,
+.pricing-badge,
+.premium-price-label {
+  letter-spacing: 0.12em;
+}
+
+.pricing-card,
+.service-card,
+.project,
+.offer-detail {
+  position: relative;
+  isolation: isolate;
+}
+
+.pricing-card:not(.featured)::before,
+.service-card::before,
+.project::before,
+.offer-detail::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 24px;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, #b9975b, transparent);
+  content: "";
+  opacity: 0.7;
+}
+
+.btn {
+  border-radius: 0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.brief-form label {
+  color: #334e68;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.offer-detail summary,
+.premium-offer-details summary {
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.offer-detail summary:hover,
+.premium-offer-details summary:hover {
+  background: rgba(210, 173, 114, 0.08);
+  color: #334e68;
+}
+
+::selection {
+  background: #b9975b;
+  color: #17212b;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pricing-card,
   .service-card,
