@@ -1820,6 +1820,10 @@ footer .copyright {
   gap: 24px;
 }
 
+.premium-web-page .offers-layout {
+  margin-bottom: 165px;
+}
+
 .premium-web-page .offers-layout .pricing-card {
   padding: 34px;
   border: 1px solid #ded7ca;
@@ -1937,8 +1941,9 @@ footer .copyright {
 }
 
 .premium-web-page .offers-layout .offer-help-wrap {
-  right: -12px;
-  bottom: 34px;
+  right: auto;
+  left: -12px;
+  bottom: -135px;
 }
 
 .premium-web-page .offers-layout .offer-help-note {
@@ -2747,6 +2752,10 @@ footer .copyright {
 
   .premium-web-page .offers-layout .offer-help-note {
     width: min(100%, 320px);
+  }
+
+  .premium-web-page .offers-layout {
+    margin-bottom: 0;
   }
 
   .premium-investment {
