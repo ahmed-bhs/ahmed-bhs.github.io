@@ -456,7 +456,7 @@
         }
       }
     </style>
-  <script>(function(){try{var t=localStorage.getItem("theme");if(t){document.documentElement.setAttribute("data-theme",t);}if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
+  <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
   </head>
   <body>
     <header>
@@ -479,14 +479,6 @@
             <li><a class="nav-link active" href="methode-travail.html">MÉTHODE</a></li>
             <li><a class="nav-link btn btn-primary" href="index.html#contact">CONTACT <i class="fas fa-envelope"></i></a></li>
 
-            <!-- Toggle switch -->
-            <li class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" alt="" />
-                <img class="sun" src="assets/sun.svg" alt="" />
-              </label>
-            </li>
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -1080,6 +1072,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=20260829-single-theme"></script>
   </body>
 </html>
