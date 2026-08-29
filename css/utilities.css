@@ -3131,6 +3131,64 @@ footer .copyright {
   color: #d2ad72;
 }
 
+/* Micro-détails de finition : précision, contraste et interactions soignées. */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #d2ad72;
+  color: #17212b;
+}
+
+:focus-visible {
+  outline: 2px solid #c19b5b;
+  outline-offset: 4px;
+}
+
+.division {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(148, 114, 68, 0.62), transparent);
+}
+
+.page-header::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(148, 114, 68, 0.45), transparent);
+  content: "";
+  pointer-events: none;
+}
+
+.premium-web-page .offers-layout .pricing-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-web-page .offers-layout .pricing-card::before {
+  position: absolute;
+  top: 0;
+  left: 28px;
+  width: 72px;
+  height: 2px;
+  background: linear-gradient(90deg, #b9975b, #e1c998, transparent);
+  content: "";
+  opacity: 0.72;
+}
+
+.premium-web-page .offers-layout .pricing-card:hover::before {
+  width: 120px;
+  transition: width 0.28s ease;
+}
+
+.premium-web-page .section-kicker {
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
 /* CTA: espace de lecture généreux et constant sur tous les écrans. */
 .cta-container {
   padding: clamp(64px, 8vw, 108px) 24px;
