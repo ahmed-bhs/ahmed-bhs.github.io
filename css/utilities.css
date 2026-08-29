@@ -2035,6 +2035,10 @@ footer .copyright {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.tjm-offer-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .offer-details-grid > .offer-detail:nth-child(-n + 4) {
   order: 1;
 }
