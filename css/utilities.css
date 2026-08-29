@@ -2031,6 +2031,21 @@ footer .copyright {
   grid-column: 1 / -1;
 }
 
+.offer-details-grid > .offer-detail:nth-child(-n + 4) {
+  order: 1;
+}
+
+.offer-details-grid > .offer-detail:nth-child(n + 5) {
+  order: 2;
+}
+
+.offer-included-word {
+  color: #947244;
+  text-decoration-color: #c19b5b;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .offer-detail {
   border: 1px solid var(--border-color);
   border-radius: 10px;
