@@ -3406,6 +3406,11 @@ body {
   height: 64px;
 }
 
+.premium-web-page #web-creation {
+  padding-top: 0;
+  scroll-margin-top: 64px;
+}
+
 /* Footer : bleu nuit profond, champagne et contraste éditorial. */
 #footer {
   background: linear-gradient(145deg, #0b1420 0%, #172a3b 58%, #0b1420 100%);
