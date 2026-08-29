@@ -3130,3 +3130,62 @@ footer .copyright {
 .premium-web-page .premium-investment .premium-eyebrow {
   color: #d2ad72;
 }
+
+/* Finition premium commune aux pages principales. */
+:root {
+  color-scheme: light;
+}
+
+.page-header {
+  background: rgba(255, 255, 255, 0.88);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom-color: rgba(93, 107, 120, 0.16);
+}
+
+.pricing-card,
+.service-card,
+.stat-card,
+.achievement-card,
+.principle-card,
+.project,
+.offer-detail {
+  border-color: rgba(116, 130, 143, 0.24);
+  box-shadow: 0 14px 36px rgba(31, 43, 54, 0.07);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.pricing-card:hover,
+.service-card:hover,
+.stat-card:hover,
+.achievement-card:hover,
+.principle-card:hover,
+.project:hover,
+.offer-detail:hover {
+  border-color: rgba(148, 114, 68, 0.48);
+  box-shadow: 0 22px 48px rgba(31, 43, 54, 0.13);
+  transform: translateY(-3px);
+}
+
+.btn {
+  box-shadow: 0 8px 20px rgba(31, 43, 54, 0.14);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 14px 28px rgba(31, 43, 54, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-card,
+  .service-card,
+  .stat-card,
+  .achievement-card,
+  .principle-card,
+  .project,
+  .offer-detail,
+  .btn {
+    transition: none;
+  }
+}
