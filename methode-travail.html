@@ -687,6 +687,25 @@
       .flow-step::after {
         display: none !important;
       }
+
+      /* Version courte : les détails restent dans le code mais ne surchargent pas le parcours. */
+      .method-overview,
+      .overview-step,
+      .overview-step .ov-num,
+      .step-number-box,
+      .step-content-box,
+      .step-details-toggle,
+      .step-details,
+      .substep,
+      .wave-divider,
+      .key-principles,
+      .principle-card {
+        border-radius: 0 !important;
+      }
+
+      .step-details-toggle {
+        display: none;
+      }
     </style>
   <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
   </head>
