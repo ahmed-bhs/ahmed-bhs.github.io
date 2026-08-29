@@ -1925,6 +1925,17 @@ footer .copyright {
   box-shadow: none;
 }
 
+.premium-followup-link {
+  display: flex;
+  justify-content: center;
+  margin: 52px 0 12px;
+}
+
+.premium-followup-link .btn {
+  padding: 15px 24px;
+  letter-spacing: 0.02em;
+}
+
 .premium-investment {
   padding: 46px;
   border: 1px solid #d9d0c3;
