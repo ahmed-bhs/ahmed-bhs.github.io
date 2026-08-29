@@ -463,4 +463,35 @@ Español — site en anglais</a><a style=opacity:.5;pointer-events:none>
     letter-spacing:.08em;
     white-space:nowrap;
   }
+  .team-grid .team-card[hidden]{
+    display:none;
+  }
 </style>
+<script>
+  (()=>{
+    const filter=document.querySelector('.lang-filter');
+    const grid=document.querySelector('#team-grid');
+    if(!filter||!grid)return;
+
+    const buttons=[...filter.querySelectorAll('button[data-lang]')];
+    const cards=[...grid.querySelectorAll('.team-card[data-langs]')];
+
+    const applyFilter=lang=>{
+      buttons.forEach(button=>{
+        button.setAttribute('aria-pressed',String(button.dataset.lang===lang));
+      });
+      cards.forEach(card=>{
+        const languages=(card.dataset.langs||'').split(',');
+        card.hidden=lang!=='all'&&!languages.includes(lang);
+      });
+    };
+
+    filter.addEventListener('click',event=>{
+      const button=event.target.closest('button[data-lang]');
+      if(!button||!filter.contains(button))return;
+      applyFilter(button.dataset.lang);
+    });
+
+    applyFilter('all');
+  })();
+</script>
