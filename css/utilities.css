@@ -3114,3 +3114,15 @@ footer .copyright {
   border-color: #cbd4dc;
   background: #e9eef2;
 }
+
+.premium-web-page .premium-investment h2 {
+  color: #f7f5f0;
+}
+
+.premium-web-page .premium-investment > p:not(.premium-eyebrow) {
+  color: #e7e4de;
+}
+
+.premium-web-page .premium-investment .premium-eyebrow {
+  color: #d2ad72;
+}
