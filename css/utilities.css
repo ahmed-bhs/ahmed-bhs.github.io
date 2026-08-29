@@ -3245,6 +3245,18 @@ html {
   isolation: isolate;
 }
 
+.cta-container .cta-buttons .btn-secondary {
+  color: #f7f5f0;
+  border-color: rgba(224, 229, 234, 0.78);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cta-container .cta-buttons .btn-secondary:hover {
+  color: #17212b;
+  border-color: #d2ad72;
+  background: #d2ad72;
+}
+
 .cta-container::before {
   position: absolute;
   inset: 0;
