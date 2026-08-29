@@ -1737,25 +1737,6 @@ footer .copyright {
   position: relative;
 }
 
-.offers-layout .offer-help-wrap {
-  position: absolute;
-  right: -24px;
-  bottom: 46px;
-  z-index: 6;
-  margin: 0;
-  pointer-events: none;
-}
-
-.offers-layout .offer-help-note {
-  pointer-events: auto;
-  transform: rotate(2.5deg);
-  box-shadow: 0 16px 34px rgba(57, 42, 31, 0.24);
-}
-
-.offers-layout .offer-help-note:hover {
-  transform: rotate(1deg) translateY(-4px);
-}
-
 /* Premium positioning for the web project page. */
 .premium-web-page {
   background: #f7f4ee;
@@ -1818,10 +1799,6 @@ footer .copyright {
 
 .premium-web-page .offers-layout .pricing-grid {
   gap: 24px;
-}
-
-.premium-web-page .offers-layout {
-  margin-bottom: 265px;
 }
 
 .premium-web-page .offers-layout .pricing-card {
@@ -1938,45 +1915,6 @@ footer .copyright {
   color: #6a635b;
   font-size: 0.9rem;
   line-height: 1.65;
-}
-
-.premium-web-page .offers-layout .offer-help-wrap {
-  right: auto;
-  left: -12px;
-  bottom: -225px;
-}
-
-.premium-web-page .offers-layout .offer-help-note {
-  width: 270px;
-  padding: 22px;
-  border: 1px solid #b88a55;
-  border-radius: 2px;
-  background: #24211d;
-  color: #f7f1e7;
-  transform: none;
-  box-shadow: 0 22px 50px rgba(26, 22, 18, 0.24);
-}
-
-.premium-web-page .offers-layout .offer-help-note:hover {
-  transform: translateY(-4px);
-}
-
-.premium-web-page .offer-help-title,
-.premium-web-page .offer-help-copy {
-  color: inherit;
-  font-family: inherit;
-}
-
-.premium-web-page .offer-help-title {
-  font-size: 1.08rem;
-  font-weight: 700;
-}
-
-.premium-web-page .offer-help-link {
-  color: #d7ad79;
-  font-family: inherit;
-  font-size: 0.9rem;
-  font-weight: 700;
 }
 
 .premium-web-page .offer-details-panel {
@@ -2645,14 +2583,6 @@ footer .copyright {
     grid-template-columns: 1fr;
   }
 
-  .offers-layout .offer-help-wrap {
-    position: static;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0;
-    pointer-events: auto;
-  }
-
   .offer-details-grid {
     grid-template-columns: 1fr;
   }
@@ -2748,14 +2678,6 @@ footer .copyright {
     position: absolute;
     top: -12px;
     right: 18px;
-  }
-
-  .premium-web-page .offers-layout .offer-help-note {
-    width: min(100%, 320px);
-  }
-
-  .premium-web-page .offers-layout {
-    margin-bottom: 0;
   }
 
   .premium-investment {
