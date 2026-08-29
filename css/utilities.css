@@ -2025,6 +2025,12 @@ footer .copyright {
   gap: 12px;
 }
 
+/* Le détail d'accompagnement ouvre la lecture sur toute la largeur ;
+   les formules complémentaires restent ensuite organisées par paires. */
+.offer-details-grid > .offer-detail:first-child {
+  grid-column: 1 / -1;
+}
+
 .offer-detail {
   border: 1px solid var(--border-color);
   border-radius: 10px;
