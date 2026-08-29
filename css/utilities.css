@@ -3395,6 +3395,63 @@ body {
   box-shadow: 0 8px 24px rgba(23, 33, 43, 0.08);
 }
 
+/* Footer : bleu nuit profond, champagne et contraste éditorial. */
+#footer {
+  background: linear-gradient(145deg, #0b1420 0%, #172a3b 58%, #0b1420 100%);
+  border-top: 1px solid rgba(210, 173, 114, 0.38);
+  box-shadow: 0 -18px 46px rgba(23, 33, 43, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+#footer .footer-col h4,
+#footer .footer-contact i,
+#footer .footer-col a:hover {
+  color: #d2ad72;
+}
+
+#footer .footer-brand h3 {
+  color: #f7f5f0;
+  letter-spacing: 0.02em;
+}
+
+#footer .footer-brand p,
+#footer .footer-col li,
+#footer .footer-col a {
+  color: rgba(239, 238, 233, 0.76);
+}
+
+#footer .footer-col a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#footer .footer-social a {
+  border: 1px solid rgba(210, 173, 114, 0.34);
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+#footer .footer-social a:hover {
+  background: #d2ad72;
+  border-color: #d2ad72;
+}
+
+#footer .footer-social a:hover i {
+  color: #0b1420;
+}
+
+#footer .footer-bottom {
+  border-top-color: rgba(210, 173, 114, 0.25);
+}
+
+#footer .footer-bottom .copyright {
+  color: rgba(239, 238, 233, 0.78);
+}
+
+#footer .footer-bottom .footer-legal {
+  color: rgba(239, 238, 233, 0.52);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pricing-card,
   .service-card,
