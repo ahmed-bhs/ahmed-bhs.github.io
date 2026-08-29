@@ -1860,6 +1860,21 @@ footer .copyright {
   line-height: 1;
 }
 
+.premium-old-price {
+  color: #8b8379;
+  font-size: 0.92rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.premium-discount {
+  color: #b45532;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .premium-web-page .offers-layout .pricing-description {
   min-height: 0;
   margin-bottom: 24px;
