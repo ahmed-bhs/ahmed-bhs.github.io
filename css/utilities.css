@@ -2048,7 +2048,7 @@ footer .copyright {
 }
 
 .offer-included-word {
-  color: #947244;
+  color: #b9975b;
   text-decoration-color: #c19b5b;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
@@ -3108,7 +3108,7 @@ footer .copyright {
 
 .premium-web-page .premium-accent,
 .premium-web-page .offers-layout .price .amount {
-  color: #947244;
+  color: #b9975b;
 }
 
 .premium-web-page .content-text h2,
@@ -3141,7 +3141,7 @@ footer .copyright {
 }
 
 .premium-web-page .nav-link.active {
-  color: #947244;
+  color: #b9975b;
 }
 
 .premium-web-page .offer-details-panel {
@@ -3232,7 +3232,7 @@ html {
   padding: 3px 7px;
   border: 1px solid rgba(185, 151, 91, 0.55);
   border-radius: 2px;
-  color: #947244;
+  color: #b9975b;
   font-size: 0.68rem;
   font-style: normal;
   font-weight: 800;
