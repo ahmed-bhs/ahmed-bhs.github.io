@@ -411,6 +411,23 @@
         line-height: 1.6;
       }
 
+      /* Parcours net, sans arrondis décoratifs. */
+      .overview-step,
+      .step-details-toggle,
+      .step-content-box,
+      .step-details,
+      .substep,
+      .key-principles,
+      .principle-card {
+        border-radius: 0;
+      }
+
+      .method-overview {
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+        padding: 14px 0;
+      }
+
       /* Responsive */
       @media (max-width: 768px) {
         .method-hero h1 {
@@ -467,7 +484,7 @@
           <h1 id="logo">
             <a href="https://ahmed-bhs.github.io/">
               <span class="logo-mark" title="Disponible pour missions freelance"><span class="status-dot"></span><svg class="logo-glyph" viewBox="0 0 92 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="logo-node" cx="6" cy="19" r="2.8" fill="#ffcd42"/><path class="logo-thread" d="M9 19 H83" stroke="#ffcd42" stroke-width="3.2" stroke-linecap="round"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 29 L17.5 7 L23 29"/><path d="M39 7 h8 M39 7 v22 M39 29 h8"/><path d="M61 7 v22 M73 7 v22"/></g><circle class="logo-node" cx="86" cy="19" r="2.8" fill="#ffcd42"/></svg></span>
-              <span class="logo-name"><span class="logo-name-main">Ahmed Eben Hassine</span><span class="logo-name-role">Ingénieur en informatique senior</span></span>
+              <span class="logo-name"><span class="logo-name-main">AHMED EBEN HASSINE</span><span class="logo-name-role">Ingénieur en informatique senior</span></span>
             </a>
           </h1>
           <!-- Navbar links -->
@@ -499,38 +516,34 @@
     <section class="mindmap-container">
       <div class="mindmap-intro">
         <h2><span class="hand-underline">Comment nous allons travailler ensemble</span></h2>
-        <p>
-          Ma méthode combine les principes du développement agile et du RAD (Rapid Application Development)
-          pour garantir des livraisons rapides, itératives et de haute qualité. Chaque étape est pensée pour
-          maximiser la transparence, la communication et la satisfaction client.
-        </p>
+        <p>Un cycle simple et lisible : cadrer, planifier, construire, valider, puis améliorer.</p>
       </div>
 
       <nav class="method-overview" aria-label="Aperçu des étapes">
         <a class="overview-step" href="#etape-1">
           <span class="ov-num">1</span>
-          <span class="ov-title">Cadrage initial</span>
-          <span class="ov-duration">30-60 min · gratuit</span>
+          <span class="ov-title">Cadrer</span>
+          <span class="ov-duration">30–60 min · gratuit</span>
         </a>
         <a class="overview-step" href="#etape-2">
           <span class="ov-num">2</span>
-          <span class="ov-title">Planification & specs</span>
-          <span class="ov-duration">1-2 jours</span>
+          <span class="ov-title">Planifier</span>
+          <span class="ov-duration">1–2 jours</span>
         </a>
         <a class="overview-step" href="#etape-3">
           <span class="ov-num">3</span>
-          <span class="ov-title">Cycles de dev agile</span>
-          <span class="ov-duration">Sprints de 2 semaines</span>
+          <span class="ov-title">Construire</span>
+          <span class="ov-duration">Cycles de 2 semaines</span>
         </a>
         <a class="overview-step" href="#etape-4">
           <span class="ov-num">4</span>
-          <span class="ov-title">Communication</span>
-          <span class="ov-duration">En continu</span>
+          <span class="ov-title">Valider</span>
+          <span class="ov-duration">À chaque cycle</span>
         </a>
         <a class="overview-step" href="#etape-5">
           <span class="ov-num">5</span>
-          <span class="ov-title">Revue & bilan</span>
-          <span class="ov-duration">Fin de cycle</span>
+          <span class="ov-title">Améliorer ↻</span>
+          <span class="ov-duration">Puis on recommence</span>
         </a>
       </nav>
 
