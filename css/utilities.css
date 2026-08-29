@@ -3395,6 +3395,17 @@ body {
   box-shadow: 0 8px 24px rgba(23, 33, 43, 0.08);
 }
 
+/* En-tête compact : aucun espace vertical superflu autour de la navigation. */
+.page-header .navbar,
+.page-header .navbar .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-header .navbar .container {
+  height: 64px;
+}
+
 /* Footer : bleu nuit profond, champagne et contraste éditorial. */
 #footer {
   background: linear-gradient(145deg, #0b1420 0%, #172a3b 58%, #0b1420 100%);
