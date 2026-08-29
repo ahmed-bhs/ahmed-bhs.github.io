@@ -144,7 +144,7 @@
  <div class=tc-role><span class=tc-role-lead>Fondatrice</span> · Expert judiciaire · Interprète-traductrice</div>
  <h3>Nabila Khalifa</h3>
  <p class=tc-bio>Expert judiciaire assermentée près la Cour d'appel, Nabila Khalifa met plus de dix ans d'excellence au service des <b class=tc-hi>affaires pénales</b>, des <b class=tc-hi>audiences</b> et du <b class=tc-hi>notariat</b>. Elle apporte aux magistrats, avocats et cabinets d'exception une <b class=tc-hi>maîtrise linguistique absolue</b>, une réactivité sur mesure et une <b class=tc-hi>discrétion irréprochable</b> au cœur des procédures les plus exigeantes.</p>
- <div class=tc-motto>Précision · Écoute · Discrétion</div> <div class=tc-langs><span>Arabe</span><span>Français</span></div>
+ <div class=tc-motto><span>Précision</span><span>Écoute</span><span>Discrétion</span></div> <div class=tc-langs><span>Arabe</span><span>Français</span></div>
  </div>
  </article>
  <article class=team-card id=team-member-2 data-langs=fr,es,en>
@@ -154,7 +154,7 @@
  <div class=tc-role>Expert traducteur &amp; interprète</div>
  <h3>Simon Fernandez</h3>
  <p class=tc-bio>Expertise en traduction et interprétation dans les domaines notarial, médico-social, judiciaire et général.</p>
- <div class=tc-motto>Rigueur · Précision · Confidentialité</div> <div class=tc-langs><span>Français</span><span>Espagnol</span><span>Anglais</span></div>
+ <div class=tc-motto><span>Rigueur</span><span>Précision</span><span>Confidentialité</span></div> <div class=tc-langs><span>Français</span><span>Espagnol</span><span>Anglais</span></div>
  </div>
  </article>
  <article class=team-card id=team-member-3 data-langs=ru,en,fr>
@@ -164,7 +164,7 @@
  <div class=tc-role>Expert judiciaire · Interprète-traductrice</div>
  <h3>Natalia Hily</h3>
  <p class=tc-bio>Expert judiciaire près la cour d'appel, Natalia accompagne une clientèle internationale exigeante en russe et en anglais, notamment dans le domaine notarial.</p>
- <div class=tc-motto>Rigueur · Confidentialité · Exigence</div> <div class=tc-langs><span>Russe</span><span>Anglais</span><span>Français</span></div>
+ <div class=tc-motto><span>Rigueur</span><span>Confidentialité</span><span>Exigence</span></div> <div class=tc-langs><span>Russe</span><span>Anglais</span><span>Français</span></div>
  </div>
  </article>
  <article class=team-card id=team-member-4 data-langs=de,fr>
@@ -174,7 +174,7 @@
  <div class=tc-role>Expert traducteur &amp; interprète auprès de la Cour d'appel de Montpellier</div>
  <h3>Mirco Frebel</h3>
  <p class=tc-bio>Spécialisé en traduction juridique et technique, Mirco intervient notamment dans les domaines de l'industrie, de l'automobile et des objets connectés, ainsi que dans les relations franco-allemandes. Son expertise s'étend aux documents juridiques et aux secteurs professionnels spécialisés, avec une parfaite connaissance des échanges franco-allemands.</p>
- <div class=tc-motto>Rigueur · Expertise · Culture franco-allemande</div> <div class=tc-langs><span>Allemand</span><span>Français</span></div>
+ <div class=tc-motto><span>Rigueur</span><span>Expertise</span><span>Culture franco-allemande</span></div> <div class=tc-langs><span>Allemand</span><span>Français</span></div>
  </div>
  </article>
  <article class=team-card id=team-member-5 data-langs=it,en,fr>
@@ -184,7 +184,7 @@
  <div class=tc-role>Traductrice &amp; interprète experte auprès de la Cour d'appel de Montpellier</div>
  <h3>Silvia Pitasi</h3>
  <p class=tc-bio>Spécialisée en marketing digital, elle intervient notamment dans les secteurs de l'e-commerce, du sport, du développement personnel, du bien-être et de la cosmétique.</p>
- <div class=tc-motto>Stratégie · Créativité · Performance</div> <div class=tc-langs><span>Italien</span><span>Anglais</span><span>Français</span></div>
+ <div class=tc-motto><span>Stratégie</span><span>Créativité</span><span>Performance</span></div> <div class=tc-langs><span>Italien</span><span>Anglais</span><span>Français</span></div>
  </div>
  </article>
  <article class=team-card id=team-member-6 data-langs=fr,en,de,es>
@@ -194,7 +194,7 @@
  <div class=tc-role>Traductrice &amp; interprète</div>
  <h3>Eve Molho</h3>
  <p class=tc-bio>Avec plus de 15 années d'expérience, Eve Molho accompagne une clientèle française et internationale dans ses besoins de traduction et d'interprétation. Diplômée et spécialisée dans l'accompagnement de situations internationales, elle intervient notamment dans le cadre du CESEDA et est agréée par la Société néo-zélandaise des traducteurs et interprètes. Son parcours international lui permet d'offrir un accompagnement personnalisé, aussi bien pour des échanges professionnels que pour des projets exigeant une parfaite confidentialité.</p>
- <div class=tc-motto>Traduction · Interprétation de conférence · Interprétation de liaison</div> <div class=tc-langs><span>Français</span><span>Anglais</span><span>Allemand</span><span>Espagnol</span></div>
+ <div class=tc-motto><span>Traduction</span><span>Interprétation de conférence</span><span>Interprétation de liaison</span></div> <div class=tc-langs><span>Français</span><span>Anglais</span><span>Allemand</span><span>Espagnol</span></div>
  </div>
  </article>
  </div>
@@ -421,13 +421,23 @@ Español — site en anglais</a><a style=opacity:.5;pointer-events:none>
     font-weight:650;
   }
   .team-card .tc-motto{
+    border-left:0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    padding-left:0;
+  }
+  .team-card .tc-motto span{
+    background:rgba(227,178,60,.09);
     color:#e8c878;
     font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    font-size:.84rem;
-    font-weight:450;
-    font-style:italic;
-    letter-spacing:.015em;
-    line-height:1.5;
+    font-size:.64rem;
+    font-style:normal;
+    font-weight:600;
+    letter-spacing:.08em;
+    line-height:1.2;
+    padding:6px 8px;
+    text-transform:uppercase;
     -webkit-font-smoothing:auto;
   }
 </style>
