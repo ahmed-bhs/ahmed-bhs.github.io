@@ -455,3 +455,22 @@ Deutsch — site en anglais</a><a style=opacity:.5;pointer-events:none>
 </a><a style=opacity:.5;pointer-events:none>Deutsch — site en anglais</a><a href=http://127.0.0.1:8055/en>
 Español — site en anglais</a><a style=opacity:.5;pointer-events:none>
 </a><a style=opacity:.5;pointer-events:none>Español — site en anglais</a></div></div><div class=lightbox id=lightbox role=dialog aria-modal=true aria-label="Affiche agrandie"><button type=button class=lb-close aria-label=Fermer>×</button><button type=button class="lb-nav lb-prev" aria-label=Précédent>←</button><img class=lb-img src=data:, alt width=1600 height=1067 decoding=async><button type=button class="lb-nav lb-next" aria-label=Suivant>→</button><div class=lb-cap></div></div><div style=all:initial;position:fixed!important;display:block!important;z-index:2147483647!important;top:0;left:0><template shadowrootmode=closed></template></div>
+
+<!-- Drapeaux rationalises sous les portraits et dans la presentation du cabinet. -->
+<style>
+  .firm-portraits .fp-langs{color:rgba(246,242,234,.48);font:600 .62rem/1.2 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-top:3px}
+  .firm-portraits .fp-langs .fl-flag{display:none}
+  .firm-portraits .fp-langs:after{display:block}
+  .firm-portraits .fp:nth-child(1) .fp-langs:after{content:"AR · FR"}
+  .firm-portraits .fp:nth-child(2) .fp-langs:after{content:"FR · ES · EN"}
+  .firm-portraits .fp:nth-child(3) .fp-langs:after{content:"RU · EN · FR"}
+  .firm-portraits .fp:nth-child(4) .fp-langs:after{content:"DE · FR"}
+  .firm-portraits .fp:nth-child(5) .fp-langs:after{content:"IT · EN · FR"}
+  .firm-portraits .fp:nth-child(6) .fp-langs:after{content:"FR · EN · DE · ES"}
+
+  .firm-langs{column-gap:18px;row-gap:9px}
+  .firm-langs li{position:relative;background:transparent;border:0;padding:2px 0 2px 12px}
+  .firm-langs li:before{content:"";position:absolute;left:0;top:50%;width:4px;height:4px;background:var(--brass);transform:translateY(-50%) rotate(45deg);opacity:.72}
+  .firm-langs .fl-flag{display:none}
+  .firm-langs .fl-name{color:rgba(246,242,234,.74)}
+</style>
