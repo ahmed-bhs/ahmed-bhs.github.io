@@ -1728,6 +1728,11 @@ footer .copyright {
   margin: 28px 0;
 }
 
+/* Creation offers: two cards per row on desktop. */
+.offers-layout .pricing-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .pricing-note-layout {
   position: relative;
 }
@@ -2129,6 +2134,10 @@ footer .copyright {
   }
 
   .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offers-layout .pricing-grid {
     grid-template-columns: 1fr;
   }
 
