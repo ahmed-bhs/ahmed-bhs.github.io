@@ -530,8 +530,34 @@
       }
 
       .overview-step:hover {
-        transform: translateY(-3px);
-        box-shadow: none;
+        transform: translateY(-5px);
+        border-top-color: #b9975b;
+        border-bottom-color: #b9975b;
+        background: linear-gradient(180deg, rgba(210, 173, 114, 0.14), rgba(255, 255, 255, 0.3));
+        box-shadow: 0 12px 26px rgba(23, 33, 43, 0.1);
+      }
+
+      .overview-step:focus-visible {
+        outline: 2px solid #b9975b;
+        outline-offset: 4px;
+      }
+
+      .overview-step .ov-num {
+        transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+      }
+
+      .overview-step:hover .ov-num {
+        transform: translateY(-2px) scale(1.08);
+        background: #b9975b;
+        color: #17212b;
+      }
+
+      .overview-step .ov-title {
+        transition: color 0.25s ease;
+      }
+
+      .overview-step:hover .ov-title {
+        color: #334e68;
       }
 
       .overview-step .ov-num {
