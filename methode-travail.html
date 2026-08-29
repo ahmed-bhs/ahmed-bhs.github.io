@@ -682,6 +682,11 @@
           display: none;
         }
       }
+
+      /* Les étapes restent autonomes : aucun connecteur automatique entre les cartes. */
+      .flow-step::after {
+        display: none !important;
+      }
     </style>
   <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
   </head>
