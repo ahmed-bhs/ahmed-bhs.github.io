@@ -3559,6 +3559,41 @@ body {
   color: #17212b;
 }
 
+/* Références « quiet luxury » : navigation retenue, grille éditoriale et mouvement lent. */
+.page-header .nav-link,
+.navbar .nav-link {
+  letter-spacing: 0.09em;
+}
+
+.project {
+  border: 1px solid rgba(51, 78, 104, 0.18);
+  background: #ffffff;
+}
+
+.project .card {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.project .card img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.65, 0.25, 1), filter 0.7s ease;
+}
+
+.project .card:hover img {
+  transform: scale(1.035);
+  filter: saturate(0.88) contrast(1.04);
+}
+
+.project .project-info {
+  border-top: 1px solid rgba(185, 151, 91, 0.38);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project .card img {
+    transition: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pricing-card,
   .service-card,
