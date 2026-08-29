@@ -3065,3 +3065,52 @@ footer .copyright {
   color: var(--text-color);
   font-size: 0.95rem;
 }
+
+/* Premium palette: graphite, cool ivory and champagne gold. */
+.premium-web-page {
+  background: #f2f4f6;
+  color: #17212b;
+}
+
+.premium-web-page .premium-accent,
+.premium-web-page .offers-layout .price .amount {
+  color: #947244;
+}
+
+.premium-web-page .content-text h2,
+.premium-web-page .offers-layout .pricing-card h3 {
+  color: #17212b;
+}
+
+.premium-web-page .offers-layout .pricing-card {
+  border-color: #d4dbe2;
+  background: #ffffff;
+}
+
+.premium-web-page .offers-layout .pricing-card.featured {
+  border-color: #b89a67;
+  background: linear-gradient(155deg, #ffffff 0%, #f5f7f8 100%);
+}
+
+.premium-web-page .pricing-badge {
+  background: #4d5d6b;
+}
+
+.premium-web-page .btn-primary {
+  background: #4d5d6b;
+  border-color: #4d5d6b;
+}
+
+.premium-web-page .btn-primary:hover {
+  background: #344552;
+  border-color: #344552;
+}
+
+.premium-web-page .nav-link.active {
+  color: #947244;
+}
+
+.premium-web-page .offer-details-panel {
+  border-color: #cbd4dc;
+  background: #e9eef2;
+}
