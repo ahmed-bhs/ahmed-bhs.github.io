@@ -80,8 +80,8 @@
  <aside class=contact-aside>
  <h2 class="serif contact-side-title">Nous joindre</h2>
  <div class="creds contact-creds">
- <div class=cred><span class="k contact-cred-key">@</span><span class=v><a href=mailto:contact.ri@azur-trad.fr class=contact-cred-link>contact.ri@azur-trad.fr</a></span></div>
- <div class=cred><span class="k contact-cred-key">T</span><span class=v><a href=tel:+33614472397 class=contact-cred-link>+33 6 14 47 23 97</a></span></div>
+ <div class=cred><span class="k contact-cred-key">E-mail</span><span class=v><a href=mailto:contact.ri@azur-trad.fr class=contact-cred-link>contact.ri@azur-trad.fr</a></span></div>
+ <div class=cred><span class="k contact-cred-key">Téléphone</span><span class=v><a href=tel:+33614472397 class=contact-cred-link>+33 6 14 47 23 97</a></span></div>
  </div>
  <div class=contact-note>
  <div class=contact-note-main><p><strong style=color:var(--brass-lt)>Réactivité &amp; disponibilité.</strong> Nous accompagnons une clientèle exigeante et nous engageons à vous répondre rapidement avec une proposition claire, adaptée à vos enjeux, à vos documents et à vos délais.</p></div>
@@ -280,12 +280,22 @@ Español — site en anglais</a><a style=opacity:.5;pointer-events:none>
   .contact-form-section{padding-top:56px}
   .contact-layout{grid-template-columns:minmax(300px,.82fr) minmax(560px,1.18fr);gap:64px}
   .contact-side-title{margin-bottom:26px;font-size:2.15rem}
-  .contact-creds{display:grid;gap:10px;background:none}
+  .contact-creds{
+    display:grid;
+    gap:10px;
+    background:none;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
   .contact-creds .cred{
-    min-height:82px;
-    padding:20px 22px;
+    min-height:78px;
+    padding:17px 20px;
     background:rgba(246,242,234,.025);
     border:1px solid rgba(227,178,60,.2);
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:7px;
     transition:border-color .2s ease,background .2s ease,transform .2s ease;
   }
   .contact-creds .cred:hover{
@@ -293,8 +303,22 @@ Español — site en anglais</a><a style=opacity:.5;pointer-events:none>
     border-color:rgba(227,178,60,.42);
     transform:translateX(3px);
   }
-  .contact-cred-key{font-family:var(--serif);font-size:1.35rem}
-  .contact-cred-link{font-size:.94rem}
+  .contact-cred-key{
+    color:rgba(246,242,234,.5);
+    font-family:inherit;
+    font-size:.65rem;
+    font-weight:650;
+    letter-spacing:.16em;
+    line-height:1;
+    text-transform:uppercase;
+  }
+  .contact-cred-link{
+    color:#f2cc64;
+    font-family:inherit;
+    font-size:.94rem;
+    font-weight:500;
+    letter-spacing:.01em;
+  }
   .contact-note{
     margin-top:30px;
     padding:20px 22px;
