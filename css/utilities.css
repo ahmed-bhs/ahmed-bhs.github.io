@@ -1744,6 +1744,7 @@ footer .copyright {
 
 .premium-web-page #web-creation {
   padding-top: 74px;
+  scroll-margin-top: 96px;
 }
 
 .premium-web-page #web-creation > .content-text:first-of-type {
