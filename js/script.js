@@ -34,9 +34,43 @@ const briefForm = document.querySelector("[data-brief-form]");
 if (briefForm) {
   const status = briefForm.querySelector("[data-brief-status]");
   const submitButton = briefForm.querySelector("[type=submit]");
+  const startedAtField = briefForm.querySelector("[data-form-started-at]");
+  const trapField = briefForm.elements.website;
+
+  const markFormStarted = () => {
+    const timestamp = String(Date.now());
+    briefForm.dataset.formStartedAt = timestamp;
+    if (startedAtField) startedAtField.value = timestamp;
+  };
+
+  markFormStarted();
 
   briefForm.addEventListener("submit", async function (event) {
     event.preventDefault();
+
+    // Les robots remplissent souvent les champs invisibles ou soumettent
+    // instantanément. On arrête la requête avant qu'elle n'atteigne le service.
+    if (trapField && trapField.value.trim() !== "") {
+      if (status) status.textContent = "Merci de compléter le formulaire normalement.";
+      return;
+    }
+    const startedAt = Number(briefForm.dataset.formStartedAt || startedAtField?.value || 0);
+    if (startedAt && Date.now() - startedAt < 2500) {
+      if (status) {
+        status.textContent = "Prenez quelques secondes pour vérifier votre demande avant l'envoi.";
+        status.className = "brief-form-status is-error";
+      }
+      return;
+    }
+
+    const messageField = briefForm.elements.Message;
+    if (messageField && messageField.value.trim().length < 20) {
+      if (status) {
+        status.textContent = "Décrivez votre besoin en quelques phrases (20 caractères minimum).";
+        status.className = "brief-form-status is-error";
+      }
+      return;
+    }
 
     if (status) {
       status.textContent = "Envoi en cours...";
@@ -45,15 +79,20 @@ if (briefForm) {
     if (submitButton) submitButton.disabled = true;
 
     try {
+      const formData = new FormData(briefForm);
+      formData.set("submitted_at", new Date().toISOString());
+      formData.set("page_url", window.location.href);
+
       const response = await fetch(briefForm.action, {
         method: "POST",
         headers: { Accept: "application/json" },
-        body: new FormData(briefForm),
+        body: formData,
       });
       const result = await response.json();
 
       if (response.ok && result.success) {
         briefForm.reset();
+        markFormStarted();
         if (status) {
           status.textContent = "Message envoyé. Je vous réponds rapidement.";
           status.className = "brief-form-status is-success";

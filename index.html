@@ -512,7 +512,12 @@
         <input type="hidden" name="access_key" value="a38d9d2e-62be-4e6f-a3a0-a1bf9c094951" />
         <input type="hidden" name="subject" value="Brief projet freelance Symfony" />
         <input type="hidden" name="from_name" value="Formulaire ahmed-bhs.github.io" />
+        <input type="hidden" name="form_started_at" data-form-started-at value="" />
         <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+        <label class="brief-form-trap" aria-hidden="true">
+          Site web
+          <input type="text" name="website" tabindex="-1" autocomplete="off" />
+        </label>
         <label>
           Nom / entreprise
           <input type="text" name="Nom" placeholder="Votre nom ou société" />
@@ -561,6 +566,7 @@
         <button type="submit" class="btn btn-primary brief-form-submit">
           <i class="fas fa-paper-plane"></i> Envoyer
         </button>
+        <p class="brief-form-privacy">Protection anti-spam active · Vos informations servent uniquement à répondre à votre demande.</p>
         <p class="brief-form-status" data-brief-status role="status" aria-live="polite"></p>
       </form>
     </section>
@@ -622,6 +628,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js?v=20260829-single-theme"></script>
+    <script src="js/script.js?v=20260829-antispam"></script>
   </body>
 </html>

@@ -3328,6 +3328,25 @@ html {
   transform: translateY(-2px);
 }
 
+/* Piège anti-robot : présent dans le DOM pour les bots, invisible pour les visiteurs. */
+.brief-form-trap {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.brief-form-privacy {
+  margin: 0.75rem 0 0;
+  color: var(--muted-color, #68737d);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pricing-card,
   .service-card,
