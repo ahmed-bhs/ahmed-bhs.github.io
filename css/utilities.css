@@ -3072,6 +3072,10 @@ footer .copyright {
   color: #17212b;
 }
 
+.premium-web-page .logo-mark {
+  background: #4d5d6b;
+}
+
 .premium-web-page .premium-accent,
 .premium-web-page .offers-layout .price .amount {
   color: #947244;
