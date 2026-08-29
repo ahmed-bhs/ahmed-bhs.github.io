@@ -3452,6 +3452,21 @@ body {
   color: rgba(239, 238, 233, 0.52);
 }
 
+/* Les listes d'offres utilisent un signe plus vert pour signaler chaque point. */
+.plus-hand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.35rem;
+  color: #2f9e62;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pricing-card,
   .service-card,
