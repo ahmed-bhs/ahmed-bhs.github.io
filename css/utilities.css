@@ -3306,6 +3306,17 @@ html {
 /* Finition premium commune aux pages principales. */
 :root {
   color-scheme: light;
+  --primary-color: #334e68;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(51, 78, 104, 0.1), transparent 34rem),
+    linear-gradient(180deg, var(--bg-primary) 0%, #f7f8fa 48%, var(--bg-primary) 100%);
+}
+
+.logo-mark {
+  background: #334e68;
 }
 
 .page-header {
