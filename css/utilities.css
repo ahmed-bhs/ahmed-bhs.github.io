@@ -3166,7 +3166,7 @@ html {
 
 .premium-web-page .offers-layout .pricing-card {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .premium-web-page .offers-layout .pricing-card::before {
