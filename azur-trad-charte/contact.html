@@ -357,12 +357,19 @@ Español — site en anglais</a><a style=opacity:.5;pointer-events:none>
     border-color:var(--brass-lt);
     box-shadow:0 0 0 3px rgba(227,178,60,.1);
   }
-  .ri-form .consent{align-items:flex-start;padding:2px 0 0}
-  .ri-form .consent input[type=checkbox]{
-    flex:0 0 17px;
-    width:17px;
-    height:17px;
-    margin-top:2px;
+  .ri-form .consent{
+    grid-template-columns:15px minmax(0,1fr);
+    align-items:flex-start;
+    gap:10px;
+    padding:2px 0 0;
+  }
+  #dynamic_form1_consent{
+    flex:0 0 15px!important;
+    width:15px!important;
+    min-width:15px!important;
+    height:15px!important;
+    min-height:15px!important;
+    margin:3px 0 0!important;
   }
   .ri-form .consent .ri-label{color:rgba(246,242,234,.66);letter-spacing:.02em;line-height:1.5}
   .ri-form .btn-primary{min-height:54px;letter-spacing:.15em;box-shadow:0 10px 24px rgba(7,19,31,.25)}
