@@ -1729,8 +1729,9 @@ footer .copyright {
 }
 
 /* The follow-up section has two offers: let both share the full available width. */
-.followup-pricing-grid {
+.pricing-grid.followup-pricing-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
 }
 
 /* Creation offers: two cards per row on desktop. */
@@ -2637,6 +2638,10 @@ footer .copyright {
   }
 
   .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid.followup-pricing-grid {
     grid-template-columns: 1fr;
   }
 
