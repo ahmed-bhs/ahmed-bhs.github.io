@@ -1728,6 +1728,11 @@ footer .copyright {
   margin: 28px 0;
 }
 
+/* The follow-up section has two offers: let both share the full available width. */
+.followup-pricing-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 /* Creation offers: two cards per row on desktop. */
 .offers-layout .pricing-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
