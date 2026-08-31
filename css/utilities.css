@@ -4440,3 +4440,29 @@ body {
   color: var(--gold-deep);
   font-weight: 700;
 }
+
+
+.offer-detail-content h4 {
+  margin: 16px 0 4px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+.offer-proof {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.offer-proof code {
+  padding: 1px 5px;
+  background: var(--surface-warm);
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+}

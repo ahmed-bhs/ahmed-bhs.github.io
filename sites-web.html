@@ -35,8 +35,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-iaas" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-iaas" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-perf" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-perf" />
   <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
   </head>
   <body class="premium-web-page">
@@ -244,6 +244,7 @@
             <li>4 vCPU · 8 Go RAM · 75 Go SSD</li>
             <li>Aucune dépendance à un éditeur, site transférable</li>
             <li>Données hébergées en France, OVHcloud</li>
+            <li>Cache HTTP et cache applicatif configurés</li>
           </ul>
 
           <details class="offer-detail">
@@ -259,6 +260,24 @@
               </ul>
               <p>DNS, certificat SSL, sauvegardes, surveillance de disponibilité et protection anti-bots/anti-DDoS Nginx sont configurés et suivis pendant les trois premiers mois.</p>
               <p><strong>Après ces 3 mois :</strong> l'hébergement et l'infogérance sont proposés à <strong>49 € HT / mois</strong>, sans reconduction automatique. Le tarif est annoncé avant toute prolongation ; vous pouvez continuer, changer de formule ou reprendre la gestion de votre serveur.</p>
+            </div>
+          </details>
+
+          <details class="offer-detail">
+            <summary><span>Performance : cache HTTP et cache applicatif <u class="offer-included-word">inclus</u></span><span class="offer-detail-action">Voir le détail</span></summary>
+            <div class="offer-detail-content">
+              <p><strong>Une page déjà calculée est servie sans repasser par PHP ni par la base de données.</strong> Le visiteur reçoit la réponse en quelques millisecondes, et le serveur encaisse les pics de trafic sans ralentir.</p>
+
+              <h4>Cache HTTP</h4>
+              <p>Un cache de pages est placé devant l'application : la première visite calcule la page, les suivantes la reçoivent telle quelle. La durée de validité est réglée par type de contenu, et le cache est invalidé automatiquement dès qu'une page est modifiée depuis le back-office. Vos changements sont donc visibles immédiatement, sans purge manuelle.</p>
+
+              <h4>Cache applicatif</h4>
+              <p>Côté serveur, plusieurs niveaux évitent de refaire le même travail à chaque requête : compilation PHP conservée en mémoire (OPcache), routes et conteneur de services précompilés, métadonnées et résultats de requêtes Doctrine mis en cache. Sur les projets à forte charge, un cache déporté type Redis prend le relais pour les sessions et les données calculées.</p>
+
+              <h4>Livraison des fichiers</h4>
+              <p>Feuilles de style, scripts et polices sont minifiés, compressés (gzip/Brotli), versionnés et servis avec une validité longue : le navigateur ne les retélécharge qu'en cas de changement réel. Le tout est distribué en HTTP/2 sur une connexion chiffrée avec HSTS.</p>
+
+              <p class="offer-proof">Exemple mesurable sur un site en production : <a href="https://www.azur-trad.fr/fr" target="_blank" rel="noopener noreferrer">azur-trad.fr</a> renvoie les en-têtes <code>cache-control: public, s-maxage=240</code> pour les pages et <code>max-age=2592000, immutable</code> pour les fichiers statiques.</p>
             </div>
           </details>
 
