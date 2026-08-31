@@ -4240,3 +4240,144 @@ body {
   display: inline;
   white-space: nowrap;
 }
+
+
+/* --- Etudes de cas : contexte, intervention, resultat --- */
+.case-grid {
+  max-width: var(--width-large);
+  margin: 1.8rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 26px 24px;
+  border: 1px solid var(--border-color);
+  border-top: 2px solid var(--gold-deep);
+  background: var(--card-background);
+  box-shadow: var(--luxury-shadow);
+}
+
+.case-client {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+.case-card h3 {
+  margin: 10px 0 0;
+  font-size: 1.16rem;
+  line-height: 1.3;
+}
+
+.case-block {
+  margin-top: 16px;
+}
+
+.case-block dt {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.case-block dd {
+  margin: 5px 0 0;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.case-result {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.case-result .case-figure {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.case-result .case-figure-label {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+/* --- Temoignages --- */
+.quote-grid {
+  max-width: var(--width-large);
+  margin: 1.8rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 18px;
+}
+
+.quote-card {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border: 1px solid var(--border-color);
+  background: var(--card-background);
+}
+
+.quote-card blockquote {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+}
+
+.quote-card blockquote::before {
+  content: "\201C";
+  display: block;
+  margin-bottom: 2px;
+  font-size: 2.2rem;
+  line-height: 0.8;
+  color: var(--gold-deep);
+}
+
+.quote-author {
+  margin-top: auto;
+  padding-top: 16px;
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+}
+
+.quote-author strong {
+  display: block;
+  color: var(--text-primary);
+}
+
+/* Marqueur d'espace reserve : ces blocs ne doivent pas etre publies tels quels. */
+.is-placeholder {
+  position: relative;
+  border-style: dashed;
+  opacity: 0.72;
+}
+
+.is-placeholder::after {
+  content: "À REMPLACER";
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  padding: 3px 8px;
+  background: #c62828;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}

@@ -34,8 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-convert" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-convert" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-wording" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-wording" />
     <style>
       /* Styles spécifiques pour la page méthode */
       .method-hero {
@@ -126,8 +126,8 @@
 
       .overview-step:hover {
         border-color: var(--primary-color);
-        transform: translateY(-4px);
-        box-shadow: var(--shadow);
+        transform: none;
+        box-shadow: none;
       }
 
       .overview-step .ov-num {
@@ -298,7 +298,7 @@
       .step-details {
         background: var(--bg-primary);
         border-radius: 12px;
-        padding: 25px;
+        padding: 14px 18px 16px;
         border-left: 1px solid var(--border-color);
       }
 
@@ -390,9 +390,9 @@
       }
 
       .principle-card:hover {
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-        border-color: var(--primary-color);
+        transform: none;
+        box-shadow: var(--luxury-shadow-hover);
+        border-color: var(--gold-deep);
       }
 
       .principle-icon {
@@ -530,11 +530,11 @@
       }
 
       .overview-step:hover {
-        transform: translateY(-5px);
+        transform: none;
         border-top-color: var(--gold-deep);
         border-bottom-color: var(--gold-deep);
-        background: linear-gradient(180deg, rgba(154, 163, 170, 0.14), rgba(255, 255, 255, 0.3));
-        box-shadow: 0 12px 26px rgba(27, 30, 33, 0.1);
+        background: transparent;
+        box-shadow: none;
       }
 
       .overview-step:focus-visible {
@@ -630,9 +630,9 @@
       }
 
       .step-content-box:hover {
-        transform: translateY(-4px);
+        transform: none;
         border-color: rgba(127, 139, 149, 0.68);
-        box-shadow: 0 24px 48px rgba(27, 30, 33, 0.14);
+        box-shadow: var(--luxury-shadow-hover);
       }
 
       .flow-step:nth-child(odd)::after,
@@ -780,27 +780,27 @@
       <nav class="method-overview" aria-label="Aperçu des étapes">
         <a class="overview-step" href="#etape-1">
           <span class="ov-num">1</span>
-          <span class="ov-title">Cadrer</span>
+          <span class="ov-title">Cadrage</span>
           <span class="ov-duration">30–60 min · gratuit</span>
         </a>
         <a class="overview-step" href="#etape-2">
           <span class="ov-num">2</span>
-          <span class="ov-title">Planifier &amp; valider la charte</span>
+          <span class="ov-title">Spécifications &amp; planification</span>
           <span class="ov-duration">1–2 jours · gratuit</span>
         </a>
         <a class="overview-step" href="#etape-3">
           <span class="ov-num">3</span>
-          <span class="ov-title">Créer les pages</span>
-          <span class="ov-duration">Intégration progressive</span>
+          <span class="ov-title">Développement &amp; intégration</span>
+          <span class="ov-duration">Cycles de 2 semaines</span>
         </a>
         <a class="overview-step" href="#etape-4">
           <span class="ov-num">4</span>
-          <span class="ov-title">Recette client</span>
-          <span class="ov-duration">Vos validations</span>
+          <span class="ov-title">Recette &amp; validation</span>
+          <span class="ov-duration">Sur environnement de test</span>
         </a>
         <a class="overview-step" href="#etape-5">
           <span class="ov-num">5</span>
-          <span class="ov-title">Mise en ligne &amp; suivi ↻</span>
+          <span class="ov-title">Mise en production &amp; suivi</span>
           <span class="ov-duration">Après validation</span>
         </a>
       </nav>
@@ -814,7 +814,7 @@
           <div class="step-content-box">
             <h3>
               <i class="fas fa-handshake"></i>
-              Réunion de Cadrage Initial
+              Cadrage initial
             </h3>
             <span class="step-duration">30-60 minutes (Gratuit)</span>
             <p class="step-description">
@@ -835,7 +835,7 @@
                 <div class="substep-title">2. La problématique</div>
                 <div class="substep-desc">
                   Quel est le vrai problème à résoudre ? Contexte technique, contraintes business, délais, budget.
-                  On creuse pour comprendre les enjeux sans tourner autour du pot.
+                  Nous identifions les enjeux réels avant d'envisager une solution.
                 </div>
               </div>
 
@@ -843,7 +843,7 @@
                 <div class="substep-title">3. La solution proposée</div>
                 <div class="substep-desc">
                   Je vous propose une approche technique concrète, pragmatique et réaliste.
-                  Pas de bullshit, juste ce qui marche. Stack, architecture, méthodologie.
+                  Une approche éprouvée plutôt qu'une démonstration technique : stack, architecture et méthodologie adaptées à votre contexte.
                 </div>
               </div>
 
@@ -851,7 +851,7 @@
                 <div class="substep-title">4. Modalités de réalisation</div>
                 <div class="substep-desc">
                   Estimation macro (durée, budget), découpage en phases, rythme de travail.
-                  Si on est alignés, on démarre. Sinon, on ne perd pas notre temps.
+                  Si l'approche vous convient, nous démarrons. Sinon, vous repartez avec un avis technique argumenté.
                 </div>
               </div>
 
@@ -860,9 +860,9 @@
                 Pas de rendez-vous de courtoisie interminables.
               </p>
 
-              <div style="background: rgba(152, 161, 169, 0.1); border-left: 4px solid var(--primary-color); padding: 20px; margin-top: 25px; border-radius: 8px;">
+              <div style="background: rgba(152, 161, 169, 0.1); border-left: 1px solid var(--border-color); padding: 16px 18px; margin-top: 20px; border-radius: 8px;">
                 <h4 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--text-primary);">
-                  <i class="fas fa-shield-alt"></i> Je ne suis pas un exécutant aveugle
+                  <i class="fas fa-shield-alt"></i> Un regard critique sur le besoin
                 </h4>
                 <p style="color: var(--text-color); font-size: 0.95rem; line-height: 1.6; margin-bottom: 10px;">
                   <strong>Je challenge toujours le besoin</strong> pour veiller sur la qualité et l'amélioration de votre produit :
@@ -928,11 +928,11 @@
           <div class="step-content-box">
             <h3>
               <i class="fas fa-sync-alt"></i>
-              Création et intégration des pages
+              Développement et intégration
             </h3>
             <span class="step-duration">Selon le planning validé</span>
             <p class="step-description">
-              J'intègre les pages, les contenus et les fonctionnalités prévues, puis je vous montre l'avancement régulièrement.
+              Je développe et intègre les fonctionnalités par cycles de deux semaines, avec tests automatisés et revue de code. Vous suivez l'avancement ticket par ticket.
             </p>
 
             <details class="step-details step-details-toggle"><summary class="step-details-summary"><span>Voir le détail de cette étape</span></summary><div class="step-details-inner">
@@ -1031,7 +1031,7 @@
           <div class="step-content-box">
             <h3>
               <i class="fas fa-comments"></i>
-              Recette et validation client
+              Recette et validation
             </h3>
             <span class="step-duration">Avant la mise en ligne</span>
             <p class="step-description">
@@ -1057,7 +1057,7 @@
           <div class="step-content-box">
             <h3>
               <i class="fas fa-chart-line"></i>
-              Mise en ligne et suivi
+              Mise en production et suivi
             </h3>
             <span class="step-duration">Après votre validation finale</span>
             <p class="step-description">
