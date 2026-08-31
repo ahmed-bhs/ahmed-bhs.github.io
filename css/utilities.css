@@ -4835,7 +4835,7 @@ body.premium-web-page .page-header + #web-creation {
 
 /* Rythme vertical compact : moins de défilement sans sacrifier la lisibilité. */
 :root {
-  --header-gap: 32px;
+  --header-gap: 18px;
 }
 
 .stats-container,
@@ -4852,18 +4852,18 @@ body.premium-web-page .page-header + #web-creation {
 .expertise-gallery,
 .achievements-container,
 .project-container {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .content-text {
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .content-text p {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
 }
 
 .services-grid,
@@ -4872,38 +4872,118 @@ body.premium-web-page .page-header + #web-creation {
 .quality-grid,
 .proof-links-grid,
 .faq-grid {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .hero-console {
-  margin-top: 22px;
+  margin-top: 12px;
 }
 
 .client-marquee,
 .value-comparison {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .service-area {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .mid-cta {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .section-spacer-lg,
 .offer-more {
-  margin-top: 1.4rem;
+  margin-top: 0.8rem;
+}
+
+.pricing-card,
+.service-card,
+.achievement-card,
+.quality-card,
+.stat-card,
+.offer-detail-content,
+.substep,
+.principle-card,
+.case-card {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.pricing-card h3,
+.service-card h3,
+.achievement-card h3,
+.quality-card h3,
+.substep-title,
+.offer-detail-content h4 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.pricing-description,
+.service-card > p,
+.achievement-card p,
+.quality-card p,
+.substep-desc,
+.offer-detail-content p,
+.case-card p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.service-icon,
+.achievement-icon,
+.quality-card > i {
+  margin-bottom: 8px;
+}
+
+.pricing-features,
+.service-benefits,
+.compact-list,
+.vps-specs {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.pricing-features li,
+.service-benefits li,
+.compact-list li {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.premium-web-page .offers-layout .pricing-features li {
+  display: block;
+}
+
+.premium-web-page .offers-layout .pricing-features .plus-hand {
+  vertical-align: text-bottom;
+}
+
+.price {
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.premium-offer-details,
+.offer-detail,
+.faq-item {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.expertise-gallery figcaption {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 @media (max-width: 900px) {
   :root {
-    --header-gap: 20px;
+    --header-gap: 10px;
   }
 
   .stats-container,
@@ -4920,15 +5000,24 @@ body.premium-web-page .page-header + #web-creation {
   .expertise-gallery,
   .achievements-container,
   .project-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 
   .service-card,
   .achievement-card,
   .quality-card,
   .stat-card {
-    padding: 18px;
+    padding: 12px 14px;
+  }
+
+  .pricing-card,
+  .substep,
+  .principle-card,
+  .case-card,
+  .offer-detail-content {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .stats-grid,
@@ -4936,7 +5025,7 @@ body.premium-web-page .page-header + #web-creation {
   .achievements-grid,
   .quality-grid,
   .faq-grid {
-    gap: 10px;
+    gap: 6px;
   }
 
   .stat-number {
@@ -4944,23 +5033,23 @@ body.premium-web-page .page-header + #web-creation {
   }
 
   .hero-paths-lead {
-    margin-top: 1rem;
-    margin-bottom: 0.35rem;
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
   }
 
   .header-container > p.hero-clients {
-    padding-top: 0.65rem;
+    padding-top: 0.35rem;
   }
 
   .hero-console {
-    margin-top: 16px;
+    margin-top: 8px;
   }
 
   .faq-item > summary {
-    padding: 13px 16px;
+    padding: 10px 14px;
   }
 
   .faq-item p {
-    padding: 0 16px 14px;
+    padding: 0 14px 10px;
   }
 }
