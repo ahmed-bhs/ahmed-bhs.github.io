@@ -117,7 +117,7 @@
         transform: translateY(-50%);
         width: 22px;
         height: 18px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 20' fill='none' stroke='%23b8a179' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 10C8 9 15 10 21 10'/%3E%3Cpath d='M15 4C18 7 20 9 21 10C20 11 18 13 15 16'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 20' fill='none' stroke='%239aa3ab' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 10C8 9 15 10 21 10'/%3E%3Cpath d='M15 4C18 7 20 9 21 10C20 11 18 13 15 16'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-size: contain;
         opacity: 0.9;
@@ -229,7 +229,7 @@
         bottom: -46px;
         width: 34px;
         height: 40px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 44' fill='none' stroke='%23b8a179' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3C12 14 22 22 16 40'/%3E%3Cpath d='M8 31C12 37 15 40 16 40C18 38 22 35 27 34'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 44' fill='none' stroke='%239aa3ab' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3C12 14 22 22 16 40'/%3E%3Cpath d='M8 31C12 37 15 40 16 40C18 38 22 35 27 34'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-size: contain;
         opacity: 0.85;
@@ -531,14 +531,14 @@
 
       .overview-step:hover {
         transform: translateY(-5px);
-        border-top-color: #b9975b;
-        border-bottom-color: #b9975b;
+        border-top-color: var(--gold-deep);
+        border-bottom-color: var(--gold-deep);
         background: linear-gradient(180deg, rgba(210, 173, 114, 0.14), rgba(255, 255, 255, 0.3));
-        box-shadow: 0 12px 26px rgba(57, 42, 31, 0.1);
+        box-shadow: 0 12px 26px rgba(27, 30, 33, 0.1);
       }
 
       .overview-step:focus-visible {
-        outline: 2px solid #b9975b;
+        outline: 2px solid var(--gold-deep);
         outline-offset: 4px;
       }
 
@@ -548,7 +548,7 @@
 
       .overview-step:hover .ov-num {
         transform: translateY(-2px) scale(1.08);
-        background: #b9975b;
+        background: var(--gold-deep);
         color: #17212b;
       }
 
@@ -564,7 +564,7 @@
         width: 30px;
         height: 30px;
         background: var(--primary-color);
-        box-shadow: 0 5px 12px rgba(57, 42, 31, 0.18);
+        box-shadow: 0 5px 12px rgba(27, 30, 33, 0.18);
       }
 
       .overview-step:not(:last-child)::after {
@@ -572,8 +572,8 @@
         width: 12px;
         height: 12px;
         background: none;
-        border-top: 1px solid #b9975b;
-        border-right: 1px solid #b9975b;
+        border-top: 1px solid var(--gold-deep);
+        border-right: 1px solid var(--gold-deep);
         transform: translateY(-50%) rotate(45deg);
       }
 
@@ -617,7 +617,7 @@
         border-radius: 0;
         background: var(--primary-color);
         font-size: 1.15rem;
-        box-shadow: 0 8px 18px rgba(57, 42, 31, 0.2), 0 0 0 5px var(--bg-primary);
+        box-shadow: 0 8px 18px rgba(27, 30, 33, 0.2), 0 0 0 5px var(--bg-primary);
       }
 
       .step-content-box {
@@ -626,13 +626,13 @@
         border: 1px solid rgba(51, 78, 104, 0.24);
         border-radius: 0;
         background: rgba(255, 255, 255, 0.82);
-        box-shadow: 0 16px 36px rgba(57, 42, 31, 0.09);
+        box-shadow: 0 16px 36px rgba(27, 30, 33, 0.09);
       }
 
       .step-content-box:hover {
         transform: translateY(-4px);
         border-color: rgba(185, 151, 91, 0.68);
-        box-shadow: 0 24px 48px rgba(57, 42, 31, 0.14);
+        box-shadow: 0 24px 48px rgba(27, 30, 33, 0.14);
       }
 
       .flow-step:nth-child(odd)::after,
@@ -641,7 +641,7 @@
         z-index: 1;
         width: 44px;
         height: 44px;
-        border-color: #b9975b;
+        border-color: var(--gold-deep);
         border-style: solid;
         content: "";
       }
@@ -747,7 +747,7 @@
           <!-- Logo -->
           <h1 id="logo">
             <a href="https://ahmed-bhs.github.io/">
-              <span class="logo-mark" title="Disponible pour missions freelance"><span class="status-dot"></span><svg class="logo-glyph" viewBox="0 0 92 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="logo-node" cx="6" cy="19" r="2.8" fill="#b8a179"/><path class="logo-thread" d="M9 19 H83" stroke="#b8a179" stroke-width="3.2" stroke-linecap="round"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 29 L17.5 7 L23 29"/><path d="M39 7 h8 M39 7 v22 M39 29 h8"/><path d="M61 7 v22 M73 7 v22"/></g><circle class="logo-node" cx="86" cy="19" r="2.8" fill="#b8a179"/></svg></span>
+              <span class="logo-mark" title="Disponible pour missions freelance"><span class="status-dot"></span><svg class="logo-glyph" viewBox="0 0 92 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="logo-node" cx="6" cy="19" r="2.8" fill="#9aa3ab"/><path class="logo-thread" d="M9 19 H83" stroke="#9aa3ab" stroke-width="3.2" stroke-linecap="round"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 29 L17.5 7 L23 29"/><path d="M39 7 h8 M39 7 v22 M39 29 h8"/><path d="M61 7 v22 M73 7 v22"/></g><circle class="logo-node" cx="86" cy="19" r="2.8" fill="#9aa3ab"/></svg></span>
               <span class="logo-name"><span class="logo-name-main">AHMED EBEN HASSINE</span><span class="logo-name-role">Ingénieur en informatique senior</span></span>
             </a>
           </h1>

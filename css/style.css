@@ -9,25 +9,25 @@
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #2b2721;
-  --secondary-color: #6d665c;
-  --gold: #b8a179;
-  --gold-deep: #9d8862;
-  --bg-primary: #fbfaf7;
-  --text-color: #25211c;
+  --primary-color: #1b1e21;
+  --secondary-color: #6b747c;
+  --gold: #9aa3ab;
+  --gold-deep: #7d868f;
+  --bg-primary: #f6f7f9;
+  --text-color: #1b1e21;
   --text-color-two: #ffffff;
-  --text-primary: #25211c;
-  --text-secondary: #6d665c;
-  --bg-secondary: #25211c;
-  --card-background: #fffdfa;
-  --bg-secondary-two: #ede5d8;
-  --surface-warm: #efe6d7;
-  --console-bg: #231f1a;
-  --console-muted: #b8aa98;
-  --border-color: rgba(37, 33, 28, 0.14);
+  --text-primary: #1b1e21;
+  --text-secondary: #6b747c;
+  --bg-secondary: #1b1e21;
+  --card-background: #ffffff;
+  --bg-secondary-two: #e4e8ec;
+  --surface-warm: #eceff2;
+  --console-bg: #191c1f;
+  --console-muted: #9aa3ab;
+  --border-color: rgba(27, 30, 33, 0.13);
 
-  --shadow: 0 22px 70px rgba(57, 42, 31, 0.14);
-  --shadow-sm: 0 10px 30px rgba(57, 42, 31, 0.08);
+  --shadow: 0 22px 70px rgba(27, 30, 33, 0.12);
+  --shadow-sm: 0 10px 30px rgba(27, 30, 33, 0.07);
   --font-body: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-heading: "Source Serif 4", Georgia, serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
@@ -44,21 +44,21 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: #f0ece4;
-  --secondary-color: #c7bdb2;
-  --gold: #cbb488;
-  --gold-deep: #b8a179;
-  --bg-primary: #171512;
-  --text-color: #f8f4ee;
-  --text-color-two: #171512;
-  --text-primary: #f8f4ee;
-  --text-secondary: #c7bdb2;
-  --bg-secondary: #f8f4ee;
-  --card-background: #211e19;
-  --bg-secondary-two: #f8f4ee;
-  --surface-warm: #28231d;
-  --console-bg: #0f0e0c;
-  --console-muted: #b9aa98;
+  --primary-color: #eceff2;
+  --secondary-color: #b6bec6;
+  --gold: #b6bec6;
+  --gold-deep: #9aa3ab;
+  --bg-primary: #14171a;
+  --text-color: #eceff2;
+  --text-color-two: #14171a;
+  --text-primary: #eceff2;
+  --text-secondary: #b6bec6;
+  --bg-secondary: #eceff2;
+  --card-background: #1c2023;
+  --bg-secondary-two: #eceff2;
+  --surface-warm: #22272b;
+  --console-bg: #0e1113;
+  --console-muted: #9aa3ab;
   --border-color: rgba(255, 255, 255, 0.1);
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.24);
@@ -234,7 +234,7 @@ h6 {
   right: 0;
   z-index: 20;
   background: var(--bg-primary);
-  box-shadow: 0 8px 30px rgba(57, 42, 31, 0.06);
+  box-shadow: 0 8px 30px rgba(27, 30, 33, 0.06);
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(18px);
   background-color: color-mix(in srgb, var(--bg-primary) 88%, transparent);
@@ -730,7 +730,7 @@ h6 {
   color: #4a3f1e;
   border-radius: 3px;
   transform: rotate(2.5deg);
-  box-shadow: 0 10px 22px rgba(57, 42, 31, 0.18);
+  box-shadow: 0 10px 22px rgba(27, 30, 33, 0.18);
   transition: transform 0.2s ease;
 }
 
