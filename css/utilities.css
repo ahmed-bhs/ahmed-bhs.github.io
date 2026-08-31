@@ -4068,3 +4068,175 @@ body {
 .header-container > p.hero-paths-lead {
   text-align: left;
 }
+
+
+/* --- Offres : une entree principale, le detail se deplie --- */
+.offer-more {
+  max-width: var(--width-large);
+  margin: 2.4rem auto 0;
+  display: grid;
+  gap: 12px;
+}
+
+.offer-more-block {
+  border: 1px solid var(--border-color);
+  background: var(--card-background);
+}
+
+.offer-more-block > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 22px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.offer-more-block > summary::-webkit-details-marker {
+  display: none;
+}
+
+.offer-more-block > summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--gold-deep);
+}
+
+.offer-more-block[open] > summary::after {
+  content: "\2212";
+}
+
+.offer-more-block > summary:hover {
+  color: var(--gold-deep);
+}
+
+.offer-more-inner {
+  padding: 4px 22px 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.offer-more-lead {
+  margin: 16px 0 20px;
+  max-width: 68ch;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* Rappel d'action a mi-page : le prospect convaincu tot n'a pas a tout parcourir. */
+.mid-cta {
+  max-width: var(--width-large);
+  margin: 3rem auto 0;
+  padding: 26px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  border: 1px solid var(--border-color);
+  border-left: 2px solid var(--gold-deep);
+  background: var(--card-background);
+}
+
+.mid-cta p {
+  margin: 0;
+  max-width: 54ch;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.mid-cta strong {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-heading);
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.mid-cta .btn {
+  flex: 0 0 auto;
+}
+
+/* Objections : ce qu'un prospect se demande avant d'ecrire. */
+.faq-grid {
+  max-width: var(--width-large);
+  margin: 1.6rem auto 0;
+  display: grid;
+  gap: 10px;
+}
+
+.faq-item {
+  border: 1px solid var(--border-color);
+  background: var(--card-background);
+}
+
+.faq-item > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 22px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item > summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  color: var(--gold-deep);
+}
+
+.faq-item[open] > summary::after {
+  content: "\2212";
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 22px 20px;
+  max-width: 78ch;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 760px) {
+  .mid-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+.field-optional {
+  display: inline;
+  margin-left: 6px;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+
+.brief-form label {
+  display: block;
+}
+
+.brief-form label .field-optional {
+  display: inline;
+  white-space: nowrap;
+}

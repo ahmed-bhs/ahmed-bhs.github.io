@@ -35,8 +35,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-mindmap" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-mindmap" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-convert" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-convert" />
     <style>
       .hero-paths {
         display: flex;
@@ -329,16 +329,13 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <section id="mission-formats" class="pricing-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Formats de mission clairs</h2>
-        <p>Des points d'entrée simples pour décider vite, cadrer le budget et avancer sans zone floue.</p>
-      </div>
-
-      <div class="pricing-grid offer-grid">
+      <div class="offer-more">
+        <details class="offer-more-block">
+          <summary><span>Voir les formats et tarifs détaillés</span></summary>
+          <div class="offer-more-inner">
+            <p class="offer-more-lead">Des points d'entrée simples pour décider vite, cadrer le budget et avancer sans zone floue.</p>
+            <div class="pricing-grid offer-grid">
         <article class="pricing-card">
           <div class="pricing-badge">Visibilité</div>
           <h3>Audit SEO</h3>
@@ -400,17 +397,14 @@
           </ul>
         </article>
       </div>
-    </section>
+          </div>
+        </details>
 
-
-    <section id="deliverables" class="deliverables-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Bibliothèque de livrables</h2>
-        <p>Les briques que je peux assembler selon votre contexte, de la simple présence web à l'application métier plus avancée.</p>
-      </div>
-
-      <div class="deliverables-grid">
+        <details class="offer-more-block">
+          <summary><span>Voir toutes les briques techniques</span></summary>
+          <div class="offer-more-inner">
+            <p class="offer-more-lead">Les briques que je peux assembler selon votre contexte, de la simple présence web à l'application métier plus avancée.</p>
+            <div class="deliverables-grid">
         <span><i class="fas fa-globe"></i> Site vitrine administrable</span>
         <span><i class="fas fa-cogs"></i> Back-office métier</span>
         <span><i class="fas fa-plug"></i> API REST / GraphQl / gRPC</span>
@@ -424,7 +418,18 @@
         <span><i class="fas fa-user-lock"></i> Rôles utilisateurs</span>
         <span><i class="fas fa-sync-alt"></i> Maintenance évolutive</span>
       </div>
+          </div>
+        </details>
+      </div>
     </section>
+
+    <aside class="mid-cta container">
+      <p>
+        <strong>Votre besoin ressemble à l'un de ces cas ?</strong>
+        Un premier échange de 30 minutes suffit pour savoir si je peux vous aider, comment, et à quel prix. Sans engagement.
+      </p>
+      <a class="btn btn-primary" href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer">Réserver un appel</a>
+    </aside>
 
     <section id="external-proof" class="proof-links-container container">
       <div class="division"></div>
@@ -450,6 +455,46 @@
           <i class="fab fa-medium"></i>
           <span>Articles techniques</span>
         </a>
+      </div>
+    </section>
+
+    <section id="faq" class="pricing-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Les questions que l'on me pose avant de démarrer</h2>
+        <p>Ce qu'il est légitime de vouloir savoir avant de confier un projet à un prestataire externe.</p>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-item">
+          <summary>À qui appartient le code que vous écrivez ?</summary>
+          <p>Le code vous appartient. Il est versionné sur votre dépôt Git, ou sur un dépôt que je vous transfère en fin de mission. Vous conservez l'accès complet à l'historique, aux environnements et à la documentation technique.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Que se passe-t-il si vous n'êtes plus disponible ?</summary>
+          <p>Le travail est documenté au fil de la mission, pas à la fin : architecture, choix techniques et procédures de déploiement sont écrits dans le dépôt. Un autre développeur Symfony peut reprendre sans dépendre de moi. La passation fait partie de la prestation.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment savoir où en est le projet ?</summary>
+          <p>Chaque besoin est formalisé en tickets numérotés dans votre outil de gestion, avec des critères d'acceptation. Vous voyez l'avancement en continu et vous recettez sur un environnement de test avant chaque mise en production. Le détail est décrit sur la page <a href="methode-travail.html">méthode de travail</a>.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Et si le résultat ne me convient pas ?</summary>
+          <p>La recette client précède toute mise en production : vous validez sur un environnement de test avant que quoi que ce soit ne parte en ligne. Les ajustements sur les éléments livrés sont couverts par le premier mois de support correctif.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Travaillez-vous à distance ou sur site ?</summary>
+          <p>À distance, avec des points réguliers. J'interviens directement dans vos outils : dépôt Git, gestion de tickets, canaux d'équipe. Le premier échange se fait en visioconférence.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment démarre concrètement une mission ?</summary>
+          <p>Par un appel de 30 minutes, gratuit et sans engagement, pour clarifier le besoin. Vous recevez ensuite un cahier des charges synthétique et un devis. Le cadrage et la planification ne sont facturés qu'une fois la mission engagée.</p>
+        </details>
       </div>
     </section>
 
@@ -536,8 +581,8 @@
           </select>
         </label>
         <label>
-          Budget ou durée estimée
-          <input type="text" name="Budget" placeholder="Ex : 2 semaines, 5 jours, 3 000€..." />
+          Budget ou durée estimée <span class="field-optional">facultatif</span>
+          <input type="text" name="Budget" placeholder="Si vous ne savez pas encore, laissez vide" />
         </label>
         <label class="brief-form-full">
           Message
@@ -583,8 +628,8 @@
             <ul>
               <li><a href="sites-web.html">Sites & outils web Symfony</a></li>
               <li><a href="sites-web.html#web-creation">Hébergement & déploiement</a></li>
-              <li><a href="index.html#mission-formats">Audit SEO</a></li>
-              <li><a href="index.html#mission-formats">Audit UX/UI</a></li>
+              <li><a href="index.html#explore">Audit SEO</a></li>
+              <li><a href="index.html#explore">Audit UX/UI</a></li>
               <li><a href="freelance.html">Renfort d'équipe & migrations</a></li>
             </ul>
           </div>
