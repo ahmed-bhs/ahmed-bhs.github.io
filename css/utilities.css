@@ -113,10 +113,10 @@ h2::selection {
 
 @keyframes pulse-border {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(119, 97, 79, 0.28);
+    box-shadow: 0 0 0 0 rgba(90, 100, 108, 0.28);
   }
   50% {
-    box-shadow: 0 0 0 10px rgba(119, 97, 79, 0);
+    box-shadow: 0 0 0 10px rgba(90, 100, 108, 0);
   }
 }
 
@@ -568,11 +568,11 @@ h2::selection {
   color: #ffffff;
   border-color: #f59e0b;
   font-weight: 600;
-  box-shadow: 0 1px 3px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 1px 3px rgba(117, 129, 139, 0.3);
 }
 
 .skill-tag.expert:hover {
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+  box-shadow: 0 2px 8px rgba(117, 129, 139, 0.4);
 }
 
 .skill-tag.advanced {
@@ -885,7 +885,7 @@ h2::selection {
 
 .audit-card {
   border: 2px solid var(--primary-color);
-  box-shadow: 0 14px 36px rgba(119, 97, 79, 0.16);
+  box-shadow: 0 14px 36px rgba(90, 100, 108, 0.16);
 }
 
 .compact-list {
@@ -970,7 +970,7 @@ h2::selection {
 .brief-form textarea:focus {
   border-color: var(--primary-color);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(119, 97, 79, 0.18);
+  box-shadow: 0 0 0 3px rgba(90, 100, 108, 0.18);
 }
 
 .brief-form-full,
@@ -2252,7 +2252,7 @@ footer .copyright {
 
 .pricing-card.featured {
   border: 2px solid var(--primary-color);
-  box-shadow: 0 16px 40px rgba(119, 97, 79, 0.18);
+  box-shadow: 0 16px 40px rgba(90, 100, 108, 0.18);
 }
 
 .pricing-badge {
@@ -2352,7 +2352,7 @@ footer .copyright {
 }
 
 .pricing-offer {
-  background: rgba(119, 97, 79, 0.08);
+  background: rgba(90, 100, 108, 0.08);
   border: 2px dashed var(--primary-color);
   border-radius: 12px;
   padding: 20px;
@@ -2479,7 +2479,7 @@ footer .copyright {
   font-size: 1.5rem;
   font-weight: var(--weight-bold);
   flex-shrink: 0;
-  box-shadow: 0 4px 15px rgba(119, 97, 79, 0.26);
+  box-shadow: 0 4px 15px rgba(90, 100, 108, 0.26);
   z-index: 1;
 }
 
@@ -3146,7 +3146,7 @@ html {
 
 .division {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(148, 114, 68, 0.62), transparent);
+  background: linear-gradient(90deg, transparent, rgba(98, 109, 118, 0.62), transparent);
 }
 
 .page-header::after {
@@ -3155,7 +3155,7 @@ html {
   bottom: -1px;
   left: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(148, 114, 68, 0.45), transparent);
+  background: linear-gradient(90deg, transparent, rgba(98, 109, 118, 0.45), transparent);
   content: "";
   pointer-events: none;
 }
@@ -3189,7 +3189,7 @@ html {
 .premium-web-page .offer-detail-recommendation {
   padding: 10px 12px;
   border-left: 2px solid var(--gold-deep);
-  background: rgba(210, 173, 114, 0.12);
+  background: rgba(154, 163, 170, 0.12);
   color: var(--text-secondary);
 }
 
@@ -3197,7 +3197,7 @@ html {
   display: inline-block;
   margin-left: 8px;
   padding: 3px 7px;
-  border: 1px solid rgba(185, 151, 91, 0.55);
+  border: 1px solid rgba(127, 139, 149, 0.55);
   border-radius: 2px;
   color: var(--gold-deep);
   font-size: 0.68rem;
@@ -3425,7 +3425,7 @@ body {
 /* Footer : bleu nuit profond, champagne et contraste éditorial. */
 #footer {
   background: linear-gradient(145deg, #0b1420 0%, #172a3b 58%, #0b1420 100%);
-  border-top: 1px solid rgba(210, 173, 114, 0.38);
+  border-top: 1px solid rgba(154, 163, 170, 0.38);
   box-shadow: 0 -18px 46px rgba(27, 30, 33, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
@@ -3452,7 +3452,7 @@ body {
 }
 
 #footer .footer-social a {
-  border: 1px solid rgba(210, 173, 114, 0.34);
+  border: 1px solid rgba(154, 163, 170, 0.34);
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.06);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
@@ -3468,7 +3468,7 @@ body {
 }
 
 #footer .footer-bottom {
-  border-top-color: rgba(210, 173, 114, 0.25);
+  border-top-color: rgba(154, 163, 170, 0.25);
 }
 
 #footer .footer-bottom .copyright {
@@ -3498,7 +3498,7 @@ body {
 .division {
   height: 1px;
   margin: 0 0 28px;
-  background: linear-gradient(90deg, transparent, rgba(185, 151, 91, 0.7) 24%, rgba(51, 78, 104, 0.22) 70%, transparent);
+  background: linear-gradient(90deg, transparent, rgba(127, 139, 149, 0.7) 24%, rgba(51, 78, 104, 0.22) 70%, transparent);
 }
 
 .content-text h2,
@@ -3566,7 +3566,7 @@ body {
 
 .offer-detail summary:hover,
 .premium-offer-details summary:hover {
-  background: rgba(210, 173, 114, 0.08);
+  background: rgba(154, 163, 170, 0.08);
   color: var(--primary-color);
 }
 
@@ -3601,7 +3601,7 @@ body {
 }
 
 .project .project-info {
-  border-top: 1px solid rgba(185, 151, 91, 0.38);
+  border-top: 1px solid rgba(127, 139, 149, 0.38);
 }
 
 .deliverables-grid span,
@@ -3614,7 +3614,7 @@ body {
 .deliverables-grid span:hover,
 .proof-link:hover {
   transform: translateY(-4px);
-  border-color: rgba(185, 151, 91, 0.62);
+  border-color: rgba(127, 139, 149, 0.62);
   background: #ffffff;
   box-shadow: var(--luxury-shadow-hover);
 }
@@ -3666,7 +3666,7 @@ body {
 .principle-card:hover,
 .project:hover,
 .offer-detail:hover {
-  border-color: rgba(148, 114, 68, 0.48);
+  border-color: rgba(98, 109, 118, 0.48);
   box-shadow: 0 22px 48px rgba(31, 43, 54, 0.13);
   transform: translateY(-3px);
 }

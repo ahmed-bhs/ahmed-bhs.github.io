@@ -91,7 +91,7 @@ a {
 /* Main styling */
 body {
   background:
-    radial-gradient(circle at top left, rgba(184, 92, 56, 0.12), transparent 34rem),
+    radial-gradient(circle at top left, rgba(109, 121, 131, 0.12), transparent 34rem),
     linear-gradient(180deg, var(--bg-primary) 0%, #fffaf2 48%, var(--bg-primary) 100%);
   color: var(--text-color);
   font-family: var(--font-body);
@@ -726,8 +726,8 @@ h6 {
   position: relative;
   width: 250px;
   padding: 1.4rem 1.3rem 1.2rem;
-  background: #fff6c8;
-  color: #4a3f1e;
+  background: #e1e4e6;
+  color: #2f3439;
   border-radius: 3px;
   transform: rotate(2.5deg);
   box-shadow: 0 10px 22px rgba(27, 30, 33, 0.18);
@@ -746,8 +746,8 @@ h6 {
   width: 96px;
   height: 26px;
   transform: translateX(-50%) rotate(-3deg);
-  background: rgba(240, 225, 170, 0.55);
-  border: 1px solid rgba(180, 160, 110, 0.35);
+  background: rgba(201, 205, 210, 0.55);
+  border: 1px solid rgba(135, 146, 155, 0.35);
 }
 
 .offer-help-title {
@@ -763,7 +763,7 @@ h6 {
   font-size: 1.12rem;
   line-height: 1.25;
   margin-bottom: 0.8rem;
-  color: #5c4f28;
+  color: #3c4348;
 }
 
 .offer-help-link {
