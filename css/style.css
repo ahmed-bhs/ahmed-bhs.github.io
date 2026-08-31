@@ -238,6 +238,7 @@ h6 {
   border-bottom: 1px solid var(--border-color);
   backdrop-filter: blur(18px);
   background-color: color-mix(in srgb, var(--bg-primary) 88%, transparent);
+  pointer-events: auto;
 }
 
 .navbar .container {
@@ -613,6 +614,7 @@ h6 {
     border-radius: 5px;
     align-items: flex-start;
     background: var(--bg-primary);
+    z-index: 21;
   }
 
   .navbar .btn {

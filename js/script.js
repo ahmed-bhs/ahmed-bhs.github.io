@@ -1,7 +1,9 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
+if (hamburger && navMenu) {
+  hamburger.addEventListener("click", mobileMenu);
+}
 
 function mobileMenu() {
   hamburger.classList.toggle("active");
@@ -14,8 +16,8 @@ const navLink = document.querySelectorAll(".nav-link");
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
+  hamburger?.classList.remove("active");
+  navMenu?.classList.remove("active");
 }
 
 // Le site utilise volontairement une seule direction visuelle : le thème clair.
@@ -27,7 +29,7 @@ localStorage.removeItem("theme");
 let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
-myDate.innerHTML = yes;
+if (myDate) myDate.innerHTML = yes;
 
 const briefForm = document.querySelector("[data-brief-form]");
 
