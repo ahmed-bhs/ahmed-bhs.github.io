@@ -4604,9 +4604,9 @@ body.premium-web-page .page-header + #web-creation {
   background: var(--card-background);
 }
 
-.value-person {
-  max-width: 680px;
-  margin: 22px auto 0;
+.hero-person {
+  width: var(--hero-col);
+  margin: 1rem auto 0;
   padding: 12px 18px 12px 12px;
   display: flex;
   align-items: center;
@@ -4615,28 +4615,28 @@ body.premium-web-page .page-header + #web-creation {
   background: var(--card-background);
 }
 
-.value-person img {
+.hero-person img {
   width: 76px;
   height: 76px;
   object-fit: cover;
   filter: grayscale(1);
 }
 
-.value-person p,
-.value-person span {
+.hero-person p,
+.hero-person span {
   display: block;
 }
 
-.value-person p {
+.hero-person p {
   margin: 0;
   line-height: 1.5;
 }
 
-.value-person strong {
+.hero-person strong {
   color: var(--text-primary);
 }
 
-.value-person span {
+.hero-person span {
   margin-top: 4px;
   font-size: 0.86rem;
   color: var(--text-secondary);
