@@ -87,7 +87,6 @@ h2::selection {
   max-width: 100%;
 }
 
-@media (min-width: 901px) {
 /* Availability Badge */
 .availability-badge {
   display: inline-flex;
@@ -1153,6 +1152,21 @@ h2::selection {
     transform: rotate(-7deg);
     opacity: 1;
   }
+  .trust-stamp-inline {
+    position: static;
+    width: 92px;
+    margin: 0 auto 8px;
+    transform: none;
+  }
+  .trust-stamp-inline img,
+  .trust-stamp img {
+    width: 100%;
+    height: auto;
+  }
+  .premium-web-page .trust-stamp-inline {
+    transform: none;
+    opacity: 0.9;
+  }
   .trust-stamp:hover,
   .trust-stamp:focus-visible {
     transform: rotate(-7deg) scale(1.04);
@@ -1757,6 +1771,18 @@ footer .copyright {
   max-width: 880px;
   margin: 0 auto 52px;
   text-align: center;
+}
+
+@media (min-width: 901px) {
+  .premium-web-page .trust-stamp-inline {
+    top: 96px;
+    right: max(16px, calc((100vw - 1420px) / 2));
+  }
+
+  .premium-web-page #web-creation > .content-text:first-of-type h2 {
+    max-width: 20ch;
+    margin-inline: auto;
+  }
 }
 
 .premium-web-page #web-creation > .content-text:first-of-type h2 {
@@ -3106,14 +3132,14 @@ footer .copyright {
   font-size: 0.95rem;
 }
 
-/* Premium palette: graphite, cool ivory and champagne gold. */
+/* Premium palette: encre chaude, ivoire et or champagne. */
 .premium-web-page {
-  background: #f2f4f6;
-  color: #17212b;
+  background: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 .premium-web-page .logo-mark {
-  background: #4d5d6b;
+  background: var(--ink-deep);
 }
 
 .premium-web-page .premium-accent,
@@ -3123,31 +3149,31 @@ footer .copyright {
 
 .premium-web-page .content-text h2,
 .premium-web-page .offers-layout .pricing-card h3 {
-  color: #17212b;
+  color: var(--text-primary);
 }
 
 .premium-web-page .offers-layout .pricing-card {
-  border-color: #d4dbe2;
-  background: #ffffff;
+  border-color: var(--border-color);
+  background: var(--card-background);
 }
 
 .premium-web-page .offers-layout .pricing-card.featured {
   border-color: #b89a67;
-  background: linear-gradient(155deg, #ffffff 0%, #f5f7f8 100%);
+  background: linear-gradient(155deg, var(--card-background) 0%, var(--surface-warm) 100%);
 }
 
 .premium-web-page .pricing-badge {
-  background: #4d5d6b;
+  background: var(--ink-deep);
 }
 
 .premium-web-page .btn-primary {
-  background: #4d5d6b;
-  border-color: #4d5d6b;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .premium-web-page .btn-primary:hover {
-  background: #344552;
-  border-color: #344552;
+  background: color-mix(in srgb, var(--primary-color) 86%, var(--ink-deep));
+  border-color: color-mix(in srgb, var(--primary-color) 86%, var(--ink-deep));
 }
 
 .premium-web-page .nav-link.active {
@@ -3155,8 +3181,8 @@ footer .copyright {
 }
 
 .premium-web-page .offer-details-panel {
-  border-color: #cbd4dc;
-  background: #e9eef2;
+  border-color: var(--border-color);
+  background: var(--surface-warm);
 }
 
 .premium-web-page .premium-investment h2 {
@@ -3179,7 +3205,7 @@ html {
 
 ::selection {
   background: #d2ad72;
-  color: #17212b;
+  color: var(--text-primary);
 }
 
 :focus-visible {
@@ -3233,7 +3259,7 @@ html {
   padding: 10px 12px;
   border-left: 2px solid #b9975b;
   background: rgba(210, 173, 114, 0.12);
-  color: #4d5d6b;
+  color: var(--text-secondary);
 }
 
 .premium-web-page .offer-detail-recommended {
@@ -3291,7 +3317,7 @@ html {
 }
 
 .cta-container .cta-buttons .btn-secondary:hover {
-  color: #17212b;
+  color: var(--text-primary);
   border-color: #d2ad72;
   background: #d2ad72;
 }
@@ -3324,21 +3350,31 @@ html {
 /* Finition premium commune aux pages principales. */
 :root {
   color-scheme: light;
-  --primary-color: #334e68;
-  --luxury-shadow: 0 18px 42px rgba(23, 33, 43, 0.1), 0 2px 8px rgba(23, 33, 43, 0.06);
-  --luxury-shadow-hover: 0 26px 58px rgba(23, 33, 43, 0.15), 0 4px 12px rgba(23, 33, 43, 0.08);
+  --luxury-shadow: 0 18px 42px rgba(57, 42, 31, 0.09), 0 2px 8px rgba(57, 42, 31, 0.05);
+  --luxury-shadow-hover: 0 26px 58px rgba(57, 42, 31, 0.14), 0 4px 12px rgba(57, 42, 31, 0.07);
+  --ink-deep: #1d1a15;
+  --accent-soft: color-mix(in srgb, var(--primary-color) 12%, transparent);
+  --hairline: color-mix(in srgb, var(--primary-color) 22%, transparent);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --luxury-shadow: 0 18px 42px rgba(0, 0, 0, 0.42), 0 2px 8px rgba(0, 0, 0, 0.3);
+  --luxury-shadow-hover: 0 26px 58px rgba(0, 0, 0, 0.55), 0 4px 12px rgba(0, 0, 0, 0.35);
+  --ink-deep: #f8f4ee;
 }
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(51, 78, 104, 0.1), transparent 34rem),
-    linear-gradient(180deg, var(--bg-primary) 0%, #f7f8fa 48%, var(--bg-primary) 100%);
+    radial-gradient(circle at 12% 0%, color-mix(in srgb, var(--primary-color) 9%, transparent), transparent 38rem),
+    radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--secondary-color) 10%, transparent), transparent 32rem),
+    linear-gradient(180deg, var(--bg-primary) 0%, var(--surface-warm) 46%, var(--bg-primary) 100%);
 }
 
 .logo-mark {
-  background: #334e68;
+  background: var(--ink-deep);
   border-radius: 0;
-  box-shadow: 0 8px 18px rgba(23, 33, 43, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 18px rgba(57, 42, 31, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 
 /* CTA compact : aucun espace vertical ajouté par la section elle-même. */
@@ -3382,27 +3418,57 @@ body {
 }
 
 .btn {
-  box-shadow: 0 10px 22px rgba(23, 33, 43, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.btn:hover {
-  box-shadow: 0 16px 30px rgba(23, 33, 43, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 1px 2px rgba(57, 42, 31, 0.12);
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--primary-color) 86%, var(--ink-deep));
+  border-color: color-mix(in srgb, var(--primary-color) 86%, var(--ink-deep));
+  color: var(--text-color-two);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px color-mix(in srgb, var(--primary-color) 28%, transparent);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--hairline);
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  background: var(--accent-soft);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
 }
 
 .brief-form input,
 .brief-form select,
 .brief-form textarea {
-  box-shadow: inset 0 1px 2px rgba(23, 33, 43, 0.05), 0 4px 14px rgba(23, 33, 43, 0.04);
+  box-shadow: inset 0 1px 2px rgba(57, 42, 31, 0.05), 0 4px 14px rgba(57, 42, 31, 0.04);
 }
 
 .brief-form input:focus,
 .brief-form select:focus,
 .brief-form textarea:focus {
-  box-shadow: 0 0 0 3px rgba(51, 78, 104, 0.12), 0 8px 20px rgba(23, 33, 43, 0.08);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 18%, transparent), 0 8px 20px rgba(57, 42, 31, 0.08);
 }
 
 .page-header {
-  box-shadow: 0 8px 24px rgba(23, 33, 43, 0.08);
+  box-shadow: 0 8px 24px rgba(57, 42, 31, 0.08);
 }
 
 /* En-tête compact : aucun espace vertical superflu autour de la navigation. */
@@ -3429,7 +3495,7 @@ body {
 #footer {
   background: linear-gradient(145deg, #0b1420 0%, #172a3b 58%, #0b1420 100%);
   border-top: 1px solid rgba(210, 173, 114, 0.38);
-  box-shadow: 0 -18px 46px rgba(23, 33, 43, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  box-shadow: 0 -18px 46px rgba(57, 42, 31, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 #footer .footer-col h4,
@@ -3555,7 +3621,7 @@ body {
 }
 
 .brief-form label {
-  color: #334e68;
+  color: var(--primary-color);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -3570,12 +3636,12 @@ body {
 .offer-detail summary:hover,
 .premium-offer-details summary:hover {
   background: rgba(210, 173, 114, 0.08);
-  color: #334e68;
+  color: var(--primary-color);
 }
 
 ::selection {
   background: #b9975b;
-  color: #17212b;
+  color: var(--text-primary);
 }
 
 /* Références « quiet luxury » : navigation retenue, grille éditoriale et mouvement lent. */
@@ -3713,5 +3779,183 @@ body {
   .offer-detail,
   .btn {
     transition: none;
+  }
+}
+
+
+/* --- Hero : lisibilite, mesure typographique et hierarchie des CTA --- */
+.header-container {
+  --hero-badge-gutter: 132px;
+  max-width: var(--width-large);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 4vw, 3rem);
+  padding-right: clamp(1rem, 4vw, 3rem);
+}
+
+@media (min-width: 901px) {
+  .header-container {
+    padding-right: calc(clamp(1rem, 4vw, 3rem) + var(--hero-badge-gutter));
+    padding-left: calc(clamp(1rem, 4vw, 3rem) + var(--hero-badge-gutter));
+  }
+}
+
+.header-container > h1 {
+  max-width: 46ch;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.header-container .content-text {
+  max-width: none;
+}
+
+.header-container .content-text h2 {
+  max-width: 17ch;
+  margin-inline: auto;
+  font-size: clamp(2.2rem, 4.4vw, 3.9rem);
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.header-container .content-text p {
+  max-width: 62ch;
+  font-size: clamp(1rem, 1.05vw, 1.08rem);
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.header-container .content-text p strong {
+  color: var(--text-primary);
+}
+
+.hero-cert-badges {
+  top: 8px;
+  right: 0;
+  gap: 10px;
+}
+
+/* Hierarchie : une seule action principale, les autres en appui. */
+.hero-paths {
+  margin-top: 0.75rem;
+}
+
+.hero-cta-cell .btn-secondary.hero-action-btn {
+  background: transparent;
+  border-color: var(--hairline);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.hero-cta-cell .btn-secondary.hero-action-btn:hover {
+  background: var(--accent-soft);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.hero-cta-cell:nth-child(2) .btn-primary.hero-action-btn {
+  background: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+.hero-cta-cell:nth-child(2) .btn-primary.hero-action-btn:hover {
+  background: var(--accent-soft);
+  color: var(--primary-color);
+}
+
+.hero-path-q {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    --hero-badge-gutter: 0px;
+  }
+
+  .hero-cert-badges {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto 22px;
+  }
+
+  .hero-cert-row {
+    display: contents;
+  }
+
+  .hero-cert-badge {
+    width: 58px;
+    height: 58px;
+  }
+
+  .hero-cert-row-top .hero-cert-badge {
+    width: 74px;
+    height: 74px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container .content-text h2 {
+    max-width: 100%;
+    font-size: 1.9rem;
+    line-height: 1.22;
+  }
+
+  .header-container > h1 {
+    max-width: 100%;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+  }
+
+  .header-container .content-text p {
+    max-width: 100%;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container .content-text h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Pages internes : degager le contenu sous l'en-tete fixe et calmer la hierarchie. */
+.page-header + main > section:first-child,
+.page-header + main > .container:first-child,
+.page-header + section {
+  padding-top: 104px;
+}
+
+.pricing-container > .content-text h2,
+.deliverables-container > .content-text h2,
+.clients-container > .content-text h2 {
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  line-height: 1.14;
+  max-width: 22ch;
+  margin-inline: auto;
+}
+
+.content-text h2.compact-section-title {
+  font-size: clamp(1.55rem, 2.3vw, 2.05rem);
+  line-height: 1.18;
+  max-width: 26ch;
+  margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+  .page-header + main > section:first-child,
+  .page-header + main > .container:first-child,
+  .page-header + section {
+    padding-top: 88px;
   }
 }
