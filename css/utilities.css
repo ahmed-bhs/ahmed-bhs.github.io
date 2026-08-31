@@ -1053,85 +1053,16 @@ h2::selection {
   position: relative;
 }
 
-.hero-cert-badges {
-  position: absolute;
-  top: 24px;
-  right: 1.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  z-index: 5;
-}
 
-.hero-cert-row {
-  display: contents;
-}
 
-.hero-cert-badge {
-  display: block;
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
-  background: #ffffff;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
-}
 
-.hero-cert-badge:hover,
-.hero-cert-badge:focus-visible {
-  transform: scale(1.07);
-}
 
-.hero-cert-badge img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  transform: scale(1.02);
-}
 
-.hero-cert-row-bottom .hero-cert-badge {
-  border: 2px solid var(--border-color);
-}
 
-.hero-cert-row-top .hero-cert-badge {
-  width: 78px;
-  height: 78px;
-  background: transparent;
-  border-radius: 0;
-  overflow: visible;
-  box-shadow: none;
-}
 
-.hero-cert-row-top .hero-cert-badge img {
-  transform: none;
-}
 
-.hero-cert-badge-ibexa img {
-  transform: scale(1.12);
-}
 
-.hero-cert-badge-ccna img {
-  transform: scale(1.35);
-}
 
-@media (max-width: 900px) {
-  .hero-cert-badges {
-    position: static;
-    margin: 0 auto 18px;
-    gap: 20px;
-  }
-  .hero-cert-badge {
-    width: 76px;
-    height: 76px;
-  }
-  .hero-cert-row-top .hero-cert-badge {
-    width: 116px;
-    height: 116px;
-  }
-}
 
 .services-container,
 .pricing-container,
@@ -1796,7 +1727,7 @@ footer .copyright {
 
 .premium-eyebrow {
   margin: 0 0 14px;
-  color: #986b35;
+  color: var(--gold-deep);
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -2713,7 +2644,7 @@ footer .copyright {
 
   .premium-web-page .premium-eyebrow {
     padding: 0;
-    color: #986b35;
+    color: var(--gold-deep);
     font-size: 0.7rem !important;
     font-weight: 800;
     letter-spacing: 0.12em;
@@ -3785,7 +3716,7 @@ body {
 
 /* --- Hero : lisibilite, mesure typographique et hierarchie des CTA --- */
 .header-container {
-  --hero-badge-gutter: 132px;
+  --hero-badge-gutter: 0px;
   max-width: var(--width-large);
   margin-left: auto;
   margin-right: auto;
@@ -3835,11 +3766,6 @@ body {
   color: var(--text-primary);
 }
 
-.hero-cert-badges {
-  top: 8px;
-  right: 0;
-  gap: 10px;
-}
 
 /* Hierarchie : une seule action principale, les autres en appui. */
 .hero-paths {
@@ -3880,27 +3806,9 @@ body {
     --hero-badge-gutter: 0px;
   }
 
-  .hero-cert-badges {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    margin: 0 auto 22px;
-  }
 
-  .hero-cert-row {
-    display: contents;
-  }
 
-  .hero-cert-badge {
-    width: 58px;
-    height: 58px;
-  }
 
-  .hero-cert-row-top .hero-cert-badge {
-    width: 74px;
-    height: 74px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -3958,4 +3866,71 @@ body {
   .page-header + section {
     padding-top: 88px;
   }
+}
+
+
+/* --- Accent : encre pour l'action, or blanc pour l'ornement --- */
+:root {
+  --accent-soft: color-mix(in srgb, var(--gold) 16%, transparent);
+  --hairline: color-mix(in srgb, var(--gold) 46%, transparent);
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-color-two);
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--primary-color) 88%, var(--gold));
+  border-color: var(--gold);
+  color: var(--text-color-two);
+}
+
+.btn-secondary {
+  border-color: var(--hairline);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--accent-soft);
+  border-color: var(--gold);
+  color: var(--text-primary);
+}
+
+.btn:focus-visible {
+  outline-color: var(--gold-deep);
+}
+
+/* Ornements : filets, chiffres et surlignages en or blanc. */
+.section-kicker,
+.stat-number,
+.premium-accent {
+  color: var(--gold-deep);
+}
+
+.doodle-arrow,
+.hero-path-arrow {
+  color: var(--gold);
+}
+
+.nav-link.active::after,
+.hand-underline::after {
+  background: var(--gold);
+}
+
+.premium-web-page .premium-accent,
+.premium-web-page .offers-layout .price .amount,
+.premium-web-page .nav-link.active {
+  color: var(--gold-deep);
+}
+
+.premium-web-page .offers-layout .pricing-card.featured {
+  border-color: var(--gold);
+}
+
+.pricing-badge,
+.premium-web-page .pricing-badge {
+  background: var(--primary-color);
+  color: var(--text-color-two);
 }
