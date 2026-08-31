@@ -4485,6 +4485,100 @@ body {
   color: var(--gold-deep);
 }
 
+.hero-trust {
+  width: var(--hero-col);
+  margin: 1rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.hero-trust-item {
+  min-width: 0;
+  min-height: 72px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.hero-trust-item:first-child {
+  border-left: 0;
+}
+
+.hero-trust-item img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.hero-trust-item > i {
+  width: 38px;
+  text-align: center;
+  font-size: 1.35rem;
+  color: var(--gold-deep);
+}
+
+.hero-trust-item span {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-trust-item strong {
+  font-size: 0.76rem;
+  line-height: 1.25;
+}
+
+.hero-trust-item small {
+  margin-top: 3px;
+  font-size: 0.64rem;
+  line-height: 1.25;
+  color: var(--text-secondary);
+}
+
+.service-area {
+  margin: 8px auto 30px;
+  padding: 20px 26px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid var(--border-color);
+  background: color-mix(in srgb, var(--card-background) 88%, var(--surface-warm));
+}
+
+.service-area > i {
+  margin-top: 4px;
+  color: var(--gold-deep);
+}
+
+.service-area p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.service-area strong {
+  color: var(--text-primary);
+}
+
+/* Le bloc premium ne doit jamais passer sous l'en-tête fixe. */
+body.premium-web-page .page-header + #web-creation {
+  padding-top: calc(var(--header-h) + var(--header-gap));
+}
+
+.premium-web-page .premium-eyebrow {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
+}
+
 .home-services-grid {
   grid-template-columns: repeat(5, 1fr);
 }
@@ -4588,6 +4682,22 @@ body {
 }
 
 @media (max-width: 900px) {
+  .premium-web-page .trust-stamp-inline {
+    display: none;
+  }
+
+  .hero-trust {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-trust-item:nth-child(3) {
+    border-left: 0;
+  }
+
+  .hero-trust-item:nth-child(n + 3) {
+    border-top: 1px solid var(--border-color);
+  }
+
   .home-services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4598,6 +4708,30 @@ body {
 }
 
 @media (max-width: 600px) {
+  .service-area {
+    padding: 18px;
+  }
+
+  .hero-trust {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-trust-item {
+    min-height: 64px;
+    padding: 8px;
+    gap: 7px;
+  }
+
+  .hero-trust-item img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-trust-item > i {
+    width: 30px;
+    font-size: 1.1rem;
+  }
+
   .home-services-grid {
     grid-template-columns: 1fr;
   }
