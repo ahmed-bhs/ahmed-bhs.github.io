@@ -34,8 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-wording" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-wording" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-vps" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-vps" />
     <style>
       /* Styles spécifiques pour la page méthode */
       .method-hero {
@@ -180,13 +180,20 @@
       .step-details-summary {
         cursor: pointer;
         list-style: none;
-        padding: 12px 16px;
+        padding: 8px 12px;
+        font-size: 0.82rem;
         font-weight: 700;
+        letter-spacing: 0.02em;
         color: var(--primary-color);
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 10px;
         user-select: none;
+      }
+
+      .step-details-summary:hover {
+        color: var(--gold-deep);
       }
 
       .step-details-summary::-webkit-details-marker {
@@ -194,17 +201,33 @@
       }
 
       .step-details-summary::before {
-        content: "\25B6";
-        font-size: 0.8rem;
-        transition: transform 0.2s ease;
+        content: none;
       }
 
-      details[open] > .step-details-summary::before {
-        transform: rotate(90deg);
+      .step-details-summary::after {
+        content: "+";
+        order: 2;
+        flex: 0 0 auto;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--border-color);
+        border-radius: 50%;
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1;
+        color: var(--gold-deep);
+      }
+
+      details[open] > .step-details-summary::after {
+        content: "\2212";
       }
 
       .step-details-inner {
-        padding: 0 16px 16px;
+        padding: 0 12px 12px;
       }
 
       .flow-steps {
@@ -339,8 +362,8 @@
       }
 
       .substep {
-        margin-bottom: 15px;
-        padding: 15px;
+        margin-bottom: 10px;
+        padding: 10px 12px;
         background: rgba(152, 161, 169, 0.05);
         border-radius: 8px;
       }
@@ -823,7 +846,7 @@
             <details class="step-details step-details-toggle"><summary class="step-details-summary"><span>Voir le détail de cette étape</span></summary><div class="step-details-inner">
               <h4>Déroulé de la réunion :</h4>
 
-              <div class="substep" style="margin-bottom: 15px;">
+              <div class="substep">
                 <div class="substep-title">1. Votre besoin</div>
                 <div class="substep-desc">
                   Qu'attendez-vous concrètement ? Nouvelle fonctionnalité, correction de bugs, refonte, optimisation ?
@@ -831,7 +854,7 @@
                 </div>
               </div>
 
-              <div class="substep" style="margin-bottom: 15px;">
+              <div class="substep">
                 <div class="substep-title">2. La problématique</div>
                 <div class="substep-desc">
                   Quel est le vrai problème à résoudre ? Contexte technique, contraintes business, délais, budget.
@@ -839,7 +862,7 @@
                 </div>
               </div>
 
-              <div class="substep" style="margin-bottom: 15px;">
+              <div class="substep">
                 <div class="substep-title">3. La solution proposée</div>
                 <div class="substep-desc">
                   Je vous propose une approche technique concrète, pragmatique et réaliste.
@@ -847,7 +870,7 @@
                 </div>
               </div>
 
-              <div class="substep" style="margin-bottom: 15px;">
+              <div class="substep">
                 <div class="substep-title">4. Modalités de réalisation</div>
                 <div class="substep-desc">
                   Estimation macro (durée, budget), découpage en phases, rythme de travail.
@@ -855,24 +878,24 @@
                 </div>
               </div>
 
-              <p style="color: var(--text-secondary); font-style: italic; font-size: 0.95rem; margin-top: 20px;">
+              <p style="color: var(--text-secondary); font-style: italic; font-size: 0.92rem; margin-top: 14px;">
                 <strong>Résultat :</strong> En moins d'une heure, vous savez si je peux vous aider, comment, et à quel prix.
                 Pas de rendez-vous de courtoisie interminables.
               </p>
 
-              <div style="background: rgba(152, 161, 169, 0.1); border-left: 1px solid var(--border-color); padding: 16px 18px; margin-top: 20px; border-radius: 8px;">
+              <div style="background: rgba(152, 161, 169, 0.1); border-left: 1px solid var(--border-color); padding: 14px 16px; margin-top: 16px; border-radius: 8px;">
                 <h4 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--text-primary);">
                   <i class="fas fa-shield-alt"></i> Un regard critique sur le besoin
                 </h4>
                 <p style="color: var(--text-color); font-size: 0.95rem; line-height: 1.6; margin-bottom: 10px;">
                   <strong>Je challenge toujours le besoin</strong> pour veiller sur la qualité et l'amélioration de votre produit :
                 </p>
-                <ul style="margin: 15px 0; padding-left: 20px;">
-                  <li style="margin-bottom: 8px; color: var(--text-color);">
+                <ul style="margin: 10px 0; padding-left: 18px;">
+                  <li style="margin-bottom: 6px; color: var(--text-color);">
                     Si je vois qu'un besoin est inutile, trop complexe, ou qu'il existe une alternative plus simple et efficace,
                     <strong>je vous le dis clairement</strong>. Pas question de facturer pour du travail sans valeur.
                   </li>
-                  <li style="margin-bottom: 8px; color: var(--text-color);">
+                  <li style="margin-bottom: 6px; color: var(--text-color);">
                     Si je détecte des <strong>failles de sécurité</strong>, des <strong>problèmes de performance</strong>,
                     des <strong>soucis d'architecture</strong>, ou des <strong>opportunités d'amélioration</strong>,
                     je vous alerte immédiatement, même si ce n'était pas dans le scope initial.
@@ -1102,7 +1125,7 @@
             <strong>Je m'adapte complètement à vos processus internes.</strong> Voici les 3 options possibles :
           </p>
 
-          <div class="substep" style="margin-bottom: 15px;">
+          <div class="substep">
             <div class="substep-title">Option 1 : Vous travaillez avec des bons de commande (BC)</div>
             <div class="substep-desc">
               <strong>Contexte :</strong> Grandes entreprises, groupes, administrations.<br>
@@ -1112,7 +1135,7 @@
             </div>
           </div>
 
-          <div class="substep" style="margin-bottom: 15px;">
+          <div class="substep">
             <div class="substep-title">Option 2 : Contrat de prestation (missions longues en régie)</div>
             <div class="substep-desc">
               <strong>Contexte :</strong> Missions de plusieurs semaines/mois, collaboration récurrente.<br>
@@ -1122,7 +1145,7 @@
             </div>
           </div>
 
-          <div class="substep" style="margin-bottom: 15px;">
+          <div class="substep">
             <div class="substep-title">Option 3 : Devis validé par email (missions courtes/forfait)</div>
             <div class="substep-desc">
               <strong>Contexte :</strong> PME, startups, missions courtes (audit, setup CI/CD, upgrade...), projets au forfait.<br>
@@ -1132,7 +1155,7 @@
             </div>
           </div>
 
-          <p style="color: var(--text-secondary); font-style: italic; font-size: 0.95rem; margin-top: 20px;">
+          <p style="color: var(--text-secondary); font-style: italic; font-size: 0.92rem; margin-top: 14px;">
             <strong>L'essentiel :</strong> Pas de formalisme excessif. L'objectif est de démarrer rapidement tout en ayant un cadre clair.
             Pour les toutes petites missions (1-2 jours), un simple échange d'emails suffit.
           </p>
@@ -1145,7 +1168,7 @@
             La facturation s'adapte au volume et à la durée de la mission :
           </p>
 
-          <div class="substep" style="margin-bottom: 15px;">
+          <div class="substep">
             <div class="substep-title">Missions au forfait (Audit, Setup CI/CD, Upgrade Stack, Setup Infra...)</div>
             <div class="substep-desc">
               <strong>Contractualisation :</strong> Devis détaillé signé (par email ou physiquement)<br>
@@ -1155,7 +1178,7 @@
             </div>
           </div>
 
-          <div class="substep" style="margin-bottom: 15px;">
+          <div class="substep">
             <div class="substep-title">Missions courtes en régie (2-10 jours)</div>
             <div class="substep-desc">
               <strong>Facturation :</strong> Une seule facture en fin de mission<br>
@@ -1165,7 +1188,7 @@
             </div>
           </div>
 
-          <div class="substep" style="margin-bottom: 15px;">
+          <div class="substep">
             <div class="substep-title">Missions moyennes en régie (10-30 jours sur 1-2 mois)</div>
             <div class="substep-desc">
               <strong>Facturation :</strong> Tous les 10 jours travaillés OU en fin de mois (selon ce qui simplifie votre compta)<br>
@@ -1184,7 +1207,7 @@
             </div>
           </div>
 
-          <p style="color: var(--text-secondary); font-style: italic; font-size: 0.95rem; margin-top: 20px;">
+          <p style="color: var(--text-secondary); font-style: italic; font-size: 0.92rem; margin-top: 14px;">
             <strong>Flexibilité totale :</strong> On s'adapte selon le volume pour simplifier votre compta.
             L'objectif n'est pas de multiplier les factures, mais de trouver un rythme qui facilite la vie de tout le monde.
             Si vous préférez une facture mensuelle globale plutôt que plusieurs petites, pas de souci.
@@ -1398,8 +1421,8 @@
 
       .step-details-inner .substep {
         position: relative;
-        margin-bottom: 14px !important;
-        padding-left: 14px;
+        margin-bottom: 10px;
+        padding: 10px 12px 10px 14px;
       }
 
       .step-details-inner .substep::before {

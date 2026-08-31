@@ -3806,11 +3806,7 @@ body {
 
 
 /* Pages internes : degager le contenu sous l'en-tete fixe et calmer la hierarchie. */
-.page-header + main > section:first-child,
-.page-header + main > .container:first-child,
-.page-header + section {
-  padding-top: 104px;
-}
+
 
 .pricing-container > .content-text h2,
 .deliverables-container > .content-text h2,
@@ -3829,11 +3825,7 @@ body {
 }
 
 @media (max-width: 900px) {
-  .page-header + main > section:first-child,
-  .page-header + main > .container:first-child,
-  .page-header + section {
-    padding-top: 88px;
-  }
+
 }
 
 
@@ -4380,4 +4372,44 @@ body {
   font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.1em;
+}
+
+
+/* --- Espacement sous l'en-tete fixe : une seule valeur pour les six pages --- */
+:root {
+  --header-h: 84px;
+  --header-gap: 56px;
+}
+
+.header-container,
+.page-header + main > section:first-child,
+.page-header + main > .container:first-child,
+.page-header + section:first-of-type,
+.method-hero {
+  margin-top: 0;
+  padding-top: calc(var(--header-h) + var(--header-gap));
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-h: 76px;
+    --header-gap: 34px;
+  }
+}
+
+
+.vps-specs {
+  margin: 12px 0 14px;
+  padding: 12px 16px;
+  display: grid;
+  gap: 6px;
+  border-left: 2px solid var(--gold-deep);
+  background: var(--surface-warm);
+  list-style: none;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+.vps-specs strong {
+  color: var(--text-primary);
 }
