@@ -34,8 +34,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-typo" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-typo" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-mindmap" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-mindmap" />
     <style>
       /* Styles spécifiques pour la page méthode */
       .method-hero {
@@ -173,7 +173,7 @@
       .step-details-toggle {
         background: var(--bg-primary);
         border-radius: 12px;
-        border-left: 4px solid var(--primary-color);
+        border-left: 1px solid var(--border-color);
         overflow: hidden;
       }
 
@@ -299,7 +299,7 @@
         background: var(--bg-primary);
         border-radius: 12px;
         padding: 25px;
-        border-left: 4px solid var(--primary-color);
+        border-left: 1px solid var(--border-color);
       }
 
       .step-details h4 {
@@ -722,7 +722,6 @@
       .method-overview,
       .overview-step,
       .overview-step .ov-num,
-      .step-number-box,
       .step-content-box,
       .step-details-toggle,
       .step-details,
@@ -731,10 +730,6 @@
       .key-principles,
       .principle-card {
         border-radius: 0 !important;
-      }
-
-      .step-details-toggle {
-        display: none;
       }
     </style>
   <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
@@ -1286,3 +1281,193 @@
     <script src="js/script.js?v=20260829-antispam"></script>
   </body>
 </html>
+
+    <style>
+      /* --- Mind map : tronc vertical unique et branches laterales --- */
+      .flow-steps {
+        display: block;
+        position: relative;
+        max-width: 940px;
+        margin: 0 auto 68px;
+        padding-left: 0;
+      }
+
+      .flow-steps::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        bottom: 12px;
+        left: 113px;
+        width: 1px;
+        background: linear-gradient(
+          180deg,
+          transparent,
+          var(--gold-deep) 6%,
+          var(--gold-deep) 94%,
+          transparent
+        );
+        opacity: 0.55;
+      }
+
+      .flow-step {
+        position: relative;
+        display: grid;
+        grid-template-columns: 118px minmax(0, 1fr);
+        align-items: start;
+        margin: 0 0 34px;
+        padding: 0;
+      }
+
+      .flow-step:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Branche horizontale reliant le tronc a la carte. */
+      .flow-steps .flow-step::before {
+        content: "";
+        position: absolute;
+        top: 31px;
+        left: 131px;
+        width: 17px;
+        height: 1px;
+        background: var(--gold-deep);
+        opacity: 0.55;
+        display: block !important;
+      }
+
+      /* Noeud sur le tronc. */
+      .flow-steps .flow-step .step-number-box {
+        position: relative;
+        z-index: 2;
+        grid-column: 1;
+        justify-self: end;
+        margin: 14px 0 0;
+        translate: 12px 0;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--primary-color);
+        color: var(--text-color-two);
+        font-family: var(--font-body);
+        font-size: 0.86rem;
+        font-weight: 700;
+        box-shadow: 0 0 0 5px var(--bg-primary);
+      }
+
+      .flow-steps .flow-step .step-content-box {
+        grid-column: 2;
+        min-height: 0;
+        margin-left: 30px;
+        padding: 22px 26px;
+        border: 1px solid var(--border-color);
+        background: var(--card-background);
+        box-shadow: var(--luxury-shadow);
+      }
+
+      .flow-step .step-content-box h3 {
+        margin: 0 0 8px;
+        font-size: 1.18rem;
+        line-height: 1.25;
+      }
+
+      .flow-step .step-description {
+        margin: 10px 0 0;
+        color: var(--text-secondary);
+        line-height: 1.62;
+      }
+
+      /* Sous-branches : les sous-etapes se rattachent visuellement a leur etape. */
+      .step-details-inner {
+        position: relative;
+        margin-top: 6px;
+        padding-left: 20px;
+      }
+
+      .step-details-inner::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        bottom: 4px;
+        left: 4px;
+        width: 1px;
+        background: var(--border-color);
+      }
+
+      .step-details-inner .substep {
+        position: relative;
+        margin-bottom: 14px !important;
+        padding-left: 14px;
+      }
+
+      .step-details-inner .substep::before {
+        content: "";
+        position: absolute;
+        top: 11px;
+        left: -4px;
+        width: 12px;
+        height: 1px;
+        background: var(--border-color);
+      }
+
+      .step-details-inner .substep::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -7px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--bg-primary);
+        border: 1px solid var(--gold-deep);
+      }
+
+      @media (max-width: 820px) {
+        .flow-steps {
+          padding-left: 0;
+        }
+
+        .flow-steps::before {
+          left: 17px;
+        }
+
+        .flow-steps .flow-step {
+          display: block;
+          position: relative;
+          margin-bottom: 26px;
+          padding-left: 46px;
+        }
+
+        .flow-steps .flow-step::before {
+          display: none !important;
+        }
+
+        .flow-steps .flow-step .step-number-box {
+          position: absolute;
+          top: 4px;
+          left: 0;
+          translate: 0 0;
+          margin: 0;
+          width: 34px;
+          height: 34px;
+        }
+
+        .flow-steps .flow-step .step-content-box {
+          margin-left: 0;
+          margin-top: 0;
+          padding: 18px;
+        }
+      }
+    </style>
+
+    <style>
+      /* La frise de rappel adopte les memes noeuds ronds que la carte mentale. */
+      .method-overview .overview-step .ov-num {
+        width: 28px;
+        height: 28px;
+        border-radius: 50% !important;
+        font-size: 0.78rem;
+      }
+    </style>
