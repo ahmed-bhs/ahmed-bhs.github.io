@@ -4750,10 +4750,111 @@ body.premium-web-page .page-header + #web-creation {
   margin-top: 7px;
 }
 
+.early-achievements {
+  margin-top: 12px;
+  border: 1px solid var(--border-color);
+  background: var(--card-background);
+}
+
+.early-achievements summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.early-achievements summary::-webkit-details-marker {
+  display: none;
+}
+
+.early-achievements summary i {
+  margin-right: 7px;
+  color: var(--gold-deep);
+}
+
+.early-achievements-action {
+  flex: 0 0 auto;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.early-achievements[open] .early-achievements-action {
+  font-size: 0;
+}
+
+.early-achievements[open] .early-achievements-action::after {
+  content: "Masquer";
+  font-size: 0.68rem;
+}
+
+.early-achievements-content {
+  padding: 0 18px 18px;
+  border-top: 1px solid var(--border-color);
+}
+
+.early-achievements-content > p {
+  max-width: 850px;
+  margin: 12px 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.early-achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.early-achievements-grid figure {
+  margin: 0;
+  border: 1px solid var(--border-color);
+}
+
+.early-achievements-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  filter: saturate(0.7) contrast(1.04);
+}
+
+.early-achievements-grid figcaption {
+  padding: 9px 11px;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 .conference-proof-links {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 16px;
+}
+
+.event-photo-note {
+  font-size: 0.82rem;
+}
+
+.event-photo-note i {
+  margin-right: 5px;
+  color: var(--gold-deep);
+}
+
+.event-photo-note a {
+  color: var(--text-primary);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
 }
 
 .value-row {
@@ -4915,6 +5016,19 @@ body.premium-web-page .page-header + #web-creation {
 
   .conference-proof-grid {
     grid-template-columns: 1fr;
+  }
+
+  .early-achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .early-achievements summary {
+    align-items: flex-start;
+    padding: 12px 14px;
+  }
+
+  .early-achievements-content {
+    padding: 0 14px 14px;
   }
 }
 
