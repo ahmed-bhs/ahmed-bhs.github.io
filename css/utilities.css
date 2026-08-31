@@ -4419,16 +4419,19 @@ body {
 
 /* Points saillants visibles sans deplier le detail. */
 .offer-highlights {
+  grid-column: 1 / -1;
   margin: 0;
-  padding: 10px 16px 14px;
+  padding: 8px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 10px;
+  align-items: center;
+  gap: 6px;
   list-style: none;
 }
 
 .offer-highlights li {
-  padding: 4px 10px;
+  flex: 0 1 auto;
+  padding: 4px 8px;
   border: 1px solid var(--border-color);
   background: var(--surface-warm);
   font-size: 0.78rem;
