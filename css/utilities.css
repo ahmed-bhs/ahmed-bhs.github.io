@@ -3367,6 +3367,8 @@ body {
 }
 
 .page-header {
+  position: relative;
+  z-index: 20;
   box-shadow: 0 8px 24px rgba(27, 30, 33, 0.08);
 }
 
