@@ -4970,21 +4970,29 @@ body.premium-web-page .page-header + #web-creation {
 /* Surlignage façon Stabilo : large, imparfait et toujours derrière le texte. */
 .marker-highlight,
 .hl-hand {
+  --marker-color: 255, 220, 72;
   padding: 0 0.12em;
   color: inherit;
   background-image:
-    linear-gradient(178deg, transparent 13%, rgba(255, 224, 92, 0.34) 13%, rgba(255, 220, 72, 0.58) 82%, transparent 82%),
-    linear-gradient(181deg, transparent 24%, rgba(255, 231, 112, 0.34) 24%, rgba(255, 221, 76, 0.28) 91%, transparent 91%);
+    linear-gradient(178deg, transparent 13%, rgba(var(--marker-color), 0.34) 13%, rgba(var(--marker-color), 0.58) 82%, transparent 82%),
+    linear-gradient(181deg, transparent 24%, rgba(var(--marker-color), 0.34) 24%, rgba(var(--marker-color), 0.28) 91%, transparent 91%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 
+.marker-yellow { --marker-color: 255, 220, 72; }
+.marker-blue { --marker-color: 104, 190, 255; }
+.marker-green { --marker-color: 105, 214, 145; }
+.marker-violet { --marker-color: 183, 142, 255; }
+.marker-orange { --marker-color: 255, 164, 83; }
+.marker-pink { --marker-color: 255, 137, 184; }
+
 @media (prefers-contrast: more) {
   .marker-highlight,
   .hl-hand {
-    background-image: linear-gradient(178deg, transparent 12%, rgba(246, 196, 31, 0.64) 12%, rgba(246, 196, 31, 0.64) 88%, transparent 88%);
+    background-image: linear-gradient(178deg, transparent 12%, rgba(var(--marker-color), 0.7) 12%, rgba(var(--marker-color), 0.7) 88%, transparent 88%);
   }
 }
 
