@@ -4413,3 +4413,30 @@ body {
 .vps-specs strong {
   color: var(--text-primary);
 }
+
+
+/* Points saillants visibles sans deplier le detail. */
+.offer-highlights {
+  margin: 0;
+  padding: 10px 16px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  list-style: none;
+}
+
+.offer-highlights li {
+  padding: 4px 10px;
+  border: 1px solid var(--border-color);
+  background: var(--surface-warm);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--text-secondary);
+}
+
+.offer-highlights li::before {
+  content: "\2713";
+  margin-right: 6px;
+  color: var(--gold-deep);
+  font-weight: 700;
+}
