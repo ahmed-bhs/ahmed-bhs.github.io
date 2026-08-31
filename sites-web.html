@@ -35,8 +35,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-perf2" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-perf2" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-async" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-async" />
   <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
   </head>
   <body class="premium-web-page">
@@ -244,7 +244,8 @@
             <li>4 vCPU · 8 Go RAM · 75 Go SSD</li>
             <li>Aucune dépendance à un éditeur, site transférable</li>
             <li>Données en France, RGPD, hors CLOUD Act</li>
-            <li>Cache HTTP et cache applicatif configurés</li>
+            <li>Cache HTTP, OPcache et compilation JIT PHP</li>
+            <li>E-mails envoyés en arrière-plan, sans attente</li>
           </ul>
 
           <details class="offer-detail">
@@ -279,13 +280,17 @@
               <p>Un cache de pages est placé devant l'application : la première visite calcule la page, les suivantes la reçoivent telle quelle. La durée de validité est réglée par type de contenu, et le cache est invalidé automatiquement dès qu'une page est modifiée depuis le back-office. Vos changements sont donc visibles immédiatement, sans purge manuelle.</p>
 
               <h4>Cache applicatif</h4>
-              <p>Côté serveur, le framework travaille en mode production : routes, conteneur de services et gabarits sont compilés une fois puis réutilisés, au lieu d'être reconstruits à chaque visite. Sur les projets à forte charge, la configuration est étendue au cache des requêtes de base de données et à un cache déporté pour les sessions.</p>
+              <p>Côté serveur, le framework travaille en mode production : routes, conteneur de services et gabarits sont compilés une fois puis réutilisés, au lieu d'être reconstruits à chaque visite. Le code PHP lui-même est conservé compilé en mémoire (OPcache, 192 Mo alloués, compilation JIT activée), ce qui évite de le réinterpréter à chaque requête. Sur les projets à forte charge, la configuration est étendue au cache des requêtes de base de données et à un cache déporté pour les sessions.</p>
 
               <h4>Images et fichiers</h4>
               <p>Les photos sont converties au format WebP, redimensionnées selon l'affichage, et celles situées hors de l'écran ne se chargent qu'au défilement. Feuilles de style, scripts et polices sont minifiés, compressés, versionnés et servis avec une validité longue : le navigateur ne les retélécharge qu'en cas de changement réel. Les polices sont préchargées pour éviter le texte qui saute au chargement.</p>
 
+              <h4>Envoi d'e-mails en arrière-plan</h4>
+              <p><strong>Quand un visiteur envoie un formulaire, la confirmation s'affiche immédiatement : l'e-mail part en arrière-plan.</strong> Sans ce mécanisme, la page reste bloquée le temps que le serveur de messagerie réponde, parfois plusieurs secondes, et le visiteur croit que rien ne s'est passé, renvoie le formulaire, ou quitte le site.</p>
+              <p>Les envois sont mis en file d'attente et traités par un service dédié. Si le serveur de messagerie est momentanément indisponible, le message n'est pas perdu : il est réessayé automatiquement. Le même principe s'applique aux traitements longs, comme le redimensionnement d'images ou l'export de données.</p>
+
               <h4>Isolation des services</h4>
-              <p>Application, base de données et traitements différés tournent dans des conteneurs séparés derrière le serveur web. Un envoi d'e-mail ou un traitement lourd n'immobilise pas la page du visiteur, et une mise à jour se déploie sans interrompre le site.</p>
+              <p>Application, base de données et traitements différés tournent dans des conteneurs séparés derrière le serveur web. Un incident sur l'un n'entraîne pas les autres, et une mise à jour se déploie sans interrompre le site.</p>
 
               <p class="offer-proof">Mesures relevées sur un site en production, <a href="https://www.azur-trad.fr/fr" target="_blank" rel="noopener noreferrer">azur-trad.fr</a>, hébergé sur cette infrastructure : <strong>0,12 seconde</strong> de temps de réponse serveur sur page mise en cache, en-têtes <code>s-maxage=240</code> pour les pages et <code>max-age=2592000, immutable</code> pour les fichiers statiques, images en WebP et chargement différé, site publié en quatre langues avec balises hreflang.</p>
             </div>
