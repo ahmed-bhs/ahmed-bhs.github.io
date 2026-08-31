@@ -3207,14 +3207,6 @@ html {
   isolation: isolate;
 }
 
-.cta-container::before {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(115deg, rgba(4, 12, 23, 0.78), rgba(7, 23, 39, 0.5) 52%, rgba(4, 12, 23, 0.76));
-  content: "";
-}
-
 @media (max-width: 640px) {
   .cta-container {
     background-position: 18% center;
