@@ -35,78 +35,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-silver" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-silver" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-typo" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-typo" />
     <style>
       .hero-paths {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(150px, 180px));
-        justify-content: center;
-        align-items: end;
-        gap: 14px;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px 12px;
       }
 
       .hero-cta-cell {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 6px;
-        min-width: 0;
+        display: contents;
       }
 
       .hero-cta-prompt {
-        position: relative;
-        min-height: 84px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        display: none;
       }
 
-      .hero-path-q {
-        max-width: 340px;
-        font-size: 1.35rem;
-      }
-
-      .hero-path-arrow {
-        position: absolute;
-        left: 6px;
-        bottom: -7px;
-        width: 58px;
-        transform: rotate(-8deg);
+      .hero-paths > .hero-cta-cell > .hero-action-btn,
+      .hero-paths > .hero-action-btn {
+        flex: 0 0 auto;
+        width: auto;
       }
 
       .hero-action-btn {
-        width: 100%;
-        min-height: 44px;
+        min-height: 52px;
+        padding: 0 1.6rem;
         text-transform: none !important;
+        letter-spacing: 0.01em;
+        font-size: 0.86rem;
         white-space: nowrap;
       }
 
-      @media (max-width: 980px) {
-        .hero-paths {
-          grid-template-columns: repeat(4, minmax(140px, 170px));
-          gap: 10px;
-        }
+      .hero-cta-cell .hero-action-btn i {
+        color: currentColor;
+        opacity: 1;
+      }
 
-        .hero-action-btn {
-          padding-left: 1rem;
-          padding-right: 1rem;
-          font-size: 0.72rem;
-        }
+      .hero-action-btn.is-quiet,
+      .hero-action-btn.is-quiet:link,
+      .hero-action-btn.is-quiet:visited {
+        min-height: 52px;
+        padding: 0 0.5rem;
+        border: 0;
+        background: none;
+        color: var(--text-secondary);
+        box-shadow: none;
+      }
+
+      .hero-action-btn.is-quiet:hover {
+        background: none;
+        border-color: transparent;
+        color: var(--text-primary);
+        transform: none;
       }
 
       @media (max-width: 760px) {
         .hero-paths {
-          grid-template-columns: repeat(4, 150px);
-          overflow-x: auto;
-          justify-content: flex-start;
-          padding-bottom: 4px;
+          gap: 8px 10px;
         }
 
         .hero-cta-prompt {
-          min-height: 0;
           display: none;
+        }
+
+        .hero-action-btn {
+          min-height: 48px;
+          font-size: 0.8rem;
         }
       }
     </style>
@@ -171,41 +168,35 @@
           <h2>Sites métiers, APIs, audits, migrations et renfort d'équipe</h2>
 
           <p>
-            <strong>J'aide les entreprises, agences et indépendants à livrer des applications web <span class="hl-hand">fiables, rapides et maintenables</span>.</strong> Des expériences pensées pour mieux convertir vos visiteurs, développer votre présence et soutenir l'augmentation de votre chiffre d'affaires. J'interviens en freelance sur des projets Symfony, des sites administrables, des APIs, des audits techniques, des migrations PHP/Symfony et du renfort d'équipe. J'ai accompagné des organisations comme OPPBTP, Bpifrance, IRD, CIRAD, Valobat, Baresto, Atlantic, FFGolf, Delabie et le Ministère de la Culture.
+            <strong>J'aide les entreprises, agences et indépendants à livrer des applications web fiables, rapides et maintenables.</strong> Des expériences pensées pour mieux convertir vos visiteurs, développer votre présence et soutenir l'augmentation de votre chiffre d'affaires.
+          </p>
+          <p>
+            J'interviens en freelance sur des projets Symfony, des sites administrables, des APIs, des audits techniques, des migrations PHP/Symfony et du renfort d'équipe.
           </p>
         </div>
 
+        <p class="hero-clients">
+          <strong>Ils m'ont fait confiance</strong>
+          OPPBTP · Bpifrance · IRD · CIRAD · Valobat · Baresto · Atlantic · FFGolf · Delabie · Ministère de la Culture
+        </p>
+
+        <p class="hero-paths-lead">Un projet à lancer, ou un renfort sur votre application ?</p>
+
         <div class="hero-paths">
           <div class="hero-cta-cell">
-            <div class="hero-cta-prompt">
-              <p class="hero-path-q">Une idée de projet web à réaliser ?</p>
-              <svg class="doodle-arrow hero-path-arrow" viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M12 8C34 20 52 40 50 66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-                <path d="M36 52C42 60 47 64 50 66C54 62 60 58 68 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
             <a href="sites-web.html" class="btn btn-primary hero-action-btn"><i class="fas fa-laptop-code"></i> projet web</a>
           </div>
 
           <div class="hero-cta-cell">
-            <div class="hero-cta-prompt">
-              <p class="hero-path-q">Besoin d'un freelance sur votre appli ?</p>
-              <svg class="doodle-arrow hero-path-arrow" viewBox="0 0 90 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M12 8C34 20 52 40 50 66" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
-                <path d="M36 52C42 60 47 64 50 66C54 62 60 58 68 56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <a href="freelance.html" class="btn btn-primary hero-action-btn"><i class="fas fa-tools"></i> freelance Symfony</a>
+            <a href="freelance.html" class="btn btn-secondary hero-action-btn"><i class="fas fa-tools"></i> freelance Symfony</a>
           </div>
 
           <div class="hero-cta-cell">
-            <div class="hero-cta-prompt" aria-hidden="true"></div>
-            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary hero-action-btn"><i class="fas fa-calendar-check"></i> réserver un appel</a>
+            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary hero-action-btn is-quiet">réserver un appel <i class="fas fa-chevron-right"></i></a>
           </div>
 
           <div class="hero-cta-cell">
-            <div class="hero-cta-prompt" aria-hidden="true"></div>
-            <a href="realisations.html" class="btn btn-secondary hero-action-btn"><i class="fas fa-folder-open"></i> réalisations</a>
+            <a href="realisations.html" class="btn btn-secondary hero-action-btn is-quiet">réalisations <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
 

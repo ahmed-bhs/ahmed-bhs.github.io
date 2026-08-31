@@ -153,39 +153,7 @@ h2::selection {
 }
 
 .header-container .content-text h2 {
-  background: linear-gradient(
-    100deg,
-    var(--text-primary) 0%,
-    var(--text-primary) 38%,
-    var(--primary-color) 50%,
-    var(--text-primary) 62%,
-    var(--text-primary) 100%
-  );
-  background-size: 220% 100%;
-  background-position: 100% 0;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: hero-title-shimmer 5.5s ease-in-out infinite;
-}
-
-@keyframes hero-title-shimmer {
-  0%, 100% {
-    background-position: 130% 0;
-  }
-  50% {
-    background-position: -30% 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .header-container .content-text h2 {
-    animation: none;
-    background: none;
-    -webkit-background-clip: border-box;
-    background-clip: border-box;
-    color: var(--text-primary);
-  }
+  color: var(--text-primary);
 }
 
 .hero-console {
@@ -745,7 +713,7 @@ h2::selection {
 }
 
 .client-logo-dark {
-  background: #25211c;
+  background: #1f2122;
   border-color: rgba(255, 255, 255, 0.12);
 }
 
@@ -1326,7 +1294,7 @@ h2::selection {
 
 /* CTA Section */
 .cta-container {
-  background: linear-gradient(135deg, #2b261f, var(--primary-color));
+  background: linear-gradient(135deg, #232527, var(--primary-color));
   padding: 50px 20px;
   margin: 40px 0 0 0;
 }
@@ -1690,7 +1658,7 @@ footer .copyright {
 
 /* Premium positioning for the web project page. */
 .premium-web-page {
-  background: #f7f4ee;
+  background: #f2f3f3;
 }
 
 .premium-web-page #web-creation {
@@ -1719,7 +1687,7 @@ footer .copyright {
 .premium-web-page #web-creation > .content-text:first-of-type h2 {
   max-width: 820px;
   margin: 0 auto 20px;
-  color: #1d1b18;
+  color: #191b1c;
   font-size: clamp(2.45rem, 5vw, 4.8rem);
   line-height: 1.02;
   letter-spacing: -0.035em;
@@ -1741,7 +1709,7 @@ footer .copyright {
 .premium-lead {
   max-width: 720px;
   margin: 0 auto;
-  color: #5d574f;
+  color: #51575b;
   font-size: 1.08rem;
   line-height: 1.75;
 }
@@ -1769,32 +1737,32 @@ footer .copyright {
   padding: 34px;
   border: 1px solid #d0d4d8;
   border-radius: 4px;
-  background: #fcfbf8;
-  box-shadow: 0 20px 54px rgba(43, 35, 25, 0.07);
+  background: #fafafa;
+  box-shadow: 0 20px 54px rgba(32, 34, 36, 0.07);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .premium-web-page .offers-layout .pricing-card:hover {
   transform: translateY(-5px);
   border-color: #7c8891;
-  box-shadow: 0 28px 64px rgba(43, 35, 25, 0.12);
+  box-shadow: 0 28px 64px rgba(32, 34, 36, 0.12);
 }
 
 .premium-web-page .offers-layout .pricing-card.featured {
   border: 1px solid #6d7982;
-  background: linear-gradient(155deg, #fffdf8 0%, #ebedee 100%);
+  background: linear-gradient(155deg, #fbfcfc 0%, #ebedee 100%);
 }
 
 .premium-web-page .offers-layout .pricing-card h3 {
   margin: 0 0 18px;
-  color: #1d1b18;
+  color: #191b1c;
   font-size: clamp(1.65rem, 2.4vw, 2.15rem);
   letter-spacing: -0.025em;
 }
 
 .premium-web-page .pricing-badge {
   background: #5a646c;
-  color: #fffdf9;
+  color: #fcfcfc;
   font-family: inherit;
   font-size: 0.68rem;
   font-weight: 800;
@@ -1811,7 +1779,7 @@ footer .copyright {
 }
 
 .premium-price-label {
-  color: #777067;
+  color: #687076;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1825,7 +1793,7 @@ footer .copyright {
 }
 
 .premium-old-price {
-  color: #8b8379;
+  color: #7a838a;
   font-size: 0.92rem;
   text-decoration: line-through;
   text-decoration-thickness: 1px;
@@ -1842,7 +1810,7 @@ footer .copyright {
 .premium-web-page .offers-layout .pricing-description {
   min-height: 0;
   margin-bottom: 24px;
-  color: #625b53;
+  color: #555b60;
   font-size: 0.98rem;
   line-height: 1.65;
 }
@@ -1853,7 +1821,7 @@ footer .copyright {
 
 .premium-web-page .offers-layout .pricing-features li {
   padding: 9px 0;
-  color: #312e2a;
+  color: #2b2e30;
   line-height: 1.5;
 }
 
@@ -1891,7 +1859,7 @@ footer .copyright {
 
 .premium-offer-details p {
   margin: 14px 0 0;
-  color: #6a635b;
+  color: #5d6368;
   font-size: 0.9rem;
   line-height: 1.65;
 }
@@ -1918,8 +1886,8 @@ footer .copyright {
 .premium-investment {
   padding: 46px;
   border: 1px solid #caced2;
-  background: #24211d;
-  color: #f7f1e7;
+  background: #1f2122;
+  color: #eeeff0;
 }
 
 .premium-investment h2,
@@ -1955,7 +1923,7 @@ footer .copyright {
   border: 2px solid var(--primary-color);
   border-radius: 14px;
   background: color-mix(in srgb, var(--card-background) 94%, var(--primary-color));
-  box-shadow: 0 14px 34px rgba(32, 24, 17, 0.1);
+  box-shadow: 0 14px 34px rgba(23, 25, 26, 0.1);
 }
 
 .offer-details-heading {
@@ -2084,7 +2052,7 @@ footer .copyright {
   border: 1px solid var(--border-color);
   border-radius: 16px;
   background: var(--card-background);
-  box-shadow: 0 14px 34px rgba(32, 24, 17, 0.08);
+  box-shadow: 0 14px 34px rgba(23, 25, 26, 0.08);
 }
 
 .seo-explainer-intro {
@@ -2671,13 +2639,13 @@ footer .copyright {
     padding: 25px 22px !important;
     border: 1px solid #d0d4d8 !important;
     border-radius: 4px !important;
-    background: #fcfbf8 !important;
-    box-shadow: 0 16px 38px rgba(43, 35, 25, 0.08) !important;
+    background: #fafafa !important;
+    box-shadow: 0 16px 38px rgba(32, 34, 36, 0.08) !important;
   }
 
   .premium-web-page .offers-layout .pricing-card.featured {
     border-color: #6d7982 !important;
-    background: linear-gradient(155deg, #fffdf8 0%, #ebedee 100%) !important;
+    background: linear-gradient(155deg, #fbfcfc 0%, #ebedee 100%) !important;
   }
 
   .premium-web-page .offers-layout .pricing-features {
@@ -3117,11 +3085,11 @@ footer .copyright {
 }
 
 .premium-web-page .premium-investment h2 {
-  color: #f7f5f0;
+  color: #f3f4f4;
 }
 
 .premium-web-page .premium-investment > p:not(.premium-eyebrow) {
-  color: #e7e4de;
+  color: #e1e3e4;
 }
 
 .premium-web-page .premium-investment .premium-eyebrow {
@@ -3242,7 +3210,7 @@ html {
 }
 
 .cta-container .cta-buttons .btn-secondary {
-  color: #f7f5f0;
+  color: #f3f4f4;
   border-color: rgba(224, 229, 234, 0.78);
   background: rgba(255, 255, 255, 0.06);
 }
@@ -3281,8 +3249,8 @@ html {
 /* Finition premium commune aux pages principales. */
 :root {
   color-scheme: light;
-  --luxury-shadow: 0 18px 42px rgba(27, 30, 33, 0.09), 0 2px 8px rgba(27, 30, 33, 0.05);
-  --luxury-shadow-hover: 0 26px 58px rgba(27, 30, 33, 0.14), 0 4px 12px rgba(27, 30, 33, 0.07);
+  --luxury-shadow: 0 12px 32px rgba(27, 30, 33, 0.07), 0 1px 3px rgba(27, 30, 33, 0.04);
+  --luxury-shadow-hover: 0 20px 44px rgba(27, 30, 33, 0.11), 0 2px 6px rgba(27, 30, 33, 0.05);
   --ink-deep: #14171a;
   --accent-soft: color-mix(in srgb, var(--primary-color) 12%, transparent);
   --hairline: color-mix(in srgb, var(--primary-color) 22%, transparent);
@@ -3436,14 +3404,14 @@ body {
 }
 
 #footer .footer-brand h3 {
-  color: #f7f5f0;
+  color: #f3f4f4;
   letter-spacing: 0.02em;
 }
 
 #footer .footer-brand p,
 #footer .footer-col li,
 #footer .footer-col a {
-  color: rgba(239, 238, 233, 0.76);
+  color: rgba(235, 236, 237, 0.76);
 }
 
 #footer .footer-col a:hover {
@@ -3472,11 +3440,11 @@ body {
 }
 
 #footer .footer-bottom .copyright {
-  color: rgba(239, 238, 233, 0.78);
+  color: rgba(235, 236, 237, 0.78);
 }
 
 #footer .footer-bottom .footer-legal {
-  color: rgba(239, 238, 233, 0.52);
+  color: rgba(235, 236, 237, 0.52);
 }
 
 /* Les listes d'offres utilisent un signe plus vert pour signaler chaque point. */
@@ -3928,4 +3896,175 @@ body {
 .premium-web-page .pricing-badge {
   background: var(--primary-color);
   color: var(--text-color-two);
+}
+
+
+/* --- Typographie du hero : lisibilite et hierarchie --- */
+.header-container .content-text {
+  width: 100%;
+  max-width: 62ch;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.header-container > h1 {
+  max-width: 62ch;
+  margin-inline: auto;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--text-secondary);
+}
+
+.header-container .content-text h2 {
+  max-width: 20ch;
+  margin-inline: 0;
+  text-align: left;
+  font-size: clamp(2.3rem, 4.2vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.021em;
+}
+
+.header-container .content-text p {
+  max-width: 100%;
+  margin-inline: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--text-secondary);
+}
+
+.header-container .content-text p + p {
+  margin-top: 0.9rem;
+}
+
+.header-container .content-text p strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Une seule emphase : le surlignage manuscrit fait doublon avec le gras. */
+.header-container .content-text .hl-hand {
+  background: none;
+  padding: 0;
+}
+
+.header-container .content-text .hl-hand::after {
+  content: none;
+}
+
+/* La liste de clients devient une ligne de preuve autonome. */
+.hero-clients {
+  margin: 1.4rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.hero-clients strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+/* Amorces de parcours : capitales fines, sans manuscrit ni fleche. */
+.hero-path-q {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.45;
+  text-transform: uppercase;
+  text-align: left;
+  transform: none;
+  color: var(--text-secondary);
+}
+
+.hero-path-arrow,
+.hero-cta-prompt .doodle-arrow {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header-container .content-text,
+  .header-container > h1,
+  .hero-clients {
+    max-width: 100%;
+  }
+
+  .header-container .content-text h2 {
+    max-width: 100%;
+    font-size: clamp(1.85rem, 7vw, 2.4rem);
+  }
+}
+
+
+.btn i {
+  color: currentColor;
+  font-size: 0.9em;
+}
+
+.hero-action-btn.is-quiet i {
+  margin-left: 0.15rem;
+  font-size: 0.7em;
+  opacity: 0.75;
+}
+
+
+.hero-paths-lead {
+  margin: 1.6rem 0 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+
+/* Colonne unique : tous les blocs du hero partagent la meme gouttiere. */
+.header-container {
+  align-items: center;
+}
+
+.header-container {
+  --hero-col: min(640px, 100%);
+}
+
+.header-container > h1,
+.header-container > .content-text,
+.header-container > .hero-clients,
+.header-container > .hero-paths-lead,
+.header-container > .hero-paths {
+  width: var(--hero-col);
+  max-width: var(--hero-col);
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 0;
+}
+
+.header-container > p.hero-clients,
+.header-container > p.hero-paths-lead {
+  padding: 0;
+  padding-top: 1.1rem;
+  text-indent: 0;
+}
+
+.header-container > p.hero-paths-lead {
+  padding-top: 0;
+}
+
+
+.header-container > p.hero-clients,
+.header-container > p.hero-paths-lead {
+  text-align: left;
 }
