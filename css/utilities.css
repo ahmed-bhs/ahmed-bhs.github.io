@@ -5416,3 +5416,37 @@ body.premium-web-page .page-header + #web-creation {
     padding: 0 14px 10px;
   }
 }
+
+/* Projets open source : chaque carte doit se lire comme une surface distincte. */
+.project-container .project {
+  gap: 18px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.project-container .project:hover {
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+.project-container .project > .card {
+  border: 1px solid rgba(98, 109, 118, 0.34);
+  border-radius: 0;
+  background: #ffffff;
+  box-shadow: 0 10px 26px rgba(31, 43, 54, 0.08);
+}
+
+.project-container .project > .card:hover {
+  border-color: rgba(66, 78, 89, 0.58);
+  box-shadow: 0 16px 32px rgba(31, 43, 54, 0.13);
+}
+
+@media (max-width: 768px) {
+  .project-container .project {
+    gap: 14px;
+  }
+}
