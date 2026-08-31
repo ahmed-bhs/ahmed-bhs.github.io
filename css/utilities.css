@@ -4832,3 +4832,135 @@ body.premium-web-page .page-header + #web-creation {
     grid-template-columns: 1fr;
   }
 }
+
+/* Rythme vertical compact : moins de défilement sans sacrifier la lisibilité. */
+:root {
+  --header-gap: 32px;
+}
+
+.stats-container,
+.clients-container,
+.services-container,
+.value-container,
+.quality-container,
+.pricing-container,
+.proof-links-container,
+.brief-container,
+.deliverables-container,
+.case-studies-container,
+.audit-express-container,
+.expertise-gallery,
+.achievements-container,
+.project-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.content-text {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.content-text p {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.services-grid,
+.achievements-grid,
+.expertise-gallery-grid,
+.quality-grid,
+.proof-links-grid,
+.faq-grid {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.hero-console {
+  margin-top: 22px;
+}
+
+.client-marquee,
+.value-comparison {
+  margin-top: 16px;
+}
+
+.service-area {
+  margin-bottom: 16px;
+}
+
+.mid-cta {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.section-spacer-lg,
+.offer-more {
+  margin-top: 1.4rem;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-gap: 20px;
+  }
+
+  .stats-container,
+  .clients-container,
+  .services-container,
+  .value-container,
+  .quality-container,
+  .pricing-container,
+  .proof-links-container,
+  .brief-container,
+  .deliverables-container,
+  .case-studies-container,
+  .audit-express-container,
+  .expertise-gallery,
+  .achievements-container,
+  .project-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .service-card,
+  .achievement-card,
+  .quality-card,
+  .stat-card {
+    padding: 18px;
+  }
+
+  .stats-grid,
+  .services-grid,
+  .achievements-grid,
+  .quality-grid,
+  .faq-grid {
+    gap: 10px;
+  }
+
+  .stat-number {
+    margin-bottom: 6px;
+  }
+
+  .hero-paths-lead {
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .header-container > p.hero-clients {
+    padding-top: 0.65rem;
+  }
+
+  .hero-console {
+    margin-top: 16px;
+  }
+
+  .faq-item > summary {
+    padding: 13px 16px;
+  }
+
+  .faq-item p {
+    padding: 0 16px 14px;
+  }
+}
