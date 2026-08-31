@@ -3207,18 +3207,6 @@ html {
   isolation: isolate;
 }
 
-.cta-container .cta-buttons .btn-secondary {
-  color: #f3f4f4;
-  border-color: rgba(224, 229, 234, 0.78);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.cta-container .cta-buttons .btn-secondary:hover {
-  color: var(--text-primary);
-  border-color: #9aa3aa;
-  background: #9aa3aa;
-}
-
 .cta-container::before {
   position: absolute;
   inset: 0;
@@ -3866,6 +3854,42 @@ body {
 
 .btn:focus-visible {
   outline-color: var(--gold-deep);
+}
+
+/* Contraste stable des actions sur le fond sombre du CTA. */
+.cta-container .cta-buttons .btn-primary,
+.cta-container .cta-buttons .btn-primary:link,
+.cta-container .cta-buttons .btn-primary:visited {
+  color: #ffffff;
+  border-color: #1a1f24;
+  background: #1a1f24;
+}
+
+.cta-container .cta-buttons .btn-primary:hover,
+.cta-container .cta-buttons .btn-primary:focus-visible {
+  color: #0b1420;
+  border-color: #f3f4f4;
+  background: #f3f4f4;
+}
+
+.cta-container .cta-buttons .btn-secondary,
+.cta-container .cta-buttons .btn-secondary:link,
+.cta-container .cta-buttons .btn-secondary:visited {
+  color: #ffffff;
+  border-color: rgba(243, 244, 244, 0.82);
+  background: rgba(7, 21, 38, 0.4);
+}
+
+.cta-container .cta-buttons .btn-secondary:hover,
+.cta-container .cta-buttons .btn-secondary:focus-visible {
+  color: #0b1420;
+  border-color: #f3f4f4;
+  background: #f3f4f4;
+}
+
+.cta-container .cta-buttons .btn:hover i,
+.cta-container .cta-buttons .btn:focus-visible i {
+  color: inherit;
 }
 
 /* Ornements : filets, chiffres et surlignages en or blanc. */
