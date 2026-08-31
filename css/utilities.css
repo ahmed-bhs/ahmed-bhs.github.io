@@ -4989,6 +4989,10 @@ body.premium-web-page .page-header + #web-creation {
 .marker-orange { --marker-color: 255, 164, 83; }
 .marker-pink { --marker-color: 255, 137, 184; }
 
+.marker-premium-title {
+  color: var(--text-primary);
+}
+
 @media (prefers-contrast: more) {
   .marker-highlight,
   .hl-hand {
