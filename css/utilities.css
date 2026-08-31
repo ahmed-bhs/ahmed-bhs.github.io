@@ -4651,7 +4651,7 @@ body.premium-web-page .page-header + #web-creation {
 
 .expertise-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin-top: 26px;
 }
@@ -4664,11 +4664,26 @@ body.premium-web-page .page-header + #web-creation {
 
 .expertise-gallery img {
   width: 100%;
-  height: auto !important;
-  aspect-ratio: auto;
+  aspect-ratio: 3 / 2;
+  height: auto;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   filter: saturate(0.72) contrast(1.03);
+}
+
+.expertise-gallery-media {
+  display: block;
+  overflow: hidden;
+}
+
+.expertise-gallery-media img {
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.expertise-gallery-media:hover img,
+.expertise-gallery-media:focus-visible img {
+  transform: scale(1.015);
+  filter: saturate(0.9) contrast(1.04);
 }
 
 .expertise-gallery figcaption {
@@ -4676,6 +4691,69 @@ body.premium-web-page .page-header + #web-creation {
   font-size: 0.84rem;
   line-height: 1.55;
   color: var(--text-secondary);
+}
+
+.expertise-gallery figcaption span {
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.conference-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.conference-proof-card {
+  padding: 18px 20px;
+  border: 1px solid var(--border-color);
+  background: var(--card-background);
+}
+
+.conference-proof-source {
+  margin: 0 0 5px;
+  color: var(--gold-deep);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.conference-proof-card h3 {
+  margin: 0 0 7px;
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.conference-proof-card > p:not(.conference-proof-source) {
+  margin: 0 0 10px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.conference-proof-card a,
+.achievement-proof-link {
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+.achievement-proof-link {
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.conference-proof-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
 }
 
 .value-row {
@@ -4832,6 +4910,10 @@ body.premium-web-page .page-header + #web-creation {
   }
 
   .expertise-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conference-proof-grid {
     grid-template-columns: 1fr;
   }
 }
