@@ -35,8 +35,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
-    <link rel="stylesheet" href="css/style.css?v=20260831-perf" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-perf" />
+    <link rel="stylesheet" href="css/style.css?v=20260831-perf2" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260831-perf2" />
   <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
   </head>
   <body class="premium-web-page">
@@ -243,7 +243,7 @@
             <li>Serveur privé dédié (IaaS), pas de mutualisé</li>
             <li>4 vCPU · 8 Go RAM · 75 Go SSD</li>
             <li>Aucune dépendance à un éditeur, site transférable</li>
-            <li>Données hébergées en France, OVHcloud</li>
+            <li>Données en France, RGPD, hors CLOUD Act</li>
             <li>Cache HTTP et cache applicatif configurés</li>
           </ul>
 
@@ -252,6 +252,13 @@
             <div class="offer-detail-content">
               <p><strong>Votre site tourne sur un serveur privé dédié (IaaS), pas sur un hébergement mutualisé ni sur une plateforme SaaS.</strong> Les ressources ne sont partagées avec aucun autre client : la charge d'un site voisin ne peut pas ralentir le vôtre, et une faille chez un tiers ne vous expose pas.</p>
               <p>Le choix de l'IaaS plutôt que d'une plateforme clé en main a une conséquence directe pour vous : <strong>aucune dépendance à un éditeur</strong>. Le code, la base de données et la configuration serveur vous appartiennent et restent transférables chez un autre hébergeur. Pas d'abonnement propriétaire, pas de fonctionnalité bloquée derrière un palier tarifaire, pas de limite d'export.</p>
+
+              <h4>Souveraineté des données</h4>
+              <p><strong>Vos données et celles de vos clients restent en France, chez un hébergeur français.</strong> Elles relèvent du droit européen et du RGPD, sans transfert hors Union européenne : contrairement à un hébergement chez un fournisseur américain, elles ne sont pas exposées aux lois d'accès extraterritoriales comme le CLOUD Act.</p>
+              <p>Concrètement, si un formulaire de contact, une prise de rendez-vous ou un fichier client transite par votre site, vous savez où ces informations sont stockées et sous quelle juridiction. C'est un point que vos propres clients peuvent vous demander, et une exigence courante dans les marchés publics et les appels d'offres.</p>
+
+              <h4>Sécurité</h4>
+              <p>Connexion chiffrée avec certificat SSL renouvelé automatiquement et HSTS activé, sauvegardes régulières, mises à jour de sécurité appliquées, protection anti-bots et anti-DDoS au niveau du serveur. Les en-têtes de sécurité du navigateur sont configurés pour limiter les injections de code et l'affichage du site dans une page tierce.</p>
               <ul class="vps-specs">
                 <li><strong>4 vCPU</strong> dédiés</li>
                 <li><strong>8 Go</strong> de mémoire vive</li>
@@ -272,12 +279,15 @@
               <p>Un cache de pages est placé devant l'application : la première visite calcule la page, les suivantes la reçoivent telle quelle. La durée de validité est réglée par type de contenu, et le cache est invalidé automatiquement dès qu'une page est modifiée depuis le back-office. Vos changements sont donc visibles immédiatement, sans purge manuelle.</p>
 
               <h4>Cache applicatif</h4>
-              <p>Côté serveur, plusieurs niveaux évitent de refaire le même travail à chaque requête : compilation PHP conservée en mémoire (OPcache), routes et conteneur de services précompilés, métadonnées et résultats de requêtes Doctrine mis en cache. Sur les projets à forte charge, un cache déporté type Redis prend le relais pour les sessions et les données calculées.</p>
+              <p>Côté serveur, le framework travaille en mode production : routes, conteneur de services et gabarits sont compilés une fois puis réutilisés, au lieu d'être reconstruits à chaque visite. Sur les projets à forte charge, la configuration est étendue au cache des requêtes de base de données et à un cache déporté pour les sessions.</p>
 
-              <h4>Livraison des fichiers</h4>
-              <p>Feuilles de style, scripts et polices sont minifiés, compressés (gzip/Brotli), versionnés et servis avec une validité longue : le navigateur ne les retélécharge qu'en cas de changement réel. Le tout est distribué en HTTP/2 sur une connexion chiffrée avec HSTS.</p>
+              <h4>Images et fichiers</h4>
+              <p>Les photos sont converties au format WebP, redimensionnées selon l'affichage, et celles situées hors de l'écran ne se chargent qu'au défilement. Feuilles de style, scripts et polices sont minifiés, compressés, versionnés et servis avec une validité longue : le navigateur ne les retélécharge qu'en cas de changement réel. Les polices sont préchargées pour éviter le texte qui saute au chargement.</p>
 
-              <p class="offer-proof">Exemple mesurable sur un site en production : <a href="https://www.azur-trad.fr/fr" target="_blank" rel="noopener noreferrer">azur-trad.fr</a> renvoie les en-têtes <code>cache-control: public, s-maxage=240</code> pour les pages et <code>max-age=2592000, immutable</code> pour les fichiers statiques.</p>
+              <h4>Isolation des services</h4>
+              <p>Application, base de données et traitements différés tournent dans des conteneurs séparés derrière le serveur web. Un envoi d'e-mail ou un traitement lourd n'immobilise pas la page du visiteur, et une mise à jour se déploie sans interrompre le site.</p>
+
+              <p class="offer-proof">Mesures relevées sur un site en production, <a href="https://www.azur-trad.fr/fr" target="_blank" rel="noopener noreferrer">azur-trad.fr</a>, hébergé sur cette infrastructure : <strong>0,12 seconde</strong> de temps de réponse serveur sur page mise en cache, en-têtes <code>s-maxage=240</code> pour les pages et <code>max-age=2592000, immutable</code> pour les fichiers statiques, images en WebP et chargement différé, site publié en quatre langues avec balises hreflang.</p>
             </div>
           </details>
 
