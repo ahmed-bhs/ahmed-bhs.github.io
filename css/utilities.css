@@ -4967,19 +4967,14 @@ body.premium-web-page .page-header + #web-creation {
   vertical-align: text-bottom;
 }
 
-/* Surlignage au marqueur : accent éditorial réservé aux mots-clés. */
+/* Surlignage façon Stabilo : large, imparfait et toujours derrière le texte. */
 .marker-highlight,
 .hl-hand {
-  padding: 0 0.08em;
+  padding: 0 0.12em;
   color: inherit;
-  background-image: linear-gradient(
-    176deg,
-    transparent 0,
-    transparent 56%,
-    rgba(174, 158, 116, 0.28) 56%,
-    rgba(196, 184, 151, 0.42) 88%,
-    transparent 88%
-  );
+  background-image:
+    linear-gradient(178deg, transparent 13%, rgba(255, 224, 92, 0.34) 13%, rgba(255, 220, 72, 0.58) 82%, transparent 82%),
+    linear-gradient(181deg, transparent 24%, rgba(255, 231, 112, 0.34) 24%, rgba(255, 221, 76, 0.28) 91%, transparent 91%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -webkit-box-decoration-break: clone;
@@ -4989,7 +4984,7 @@ body.premium-web-page .page-header + #web-creation {
 @media (prefers-contrast: more) {
   .marker-highlight,
   .hl-hand {
-    background-image: linear-gradient(transparent 55%, rgba(125, 134, 143, 0.42) 55%, rgba(125, 134, 143, 0.42) 90%, transparent 90%);
+    background-image: linear-gradient(178deg, transparent 12%, rgba(246, 196, 31, 0.64) 12%, rgba(246, 196, 31, 0.64) 88%, transparent 88%);
   }
 }
 
