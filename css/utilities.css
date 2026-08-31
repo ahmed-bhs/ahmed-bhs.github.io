@@ -1097,7 +1097,7 @@ h2::selection {
 
 .hero-paths {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 180px));
+  grid-template-columns: minmax(150px, 174px) minmax(190px, 222px) minmax(150px, 180px);
   justify-content: center;
   align-items: end;
   gap: 14px;
@@ -1111,6 +1111,20 @@ h2::selection {
   align-items: stretch;
   gap: 6px;
   min-width: 0;
+}
+
+.hero-secondary-actions {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-self: start;
+  align-items: stretch;
+}
+
+.hero-secondary-actions > .hero-action-btn {
+  position: static;
+  width: 100%;
+  margin: 0;
 }
 
 .hero-cta-prompt {
@@ -1161,7 +1175,7 @@ h2::selection {
 
 @media (max-width: 980px) {
   .hero-paths {
-    grid-template-columns: repeat(4, minmax(140px, 170px));
+    grid-template-columns: minmax(140px, 165px) minmax(180px, 210px) minmax(140px, 165px);
     gap: 10px;
   }
 
@@ -1174,7 +1188,7 @@ h2::selection {
 
 @media (max-width: 640px) {
   .hero-paths {
-    grid-template-columns: repeat(4, 150px);
+    grid-template-columns: 150px 190px 150px;
     overflow-x: auto;
     justify-content: flex-start;
     padding-bottom: 4px;
@@ -3205,7 +3219,7 @@ html {
 .cta-container {
   position: relative;
   overflow: hidden;
-  background: #0b1420 url("../assets/contact-luxury-bg.png") center / cover no-repeat;
+  background: #0b1420 url("../assets/contact-saint-tropez.webp") center 58% / cover no-repeat;
   isolation: isolate;
 }
 
@@ -3225,7 +3239,7 @@ html {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(115deg, rgba(6, 13, 23, 0.92), rgba(12, 25, 39, 0.72) 52%, rgba(6, 13, 23, 0.9));
+  background: linear-gradient(115deg, rgba(6, 13, 23, 0.93), rgba(12, 25, 39, 0.76) 52%, rgba(6, 13, 23, 0.9));
   content: "";
 }
 
@@ -4857,6 +4871,100 @@ body.premium-web-page .page-header + #web-creation {
   text-underline-offset: 3px;
 }
 
+.publications-container {
+  margin: 8px auto;
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.publication-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 16px 18px;
+  border: 1px solid var(--border-color);
+  color: inherit;
+  background: var(--card-background);
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.publication-card:hover,
+.publication-card:focus-visible {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: var(--luxury-shadow-hover);
+}
+
+.publication-topic {
+  color: var(--gold-deep);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.publication-card h3 {
+  margin: 7px 0;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.publication-card p {
+  margin: 0 0 12px;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.publication-link {
+  margin-top: auto;
+  color: var(--text-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.publications-all {
+  margin: 10px 0 0;
+  text-align: right;
+}
+
+.publications-all a {
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .publications-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .publications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card {
+    padding: 14px;
+  }
+
+  .publications-all {
+    text-align: left;
+  }
+}
+
 .value-row {
   display: grid;
   grid-template-columns: 1fr 1.25fr;
@@ -5187,6 +5295,15 @@ body.premium-web-page .page-header + #web-creation {
 
 .marker-premium-title {
   color: var(--text-primary);
+}
+
+.feature-highlight {
+  padding: 0 0.08em;
+  color: var(--text-primary);
+  font-weight: 700;
+  background-image: linear-gradient(178deg, transparent 54%, rgba(var(--marker-color), 0.48) 54%, rgba(var(--marker-color), 0.48) 92%, transparent 92%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 @media (prefers-contrast: more) {

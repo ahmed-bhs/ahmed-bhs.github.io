@@ -39,15 +39,25 @@
     <link rel="stylesheet" href="css/utilities.css?v=20260831-async" />
     <style>
       .hero-paths {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 10px 12px;
+        display: grid;
+        grid-template-columns: minmax(150px, 174px) minmax(190px, 222px) minmax(150px, 180px);
+        align-items: start;
+        justify-content: center;
+        gap: 12px 14px;
       }
 
       .hero-cta-cell {
-        display: contents;
+        display: flex;
+        min-width: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+      }
+
+      .hero-secondary-actions {
+        display: grid;
+        grid-column: 3;
+        grid-template-columns: minmax(0, 1fr);
       }
 
       .hero-cta-prompt {
@@ -56,8 +66,7 @@
 
       .hero-paths > .hero-cta-cell > .hero-action-btn,
       .hero-paths > .hero-action-btn {
-        flex: 0 0 auto;
-        width: auto;
+        width: 100%;
       }
 
       .hero-action-btn {
@@ -94,7 +103,11 @@
 
       @media (max-width: 760px) {
         .hero-paths {
+          grid-template-columns: 150px 190px 150px;
+          justify-content: flex-start;
           gap: 8px 10px;
+          overflow-x: auto;
+          padding-bottom: 4px;
         }
 
         .hero-cta-prompt {
@@ -261,11 +274,8 @@
             <a href="freelance.html" class="btn btn-secondary hero-action-btn"><i class="fas fa-tools"></i> refonte ou dépannage</a>
           </div>
 
-          <div class="hero-cta-cell">
+          <div class="hero-cta-cell hero-secondary-actions">
             <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary hero-action-btn is-quiet">réserver un appel <i class="fas fa-chevron-right"></i></a>
-          </div>
-
-          <div class="hero-cta-cell">
             <a href="realisations.html" class="btn btn-secondary hero-action-btn is-quiet">réalisations <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
@@ -495,7 +505,7 @@
             <p class="pricing-description">Projets open-source, certifications, contributions et expériences vérifiables.</p>
             <ul class="pricing-features">
               <li><span class="plus-hand" aria-hidden="true">+</span> Outils adoptés par 2000+ devs</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Certifié Symfony & eZ Platform</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Certifié Symfony, Ibexa &amp; Cisco CCNA</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> 15+ ans d'expérience</li>
             </ul>
             <a href="realisations.html" class="btn btn-primary">Découvrir <i class="fas fa-arrow-right"></i></a>
