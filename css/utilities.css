@@ -6569,6 +6569,21 @@ body.premium-web-page .page-header + #web-creation {
   font: 700 0.75rem/1.5 var(--font-mono);
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  background: linear-gradient(110deg, var(--text-primary) 0%, var(--text-primary) 42%, #b8913e 50%, var(--text-primary) 58%, var(--text-primary) 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: home-eyebrow-shine 6s ease-in-out infinite;
+}
+
+@keyframes home-eyebrow-shine {
+  0%, 65% { background-position: 120% 0; }
+  100% { background-position: -20% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-eyebrow { animation: none; }
 }
 
 .home-hero .home-hero-copy .content-text {
