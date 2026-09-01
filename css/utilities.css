@@ -6565,8 +6565,8 @@ body.premium-web-page .page-header + #web-creation {
 
 .home-hero-eyebrow {
   margin: 0 0 12px;
-  color: var(--gold-deep);
-  font: 700 0.7rem/1.5 var(--font-mono);
+  color: var(--text-primary);
+  font: 700 0.75rem/1.5 var(--font-mono);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -6578,7 +6578,7 @@ body.premium-web-page .page-header + #web-creation {
 }
 
 .home-hero .content-text h1 {
-  max-width: 12ch;
+  max-width: none;
   margin: 0 0 18px;
   color: var(--text-primary);
   font-family: var(--font-heading);
@@ -6587,6 +6587,16 @@ body.premium-web-page .page-header + #web-creation {
   letter-spacing: -0.035em;
   line-height: 0.98;
   text-wrap: balance;
+}
+
+.home-hero .content-text h1 .marker-highlight {
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .home-hero .content-text h1 .marker-highlight {
+    white-space: normal;
+  }
 }
 
 .home-hero .content-text p {
