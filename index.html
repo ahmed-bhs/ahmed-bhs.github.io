@@ -36,90 +36,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
     <link rel="stylesheet" href="css/style.css?v=20260831-async" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-compact-franken" />
-    <style>
-      .hero-paths {
-        display: grid;
-        grid-template-columns: minmax(150px, 174px) minmax(190px, 222px) minmax(150px, 180px);
-        align-items: start;
-        justify-content: center;
-        gap: 12px 14px;
-      }
-
-      .hero-cta-cell {
-        display: flex;
-        min-width: 0;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 6px;
-      }
-
-      .hero-secondary-actions {
-        display: grid;
-        grid-column: 3;
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .hero-cta-prompt {
-        display: none;
-      }
-
-      .hero-paths > .hero-cta-cell > .hero-action-btn,
-      .hero-paths > .hero-action-btn {
-        width: 100%;
-      }
-
-      .hero-action-btn {
-        min-height: 52px;
-        padding: 0 1.6rem;
-        text-transform: none !important;
-        letter-spacing: 0.01em;
-        font-size: 0.86rem;
-        white-space: nowrap;
-      }
-
-      .hero-cta-cell .hero-action-btn i {
-        color: currentColor;
-        opacity: 1;
-      }
-
-      .hero-action-btn.is-quiet,
-      .hero-action-btn.is-quiet:link,
-      .hero-action-btn.is-quiet:visited {
-        min-height: 52px;
-        padding: 0 0.5rem;
-        border: 0;
-        background: none;
-        color: var(--text-secondary);
-        box-shadow: none;
-      }
-
-      .hero-action-btn.is-quiet:hover {
-        background: none;
-        border-color: transparent;
-        color: var(--text-primary);
-        transform: none;
-      }
-
-      @media (max-width: 760px) {
-        .hero-paths {
-          grid-template-columns: 150px 190px 150px;
-          justify-content: flex-start;
-          gap: 8px 10px;
-          overflow-x: auto;
-          padding-bottom: 4px;
-        }
-
-        .hero-cta-prompt {
-          display: none;
-        }
-
-        .hero-action-btn {
-          min-height: 48px;
-          font-size: 0.8rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/utilities.css?v=20260901-home-v1" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -255,12 +172,12 @@
     <header class="page-header">
       <nav class="navbar">
         <div class="container">
-          <h1 id="logo">
+          <div id="logo">
             <a href="index.html">
               <span class="logo-mark" title="Disponible pour missions freelance"><span class="status-dot"></span><svg class="logo-glyph" viewBox="0 0 92 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="logo-node" cx="6" cy="19" r="2.8" fill="#9aa3ab"/><path class="logo-thread" d="M9 19 H83" stroke="#9aa3ab" stroke-width="3.2" stroke-linecap="round"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 29 L17.5 7 L23 29"/><path d="M39 7 h8 M39 7 v22 M39 29 h8"/><path d="M61 7 v22 M73 7 v22"/></g><circle class="logo-node" cx="86" cy="19" r="2.8" fill="#9aa3ab"/></svg></span>
               <span class="logo-name"><span class="logo-name-main">AHMED EBEN HASSINE</span><span class="logo-name-role">Ingénieur en informatique senior</span></span>
             </a>
-          </h1>
+          </div>
           <ul class="nav-menu">
             <li><a class="nav-link active" href="index.html">ACCUEIL</a></li>
             <li><a class="nav-link" href="sites-web.html">PROJETS WEB</a></li>
@@ -279,47 +196,79 @@
       </nav>
     </header>
 
-    <section class="header-container">
-        <h1>Pour TPE, PME, commerces et professionnels indépendants</h1>
+    <main>
+    <section class="header-container home-hero">
+      <div class="home-hero-grid">
+        <div class="home-hero-copy">
+          <p class="home-hero-eyebrow">Pour TPE, PME, commerces et professionnels indépendants</p>
 
-        <div class="content-text">
-          <h2>Un site web qui vous <span class="marker-highlight marker-yellow">amène des clients</span></h2>
+          <div class="content-text">
+            <h1>Un site web qui vous <span class="marker-highlight marker-yellow">amène des clients</span></h1>
+            <p class="home-hero-lead">Je conçois un site sur mesure qui présente clairement votre valeur, renforce votre visibilité et facilite la prise de contact, la réservation ou la vente.</p>
+            <p>Vous gardez la main sur vos textes, images et tarifs. Chaque choix est pensé pour être utile à vos visiteurs, simple à administrer et durable techniquement.</p>
+          </div>
 
-          <p>
-            <strong>TPE, PME, commerces de caractère et professionnels indépendants : je conçois une présence digitale à la hauteur de votre savoir-faire, pensée pour valoriser votre image, renforcer votre visibilité et convertir vos visiteurs en clients.</strong> Vous gardez la main sur vos contenus, sans dépendre de personne pour changer un texte, une photo ou un tarif.
+          <div class="hero-person">
+            <img src="assets/ahmed-portrait.webp" alt="Portrait d'Ahmed Eben Hassine" width="192" height="192" />
+            <p><strong>Ahmed Eben Hassine</strong><span>15+ ans d'expérience · Votre interlocuteur senior unique, du premier échange à la mise en ligne.</span></p>
+          </div>
+
+          <p class="hero-paths-lead">Quel est votre besoin aujourd'hui&nbsp;?</p>
+
+          <div class="hero-paths">
+            <div class="hero-cta-cell">
+              <a href="sites-web.html" class="btn btn-primary hero-action-btn"><i class="fas fa-laptop-code"></i> créer ou refaire mon site</a>
+            </div>
+
+            <div class="hero-cta-cell">
+              <a href="freelance.html" class="btn btn-secondary hero-action-btn"><i class="fas fa-tools"></i> faire évoluer une application</a>
+            </div>
+
+            <div class="hero-cta-cell hero-secondary-actions">
+              <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary hero-action-btn">réserver un appel de 30 min <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+
+          <p class="hero-response"><i class="fas fa-check-circle" aria-hidden="true"></i> Premier échange gratuit · Réponse personnelle sous 24 h · Sans engagement</p>
+        </div>
+
+        <div class="home-hero-visual-column">
+          <figure class="home-site-preview" aria-labelledby="home-site-preview-caption">
+            <div class="home-preview-browser" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <div>votre-entreprise.fr</div>
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="home-preview-page">
+              <div class="home-preview-nav"><strong>VOTRE MARQUE</strong><span>Services&nbsp;&nbsp; À propos&nbsp;&nbsp; Contact</span></div>
+              <div class="home-preview-hero">
+                <small>VOTRE SAVOIR-FAIRE, CLAIREMENT PRÉSENTÉ</small>
+                <h2>Le bon message, devant les bonnes personnes.</h2>
+                <p>Une expérience rassurante qui conduit naturellement vers la prise de contact.</p>
+                <span class="home-preview-button">Prendre rendez-vous <i class="fas fa-arrow-right"></i></span>
+              </div>
+              <div class="home-preview-benefits">
+                <span><i class="fas fa-search"></i><strong>Visible</strong><small>SEO structuré</small></span>
+                <span><i class="fas fa-mobile-alt"></i><strong>Rapide</strong><small>Mobile compris</small></span>
+                <span><i class="fas fa-edit"></i><strong>Autonome</strong><small>Back-office simple</small></span>
+              </div>
+            </div>
+            <figcaption id="home-site-preview-caption">Aperçu illustratif d'une expérience vitrine — votre identité et vos contenus seront entièrement personnalisés.</figcaption>
+          </figure>
+
+          <div class="home-deliverable-chips" aria-label="Éléments inclus selon le projet">
+            <span><i class="fab fa-figma" aria-hidden="true"></i> Maquette Figma validée</span>
+            <span><i class="fas fa-universal-access" aria-hidden="true"></i> Accessibilité</span>
+            <span><i class="fas fa-user-shield" aria-hidden="true"></i> RGPD</span>
+            <span><i class="fas fa-key" aria-hidden="true"></i> Comptes à votre nom</span>
+          </div>
+
+          <p class="hero-clients">
+            <strong>Une expertise issue de projets exigeants</strong>
+            Les méthodes appliquées à votre site ont été éprouvées pour OPPBTP, Bpifrance, IRD, CIRAD, Valobat, Atlantic, FFGolf, Delabie et le Ministère de la Culture.
           </p>
-          <p>
-            Expert du développement web depuis 15 ans, certifié Symfony et Ibexa, j'applique aux petites structures les méthodes utilisées sur des projets à fort trafic : site rapide, bien référencé, sécurisé et hébergé sur un serveur dédié.
-          </p>
         </div>
-
-        <div class="hero-person">
-          <img src="assets/ahmed-portrait.webp" alt="Portrait d'Ahmed Eben Hassine" width="192" height="192" />
-          <p><strong>Ahmed Eben Hassine</strong><span>Votre interlocuteur senior unique, du premier échange à la mise en ligne.</span></p>
-        </div>
-
-        <p class="hero-clients">
-          <strong>Le niveau technique de mes références</strong>
-          Les méthodes que j'applique à votre site viennent de projets menés pour OPPBTP, Bpifrance, IRD, CIRAD, Valobat, Baresto, Atlantic, FFGolf, Delabie et le Ministère de la Culture.
-        </p>
-
-        <p class="hero-paths-lead">Vous avez une idée, ou un site à refaire ?</p>
-
-        <div class="hero-paths">
-          <div class="hero-cta-cell">
-            <a href="sites-web.html" class="btn btn-primary hero-action-btn"><i class="fas fa-laptop-code"></i> créer mon site</a>
-          </div>
-
-          <div class="hero-cta-cell">
-            <a href="freelance.html" class="btn btn-secondary hero-action-btn"><i class="fas fa-tools"></i> refonte ou dépannage</a>
-          </div>
-
-          <div class="hero-cta-cell hero-secondary-actions">
-            <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary hero-action-btn">réserver un appel <i class="fas fa-chevron-right"></i></a>
-          </div>
-        </div>
-
-        <p class="hero-response"><i class="fas fa-check-circle" aria-hidden="true"></i> Premier échange gratuit · Réponse personnelle sous 24 h · Sans engagement</p>
+      </div>
 
         <div class="hero-trust" aria-label="Garanties et certifications">
           <a class="hero-trust-item hero-trust-cert" href="https://connect.symfony.com/profile/famas23" target="_blank" rel="noopener noreferrer">
@@ -406,6 +355,33 @@
           <span class="client-logo" aria-hidden="true"><img src="assets/clients/ffgolf.png" alt="" /></span>
           <span class="client-logo client-logo-dark" aria-hidden="true"><img src="assets/clients/delabie.svg" alt="" /></span>
           <span class="client-logo" aria-hidden="true"><img src="assets/clients/culture.png" alt="" /></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-human-proof container" aria-labelledby="home-human-proof-title">
+      <div class="home-human-proof-media">
+        <figure class="home-proof-photo home-proof-photo-main">
+          <img src="assets/ahmed-conference-afup-montpellier.webp" alt="Ahmed Eben Hassine présentant un sujet technique lors d'une conférence AFUP à Montpellier" width="800" height="600" loading="lazy" />
+          <figcaption>Conférence AFUP Montpellier</figcaption>
+        </figure>
+        <figure class="home-proof-photo home-proof-photo-secondary">
+          <img src="assets/ahmed-medaille-hackfest.webp" alt="Ahmed Eben Hassine recevant un certificat et une médaille lors du Hackfest" width="800" height="533" loading="lazy" />
+          <figcaption>Distinction Hackfest</figcaption>
+        </figure>
+      </div>
+      <div class="home-human-proof-copy">
+        <p class="section-kicker">Une expertise visible et vérifiable</p>
+        <h2 id="home-human-proof-title">Un ingénieur senior qui reste votre <span class="marker-highlight marker-green">interlocuteur direct</span></h2>
+        <p>Vous n'êtes pas transmis d'un commercial à un chef de projet puis à un développeur. Je mène moi-même le cadrage, les choix techniques, la réalisation et la mise en ligne.</p>
+        <ul>
+          <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Des explications compréhensibles</strong><small>Les décisions sont reliées à votre activité, pas à une mode technique.</small></span></li>
+          <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Une expertise partagée publiquement</strong><small>Conférences, contributions open source et certifications vérifiables.</small></span></li>
+          <li><i class="fas fa-check" aria-hidden="true"></i><span><strong>Une continuité après la livraison</strong><small>Hébergement, maintenance, contenus et évolutions peuvent rester pris en charge.</small></span></li>
+        </ul>
+        <div class="home-human-proof-actions">
+          <a class="btn btn-primary" href="realisations.html">Voir les réalisations</a>
+          <a class="home-proof-text-link" href="suivi-post-livraison.html">Découvrir le suivi après livraison <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -813,34 +789,39 @@
           <p>La structure SEO, l'indexabilité, les métadonnées, le sitemap, les performances et les contrôles avant livraison sont inclus. Une stratégie de croissance continue peut ensuite être mise en place pour développer vos positions et vos contenus.</p>
         </details>
 
-        <details class="faq-item">
-          <summary>À qui appartient le code que vous écrivez ?</summary>
-          <p>Le code vous appartient. Il est versionné sur votre dépôt Git, ou sur un dépôt que je vous transfère en fin de mission. Vous conservez l'accès complet à l'historique, aux environnements et à la documentation technique.</p>
-        </details>
+        <details class="faq-more">
+          <summary>Voir 6 autres réponses sur le déroulement d'une mission</summary>
+          <div class="faq-more-list">
+            <details class="faq-item">
+              <summary>À qui appartient le code que vous écrivez ?</summary>
+              <p>Le code vous appartient. Il est versionné sur votre dépôt Git, ou sur un dépôt que je vous transfère en fin de mission. Vous conservez l'accès complet à l'historique, aux environnements et à la documentation technique.</p>
+            </details>
 
-        <details class="faq-item">
-          <summary>Que se passe-t-il si vous n'êtes plus disponible ?</summary>
-          <p>Le travail est documenté au fil de la mission, pas à la fin : architecture, choix techniques et procédures de déploiement sont écrits dans le dépôt. Un autre développeur Symfony peut reprendre sans dépendre de moi. La passation fait partie de la prestation.</p>
-        </details>
+            <details class="faq-item">
+              <summary>Que se passe-t-il si vous n'êtes plus disponible ?</summary>
+              <p>Le travail est documenté au fil de la mission, pas à la fin : architecture, choix techniques et procédures de déploiement sont écrits dans le dépôt. Un autre développeur Symfony peut reprendre sans dépendre de moi. La passation fait partie de la prestation.</p>
+            </details>
 
-        <details class="faq-item">
-          <summary>Comment savoir où en est le projet ?</summary>
-          <p>Chaque besoin est formalisé en tickets numérotés dans votre outil de gestion, avec des critères d'acceptation. Vous voyez l'avancement en continu et vous recettez sur un environnement de test avant chaque mise en production. Le détail est décrit sur la page <a href="methode-travail.html">méthode de travail</a>.</p>
-        </details>
+            <details class="faq-item">
+              <summary>Comment savoir où en est le projet ?</summary>
+              <p>Chaque besoin est formalisé en tickets numérotés dans votre outil de gestion, avec des critères d'acceptation. Vous voyez l'avancement en continu et vous recettez sur un environnement de test avant chaque mise en production. Le détail est décrit sur la page <a href="methode-travail.html">méthode de travail</a>.</p>
+            </details>
 
-        <details class="faq-item">
-          <summary>Et si le résultat ne me convient pas ?</summary>
-          <p>La recette client précède toute mise en production : vous validez sur un environnement de test avant que quoi que ce soit ne parte en ligne. Les ajustements sur les éléments livrés sont couverts par le premier mois de support correctif.</p>
-        </details>
+            <details class="faq-item">
+              <summary>Et si le résultat ne me convient pas ?</summary>
+              <p>La recette client précède toute mise en production : vous validez sur un environnement de test avant que quoi que ce soit ne parte en ligne. Les ajustements sur les éléments livrés sont couverts par le premier mois de support correctif.</p>
+            </details>
 
-        <details class="faq-item">
-          <summary>Travaillez-vous à distance ou sur site ?</summary>
-          <p>À distance, avec des points réguliers. J'interviens directement dans vos outils : dépôt Git, gestion de tickets, canaux d'équipe. Le premier échange se fait en visioconférence.</p>
-        </details>
+            <details class="faq-item">
+              <summary>Travaillez-vous à distance ou sur site ?</summary>
+              <p>À distance, avec des points réguliers. J'interviens directement dans vos outils : dépôt Git, gestion de tickets, canaux d'équipe. Le premier échange se fait en visioconférence.</p>
+            </details>
 
-        <details class="faq-item">
-          <summary>Comment démarre concrètement une mission ?</summary>
-          <p>Par un appel de 30 minutes, gratuit et sans engagement, pour clarifier le besoin. Vous recevez ensuite un cahier des charges synthétique et un devis. Le cadrage et la planification ne sont facturés qu'une fois la mission engagée.</p>
+            <details class="faq-item">
+              <summary>Comment démarre concrètement une mission ?</summary>
+              <p>Par un appel de 30 minutes, gratuit et sans engagement, pour clarifier le besoin. Vous recevez ensuite un cahier des charges synthétique et un devis. Le cadrage et la planification ne sont facturés qu'une fois la mission engagée.</p>
+            </details>
+          </div>
         </details>
       </div>
     </section>
@@ -943,6 +924,8 @@
       </form>
     </section>
 
+
+    </main>
 
     <footer id="footer">
       <div class="container">
