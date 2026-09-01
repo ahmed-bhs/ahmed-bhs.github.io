@@ -26,19 +26,129 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&display=swap" />
     <link rel="stylesheet" href="css/style.css?v=20260831-async" />
-    <link rel="stylesheet" href="css/utilities.css?v=20260831-compact-franken" />
+    <link rel="stylesheet" href="css/utilities.css?v=20260901-followup-v2" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://ahmed-bhs.github.io/#ahmed-eben-hassine",
+            "name": "Ahmed EBEN HASSINE",
+            "url": "https://ahmed-bhs.github.io/",
+            "image": "https://ahmed-bhs.github.io/assets/ahmed-portrait.webp",
+            "jobTitle": "Ingénieur en informatique senior et freelance Symfony",
+            "sameAs": [
+              "https://github.com/ahmed-bhs",
+              "https://linkedin.com/in/ahmedbhs/",
+              "https://connect.symfony.com/profile/famas23"
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://ahmed-bhs.github.io/suivi-post-livraison.html#webpage",
+            "url": "https://ahmed-bhs.github.io/suivi-post-livraison.html",
+            "name": "Suivi, maintenance et TMA après livraison",
+            "description": "Hébergement infogéré, maintenance, webmastering, TMA, suivi SEO/GSO et évolutions à la carte pour sites et applications web.",
+            "inLanguage": "fr-FR",
+            "about": { "@id": "https://ahmed-bhs.github.io/suivi-post-livraison.html#service" },
+            "author": { "@id": "https://ahmed-bhs.github.io/#ahmed-eben-hassine" }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://ahmed-bhs.github.io/suivi-post-livraison.html#service",
+            "name": "Hébergement, maintenance, webmastering et TMA web",
+            "serviceType": "Maintenance et évolution de sites et applications web",
+            "provider": { "@id": "https://ahmed-bhs.github.io/#ahmed-eben-hassine" },
+            "areaServed": { "@type": "Country", "name": "France" },
+            "url": "https://ahmed-bhs.github.io/suivi-post-livraison.html",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Abonnements de suivi post-livraison",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "name": "Hébergement infogéré",
+                  "url": "https://ahmed-bhs.github.io/suivi-post-livraison.html#hosting-offer",
+                  "price": "49",
+                  "priceCurrency": "EUR",
+                  "priceSpecification": { "@type": "UnitPriceSpecification", "price": "49", "priceCurrency": "EUR", "unitText": "mois" }
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Maintenance & Webmastering",
+                  "url": "https://ahmed-bhs.github.io/suivi-post-livraison.html#maintenance-offer",
+                  "price": "149",
+                  "priceCurrency": "EUR",
+                  "priceSpecification": { "@type": "UnitPriceSpecification", "price": "149", "priceCurrency": "EUR", "unitText": "mois" }
+                },
+                {
+                  "@type": "Offer",
+                  "name": "TMA & Évolutions",
+                  "url": "https://ahmed-bhs.github.io/suivi-post-livraison.html#tma-offer",
+                  "price": "399",
+                  "priceCurrency": "EUR",
+                  "priceSpecification": { "@type": "UnitPriceSpecification", "price": "399", "priceCurrency": "EUR", "unitText": "mois" }
+                }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://ahmed-bhs.github.io/suivi-post-livraison.html#faq-schema",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quelle différence entre hébergement, maintenance et TMA ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "L'Hébergement infogéré protège le serveur, le certificat, les sauvegardes et la disponibilité. Maintenance & Webmastering ajoute les corrections du site existant, la gestion de contenu et 4h d'évolutions mensuelles. La TMA réserve deux jours par mois aux applications plus actives avec une prise en charge prioritaire en cas de blocage." }
+              },
+              {
+                "@type": "Question",
+                "name": "La surveillance continue signifie-t-elle une présence humaine 24h/24 ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "La disponibilité et les contrôles techniques sont automatisés en continu. Les alertes sont qualifiées et les interventions humaines sont réalisées pendant les horaires ouvrés selon la priorité prévue par la formule, sauf astreinte convenue séparément." }
+              },
+              {
+                "@type": "Question",
+                "name": "Que signifie maintenance corrective couverte à 100 % ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Les anomalies reproductibles du périmètre applicatif existant sont diagnostiquées et corrigées sans facturation supplémentaire. Une nouvelle fonctionnalité, une refonte, un changement de besoin ou un incident causé par un service tiers hors du contrôle du prestataire relève du crédit disponible ou d'un devis validé." }
+              },
+              {
+                "@type": "Question",
+                "name": "Que deviennent les heures ou les jours non utilisés ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Les 4h de Maintenance & Webmastering sont cumulables pendant trois mois, dans la limite de 12h. Les jours de TMA non consommés restent disponibles jusqu'au 31 décembre de l'année en cours." }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment sont protégées les sauvegardes et les données ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Les sauvegardes sont exécutées quotidiennement et leur restauration fait partie du périmètre prévu. L'hébergement proposé est situé en France et relève du droit européen ainsi que du RGPD." }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je faire reprendre un site créé par un autre prestataire ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Oui, après vérification de l'architecture, des accès, des versions, des licences et de la sécurité. Une éventuelle remise à niveau est présentée et chiffrée séparément avant le démarrage de l'abonnement." }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je arrêter ou changer de formule ?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Les abonnements techniques sont sans engagement et résiliables avec un mois de préavis. Un changement de formule est possible. L'offre SEO & GSO conserve un engagement initial de trois mois." }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
     <script>(function(){try{if(!sessionStorage.getItem("logoSeen")){document.documentElement.classList.add("logo-animate");sessionStorage.setItem("logoSeen","1");}}catch(e){}})();</script>
   </head>
-  <body>
+  <body class="followup-page">
     <header class="page-header">
       <nav class="navbar">
         <div class="container">
-          <h1 id="logo">
+          <div id="logo">
             <a href="index.html">
               <span class="logo-mark" title="Disponible pour missions freelance"><span class="status-dot"></span><svg class="logo-glyph" viewBox="0 0 92 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="logo-node" cx="6" cy="19" r="2.8" fill="#9aa3ab"/><path class="logo-thread" d="M9 19 H83" stroke="#9aa3ab" stroke-width="3.2" stroke-linecap="round"/><g stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 29 L17.5 7 L23 29"/><path d="M39 7 h8 M39 7 v22 M39 29 h8"/><path d="M61 7 v22 M73 7 v22"/></g><circle class="logo-node" cx="86" cy="19" r="2.8" fill="#9aa3ab"/></svg></span>
               <span class="logo-name"><span class="logo-name-main">AHMED EBEN HASSINE</span><span class="logo-name-role">Ingénieur en informatique senior</span></span>
             </a>
-          </h1>
+          </div>
           <ul class="nav-menu">
             <li><a class="nav-link" href="index.html">ACCUEIL</a></li>
             <li><a class="nav-link active" href="sites-web.html">PROJETS WEB</a></li>
@@ -52,75 +162,282 @@
     </header>
 
     <main>
-      <section class="pricing-container container">
+      <section id="followup-offers" class="pricing-container container">
         <div class="division"></div>
-        <div class="content-text">
-          <h2><span class="hand-underline">Votre projet reste suivi après sa livraison</span></h2>
-          <p>La mise en ligne n'est pas la fin du projet. Je peux continuer à héberger, sécuriser, maintenir et faire évoluer votre site pour préserver sa visibilité, ses conversions et sa contribution au chiffre d'affaires.</p>
+        <div class="followup-hero content-text">
+          <p class="followup-eyebrow">Hébergement · Maintenance · TMA Symfony</p>
+          <h1><span class="hand-underline">Votre projet reste suivi après sa livraison</span></h1>
+          <p class="followup-hero-lead">Je sécurise, surveille, corrige et fais évoluer votre site avec un interlocuteur senior unique et un budget mensuel prévisible.</p>
           <p class="section-kicker">Infogérance · Maintenance · Webmastering · TMA · SEO & GSO · Évolutions</p>
+          <div class="followup-hero-actions">
+            <a class="btn btn-primary" href="#subscriptions">Découvrir les formules <i class="fas fa-arrow-down" aria-hidden="true"></i></a>
+            <a class="btn btn-secondary" href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer">Réserver un appel <i class="fas fa-calendar-check" aria-hidden="true"></i></a>
+          </div>
         </div>
 
-        <div class="content-text section-spacer">
-          <h2 class="compact-section-title">Le support offert <span class="marker-highlight marker-green">après la livraison</span></h2>
-          <p>Le <strong>premier mois de support correctif</strong> couvre les bugs, l'aide à la prise en main et les petits ajustements sur les éléments livrés : couleurs, typographie, espacements et reformattage d'un bloc existant.</p>
-          <p>Une nouvelle page, un nouveau bloc, une fonctionnalité ou une évolution métier sortent du support offert et relèvent ensuite d'un abonnement ou d'une intervention à la carte.</p>
+        <div class="followup-proof-grid" aria-label="Engagements de suivi">
+          <div class="followup-proof"><i class="fab fa-symfony" aria-hidden="true"></i><span><strong>Symfony Certified</strong><small>Expertise vérifiable</small></span></div>
+          <div class="followup-proof"><i class="fas fa-award" aria-hidden="true"></i><span><strong>15+ ans</strong><small>D'expérience web</small></span></div>
+          <div class="followup-proof"><i class="fas fa-database" aria-hidden="true"></i><span><strong>Chaque jour</strong><small>Sauvegardes suivies</small></span></div>
+          <div class="followup-proof"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span><strong>Données en France</strong><small>Infrastructure maîtrisée</small></span></div>
         </div>
 
-        <div class="content-text section-spacer">
+        <div id="subscriptions" class="content-text section-spacer followup-section-heading">
           <h2 class="compact-section-title">Les <span class="marker-highlight marker-blue">abonnements de suivi</span></h2>
-          <p>Chaque formule répond à un niveau différent de disponibilité et d'accompagnement. Vous pouvez changer de formule si votre activité évolue.</p>
+          <p>Choisissez le niveau de délégation utile aujourd'hui. Vous pourrez changer de formule lorsque votre activité évoluera.</p>
         </div>
 
         <div class="pricing-grid followup-pricing-grid">
-          <div class="pricing-card featured">
+          <article id="hosting-offer" class="pricing-card followup-offer-card">
+            <div class="followup-card-kicker">Le socle technique</div>
+            <h3>Hébergement infogéré</h3>
+            <div class="price"><span class="amount"><span class="hl-hand">49€</span></span><span class="period"> HT / mois</span></div>
+            <p class="pricing-description">Votre site, son serveur et ses sauvegardes restent surveillés sans vous imposer la maintenance éditoriale ou évolutive.</p>
+            <p class="followup-card-fit"><strong>Idéal pour :</strong> un site stable que vous administrez vous-même.</p>
+            <ul class="pricing-features followup-feature-summary">
+              <li><span class="plus-hand" aria-hidden="true">+</span> Hébergement privé en France, DNS et certificat SSL</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Sauvegardes quotidiennes et restauration</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Surveillance de disponibilité et alertes</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Infogérance, mises à jour serveur et durcissement</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Protection anti-bots et limitation des requêtes</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Adresse e-mail professionnelle Zimbra</li>
+            </ul>
+            <details class="followup-card-details">
+              <summary>Voir le périmètre technique</summary>
+              <div>
+                <p>Nginx, FrankenPHP, HTTP/2 et HTTP/3 sont configurés et suivis. Le monitoring couvre la disponibilité du serveur ; les corrections applicatives, changements de contenu et évolutions relèvent des formules supérieures.</p>
+              </div>
+            </details>
+            <a class="btn btn-secondary followup-card-cta" href="#contact">Choisir l'hébergement</a>
+          </article>
+
+          <article id="maintenance-offer" class="pricing-card featured followup-offer-card">
             <div class="pricing-badge">Le plus adapté aux vitrines</div>
             <h3>Maintenance &amp; Webmastering</h3>
             <div class="price"><span class="amount"><span class="hl-hand">149€</span></span><span class="period"> HT / mois</span></div>
             <p class="pricing-description">Votre maintenance corrective est couverte à 100&nbsp;%. Vous pouvez aussi me confier directement vos changements de contenus et jusqu'à 4h d'évolutions chaque mois.</p>
-            <ul class="pricing-features">
+            <p class="followup-card-fit"><strong>Idéal pour :</strong> un site vitrine actif qui doit rester fiable et évoluer régulièrement.</p>
+            <ul class="pricing-features followup-feature-summary">
+              <li><span class="plus-hand" aria-hidden="true">+</span> Tout le pack Hébergement infogéré</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Maintenance corrective couverte à 100&nbsp;%</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Sécurité, sauvegardes, monitoring et restauration</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Modification de vos textes, images et contenus</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> <span class="hl-hand">4h par mois</span> d'évolutions sur le sujet de votre choix</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Prise en charge sous 24 à 48h ouvrées</li>
+            </ul>
+            <details class="followup-card-details">
+              <summary>Voir toutes les protections incluses</summary>
+              <div><ul class="pricing-features">
               <li><span class="plus-hand" aria-hidden="true">+</span> Intervention en cas de site indisponible, page inaccessible, erreur serveur ou panne après une mise à jour</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Prise en charge des attaques, fichiers compromis, activités suspectes, spams et tentatives d'intrusion</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Correction des incidents liés au serveur, au DNS, au certificat SSL, aux e-mails et à la configuration Nginx</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Résolution des bugs techniques affectant l'affichage, les formulaires, les parcours principaux ou l'administration du site</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Diagnostic, restauration si nécessaire, remise en ligne et correctif durable inclus, sans facturation supplémentaire</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Hébergement en France, DNS, infogérance et certificat SSL</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Gestion de votre adresse e-mail professionnelle Zimbra et de ses paramètres</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Durcissement Nginx, filtrage anti-bot et limitation des requêtes</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Sauvegardes quotidiennes</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Monitoring, alertes et restauration en cas d'incident</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Mises à jour de sécurité</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Maintenance des dépendances Symfony et des intégrations</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Vérification des formulaires et parcours principaux</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Demandes d'édition de contenu incluses : je modifie pour vous, depuis le back-office, les textes, images et autres contenus administrables</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> <span class="hl-hand">4h par mois</span> d'évolutions sur le sujet de votre choix : contenu, design, bloc existant, réglage ou amélioration fonctionnelle</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Gestion éditoriale des contenus dans les langues déjà disponibles</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Correction des bugs mineurs</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Contrôle trimestriel PageSpeed Insights et Search Console</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Prise en charge sous 24 à 48h ouvrées</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Rapport trimestriel et recommandations</li>
-            </ul>
-          </div>
+              </ul></div>
+            </details>
+            <a class="btn btn-primary followup-card-cta" href="#contact">Choisir la maintenance</a>
+          </article>
 
-          <div class="pricing-card">
+          <article id="tma-offer" class="pricing-card followup-offer-card">
+            <div class="followup-card-kicker">Applications actives</div>
             <h3>TMA & Évolutions</h3>
             <div class="price"><span class="amount"><span class="hl-hand">399€</span></span><span class="period"> HT / mois</span></div>
             <p class="pricing-description">Tout le pack Maintenance & Webmastering, avec deux jours d'évolution par mois pour vos réservations, e-commerces et applications métier actives</p>
-            <ul class="pricing-features">
+            <p class="followup-card-fit"><strong>Idéal pour :</strong> une application métier, une réservation ou un e-commerce en production.</p>
+            <ul class="pricing-features followup-feature-summary">
               <li><span class="plus-hand" aria-hidden="true">+</span> Tout le pack <span class="hl-hand">Maintenance & Webmastering</span>, plus :</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> <span class="hl-hand">2 jours par mois</span> pour transformer vos priorités métier en améliorations concrètes</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Exemples selon la complexité : fluidifier une réservation ou une commande, automatiser une relance, connecter un outil externe, enrichir le tableau de bord, créer un export ou améliorer un parcours qui freine les conversions</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Chaque évolution fait l'objet d'un préchiffrage et d'un devis précisant l'estimation de la charge de travail, envoyé pour validation avant de commencer</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Au-delà des 2 jours disponibles, le travail supplémentaire est facturé au TJM en vigueur, après estimation de la charge et validation du devis</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Jours non utilisés cumulables jusqu'à la fin de l'année civile, puis remise à zéro du compteur</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Point mensuel de 30 min pour prioriser les demandes, non décompté</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Audit mensuel de performance et de sécurité</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Prise en charge prioritaire sous 4h ouvrées en cas de blocage</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Rapport mensuel des interventions</li>
             </ul>
-          </div>
+            <details class="followup-card-details">
+              <summary>Voir le fonctionnement du crédit TMA</summary>
+              <div><ul class="pricing-features">
+                <li><span class="plus-hand" aria-hidden="true">+</span> Chaque évolution fait l'objet d'un préchiffrage précisant l'estimation de charge, transmis pour validation avant de commencer</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Au-delà des 2 jours disponibles, le travail supplémentaire est facturé au TJM en vigueur après votre accord</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Jours non utilisés cumulables jusqu'à la fin de l'année civile, puis remise à zéro du compteur</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Audit mensuel de performance et de sécurité</li>
+              </ul></div>
+            </details>
+            <a class="btn btn-secondary followup-card-cta" href="#contact">Choisir la TMA</a>
+          </article>
         </div>
 
         <p class="pricing-footnote is-subtle">Abonnements sans engagement, résiliables avec un mois de préavis. Les 4h mensuelles de Maintenance & Webmastering peuvent être cumulées pendant 3 mois, jusqu'à 12h. Les jours de TMA & Évolutions non utilisés sont cumulables jusqu'au 31 décembre de l'année en cours, puis le compteur est remis à zéro. Le temps est décompté par tranches de 15 minutes. Tout dépassement nécessite votre accord préalable. Une refonte, un nouveau module complet ou une évolution dépassant le crédit disponible fait l'objet d'un devis. Les délais annoncés concernent la prise en charge, pas une durée de résolution garantie.</p>
+
+        <section class="followup-comparison" aria-labelledby="followup-comparison-title">
+          <div class="content-text followup-section-heading">
+            <p class="followup-eyebrow">Comparer sans décoder une liste technique</p>
+            <h2 id="followup-comparison-title" class="compact-section-title">Quelle formule correspond à votre quotidien&nbsp;?</h2>
+            <p>Le socle protège l'infrastructure. Les formules supérieures ajoutent la prise en charge applicative, vos demandes de contenus et un véritable crédit d'évolution.</p>
+          </div>
+          <div class="followup-comparison-table" role="table" aria-label="Comparaison des trois abonnements de suivi">
+            <div class="followup-comparison-row followup-comparison-head" role="row">
+              <span role="columnheader">Service</span>
+              <strong role="columnheader">Hébergement<br /><small>49€ HT/mois</small></strong>
+              <strong role="columnheader">Maintenance<br /><small>149€ HT/mois</small></strong>
+              <strong role="columnheader">TMA<br /><small>399€ HT/mois</small></strong>
+            </div>
+            <div class="followup-comparison-row" role="row"><span role="rowheader">Serveur privé en France, SSL et DNS</span><strong role="cell" aria-label="Inclus dans Hébergement"><i class="fas fa-check" aria-hidden="true"></i></strong><strong role="cell" aria-label="Inclus dans Maintenance"><i class="fas fa-check" aria-hidden="true"></i></strong><strong role="cell" aria-label="Inclus dans TMA"><i class="fas fa-check" aria-hidden="true"></i></strong></div>
+            <div class="followup-comparison-row" role="row"><span role="rowheader">Sauvegardes quotidiennes et surveillance</span><strong role="cell" aria-label="Inclus dans Hébergement"><i class="fas fa-check" aria-hidden="true"></i></strong><strong role="cell" aria-label="Inclus dans Maintenance"><i class="fas fa-check" aria-hidden="true"></i></strong><strong role="cell" aria-label="Inclus dans TMA"><i class="fas fa-check" aria-hidden="true"></i></strong></div>
+            <div class="followup-comparison-row" role="row"><span role="rowheader">Maintenance corrective du périmètre existant</span><span role="cell" aria-label="Non inclus dans Hébergement">—</span><strong role="cell">Couverte à 100&nbsp;%</strong><strong role="cell">Couverte à 100&nbsp;%</strong></div>
+            <div class="followup-comparison-row" role="row"><span role="rowheader">Textes, images et contenus confiés au webmaster</span><span role="cell" aria-label="Non inclus dans Hébergement">—</span><strong role="cell" aria-label="Inclus dans Maintenance"><i class="fas fa-check" aria-hidden="true"></i></strong><strong role="cell" aria-label="Inclus dans TMA"><i class="fas fa-check" aria-hidden="true"></i></strong></div>
+            <div class="followup-comparison-row" role="row"><span role="rowheader">Temps réservé aux évolutions</span><span role="cell">À la carte</span><strong role="cell">4h / mois</strong><strong role="cell">2 jours / mois</strong></div>
+            <div class="followup-comparison-row" role="row"><span role="rowheader">Délai de prise en charge annoncé</span><span role="cell">Selon incident</span><strong role="cell">24 à 48h ouvrées</strong><strong role="cell">4h ouvrées si blocage</strong></div>
+            <div class="followup-comparison-row" role="row"><span role="rowheader">Bilan transmis</span><span role="cell">Suivi technique interne</span><strong role="cell">Trimestriel</strong><strong role="cell">Mensuel</strong></div>
+          </div>
+        </section>
+
+        <section class="monitoring-showcase" aria-labelledby="monitoring-showcase-title">
+          <div class="monitoring-copy">
+            <p class="followup-eyebrow">Une surveillance visible, pas une promesse abstraite</p>
+            <h2 id="monitoring-showcase-title" class="compact-section-title">Vous savez ce qui est surveillé et ce qui a été fait</h2>
+            <p>Disponibilité, temps de réponse, certificat SSL, sauvegardes et incidents sont suivis. Selon la formule, ces contrôles alimentent votre bilan périodique et les actions recommandées.</p>
+            <ul class="monitoring-benefits">
+              <li><i class="fas fa-check" aria-hidden="true"></i> Alertes en cas d'indisponibilité</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> Historique des contrôles et interventions</li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> Compte rendu compréhensible, sans jargon inutile</li>
+            </ul>
+          </div>
+
+          <figure class="monitoring-dashboard" aria-labelledby="monitoring-dashboard-caption">
+            <div class="monitoring-window-bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <div>supervision · site-exemple.fr</div>
+              <b>EN LIGNE</b>
+            </div>
+            <div class="monitoring-dashboard-body">
+              <div class="monitoring-dashboard-head">
+                <div>
+                  <small>ÉTAT DU SERVICE</small>
+                  <strong><i aria-hidden="true"></i> Tous les contrôles sont opérationnels</strong>
+                </div>
+                <span>Dernière vérification : il y a 2 min</span>
+              </div>
+              <div class="monitoring-metrics">
+                <div class="monitoring-metric">
+                  <small>DISPONIBILITÉ</small>
+                  <strong>99,98<sup>%</sup></strong>
+                  <span class="metric-positive">30 derniers jours</span>
+                </div>
+                <div class="monitoring-metric">
+                  <small>TEMPS DE RÉPONSE</small>
+                  <strong>142<sup>ms</sup></strong>
+                  <span>médiane observée</span>
+                </div>
+                <div class="monitoring-metric">
+                  <small>INCIDENT CRITIQUE</small>
+                  <strong>0</strong>
+                  <span class="metric-positive">aucun en cours</span>
+                </div>
+              </div>
+              <div class="monitoring-chart" aria-label="Courbe illustrative de disponibilité sur sept jours">
+                <div class="monitoring-chart-label"><span>Disponibilité · 7 jours</span><strong>Stable</strong></div>
+                <svg viewBox="0 0 520 92" role="img" aria-label="Disponibilité stable avec une légère variation">
+                  <defs>
+                    <linearGradient id="monitoringArea" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#26b67a" stop-opacity="0.34" />
+                      <stop offset="100%" stop-color="#26b67a" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path class="monitoring-area" d="M0 74 L0 37 L52 35 L104 38 L156 31 L208 34 L260 26 L312 29 L364 21 L416 25 L468 17 L520 20 L520 74 Z" />
+                  <path class="monitoring-line" d="M0 37 L52 35 L104 38 L156 31 L208 34 L260 26 L312 29 L364 21 L416 25 L468 17 L520 20" />
+                </svg>
+              </div>
+              <div class="monitoring-checks">
+                <div><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Sauvegarde quotidienne</strong><small>Vérifiée aujourd'hui à 02:12</small></span></div>
+                <div><i class="fas fa-lock" aria-hidden="true"></i><span><strong>Certificat SSL valide</strong><small>Expiration contrôlée automatiquement</small></span></div>
+              </div>
+            </div>
+            <figcaption id="monitoring-dashboard-caption">Exemple d'indicateurs de supervision — données de démonstration.</figcaption>
+          </figure>
+        </section>
+
+        <section class="followup-operations" aria-labelledby="followup-operations-title">
+          <div class="content-text followup-section-heading">
+            <p class="followup-eyebrow">Du premier accès au suivi régulier</p>
+            <h2 id="followup-operations-title" class="compact-section-title">Une prise en charge cadrée en quatre temps</h2>
+            <p>Le suivi commence par une photographie fiable de l'existant. Vous savez ensuite quels contrôles sont actifs, comment demander une intervention et comment les priorités sont arbitrées.</p>
+          </div>
+          <ol class="followup-operation-grid">
+            <li>
+              <span class="followup-operation-number">01</span>
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <h3>État initial</h3>
+              <p>Accès, versions, hébergement, DNS, certificat, sauvegardes et points de vigilance sont recensés avant la reprise.</p>
+            </li>
+            <li>
+              <span class="followup-operation-number">02</span>
+              <i class="fas fa-shield-alt" aria-hidden="true"></i>
+              <h3>Sécurisation</h3>
+              <p>Une sauvegarde de référence est vérifiée, les protections nécessaires sont configurées et les alertes sont activées.</p>
+            </li>
+            <li>
+              <span class="followup-operation-number">03</span>
+              <i class="fas fa-headset" aria-hidden="true"></i>
+              <h3>Suivi quotidien</h3>
+              <p>Les incidents détectés et vos demandes sont qualifiés, priorisés puis traités dans le périmètre de votre formule.</p>
+            </li>
+            <li>
+              <span class="followup-operation-number">04</span>
+              <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+              <h3>Bilan &amp; priorités</h3>
+              <p>Le travail effectué, les indicateurs utiles et les prochaines recommandations sont résumés sans jargon.</p>
+            </li>
+          </ol>
+
+          <figure class="followup-report" aria-labelledby="followup-report-caption">
+            <div class="followup-report-topbar">
+              <div><span class="followup-report-mark">AEH</span><span><strong>Bilan de suivi</strong><small>site-exemple.fr · Avril</small></span></div>
+              <span class="followup-report-demo">EXEMPLE</span>
+            </div>
+            <div class="followup-report-summary">
+              <div><small>Disponibilité</small><strong>99,98&nbsp;%</strong><span>Service stable</span></div>
+              <div><small>Sauvegardes</small><strong>30 / 30</strong><span>Contrôles réussis</span></div>
+              <div><small>Interventions</small><strong>3</strong><span>Demandes terminées</span></div>
+              <div><small>Crédit utilisé</small><strong>2h15 / 4h</strong><span>1h45 disponible</span></div>
+            </div>
+            <div class="followup-report-columns">
+              <section aria-labelledby="report-actions-title">
+                <p class="followup-report-label">CE QUI A ÉTÉ FAIT</p>
+                <h3 id="report-actions-title">Actions réalisées</h3>
+                <ul>
+                  <li><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Formulaire de contact corrigé</strong><small>Contrôle fonctionnel après déploiement</small></span></li>
+                  <li><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Dépendances de sécurité actualisées</strong><small>Versions et compatibilité vérifiées</small></span></li>
+                  <li><i class="fas fa-check-circle" aria-hidden="true"></i><span><strong>Nouvelle actualité mise en ligne</strong><small>Texte, image et métadonnées intégrés</small></span></li>
+                </ul>
+              </section>
+              <section aria-labelledby="report-priorities-title">
+                <p class="followup-report-label">CE QUI MÉRITE VOTRE ATTENTION</p>
+                <h3 id="report-priorities-title">Priorités proposées</h3>
+                <ol>
+                  <li><span>01</span><p><strong>Optimiser la page la plus consultée</strong><small>Amélioration proposée pour le prochain crédit d'évolution.</small></p></li>
+                  <li><span>02</span><p><strong>Renouveler une photo devenue ancienne</strong><small>À valider avant toute modification de contenu.</small></p></li>
+                </ol>
+              </section>
+            </div>
+            <figcaption id="followup-report-caption">Exemple de bilan Maintenance &amp; Webmastering — données fictives. La fréquence dépend de la formule choisie.</figcaption>
+          </figure>
+        </section>
+
+        <aside class="followup-support-note" aria-labelledby="included-support-title">
+          <div class="followup-support-icon"><i class="fas fa-gift" aria-hidden="true"></i></div>
+          <div>
+            <p class="followup-eyebrow">Inclus après chaque création</p>
+            <h2 id="included-support-title" class="compact-section-title">Le premier mois de support est offert</h2>
+            <p>Il couvre les bugs, l'aide à la prise en main et les petits ajustements sur les éléments livrés : couleurs, typographie, espacements et reformattage d'un bloc existant.</p>
+            <p class="is-subtle">Une nouvelle page, un nouveau bloc, une fonctionnalité ou une évolution métier relèvent ensuite d'un abonnement ou d'une intervention à la carte.</p>
+          </div>
+        </aside>
 
         <div class="content-text section-spacer">
           <h2 class="compact-section-title">Référencement classique et <span class="marker-highlight marker-violet">visibilité dans les moteurs IA</span></h2>
@@ -177,27 +494,36 @@
         </section>
 
         <div class="pricing-grid seo-offer-grid">
-          <div class="pricing-card featured">
-            <div class="pricing-badge">Une formule complète</div>
+          <div id="seo-offer" class="pricing-card featured">
+            <div class="pricing-badge">Tarif de lancement</div>
             <h3>SEO &amp; GSO Croissance</h3>
-            <div class="price"><span class="amount"><span class="hl-hand">89€</span></span><span class="period"> HT / mois</span></div>
+            <div class="price">
+              <span class="old-price"><span class="old-price-label">Tarif standard</span><span class="old-price-amount">149€ HT / mois</span></span>
+              <span><span class="amount"><span class="hl-hand">89€</span></span><span class="period"> HT / mois</span></span>
+            </div>
             <p class="pricing-description">Un accompagnement unique pour améliorer et consolider votre visibilité chaque mois</p>
-            <ul class="pricing-features">
+            <ul class="pricing-features followup-feature-summary">
               <li><span class="plus-hand" aria-hidden="true">+</span> Google Search Console, Bing Webmaster Tools et Yandex Webmaster</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Suivi de l'indexation, des erreurs, de la vitesse et des Core Web Vitals</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Audit initial et recherche de mots-clés</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Analyse de la concurrence et suivi des positions</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Audit GSO pour ChatGPT, Gemini, Claude, Perplexity, DeepSeek et autres moteurs IA</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Contenus structurés, données JSON-LD et réponses clairement attribuables</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Configuration des robots IA documentés et suivi des citations observables</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Optimisation d'une page stratégique par mois</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Rédaction ou réécriture de contenus ciblés selon le plan éditorial</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Corrections SEO techniques et maillage interne</li>
+              <li><span class="plus-hand" aria-hidden="true">+</span> Rédaction d'un article par mois sur un sujet d'actualité pertinent pour votre activité, soumis à votre validation avant publication</li>
               <li><span class="plus-hand" aria-hidden="true">+</span> Création ou optimisation Google Business Profile</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Plan éditorial trimestriel</li>
-              <li><span class="plus-hand" aria-hidden="true">+</span> Rapport et échange mensuels</li>
-              <li><i class="fas fa-info-circle"></i> Engagement initial de 3 mois — contenus, maillage et recommandations de backlinks inclus selon le plan validé</li>
             </ul>
+            <details class="followup-card-details">
+              <summary>Voir tout le suivi SEO et IA inclus</summary>
+              <div><ul class="pricing-features">
+                <li><span class="plus-hand" aria-hidden="true">+</span> Analyse de la concurrence et suivi des positions</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Audit GSO pour ChatGPT, Gemini, Claude, Perplexity, DeepSeek et autres moteurs IA</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Contenus structurés, données JSON-LD et réponses clairement attribuables</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Configuration des robots IA documentés et suivi des citations observables</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Rédaction ou réécriture de contenus ciblés selon le plan éditorial</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Corrections SEO techniques et maillage interne</li>
+                <li><span class="plus-hand" aria-hidden="true">+</span> Plan éditorial trimestriel, rapport et échange mensuels</li>
+              </ul></div>
+            </details>
+            <a class="btn btn-primary followup-card-cta" href="#contact">Profiter du tarif de lancement</a>
+            <p class="followup-offer-condition"><i class="fas fa-info-circle" aria-hidden="true"></i> Engagement initial de 3 mois — contenus, maillage et recommandations de backlinks inclus selon le plan validé.</p>
           </div>
         </div>
 
@@ -223,8 +549,47 @@
               <li><span class="plus-hand" aria-hidden="true">+</span> Compte rendu des travaux et déploiement inclus dans la charge</li>
               <li><i class="fas fa-info-circle"></i> Aucun dépassement sans validation d'un complément de devis</li>
             </ul>
+            <a class="btn btn-primary followup-card-cta" href="#contact">Demander une intervention</a>
           </div>
         </div>
+
+        <section class="followup-faq" aria-labelledby="followup-faq-title">
+          <div class="content-text followup-section-heading">
+            <p class="followup-eyebrow">Périmètre, délais et fonctionnement</p>
+            <h2 id="followup-faq-title" class="compact-section-title">Les réponses avant de vous engager</h2>
+            <p>Les offres sont volontairement transparentes sur ce qui est surveillé, ce qui est corrigé et ce qui nécessite une validation complémentaire.</p>
+          </div>
+          <div class="faq-grid">
+            <details class="faq-item">
+              <summary>Quelle différence entre hébergement, maintenance et TMA&nbsp;?</summary>
+              <p>L'Hébergement infogéré protège le serveur, le certificat, les sauvegardes et la disponibilité. Maintenance &amp; Webmastering ajoute les corrections du site existant, la gestion de contenu et 4h d'évolutions mensuelles. La TMA s'adresse aux applications plus actives et réserve deux jours par mois avec une prise en charge prioritaire en cas de blocage.</p>
+            </details>
+            <details class="faq-item">
+              <summary>« Surveillance continue » signifie-t-il une présence humaine 24h/24&nbsp;?</summary>
+              <p>La disponibilité et les contrôles techniques sont automatisés en continu. Les alertes sont ensuite qualifiées et les interventions humaines sont réalisées pendant les horaires ouvrés selon le niveau de priorité prévu par la formule, sauf dispositif d'astreinte convenu séparément.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Que signifie « maintenance corrective couverte à 100&nbsp;% »&nbsp;?</summary>
+              <p>Les anomalies reproductibles qui touchent le périmètre applicatif existant sont diagnostiquées et corrigées sans facturation supplémentaire. Une nouvelle fonctionnalité, une refonte, un changement de besoin ou un incident causé par un service tiers hors de mon contrôle relève du crédit d'évolution disponible ou d'un devis validé au préalable.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Que deviennent les heures ou les jours non utilisés&nbsp;?</summary>
+              <p>Les 4h de Maintenance &amp; Webmastering sont cumulables pendant trois mois, dans la limite de 12h. Les jours de TMA non consommés restent disponibles jusqu'au 31 décembre de l'année en cours. Vous pouvez ainsi conserver du temps pour une évolution plus importante.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Comment sont protégées les sauvegardes et les données&nbsp;?</summary>
+              <p>Les sauvegardes sont exécutées quotidiennement et leur restauration fait partie du périmètre prévu. L'hébergement proposé est situé en France et relève du droit européen ainsi que du RGPD. Les accès sensibles ne sont jamais affichés dans les rapports transmis.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Puis-je faire reprendre un site créé par un autre prestataire&nbsp;?</summary>
+              <p>Oui, après vérification de l'architecture, des accès, des versions, des licences et de l'état de sécurité. Si une remise à niveau est nécessaire avant la reprise, son périmètre et son coût sont présentés séparément avant le démarrage de l'abonnement.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Puis-je arrêter ou changer de formule&nbsp;?</summary>
+              <p>Les abonnements techniques sont sans engagement et peuvent être résiliés avec un mois de préavis. Un changement de formule est possible lorsque la fréquence des demandes ou la criticité du projet évolue. L'offre SEO &amp; GSO conserve son engagement initial de trois mois afin de disposer d'une période de travail exploitable.</p>
+            </details>
+          </div>
+        </section>
       </section>
 
       <section id="contact" class="cta-container">
@@ -232,6 +597,10 @@
           <div class="cta-content">
             <h2>Quel suivi correspond à votre projet ?</h2>
             <p>En 30 minutes, nous évaluons la criticité, la fréquence des changements et le niveau d'accompagnement réellement utile.</p>
+            <div class="followup-cta-profile">
+              <img src="assets/ahmed-portrait.webp" alt="Ahmed Eben Hassine, ingénieur en informatique senior" width="72" height="72" loading="lazy" />
+              <span><strong>Ahmed Eben Hassine</strong><small>Votre interlocuteur Symfony, du diagnostic au déploiement</small></span>
+            </div>
             <div class="cta-buttons">
               <a href="https://calendly.com/ahmedbhs123/new-meeting-1" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large"><i class="fas fa-calendar-check"></i> Réserver un appel gratuit</a>
               <a href="mailto:ahmedbhs123@gmail.com" class="btn btn-secondary btn-large"><i class="fas fa-envelope"></i> Demander une estimation</a>
@@ -267,10 +636,10 @@
           <div class="footer-col">
             <h4>Suivi</h4>
             <ul>
-              <li><a href="#">Hébergement & infogérance</a></li>
-              <li><a href="#">Maintenance & webmastering</a></li>
-              <li><a href="#">TMA & évolutions</a></li>
-              <li><a href="#">Accompagnement SEO</a></li>
+              <li><a href="#hosting-offer">Hébergement & infogérance</a></li>
+              <li><a href="#maintenance-offer">Maintenance & webmastering</a></li>
+              <li><a href="#tma-offer">TMA & évolutions</a></li>
+              <li><a href="#seo-offer">Accompagnement SEO</a></li>
             </ul>
           </div>
           <div class="footer-col">
