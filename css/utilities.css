@@ -7073,3 +7073,17 @@ body.premium-web-page .page-header + #web-creation {
 
   .home-services-grid > .service-card:last-child { grid-column: auto; }
 }
+
+/* Le hero reste équilibré lorsque l'aperçu vitrine est masqué. */
+.header-container > .home-hero-grid {
+  display: block;
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-hero-copy {
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+}
