@@ -314,3 +314,37 @@ if (heroConsole) {
     }
   });
 }
+
+// Offer cards: show the first features, collapse the rest behind a toggle.
+document.querySelectorAll(".offers-layout .pricing-features").forEach((list, index) => {
+  const VISIBLE = 5;
+  const items = list.querySelectorAll("li");
+  const hidden = items.length - VISIBLE;
+  if (hidden < 2) return;
+
+  if (!list.id) list.id = `offer-features-${index + 1}`;
+  list.classList.add("is-collapsible", "is-collapsed");
+
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "offer-features-toggle";
+  button.setAttribute("aria-controls", list.id);
+  button.setAttribute("aria-expanded", "false");
+  const label = (open) =>
+    open ? "Réduire la liste" : `Voir les ${hidden} autres avantages`;
+  button.textContent = label(false);
+
+  button.addEventListener("click", () => {
+    const open = list.classList.toggle("is-collapsed") === false;
+    button.setAttribute("aria-expanded", String(open));
+    button.textContent = label(open);
+    if (!open) {
+      const card = list.closest(".pricing-card");
+      if (card && card.getBoundingClientRect().top < 0) {
+        card.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  });
+
+  list.insertAdjacentElement("afterend", button);
+});
